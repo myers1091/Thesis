@@ -1,0 +1,18 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'thesis.blg'
+[56] biber-MSWIN64:313> INFO - === 
+[110] Biber.pm:371> INFO - Reading 'thesis.bcf'
+[257] Biber.pm:857> INFO - Found 1 citekeys in bib section 0
+[286] Biber.pm:3976> INFO - Processing section 0
+[321] Biber.pm:4136> INFO - Looking for bibtex format file 'thesis.bib' for section 0
+[323] bibtex.pm:1454> INFO - Reading ascii input as UTF-8
+[325] bibtex.pm:1500> INFO - LaTeX decoding ...
+[336] bibtex.pm:1316> INFO - Found BibTeX data source 'thesis.bib'
+[343] Utils.pm:193> WARN - month field 'Jul' in entry 'ATL-PHYS-PUB-2015-015' is not an integer - this will probably not sort properly.
+[363] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[363] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[363] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[363] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[371] bbl.pm:617> INFO - Writing 'thesis.bbl' with encoding 'ascii'
+[373] bbl.pm:720> INFO - Output to thesis.bbl
+[378] Biber.pm:110> INFO - WARNINGS: 1
