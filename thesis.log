@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  1 JUN 2018 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.6.1)  8 JUN 2018 16:56
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1852,7 +1852,7 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 \@quotelevel=\count538
 \@quotereset=\count539
- (thesis.aux (results.aux))
+ (thesis.aux (cover.aux) (results.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 190.
@@ -1953,23 +1953,29 @@ Package biblatex Info: ... file 'thesis.bbl' found.
 (thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 190.
 Package biblatex Info: Reference segment=0 on input line 190.
-\openout2 = `results.aux'.
+\openout2 = `cover.aux'.
 
- (results.tex) [1
+ (cover.tex) [1
 
 
 {C:/Users/jmyers/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+\openout2 = `results.aux'.
+
+ (results.tex) [2
+
+
+]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 149.
 See the caption package documentation for explanation.
 
-[2
+[3
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 363.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 363.
- (thesis.aux (results.aux))
+ (thesis.aux (cover.aux) (results.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 363.
 
 
@@ -2132,31 +2138,26 @@ gettitlestring.sty    2016/05/16 v1.5 Cleanup title references (HO)
   thesis.out
   thesis.out
   thesis.bbl
+   cover.tex
  results.tex
  ***********
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 363.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please rerun LaTeX.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 363.
  ) 
 Here is how much of TeX's memory you used:
- 42774 strings out of 493305
- 868983 string characters out of 3129368
- 1404224 words of memory out of 3000000
- 45692 multiletter control sequences out of 15000+200000
+ 42785 strings out of 493305
+ 869197 string characters out of 3129368
+ 1407971 words of memory out of 3000000
+ 45695 multiletter control sequences out of 15000+200000
  538498 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,7n,78p,1153b,1207s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,7n,78p,1153b,1206s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/jmyers/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmcsc10.pfb><C:/Users/jmyers/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmmi12.pfb><C:/Users/jmyers/AppData/Local/Programs/MiKTeX 2
@@ -2165,9 +2166,9 @@ rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jmyers/AppD
 ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Use
 rs/jmyers/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt
 12.pfb>
-Output written on thesis.pdf (2 pages, 69806 bytes).
+Output written on thesis.pdf (3 pages, 74463 bytes).
 PDF statistics:
- 74 PDF objects out of 1000 (max. 8388607)
- 5 named destinations out of 1000 (max. 500000)
+ 78 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
