@@ -3,12 +3,24 @@
 \chapter{Experimental Setup}
 %ATLAS is a multipurpose detector positioned around one of the 4 primry interaction points of the Large Hadron Collider (LHC) in Geneva, Switzerland. The LHC collides protons at a center of mass energy of 13 TeV, for Run 2, at a rate of approximately 600MHz. 
 \section{Hadronic Colliders}
-\section{The Large Hadron Collider}
+Hadronic colliders use two beams of non-fundamental particles, typically proton-proton or proton-antiproton. These accelerators benefit from the larger mass of the particles when compared to lepton colliders. This results in smaller synchrotron radiation in circular accelerators, as the radiation is inversely proportional to mass. This allows hadronic colliders to have a much larger center of mass energy than leptonic colliders for the same size circular ring. \newline
+\indent While hadronic colliders typically have larger collision energies, they also have significantly "messier" collisions. In leptonic colliders, the only final state particles come from the colliding particles. In hadronic colliders, not all of the constituents of the hadrons interact in the hard collision. This leads to many additional particles in the final state. Additionally, each subparticle only carries a portion of the hadron momentum, it is impossible to know the exact initial energy of the collision. 
 \section{Overlapping Collisions}
-\section{ATLAS}
+\section{The Large Hadron Collider}
+%Source
+The Large Hadron Collider (LHC) is a 27 kilometer ring underneath the Franco-Swiss border. The LHC accelerates beams of protons (or ions) to a center of mass energy of up to 13 TeV(5 TeV) in two antiparallel beams around the ring. The particles are then collided at 4 primary interaction points each of which has a dedicated detector: ATLAS, CMS, ALICE, and LHCb.
 \subsection{Detector Coordinates}
-\subsection{Magnet System}
+%Source
+Within the ATLAS detector, the interaction point defined the origin of the coordinate system. The z-axis, the longitudinal axis, runs along the beam line, the positive x-axis points toward the center of the LHC ring, and the positive y-axis points toward the surface. The detector is also described in r, ${\eta}$, ${\phi}$ coordinates. With the transverse plane, the plane perpendicular to the beam line, being described by r and ${\phi}$. The radial coordinate, r, describes the distance from the beam line. The azimuthal angle, ${\phi}$, is the angle from the x-axis around the beam line. The final coordinate, ${\eta}$, is referred to pseudorapidity and is defined as ${\eta = -ln(tan(\frac{\theta}{2}))}$. With ${\theta}$ being the angle from the y-axis. The variable ${\Delta{R}=\sqrt{\eta^{2} + \phi^{2}}}$ is used to describe the distance between detector objects.
+\section{ATLAS}
+%Source
+The ATLAS detector is a general purpose detector and the largest on the LHC. It is a 44 meter long and 25 meter tall cylinder positioned along the beam pipe of the LHC. It is made up of concentric subsystems, each with a specialized task: the inner detector, which is responsible for measuring the charge and momentum of charged particles; the calorimeters, which are responsible for measuring the energy of different electromagnetic and hadronic particles; the muon spectrometer, which measures the momentum of minimum ionizing particles, like muons; and the magnet system, which is responsible for bending the charged particles in the detector, allowing their charge to be measured. The subdetectors feed into a vast Trigger and Data Acquisition (TDAQ) system that is responsible for selecting collision events with interesting characteristics.
+
 \subsection{The Inner Detector}
+%Source Inner detector TDR: https://cds.cern.ch/record/331063?ln=en
+%Source IBL TDR: https://cds.cern.ch/record/1291633?ln=en
+The inner detector is the closest system to the beam pipe. It contains 4 separate pieces. In order of distance from the beam pipe: The Insertable B-Layer (IBL), the Pixel Detectors, the Semiconductor Tracker (SCT), and the Transition Radiation Tracker (TRT). These subsystems work together to give charged particle tracking within the pseudorapidity range of ${|\eta| < 2.5}$.
+\indent The IBL is the newest addition to the inner detector, being installed during the 2016 shutdown. It is place directly outside the beam pipe in order to maintain good vertexing and b tagging in increased pileup environments.
 %%Important pieces for my analysis
 %ID (for tracking, track-jets, vertex ID)
 %The Inner Detector (ID) consists of 4 subsystems. The Insertable B-Layer (IBL), a silicon pixel detector, a semiconductor tracker (SCT) and transition radiation tracker (TRT).
@@ -17,6 +29,7 @@
 %Trigger (lots of this)
 \subsection{Calorimeters}
 \subsection{Muon Detectors}
+\subsection{Magnet System}
 \subsection{Trigger System}
 \subsubsection{L1 Trigger}
 \subsubsection{High Level Trigger}
