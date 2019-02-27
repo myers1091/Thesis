@@ -5,13 +5,120 @@ The Standard Model (SM) is the culmination of more than a century of work. The f
 %Include this is a search for BSM production
 \section{The Standard Model}
 The Standard Model defines the basic building blocks of matter and force and the interactions between them. Normal matter that we interact with on a daily basis is made of protons, neutrons, and electrons. Electrons are a fundamental particle, called a lepton, meaning they are not made of smaller constituents. However, protons and neutrons are not fundamental particles. They are a composite of up and down quarks, two more fundamental particles. The protons are made of 2 ups and a down and the neutrons are made of two downs and an up. Leptons and quarks are both different types of fermions. \linebreak
-\indent Fermions are spin-${\frac{1}{2}}$ particles that make up all matter in the SM. The fermions can be broken down into 3 "generations". Where a generation contains two quarks, one with electric charge ${+\frac{2}{3}}$ and one with electric charge ${-\frac{1}{3}}$, one electrically charged lepton, charge -1, and one electrically neutral lepton. The quarks have an additional color charge, of which there are 3 charges. This is additional quantum number associated with the strong force. In all, this gives 12 fermions. \linebreak
+\indent Fermions are spin-${\frac{1}{2}}$ particles that make up all matter in the SM. The fermions can be broken down into 3 "generations". Where a generation contains two quarks, one with electric charge ${+\frac{2}{3}}$ and one with electric charge ${-\frac{1}{3}}$, one electrically charged lepton, charge -1, and one electrically neutral lepton. The quarks have an additional color charge, of which there are 3 charges. This is additional quantum number associated with the strong force. In all, this gives 12 fermions. \linebreak 
+
+\begin{table}[h]
+\begin{center}
+\footnotesize
+\begin{tabular}[h]{|c||c|c|c|c|}
+\hline
+ & Particle & Spin & Charge & Mass \\
+\hline\hline
+Quarks &&&&\\
+\hline
+u type &u& & &${2.4^{+0.6}_{-0.4} MeV}$\\
+ &c&${\frac{1}{2}}$&${\frac{2}{3}}$&${1.28\pm{0.03} GeV}$\\
+ &t& & &${173.1\pm{0.6} GeV}$\\
+\hline
+d type & d& & & ${4.7^{+0.5}_{-0.4} MeV}$\\
+ & s & ${\frac{1}{2}}$ & ${-\frac{1}{3}}$ & ${96^{+8}_{-4} MeV}$\\
+ & b & & & ${4.18^{+0.04}_{-0.03} GeV}$\\
+\hline\hline
+Leptons &&&&\\
+\hline
+e family & e & ${\frac{1}{2}}$ & -1 &${0.5109989461\pm{}0.000000003 MeV}$\\
+ & ${\nu_{e}}$ & & 0 & ${< 2 eV}$\\
+ \hline
+${\mu}$ family & ${\mu}$ & ${\frac{1}{2}}$ & -1 &${105.6583745\pm{}0.0000024 MeV}$\\
+ & ${\nu_{\mu}}$ & & 0 & ${< 2 eV}$\\
+ \hline
+${\tau}$ family & ${\tau}$ & ${\frac{1}{2}}$ & -1 &${1776.86\pm{}0.12 GeV}$\\
+ & ${\nu_{\tau}}$ & & 0 & ${< 2 eV}$\\
+ \hline\hline
+ Bosons &&&&\\
+ \hline
+ Vector & ${\gamma}$ & 1 & 0 & ${< 10^{-18} eV}$\\
+ & ${g}$ & 1 & 0 & ${0}$\\
+ & ${W}$ & 1 & ${\pm}$ & ${80.385\pm{}0.0015 GeV}$\\
+ & ${Z}$ & 1 & 0 & ${91.1876\pm{}0.0021 GeV}$\\
+ \hline
+ Scalar & H & 0& 0 & ${125.09\pm{}0.21\pm{}0.11 GeV}$\\
+ \hline
+\end{tabular}
+\caption{Particles of the Standard Model (ref XXX (ian or PDG))}
+\label{tab:SM}
+\end{center}
+\end{table}
+
 \indent Gauge bosons are spin-${1}$ particles responsible for carrying the fundamental forces in the standard model. There are 12 physical gauge boson. The photon ${\gamma}$ is a massless, charge neutral force carrier for the electromagnetic force. The nuclear forces are carried by 3 massive gauge bosons. A chargeless Z boson and two charged W bosons, ${Q = \pm 1}$. Together, these 4 bosons control the electroweak interactions in the standard model. The remaining 8 bosons are the gluons, the force carriers for the strong nuclear interaction. Gluons are massless, electrically neutral particles that have two color charges. There is a gluon for each combination of the three color charges, giving the 8 total gluons. \linebreak
-\indent The remaining piece of the standard is the Higgs Boson. The Higgs boson is a massive Scalar, spin-${0}$, chargeless boson. The Higgs boson is responsible for giving mass to the massive electoweak bosons through electroweak symmetry breaking. The particles and their masses can be seen in Table XXX\linebreak
+\indent The remaining piece of the standard is the Higgs Boson. The Higgs boson is a massive Scalar, spin-${0}$, chargeless boson. The Higgs boson is responsible for giving mass to the massive electoweak bosons through electroweak symmetry breaking. The particles and their properties are in Table ~\ref{tab:SM}\linebreak
+\subsection{Interactions}
+The SM is governed by three different types of interactions. For leptons, the overarching theory is quantum electrodynamics (QED). QED describes how particles behave under electroweak interactions. This can be broken down further into the electromagnetic interaction and the weak interaction. The electromagnetic interaction defines the interaction of electrically charged particles with photons. The fundamental diagram for the electromagnetic interaction is electron-positron annihilation ~\ref{Fey:e-p}. Where an electron and a positron collide and produce two photons. This can also be reversed, two photons interact and produce an electron-positron pair. The strength of this interaction is the electrical charge e. \linebreak
+
+\begin{figure}[h]
+
+\begin{center}
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (c) ;
+\vertex [below left =of c] (i1){\(e^{-}\)};
+\vertex [above left=of c] (i2) {\(e^{+}\)};
+\vertex [below right=of c] (f1){\(\gamma\)};
+\vertex [above right= of c] (f2){\(\gamma\)};
+\diagram* {
+(i1) -- [fermion] (c) -- [fermion] (i2) ,
+(f1) -- [photon] (c)-- [photon] (f2)
+};
+\end{feynman}
+\end{tikzpicture}
+\caption{Electron-Positron Annihilation}
+\label{Fey:e-p}
+\end{center}
+\end{figure}
+
+\indent The weak interaction defines the interaction of particles under the weak isospin quantum number. There are two copies of each of every fermion, a left and a right-handed chirality version. Particle with a right-handed chirality have a weak isospin T = 0. These particles exist as singlets and do not interact with the weak force. Left-handed particles have a weak isospin T =  ${\frac{1}{2}}$. These particles live as doublets as illustrated in Fig XXX (make this, table?). For these particles, the third component of the weak isospin T\textsubscript{3}, ${+\frac{1}{2}}$ for up-type quarks and charged leptons and ${-\frac{1}{2}}$ for down-type quarks and neutral leptons. Under weak interactions, particles with ${T_{3} = +\frac{1}{2}}$ always transform into particles with ${T_{3} = -\frac{1}{2}}$, or vice versa.  The remaining piece of the weak interaction is the W boson. The W has an isospin of T = 1. This gives three option for the third component of isospin, ${T_{3} = +1, 0, -1}$ which give the W\textsuperscript{+}, the W\textsuperscript{0}, and the W\textsuperscript{-}. W\textsuperscript{0} will be discussed more in ~\ref{ssec:Higgs}. The ${W^{\pm}}$ either raise or lower the ${T_{3}}$ of the fermions. ~\ref{Fig:weak_dia} is an example of a weak interaction.\linebreak
+
+\begin{figure}[h]
+\begin{center}
+
+\begin{tikzpicture}
+\begin{feynman}
+\vertex (i1){\(e^{-}\)};
+\vertex [right =of i1] (c);
+\vertex [right=of c] (f1) {\(\nu_{e}\)};
+\vertex [below right=of c] (f2){\(W^{-}\)};
+\diagram* {
+(i1) -- [fermion] (c),
+(f2) -- [boson] (c)-- [fermion] (f1)
+};
+\end{feynman}
+\end{tikzpicture}
+\caption{electron emitting an electron neutrino and a W Boson}
+\label{Fig:weak_dia}
+\end{center}
+\end{figure}
+
+%Here, write about mixing and electroweak interaction?
+
+%\begin{equation}
+%Y_{W} = 2(Q - T_{3})
+%\end{equation}
+
+
 \indent %Need to talk about couplings and decays more in depth here
-\subsection{The Higgs Boson}
+\subsection{The Higgs Mechanism and Higgs Boson}
+\label{ssec:Higgs}
 %Start with need massless gauge bosons to fufill local gauge invariance. So we have W 1,2,3, and b. explain the mixing and the  break the symmetry to give the W+- Z and photon. Give math to explain this?? Show how this gives rise to a new boson, the higgs. 
 Electroweak field theory is a gauge invariant theory. This means the Lagrangian that describes the system is invariant under local gauge transformations. For the electroweak theory, this is the electroweak symmetry. To satisfy this symmetry, the bosons must be massless. However, the electroweak bosons in the standard model, the ${W^{\pm}}$ the ${Z}$ and the ${\gamma}$ are not all massless. This means that the electroweak symmetry must be broken by something.\linebreak
+
+\begin{figure}[h]
+\begin{center}
+\label{Fig:higgspot}
+\includegraphics[scale=0.65]{figures/higgspotential}
+\caption{The Higgs potential (from http://cds.cern.ch/record/1638469/plots) }
+\end{center}
+\end{figure}
+
 \indent In Electroweak theory, the five gauge bosons are ${W^{i}_{\mu}, i = 1,2,3}$ and ${B_{\mu}}$. These bosons couple to a complex scalar Higgs doublet, ${\Phi \equiv \binom{\phi^{+}}{\phi^{0}}}$. This doublet has a scalar potential.
 \begin{equation}
 V(\Phi) = \mu^{2}|\Phi^{\dagger}\Phi| + \lambda(|\Phi^{\dagger}\Phi|)^{2}
@@ -20,7 +127,10 @@ Where ${\mu^{2} < 0}$. This gives the Mexican hat shaped potential seen in Fig(h
 \begin{equation}
 \langle \phi \rangle = \sqrt{-\frac{\mu^{2}}{2\lambda}}\equiv \frac{\nu}{\sqrt{2}}
 \end{equation}
-called the vacuum expectation value (VEV) of ${\phi}$. The choice of the direction of fluctuation is arbitrary but can be chosen such that 
+called the vacuum expectation value (VEV) of ${\phi}$. The choice of the direction of fluctuation is arbitrary but can be chosen such that
+
+
+ 
 \begin{equation}
 \phi_{0} = \frac{1}{\sqrt{2}} \binom{0}{\nu}
 \end{equation}
