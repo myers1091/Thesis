@@ -76,7 +76,25 @@ The SM is governed by three different types of interactions. For leptons, the ov
 \end{center}
 \end{figure}
 
-\indent The weak interaction defines the interaction of particles under the weak isospin quantum number. There are two copies of each of every fermion, a left and a right-handed chirality version. Particle with a right-handed chirality have a weak isospin T = 0. These particles exist as singlets and do not interact with the weak force. Left-handed particles have a weak isospin T =  ${\frac{1}{2}}$. These particles live as doublets as illustrated in Fig XXX (make this, table?). For these particles, the third component of the weak isospin T\textsubscript{3}, ${+\frac{1}{2}}$ for up-type quarks and charged leptons and ${-\frac{1}{2}}$ for down-type quarks and neutral leptons. Under weak interactions, particles with ${T_{3} = +\frac{1}{2}}$ always transform into particles with ${T_{3} = -\frac{1}{2}}$, or vice versa.  The remaining piece of the weak interaction is the W boson. The W has an isospin of T = 1. This gives three option for the third component of isospin, ${T_{3} = +1, 0, -1}$ which give the W\textsuperscript{+}, the W\textsuperscript{0}, and the W\textsuperscript{-}. W\textsuperscript{0} will be discussed more in ~\ref{ssec:Higgs}. The ${W^{\pm}}$ either raise or lower the ${T_{3}}$ of the fermions. ~\ref{Fig:weak_dia} is an example of a weak interaction.\linebreak
+\indent The weak interaction defines the interaction of particles under the weak isospin quantum number. There are two copies of each of every fermion, a left and a right-handed chirality version. Particle with a right-handed chirality have a weak isospin T = 0. These particles exist as singlets and do not interact with the weak force. Left-handed particles have a weak isospin T =  ${\frac{1}{2}}$. These particles live as doublets as illustrated in table ~\ref{tab:chiral}. For these particles, the third component of the weak isospin T\textsubscript{3}, ${+\frac{1}{2}}$ for up-type quarks and charged leptons and ${-\frac{1}{2}}$ for down-type quarks and neutral leptons. Under weak interactions, particles with ${T_{3} = +\frac{1}{2}}$ always transform into particles with ${T_{3} = -\frac{1}{2}}$, or vice versa.\linebreak
+
+\begin{table}[h]
+\begin{center}
+\def\arraystretch{1.5}
+\begin{tabular}[h]{|c|c|}
+\hline
+Left Handed Fermions, ${T = \frac{1}{2}, T_{3} = \pm\frac{1}{2}}$ & Right Handed Fermions, ${T = 0, T_{3} = 0}$\\
+\hline\hline
+${\binom{u}{d}}$, ${\binom{c}{s}}$, ${\binom{t}{b}}$, ${\binom{e}{\nu_{e}}}$, ${\binom{\mu}{\nu_{\mu}}}$, ${\binom{\tau}{\nu_{\tau}}}$ & u, d, c, s, t, b, e, ${\nu_{e}}$, ${\mu}$, ${\nu_{\mu}}$, ${\tau}$, ${\nu_{\tau}}$ \\
+\hline
+\end{tabular}
+\caption{Particles of the Standard Model (ref XXX (ian or PDG))}
+\label{tab:chiral}
+\end{center}
+\end{table}
+
+
+ \indent The remaining piece of the weak interaction is the W boson. The W has an isospin of T = 1. This gives three option for the third component of isospin, ${T_{3} = +1, 0, -1}$ which give the W\textsuperscript{+}, the W\textsuperscript{0}, and the W\textsuperscript{-}. W\textsuperscript{0} will be discussed more in ~\ref{ssec:Higgs}. The ${W^{\pm}}$ either raise or lower the ${T_{3}}$ of the fermions. ~\ref{Fig:weak_dia} is an example of a weak interaction.\linebreak
 
 \begin{figure}[h]
 \begin{center}
@@ -99,6 +117,8 @@ The SM is governed by three different types of interactions. For leptons, the ov
 \end{figure}
 
 %Here, write about mixing and electroweak interaction?
+%Also need to talk briefly about QCD
+%Need to talk about b-quarks specifically.
 
 %\begin{equation}
 %Y_{W} = 2(Q - T_{3})
@@ -109,21 +129,21 @@ The SM is governed by three different types of interactions. For leptons, the ov
 \subsection{The Higgs Mechanism and Higgs Boson}
 \label{ssec:Higgs}
 %Start with need massless gauge bosons to fufill local gauge invariance. So we have W 1,2,3, and b. explain the mixing and the  break the symmetry to give the W+- Z and photon. Give math to explain this?? Show how this gives rise to a new boson, the higgs. 
-Electroweak field theory is a gauge invariant theory. This means the Lagrangian that describes the system is invariant under local gauge transformations. For the electroweak theory, this is the electroweak symmetry. To satisfy this symmetry, the bosons must be massless. However, the electroweak bosons in the standard model, the ${W^{\pm}}$ the ${Z}$ and the ${\gamma}$ are not all massless. This means that the electroweak symmetry must be broken by something.\linebreak
+QED is a gauge invariant theory. This means the Lagrangian that describes the system is invariant under local gauge transformations. For the electroweak theory, this is the electroweak symmetry. To satisfy this symmetry, the bosons must be massless. However, the electroweak bosons in the standard model, the ${W^{\pm}}$ the ${Z}$ and the ${\gamma}$ are not all massless. This means that the electroweak symmetry must be broken by something.\linebreak
 
 \begin{figure}[h]
 \begin{center}
-\label{Fig:higgspot}
 \includegraphics[scale=0.65]{figures/higgspotential}
 \caption{The Higgs potential (from http://cds.cern.ch/record/1638469/plots) }
+\label{Fig:higgspot}
 \end{center}
 \end{figure}
 
-\indent In Electroweak theory, the five gauge bosons are ${W^{i}_{\mu}, i = 1,2,3}$ and ${B_{\mu}}$. These bosons couple to a complex scalar Higgs doublet, ${\Phi \equiv \binom{\phi^{+}}{\phi^{0}}}$. This doublet has a scalar potential.
+\indent In QED, the five gauge bosons are ${W^{i}_{\mu}, i = 1,2,3}$ and ${B_{\mu}}$. These bosons couple to a complex scalar Higgs doublet, ${\Phi \equiv \binom{\phi^{+}}{\phi^{0}}}$. This doublet has a scalar potential.
 \begin{equation}
 V(\Phi) = \mu^{2}|\Phi^{\dagger}\Phi| + \lambda(|\Phi^{\dagger}\Phi|)^{2}
 \end{equation}
-Where ${\mu^{2} < 0}$. This gives the Mexican hat shaped potential seen in Fig(higgs potential plot, with a minimum energy at 
+Where ${\mu^{2} < 0}$. This gives the Mexican hat shaped potential seen in figure ~\ref{Fig:higgspot}, with a minimum energy at 
 \begin{equation}
 \langle \phi \rangle = \sqrt{-\frac{\mu^{2}}{2\lambda}}\equiv \frac{\nu}{\sqrt{2}}
 \end{equation}
