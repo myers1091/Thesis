@@ -1,13 +1,47 @@
 %%%%Use this as a filler to get the template working
 %%Introduction
-\chapter{Event Reconstruction}
+\chapter{Simulation and Event Reconstruction}
+
+\section{Simulation}
+In order to draw conclusion from ATLAS data, it is necessary to compare to theoretical predictions. For particle collisions, it is not practical to create exact predictions, especially including detector effects like acceptance or efficiency. To circumvent this issue, ATLAS uses the Monte Carlo (MC) method to simulate data. This is done in multiple steps as illustrated by figure ~\ref{fig:eventsim}. \linebreak
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics*[width=0.70\textwidth] {figures/event_simulation}
+\caption{Pictorial representation of how an event is generated (cite max XXX)}
+\label{fig:eventsim}
+\end{center}
+\end{figure}
+
+
+\indent Protons, while often described as two up quarks and a down quark, contain a sea of gluons. This sea of gluons also creates many virtual quark-antiquark pairs. The up and down quarks are the outer, or valance, quarks. These valance quarks are the primary role players in inelastic interactions. At the LHC, the collision energies are sufficient for deep inelastic scattering, where the affects of the internal quarks and gluons are non-trivial. The internal structure of a proton is described  by a Parton Distribution Function (PDF), Figure ~\ref{fig:pdf}. A PDF shows the probability density to find a parton carrying a momentum fraction ${x}$ at a squared energy scale. %(http://www.scholarpedia.org/article/Introduction_to_Parton_Distribution_Functions)
+\linebreak
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics*[width=0.50\textwidth] {figures/pdf2}
+\caption{The bands are ${x}$ times the unpolarized parton distributions
+${f(x)}$ (where ${f = u_{v}, d_{v}, \bar{u}, \bar{d}, s \simeq{} \bar{s}, c = \bar{c}, b = \bar{b}, g}$) obtained in NNLO NNPDF3.0
+global analysis at scales ${\mu^{2} = 10 GeV^{2}}$
+(left) and ${\mu^{2} = 100 GeV^{2}}$ (right), with
+${\alpha_{s}(M^{2}_{Z}) = 0.118}$.}
+\label{fig:pdf}
+\end{center}
+\end{figure}
+
+
+\indent The hard scattering process can be described using Feynman diagrams. These diagrams are a pictorial representation of the matrix element (ME) which give the amplitudes of various interactions and their interference. In the event generation, these amplitudes are calculated to a specified order in perturbation theory. Common examples are leading order(LO), next-to-leading order(NLO) , and so on. The higher the order of the calculation, the more accurate the predictions. However, higher orders can require extreme resources to calculate. Often restricting the level of calculation. \linebreak
+\indent  After the ME calculation, the hard partons are used as the inputs to the Parton Scattering (PS) calculation. Colored particles can spontaneously emit gluons. These gluons, in turn, create either more gluons, or quark-antiquark pairs. This can happen either before (ISR) or after (FSR) the hard scattering process. Along with the ISR and FSR emittance, the PS generator also describes the hadronization and subsequent decay of the hadrons into the final state particles. The precision of the PS generators are described similarly to the ME, with their contributions coming in as leading log (LL), next-to-leading-log (NLL), etc. \linebreak
+\indent Finally, once the PS has been calculated, it is necessary to model the interactions of the final state particles as they pass through the ATLAS detector. ATLAS uses GEANT4 to describe the propagation through the detector. (CITE geant  XXX)\linebreak
+\indent The final result of the MC event generation is a set of simulated data that resembles actual data from the p-p collisions in the ATLAS detector. 
 \section{Particle Identification}
-\section{Electrons}
-\section{Muons}
-\section{Taus}
-\section{Jets}
+For all events, either MC or actual collision data, it is important to be able to identify and reconstruct the underlying physics event. For this analysis, the final state particles present in the signal events are a lepton, either an electron or a muon, a neutrino, two light flavor quarks, and two b quarks. Each of these particles has a particular signal in each of the subdetectors.  
+\subsection{Electrons}
+\subsection{Muons}
+\subsection{Neutrinos}
+\subsection{Jets}
 \subsection{b Tagging}\label{ssec:btag}
-\section{Photons}
+
 
 
 
