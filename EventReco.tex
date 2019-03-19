@@ -35,13 +35,46 @@ ${\alpha_{s}(M^{2}_{Z}) = 0.118}$.}
 \indent Finally, once the PS has been calculated, it is necessary to model the interactions of the final state particles as they pass through the ATLAS detector. ATLAS uses GEANT4 to describe the propagation through the detector. (CITE geant  XXX)\linebreak
 \indent The final result of the MC event generation is a set of simulated data that resembles actual data from the p-p collisions in the ATLAS detector. 
 \section{Particle Identification}
-For all events, either MC or actual collision data, it is important to be able to identify and reconstruct the underlying physics event. For this analysis, the final state particles present in the signal events are a lepton, either an electron or a muon, a neutrino, two light flavor quarks, and two b quarks. Each of these particles has a particular signal in each of the subdetectors.  
+For all events, either MC or actual collision data, it is important to be able to identify and reconstruct the underlying physics event. For this analysis, the final state particles present in the signal events are a lepton, either an electron or a muon, a neutrino, two light flavor quarks, and two b quarks. Each of these particles has a particular signal in each of the subdetectors, figure ~\ref{fig:crossSec}.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics*[width=0.70\textwidth] {figures/layers}
+\caption{Event Cross Section in a computer generated image of the ATLAS detector \cite{Pequenao:1096081}}
+\label{fig:crossSec}
+\end{center}
+\end{figure}
+
+
 \subsection{Electrons}
+Electrons are identified using the ID and the LAr calorimeter. As an electron passes through matter, it produces Bremsstahlung radiation. These photons then convert back to electron-positron pairs. This shower of electrons, positrons, and photons is measured by the LAr calorimeter. To distinguish showers from electrons from those from photons, the ID is used. Since electrons are charged particles, they leave a track in the ID. This is not the case for photon showers.
 \subsection{Muons}
-\subsection{Neutrinos}
+Muons leave a track in the ID, similar to electrons. However, muons are MIPS, meaning they do not deposit a significant portion of energy in the calorimeters. As they reach the outer edge of the detector, the muon spectrometer measures the tracks of the passing muons. The two sets of tracks are combined to give an accurate measurement of final state muons.
 \subsection{Jets}
+Quarks very quickly undergo hadronization, with only the top quark decaying before hadronization. This makes it impossible to measure an individual quark. Instead, collections of hadrons are grouped together into objects called jets. These objects are defined by various algorithms. Some examples are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the AntiKt algorithm with a radius parameter of 0.4 is used.\linebreak 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics*[width=0.70\textwidth] {figures/jetalgo}
+\caption{A sample parton-level event, together with many random soft
+``ghosts", clustered with four different jets algorithms, illustrating the ``active" catchment areas of
+the resulting hard jets\cite{Cacciari:2008gp}.}
+\label{fig:jetalgo}
+\end{center}
+\end{figure}
+
 \subsection{b Tagging}\label{ssec:btag}
+B-Mesons, composite particles that contain b quarks, travel a small distance before they decay. This means the track from the decay products can be traced back to the point at which the b-meson decays, called the secondary vertex, figure ~\ref{fig:bjets} . This displaced vertex is used to tag jets that are likely to come from b quarks. These are colloquially refereed to as b-jets. 
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics*[width=0.70\textwidth] {figures/bjet}
+\caption{Schmatic view of the tracks in a b-jet \cite{HanssonAdrian:1397942}.}
+\label{fig:bjets}
+\end{center}
+\end{figure}
 
+\subsection{Neutrinos}
+Neutrinos do not interact with the detector as they pass through. This means they cannot be measured like the other particles. In order to measure neutrinos, ATLAS relies on the conservation of momentum. Before the collision, there is zero momentum in the transverse plain. After the collision, this must also be true. Using this information, it is possible to identify the transverse momentum of a neutrino by balancing the visible momentum in the central calorimeter and muon spectrometer. From there, it is possible to probabilistically determine the overall direction and momentum of a neutrino.
 
 
