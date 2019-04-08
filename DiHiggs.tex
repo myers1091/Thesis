@@ -1,23 +1,23 @@
 %%%%Use this as a filler to get the template working
 %%Introduction
-\chapter{DiHiggs Production}
-
+\chapter{Di-Higgs Production}
+Di-Higgs production rate is a necessary measurement to confirm the SM with the observed Higgs boson. Additionally, the di-Higgs production rate gives a handle to measure the Higgs potential. Additionally, the di-Higgs production channel is a discovery channel for physics beyond the SM (BSM). The small SM production rate makes the channel an important place to look for new physics. This dissertation looks at both the measurement of the SM di-Higgs production rate and to search for new physics through resonant di-Higgs production. 
 \section{Standard Model}
 The Higgs self coupling potential in the SM is
 \begin{equation}
-V_{self-coupling} = \lambda(|\Phi^{\dagger}\Phi|)^{2}
+V_{\mathrm{self-coupling}} = \lambda(|\Phi^{\dagger}\Phi|)^{2}
 \end{equation}
 When ${\Phi}$ is expanded around the VEV, the self coupling term can be written as
 \begin{equation}
-V_{self-coupling} = \frac{1}{2}(2\lambda\nu^{2})H^{2} + \lambda\nu H^{3} + \frac{\lambda}{4}H^{4}
+V_{\mathrm{self-coupling}} = \frac{1}{2}(2\lambda\nu^{2})H^{2} + \lambda\nu H^{3} + \frac{\lambda}{4}H^{4}
 \end{equation}
-Where the second term, ${\lambda\nu H^{3}}$ is the coupling between three Higgs bosons with strength ${\lambda\nu \equiv \lambda_{HHH}}$\cite{Belusevic:2004pz}. The trilinear Higgs coupling can be probed at the LHC by measuring the cross section of events with two Higgs Bosons in the final state.\linebreak
+Where the second term, ${\lambda\nu H^{3}}$ is the coupling between three Higgs bosons with strength ${\lambda\nu \equiv \lambda_{HHH}}$\cite{Belusevic:2004pz}. The trilinear Higgs coupling can be probed at the LHC by measuring the cross section of events with two Higgs Bosons in the final state.\newline
 
 
 
-\indent  Currently at the LHC, there are two dominate diagrams to produce diHiggs events, the trilinear Higgs coupling gluon-gluon fusion (ggF) diagram and a box diagram, figure ~\ref{fig:dihiggs}. These diagrams interfere destructively, resulting in a low production cross section, 
+\indent  Currently at the LHC, there are two dominate ways to produce diHiggs events, the trilinear Higgs coupling gluon-gluon fusion (ggF) diagram and a box diagram, figure ~\ref{fig:dihiggs}. These diagrams interfere destructively, resulting in a low theoritical production cross section, 
 \begin{equation}
-\sigma_{HH} = 33.53^{+4.3\%}_{-6.0\%}\pm{5.9\%} fb
+\sigma_{\mathrm{HH}} = 33.53^{+4.3\%}_{-6.0\%} (\mathrm{(QCD)}\pm{5.9\%} \mathrm{(other)} \mathrm{fb}
 \end{equation}
 in pp collisions at 13 TeV \cite{Sirunyan:2018two}. This makes the trilinear coupling extremely hard to measure at the LHC but still accessible. Additionally, since the cross section is so small, it is an easy place to look for deviations from the SM, since any enhancement to the cross section would be indicative of new physics.
 
@@ -63,16 +63,26 @@ in pp collisions at 13 TeV \cite{Sirunyan:2018two}. This makes the trilinear cou
 };
 \end{feynman}
 \end{tikzpicture}
-\caption{The dominate production method for double Higgs events at the LHC with ${\sqrt{s} = 13 TeV}$, with the triple Higgs coupling on the left}
+\caption{The dominate production method for di-Higgs events at the LHC with ${\sqrt{s} = 13 \mathrm{TeV}}$, with the trilinear Higgs coupling on the left}
 \end{center}
 \end{figure}
 \label{fig:dihiggs}
+
+\indent The SM di-Higgs production is a continuum production, with a turn-on at two times the Higgs mass, 205 GeV. Figure ~\ref{fig:SM_cont} shows the continuum distribution, as expected, it is a falling exponential distribution peaked around 400 GeV. 
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.3]{figures/SM_continuum}
+\caption{ Normalized differential cross section for pp ${\rightarrow}$ hh in the SM as a function of the invariant mass of the two Higgs bosons. The solid and dotted lines correspond respectively to ${\sqrt{s} = 14 \textrm{ and } 100}$ TeV.\cite{azatov:2015}}
+\label{fig:SM_cont}
+\end{center}
+\end{figure}
 
 
 \section{Resonant Production}
 There are several BSM models that may enhance the rate of diHiggs production at the LHC. This section will give an overview of a few of these models
 \subsection{Complex Higgs Singlet}
-The addition of a complex scalar singlet to the SM results in three neutral scalar particles after spontaneous symmetry breaking, which mix to give mass eigenstates, including the observed 125 GeV scalar \cite{PhysRevD.97.015022}.\linebreak
+The addition of a complex scalar singlet to the SM results in three neutral scalar particles after spontaneous symmetry breaking, which mix to give mass eigenstates, including the observed 125 GeV scalar \cite{PhysRevD.97.015022}.\newline
 \indent After spontaneous symmetry breaking, the fields are defined as:
 \begin{equation}
 \Phi = \binom{0}{\frac{h+\nu}{\sqrt{2}}}; S_{c} = \frac{1}{\sqrt{2}}(S+\nu_{s} + i(A + \nu_{A})).
@@ -83,7 +93,7 @@ The normalizable scalar potential is
 V(\Phi,S_{c}) = \frac{\mu^{2}}{2}\Phi^{\dagger}\Phi + \frac{\lambda}{4}(\Phi^{\dagger}\Phi)^{2} \\
 + (\frac{1}{4}\delta_{1}\Phi^{\dagger}\Phi{}S_{c} + \frac{1}{4}\delta_{3}\Phi^{\dagger}\Phi{}S_{c}^{2} \\
 + a_{1}S_{c} + \frac{1}{4}b_{1}S_{c}^{2} + \frac{1}{6}e_{1}S_{c}^{3} + \frac{1}{6}e_{2}S_{c}|S_{c}|^{2} \\
-+ \frac{1}{8}d_{1}S^{4} + \frac{1}{8}d_{3}S_{c}^{2}|S_{c}|^{2} + H.C.) \\
++ \frac{1}{8}d_{1}S^{4} + \frac{1}{8}d_{3}S_{c}^{2}|S_{c}|^{2} + \mathrm{H.C.}) \\
 + \frac{1}{4}d_{2}(|S_{2}|^{2})^{2} + \frac{\delta_{2}}{2}\Phi^{\dagger}\Phi|S_{c}|^{2} + \frac{1}{2}b_{2}|S_{c}|^{2}
 \end{split}
 \end{equation}
@@ -105,8 +115,8 @@ S\\
 A\\
 \end{pmatrix}
 \end{equation}
-where ${c_{i} = \cos{\theta_{i}}}$.
-Assigning the SM-like Higgs boson as ${h_{1}}$ with ${m_{1} = 125 GeV}$ and ${\nu = 246 GeV}$,  the coupling of ${h_{1}}$ to SM particles is dominate, suppressed by a factor of ${c_{1}}$ from the SM rate, with the ${h_{2}}$ couplings suppressed by ${s_{1}c_{2}}$ and ${h_{3}}$ couplings suppressed by ${s_{1}s_{2}}$. ATLAS has sent limits of ${c_{1} > 0.94}$ at 95\% CL in RUN-1. As the ${h_{1}}$ couplings become more SM-like (${\theta_{1}\rightarrow{0}}$), the allowed ${h_{2}}$ couplings become suppressed.\linebreak
+where ${c_{i} = \cos{\theta_{i}}}$, h is the SU(2) doublet field, and S and A are the real and imaginary components of the complex scalar ${S_{c}}$.
+Assigning the SM-like Higgs boson as ${h_{1}}$ with ${m_{1} = 125 GeV}$  and ${\nu = 246 GeV}$,  ${h_{2}}$ and ${h_{3}}$ are physical heavy Higgs bosons with ${m_{2}, m_{3} > m_{1}}$. The coupling of ${h_{1}}$ to SM particles is dominant, suppressed by a factor of ${c_{1}}$ from the SM rate, with the ${h_{2}}$ couplings suppressed by ${s_{1}c_{2}}$ and ${h_{3}}$ couplings suppressed by ${s_{1}s_{2}}$. ATLAS has set limits on ${c_{1} > 0.94}$ at 95\% CL in RUN-1. As the ${h_{1}}$ couplings become more SM-like (${\theta_{1}\rightarrow{0}}$), the allowed ${h_{2}}$ couplings become suppressed.\newline
 
 \begin{figure}[h]
 \begin{center}
@@ -155,7 +165,7 @@ Assigning the SM-like Higgs boson as ${h_{1}}$ with ${m_{1} = 125 GeV}$ and ${\n
 \end{figure}
 
 
-\indent In the limit of ${\theta_{2}\rightarrow{0}}$, which is in agreement with the single Higgs rates, ${h_{3}}$ does not directly couple to SM particles and can only be observed in diHiggs production with the largest rate from ${gg\rightarrow h_{2}\rightarrow h_{1}h_{3}}$, figure ~\ref{fig:FeyComp}. For a range of masses ${m_{2}}$ and ${m_{3}}$ the rate of production of ${h_{1}h_{3} \gg h_{1}h_{1}}$, figure ~\ref{fig:CSH6}. \linebreak
+\indent In the limit of ${\theta_{2}\rightarrow{0}}$, which is in agreement with the single Higgs rates, ${h_{3}}$ does not directly couple to SM particles and can only be observed in diHiggs production with the largest rate from ${gg\rightarrow h_{2}\rightarrow h_{1}h_{3}}$, figure ~\ref{fig:FeyComp}. For a range of masses ${m_{2}}$ and ${m_{3}}$ the rate of production of ${h_{1}h_{3} \gg h_{1}h_{1}}$, figure ~\ref{fig:CSH6}. \newline
 
 \begin{figure}[h]
 \begin{center}
@@ -169,8 +179,9 @@ Assigning the SM-like Higgs boson as ${h_{1}}$ with ${m_{1} = 125 GeV}$ and ${\n
 The enhancement can be see in the potential where 
 \begin{equation}
 V \rightarrow \frac{1}{2}\lambda_{211}h_{1}^{2}h_{2} + \frac{1}{2}\lambda_{311}h_{1}^{2}h_{3} + \frac{1}{2}\lambda_{331}h_{1}h_{3}^{2} + \frac{1}{2}\lambda_{321}h_{1}h_{2}h_{3} + . . .
+\label{addhiggs}
 \end{equation}
-So while the SM trilinear Higgs coupling is determined by ${m_{h}}$, with this extension, the coupling is much less constrained. This leads to enhanced values seen in figure \ref{fig:CHS8}.
+So while the SM trilinear Higgs coupling is determined by ${m_{h}}$, with this extension, the coupling is much less constrained. This leads to enhanced values seen in figure \ref{fig:CHS8}. So while this model would definitely show up in SM di-Higgs production, through the first two terms in equation ~\ref{addhiggs}, a search for one SM Higgs and a heavy Higgs would be more sensitive. This is a promising search moving forward but is not the focus of this dissertation.
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.65]{figures/CompHiggsSing_Fig8}
@@ -180,7 +191,7 @@ So while the SM trilinear Higgs coupling is determined by ${m_{h}}$, with this e
 \end{figure}
 
 \subsection{Real Higgs Singlet Extension}
-One simple explanation of an enhanced diHiggs production rate at the LHC is the addition of a real scalar Higgs singlet, S \cite{Lewis:2017dme}. In this model, S can only interact with the SM through the Higgs field. In the case where there is no ${Z_{2}}$ symmetry, the scalar field S mixes with the SM Higgs boson. If the mass is large enough, it is possible for S to decay to two on-shell SM Higgs Bosons, significantly enhancing the diHiggs production rate.\linebreak
+One simple explanation of an enhanced diHiggs production rate at the LHC is the addition of a real scalar Higgs singlet, S \cite{Lewis:2017dme}. In this model, S can only interact with the SM through the Higgs field. In the case where there is no ${Z_{2}}$ symmetry, where ${S\rightarrow -S}$ the scalar field S mixes with the SM Higgs boson. If the mass is large enough, it is possible for S to decay to two on-shell SM Higgs Bosons, significantly enhancing the diHiggs production rate.\newline
 \indent The most general potential that can be added is 
 \begin{equation}
 V(H,S) = -\mu^{2}H^{\dagger}H + \lambda(H^{\dagger}H)^{2} + \frac{a_{1}}{2}H^{\dagger}HS + \frac{a_{2}}{2}H^{\dagger}HS + b_{1}S + \frac{b_{2}}{2}S^{2} + \frac{b_{3}}{3}S^{3} + \frac{b_{4}}{4}S^{4}.
@@ -234,3 +245,6 @@ This give an additional diagram in the diHiggs production, figure ~\ref{fig:FeyR
 \label{fig:Ian6}
 \end{center}
 \end{figure}
+
+\section{Summary}
+The SM di-Higgs production rate is an important and achievable measurement for the LHC and HL-LHC. It gives insight to the shape of the Higgs potential through measurement of the trilinear Higgs coupling. It is also a valuable discovery channel for BSM physics, especially for models with an extended Higgs sector, through resonant di-Higgs production. This dissertation will present results for both SM and resonant di-Higgs production.
