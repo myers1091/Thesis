@@ -3,21 +3,23 @@
 \chapter{DiHiggs Production}
 
 \section{Standard Model}
-The Higgs potential in the SM contains the term:
+The Higgs self coupling potential in the SM is
 \begin{equation}
-\lambda(|\Phi^{\dagger}\Phi|)^{2}
+V_{self-coupling} = \lambda(|\Phi^{\dagger}\Phi|)^{2}
 \end{equation}
-Expanding ${\Phi}$ around the VEV gives:
-%https://arxiv.org/pdf/hep-ph/0403303.pdf
+When ${\Phi}$ is expanded around the VEV, the self coupling term can be written as
 \begin{equation}
-\phi = \frac{1}{\sqrt{2}}\binom{0}{\nu + H}
+V_{self-coupling} = \frac{1}{2}(2\lambda\nu^{2})H^{2} + \lambda\nu H^{3} + \frac{\lambda}{4}H^{4}
 \end{equation}
-Where ${\nu}$ is the VEV and ${H}$ is the Higgs field
-This gives rise to the higher order Higgs self coupling terms of the potential.
+Where the second term, ${\lambda\nu H^{3}}$ is the coupling between three Higgs bosons with strength ${\lambda\nu \equiv \lambda_{HHH}}$\cite{Belusevic:2004pz}. The trilinear Higgs coupling can be probed at the LHC by measuring the cross section of events with two Higgs Bosons in the final state.\linebreak
+
+
+
+\indent  Currently at the LHC, there are two dominate diagrams to produce diHiggs events, the trilinear Higgs coupling gluon-gluon fusion (ggF) diagram and a box diagram, figure ~\ref{fig:dihiggs}. These diagrams interfere destructively, resulting in a low production cross section, 
 \begin{equation}
-V_{H} = \frac{1}{2}(2\lambda\nu^{2})H^{2} + \lambda\nu H^{3} + \frac{\lambda}{4}H^{4}
+\sigma_{HH} = 33.53^{+4.3\%}_{-6.0\%}\pm{5.9\%} fb
 \end{equation}
-The coefficient of the cubic term, ${\lambda\nu}$, is the trilinear Higgs self-coupling (${\lambda_{HHH}}$)\cite{Belusevic:2004pz}. This coupling can be probed at the LHC by measuring the cross section of events with two Higgs Bosons in the final state.\linebreak
+in pp collisions at 13 TeV \cite{Sirunyan:2018two}. This makes the trilinear coupling extremely hard to measure at the LHC but still accessible. Additionally, since the cross section is so small, it is an easy place to look for deviations from the SM, since any enhancement to the cross section would be indicative of new physics.
 
 \begin{figure}[h]
 \begin{center}
@@ -66,14 +68,9 @@ The coefficient of the cubic term, ${\lambda\nu}$, is the trilinear Higgs self-c
 \end{figure}
 \label{fig:dihiggs}
 
-\indent  Currently at the LHC, there are two dominate diagrams to produce diHiggs events, the trilinear Higgs coupling diagram and a box diagram, figure ~\ref{fig:dihiggs}. These diagrams interfere destructively, resulting in a low production cross section. This makes the trilinear coupling extremely hard to measure at the LHC but still accessible at the HL-LHC. However, new physics could manifest itself in an increase to the diHiggs production. Meaning any enhancement to the diHiggs cross section is indicative of physics beyond the Standard Model (BSM).
-
-
-
 
 \section{Resonant Production}
-There are several BSM models that may enhance the rate of diHiggs production. This section will give an overview of a few of these models
-%Here will be a couple different theories
+There are several BSM models that may enhance the rate of diHiggs production at the LHC. This section will give an overview of a few of these models
 \subsection{Complex Higgs Singlet}
 The addition of a complex scalar singlet to the SM results in three neutral scalar particles after spontaneous symmetry breaking, which mix to give mass eigenstates, including the observed 125 GeV scalar \cite{PhysRevD.97.015022}.\linebreak
 \indent After spontaneous symmetry breaking, the fields are defined as:
@@ -109,7 +106,7 @@ A\\
 \end{pmatrix}
 \end{equation}
 where ${c_{i} = \cos{\theta_{i}}}$.
-Assigning the SM-like Higgs boson as ${h_{1}}$ with ${m_{1} = 125 GeV and \nu = 246 GeV}$,  the coupling of ${h_{1}}$ to SM particles is dominate, suppressed by a factor of ${c_{1}}$ from the SM rate, with the ${h_{2}}$ couplings suppressed by ${s_{1}c_{2}}$ and ${h_{3}}$ couplings suppressed by ${s_{1}s_{2}}$. ATLAS has sent limits of ${c_{1} > 0.94}$ at 95\% CL in RUN-1. As the ${h_{1}}$ couplings become more SM-like (${\theta_{1}\rightarrow{0}}$), the allowed ${h_{2}}$ couplings become suppressed.\linebreak
+Assigning the SM-like Higgs boson as ${h_{1}}$ with ${m_{1} = 125 GeV}$ and ${\nu = 246 GeV}$,  the coupling of ${h_{1}}$ to SM particles is dominate, suppressed by a factor of ${c_{1}}$ from the SM rate, with the ${h_{2}}$ couplings suppressed by ${s_{1}c_{2}}$ and ${h_{3}}$ couplings suppressed by ${s_{1}s_{2}}$. ATLAS has sent limits of ${c_{1} > 0.94}$ at 95\% CL in RUN-1. As the ${h_{1}}$ couplings become more SM-like (${\theta_{1}\rightarrow{0}}$), the allowed ${h_{2}}$ couplings become suppressed.\linebreak
 
 \begin{figure}[h]
 \begin{center}
@@ -158,7 +155,7 @@ Assigning the SM-like Higgs boson as ${h_{1}}$ with ${m_{1} = 125 GeV and \nu = 
 \end{figure}
 
 
-\indent In the limit of ${\theta_{2}\rightarrow{0}}$, which is in agreement with the single Higgs rates, ${h_{3}}$ does not directly couple to SM particles and can only be observed in diHiggs production with the largest rate from ${gg\rightarrow h_{2}\rightarrow h_{1}h_{3}}$, figure ~\ref{fig:FeyComp} in paper. For a range of masses ${m_{2} and m_{3}}$ the rate of production of ${h_{1}h_{3} >> h_{1}h_{1}}$, figure ~\ref{fig:CSH6}. \linebreak
+\indent In the limit of ${\theta_{2}\rightarrow{0}}$, which is in agreement with the single Higgs rates, ${h_{3}}$ does not directly couple to SM particles and can only be observed in diHiggs production with the largest rate from ${gg\rightarrow h_{2}\rightarrow h_{1}h_{3}}$, figure ~\ref{fig:FeyComp}. For a range of masses ${m_{2}}$ and ${m_{3}}$ the rate of production of ${h_{1}h_{3} \gg h_{1}h_{1}}$, figure ~\ref{fig:CSH6}. \linebreak
 
 \begin{figure}[h]
 \begin{center}
@@ -169,7 +166,7 @@ Assigning the SM-like Higgs boson as ${h_{1}}$ with ${m_{1} = 125 GeV and \nu = 
 \end{figure}
 
 
-\indent The enhancement can be see in the potential where 
+The enhancement can be see in the potential where 
 \begin{equation}
 V \rightarrow \frac{1}{2}\lambda_{211}h_{1}^{2}h_{2} + \frac{1}{2}\lambda_{311}h_{1}^{2}h_{3} + \frac{1}{2}\lambda_{331}h_{1}h_{3}^{2} + \frac{1}{2}\lambda_{321}h_{1}h_{2}h_{3} + . . .
 \end{equation}
@@ -228,7 +225,7 @@ This give an additional diagram in the diHiggs production, figure ~\ref{fig:FeyR
 \end{center}
 \end{figure}
 
-\indent Varying the values of ${b_{4}}$ and ${\sin^{2}{\theta}}$, it is found that the maximum branching ratio (BR) for ${h_{2}\rightarrow h_{1}h_{1}}$ if obtained with ${b_{4} = 4.2, \sin^{2}\theta = 0.12}$. Figure XXX, shows the minimum and maximum BR as a function of ${m_{2}}$. The largest BR is when ${m \approx 280 GeV}$ of ${BR(h_{2}\rightarrow h_{1}h_{1} = 0.76}$. This corresponds to an enhancement in diHiggs production of approximately 30 times the SM cross section.
+\indent Varying the values of ${b_{4}}$ and ${\sin^{2}{\theta}}$, it is found that the maximum branching ratio (BR) for ${h_{2}\rightarrow h_{1}h_{1}}$ if obtained with ${b_{4} = 4.2, \sin^{2}\theta = 0.12}$. Figure ~\ref{fig:Ian6}, shows the minimum and maximum BR as a function of ${m_{2}}$. The largest BR is when ${m \approx 280 GeV}$ at ${BR(h_{2}\rightarrow h_{1}h_{1}) = 0.76}$. This corresponds to an enhancement in diHiggs production of approximately 30 times the SM cross section.
 
 \begin{figure}[h]
 \begin{center}

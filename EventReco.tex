@@ -8,13 +8,13 @@ In order to draw conclusion from ATLAS data, it is necessary to compare to theor
 \begin{figure}[h]
 \begin{center}
 \includegraphics*[width=0.70\textwidth] {figures/event_simulation}
-\caption{Pictorial representation of how an event is generated (cite max XXX)}
+\caption{Pictorial representation of how an event is generated \cite{Wanotayaroj:2242196}}
 \label{fig:eventsim}
 \end{center}
 \end{figure}
 
 
-\indent Protons, while often described as two up quarks and a down quark, contain a sea of gluons. This sea of gluons also creates many virtual quark-antiquark pairs. The up and down quarks are the outer, or valance, quarks. These valance quarks are the primary role players in inelastic interactions. At the LHC, the collision energies are sufficient for deep inelastic scattering, where the affects of the internal quarks and gluons are non-trivial. The internal structure of a proton is described  by a Parton Distribution Function (PDF), Figure ~\ref{fig:pdf}. A PDF shows the probability density to find a parton carrying a momentum fraction ${x}$ at a squared energy scale. %(http://www.scholarpedia.org/article/Introduction_to_Parton_Distribution_Functions)
+\indent Protons, while often described as two up quarks and a down quark, contain a sea of gluons. This sea of gluons also creates many virtual quark-antiquark pairs. The up and down quarks are the outer, or valance, quarks. These valance quarks are the primary role players in shallow inelastic interactions. At the LHC, the collision energies are sufficient for deep inelastic scattering, where the affects of the internal quarks and gluons are non-trivial. This internal structure of the proton is described  by a Parton Distribution Function (PDF), figure ~\ref{fig:pdf}. A PDF shows the probability density of find a parton carrying a momentum fraction ${x}$ at a squared energy scale. %(http://www.scholarpedia.org/article/Introduction_to_Parton_Distribution_Functions)
 \linebreak
 
 \begin{figure}[h]
@@ -22,8 +22,8 @@ In order to draw conclusion from ATLAS data, it is necessary to compare to theor
 \includegraphics*[width=0.50\textwidth] {figures/pdf2}
 \caption{The bands are ${x}$ times the unpolarized parton distributions
 ${f(x)}$ (where ${f = u_{v}, d_{v}, \bar{u}, \bar{d}, s \simeq{} \bar{s}, c = \bar{c}, b = \bar{b}, g}$) obtained in NNLO NNPDF3.0
-global analysis at scales ${\mu^{2} = 10 GeV^{2}}$
-(left) and ${\mu^{2} = 100 GeV^{2}}$ (right), with
+global analysis at scales ${\mu^{2} = 10  GeV^{2}}$
+(left) and ${\mu^{2} = 100  GeV^{2}}$ (right), with
 ${\alpha_{s}(M^{2}_{Z}) = 0.118}$.}
 \label{fig:pdf}
 \end{center}
@@ -31,8 +31,8 @@ ${\alpha_{s}(M^{2}_{Z}) = 0.118}$.}
 
 
 \indent The hard scattering process can be described using Feynman diagrams. These diagrams are a pictorial representation of the matrix element (ME) which give the amplitudes of various interactions and their interference. In the event generation, these amplitudes are calculated to a specified order in perturbation theory. Common examples are leading order(LO), next-to-leading order(NLO) , and so on. The higher the order of the calculation, the more accurate the predictions. However, higher orders can require extreme resources to calculate. Often restricting the level of calculation. \linebreak
-\indent  After the ME calculation, the hard partons are used as the inputs to the Parton Scattering (PS) calculation. Colored particles can spontaneously emit gluons. These gluons, in turn, create either more gluons, or quark-antiquark pairs. This can happen either before (ISR) or after (FSR) the hard scattering process. Along with the ISR and FSR emittance, the PS generator also describes the hadronization and subsequent decay of the hadrons into the final state particles. The precision of the PS generators are described similarly to the ME, with their contributions coming in as leading log (LL), next-to-leading-log (NLL), etc. \linebreak
-\indent Finally, once the PS has been calculated, it is necessary to model the interactions of the final state particles as they pass through the ATLAS detector. ATLAS uses GEANT4 to describe the propagation through the detector. (CITE geant  XXX)\linebreak
+\indent  After the ME generator, the hard partons are used as the inputs to the Parton Scattering (PS) generator. Colored particles can spontaneously emit gluons. These gluons, in turn, create either more gluons, or quark-antiquark pairs. This can happen either before (ISR) or after (FSR) the hard scattering process. Along with the ISR and FSR emittance, the PS generator also describes the hadronization and subsequent decay of the hadrons into the final state particles. The precision of the PS generators are described similarly to the ME, with their contributions coming in as leading log (LL), next-to-leading-log (NLL), etc. \linebreak
+\indent Finally, once the PS generator is complete, it is necessary to model the interactions of the final state particles as they pass through the ATLAS detector. ATLAS uses GEANT4  to handle this propagation\cite{geant4}. \linebreak
 \indent The final result of the MC event generation is a set of simulated data that resembles actual data from the p-p collisions in the ATLAS detector. 
 \section{Particle Identification}
 For all events, either MC or actual collision data, it is important to be able to identify and reconstruct the underlying physics event. For this analysis, the final state particles present in the signal events are a lepton, either an electron or a muon, a neutrino, two light flavor quarks, and two b quarks. Each of these particles has a particular signal in each of the subdetectors, figure ~\ref{fig:crossSec}.
@@ -47,11 +47,11 @@ For all events, either MC or actual collision data, it is important to be able t
 
 
 \subsection{Electrons}
-Electrons are identified using the ID and the LAr calorimeter. As an electron passes through matter, it produces Bremsstahlung radiation. These photons then convert back to electron-positron pairs. This shower of electrons, positrons, and photons is measured by the LAr calorimeter. To distinguish showers from electrons from those from photons, the ID is used. Since electrons are charged particles, they leave a track in the ID. This is not the case for photon showers.
+Electrons are identified using the ID and the LAr calorimeter. As an electron passes through matter, it produces Bremsstahlung radiation. These photons then convert back to electron-positron pairs and the process repeats. This shower of electrons, positrons, and photons is measured by the LAr calorimeter. To distinguish showers from electrons from those from photons, the ID is used. Since electrons are charged particles, they leave a track in the ID. This is not the case for photon.
 \subsection{Muons}
 Muons leave a track in the ID, similar to electrons. However, muons are MIPS, meaning they do not deposit a significant portion of energy in the calorimeters. As they reach the outer edge of the detector, the muon spectrometer measures the tracks of the passing muons. The two sets of tracks are combined to give an accurate measurement of final state muons.
 \subsection{Jets}
-Quarks very quickly undergo hadronization, with only the top quark decaying before hadronization. This makes it impossible to measure an individual quark. Instead, collections of hadrons are grouped together into objects called jets. These objects are defined by various algorithms. Some examples are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the AntiKt algorithm with a radius parameter of 0.4 is used.\linebreak 
+Quarks very quickly undergo hadronization, with only the top quark decaying before hadronizing. This makes it impossible to measure a singular quark. Instead, collections of hadrons are grouped together into objects called jets. These objects are defined by various algorithms. Some examples are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the AntiKt algorithm is used.\linebreak 
 
 \begin{figure}[h]
 \begin{center}
@@ -64,7 +64,7 @@ the resulting hard jets\cite{Cacciari:2008gp}.}
 \end{figure}
 
 \subsection{b Tagging}\label{ssec:btag}
-B-Mesons, composite particles that contain b quarks, travel a small distance before they decay. This means the track from the decay products can be traced back to the point at which the b-meson decays, called the secondary vertex, figure ~\ref{fig:bjets} . This displaced vertex is used to tag jets that are likely to come from b quarks. These are colloquially refereed to as b-jets. 
+B-Hadrons, composite particles that contain b quarks, travel a small distance before they decay. This means the track from the decay products can be traced back to the point at which the b-hadron decays, called the secondary, or displaced, vertex, figure ~\ref{fig:bjets} . This displaced vertex is used to tag jets that are likely to come from b quarks. These are refereed to as b-jets. 
 
 \begin{figure}[h]
 \begin{center}
