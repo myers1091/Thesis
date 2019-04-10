@@ -17,25 +17,6 @@
 % \newcommand*{\ATLASLATEXPATH}{}
 
 
-% \newcommand{\stopFootnote}{%
-% The superpartners of the left- and right- handed
-%   top quarks, $\stopL$ and $\stopR$,
-%   mix to form the two mass eigenstates $\stopone$ and $\stoptwo$, where
-%   $\stopone$ is the lighter one. Throughout this note $\stopone$ is
-%   noted as $\stop$.}
-
-%\newcommand{\AtlasCoordFootnote}{%
-%ATLAS uses a right-handed coordinate system with its origin at the nominal interaction point (IP)
-%in the centre of the detector and the $z$-axis along the beam pipe.
-%The $x$-axis points from the IP to the centre of the LHC ring,
-%and the $y$-axis points upwards.
-%Cylindrical coordinates $(r,\phi)$ are used in the transverse plane, 
-%$\phi$ being the azimuthal angle around the $z$-axis.
-%The pseudorapidity is defined in terms of the polar angle $\theta$ as $\eta = -\ln \tan(\theta/2)$.
-%Angular distance is measured in units of $\Delta R \equiv
-%\sqrt{(\Delta\eta)^{2} + (\Delta\phi)^{2}}$. The transverse momentum
-%is the momentum component in the transverse plane.}
-
 
 %-------------------------------------------------------------------------------
 %\documentclass[UKenglish,texlive=2013,PAPER,coverpage]{\ATLASLATEXPATH atlasdoc}
@@ -182,6 +163,7 @@ gsmodern,
 %-------------------------------------------------------------------------------
 \newcommand{\Lagr}{\mathcal{L}}
 %\setlength\parindent{0pt}
+\newcommand{\apkg}[2]{\href{#1}{\texttt{#2}}}
 
 
 \usepackage{lineno, lipsum}
@@ -190,6 +172,7 @@ gsmodern,
 
 
 \begin{document}
+\renewcommand\texteuro{FIXME} 
 %\begin{linenumbers}
 \begin{runninglinenumbers}
 
@@ -199,11 +182,11 @@ gsmodern,
 %\input{acknowledgements}
 %\maketitle
 %\tableofcontents
-\include{Introduction}
+%\include{Introduction}
 %\include{DiHiggs}
 %\include{Experiment}
 %\include{EventReco}
-%\include{Analysis}
+\include{Analysis}
 %\include{Conclusion}
 
 %\begin{appendices}
@@ -315,8 +298,6 @@ gsmodern,
 
 \printbibliography
 %\printbibliography[title={REFERENCES CITED},heading=bibintoc]
-
-
 %\bibliographystyle{atlasBibStyleWithTitle}
 %\bibliography{CONF}
 % If you want to use the traditional BibTeX you need to use the syntax below.
