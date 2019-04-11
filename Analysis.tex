@@ -664,9 +664,426 @@ $m_{hh}$ cut (GeV) &2040-2460	&2330-2740	&2570-2950	& 2760-3210 	& \\
 \end{table}
 
 
-
-
 \subsection{Background Determination}
+In the present analysis we expect that at the end of the event selection the
+sample will be largely dominated by $t \bar{t}$ and multi-jet background, therefore the $t\bar{t}$ background normalisation
+is derived from data while, as described in Sec. \ref{sec:multijet}, the multi-jet
+background is derived using a data-driven ABCD method.
+For all the other backgrounds, e.g. di-boson, Higgs, $W$+jets, the
+MC is used appropriately normalized by using the expected cross sections and the
+integrated luminosity that has been collected.
+
+\subsubsection{Top normalization and control region}
+\label{subsec:topCR}
+The \ttbar background is normalised and validated using  dedicated
+control regions (CR). Three CR's are defined, one for the SR's of the non-resonant (CR1), one for the low-mass analysis (CR2), and one for the high-mass analysis (CR3).  The CRs are defined in Table \ref{tab:CRdef}.
+
+
+Table \ref{tab:CR1} through \ref{tab:CR3} show the number of observed
+events and expected background events in the top CRs, and also in the sideband across selections that serve as validation regions. The final signal region is defined by $m_{bb}$ cut of $105~\textrm{GeV} < m_{bb} < 135~\textrm{GeV}$ based on optimization. The sidebands are orthogonal to the SR by virtue of having the $m_{bb}$ cut reversed. $m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV defines the sidebands in which the control regions are defined.  The 5 GeV buffer region is kept on both sides so as to be less affected by systematic effects at the edge. Fig.~\ref{fig:mbb_signal} shows $m_{bb}$ for various signal mass points. A comparative study of signal over background in these three regions shows that S/B in the final SR is 5 (20) times higher than in the sidebands for m2000 (non-resonance) while S/B in the final SR is approximate twice as high as in the buffer zones.  Table~\ref{tab:sigOverBkg} shows the ratios of S/B in the buffer zones and sidebands compared to the S/B in the final SR. 
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics*[width=0.47\textwidth] {figures/bbMass_X500_X700_X1400_X2000_X3000.eps}
+\caption[$m_{bb}$ resolution for signal and sum of backgrounds.]{$m_{bb}$ resolution for signal samples.}
+\label{fig:mbb_signal}
+\end{center}
+\end{figure}
+
+\begin{table}
+\caption{The ratios of S/B in the buffer zone and sidebands compared to the S/B in the final SR. } 
+\begin{center}
+\begin{tabular}{c|c|c|c|c|}
+Selection & non-res & m500 & m700 & m2000\\
+\hline
+Buffer/SR              	& 1.85 & 1.95  & 1.90 & 1.63\\
+\hline
+ Sidebands/SR	       & 20.5 & 12.6 & 13.4 & 5.6\\
+\hline 
+\end{tabular}
+\label{tab:sigOverBkg}
+\end{center}
+\end{table}
+
+\newpage
+%%%%%%%%%%%%%%
+\begin{table}
+\caption{Definition of the kinematic regions used to normalise the Top background. $m_{bb} < 100$~GeV or $m_{bb} > 140~GeV$ defines the sidebands in which the control regions are defined. Expected SM backgrounds are then checked against data at each subsequent selection.} \label{tab:CRdef}
+\begin{center}
+%\begin{tabular}{c|c|c|c|c|cxs}
+% variable 						& Non-Res 	 	& X700 		& X2000\\
+%\hline
+%$m_{WW}$ (GeV)   				& $<130$ 		   	&$<130$ 		& no-cut \\
+%$p_{\rm T}^{bb}$ (GeV) 			& $>150$ 		  	& $>150$ 		&$>350$\\
+%$\Delta R_{bb}$  				& no-cut 	 		& no-cut		& no-cut  \\
+%$p_{\rm T}^{WW}$ (GeV) 			& no-cut	 	 	& no-cut   		& no-cut \\
+%$\Delta R_{WW}$  				& no-cut 		 	& no-cut 		& no-cut \\
+%$m_{hh}$ (GeV)  				& no-cut 			& no-cut 		& no-cut\\
+%\hline
+\begin{tabular}{c|c|c|c|}
+ variable 						&CR1 				& CR2 	& CR3 \\
+\hline					
+$m_{bb}$ (GeV)						& $m_{bb} < 100$ or $m_{bb} > 140$ & $m_{bb} < 100$ or $m_{bb} > 140$ & $m_{bb} < 100$ or $m_{bb} > 140$\\
+$m_{WW}$ (GeV)   				& $<130$ 		 		& $<130$		& no-cut \\
+$p_{\rm T}^{bb}$ (GeV) 			& $>300$ 		 		& $>210$		&$>350$\\
+\hline
+
+
+\end{tabular}
+\end{center}
+\end{table}
+%%%%%%%%%%%%%%%
+\iffalse
+\begin{table}
+\caption{Definition of the kinematic regions used to normalise the Top background.} \label{tab:CRdef}
+\begin{center}
+\begin{tabular}{c|c}
+\hline
+\multicolumn{2}{c}{Top CR definitions} \\
+\hline
+non-res  &  ($m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV ), $m_{WW} < 130$ GeV  and $p_T^{\rm bb} > 150$ GeV (to be edited) \\
+low-mass &  ($m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV ), $m_{WW} < 130$ GeV  and $p_T^{\rm bb} > 150$ GeV \\
+high-mass &   ({$m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV}) and $p_T^{\rm bb} > 350$ GeV \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+\fi
+%%tables to be added yet
+
+
+\newpage
+
+\begin{center}
+\begin{table}
+\caption{ The number of observed
+events and expected background events in the $m_{bb}$ side-bands for
+the non-resonant selection. The top CR1 is defined at the bbpt300
+selection. No NF has been applied to the background yields to show the level of data/expectation agreement before normalizing ttbar.  Only statistical uncertainties are shown.}
+\begin{tabular}{l|c|c|c|c}
+\hline\hline
+\multicolumn{5}{c}{\textbf{CR1}: \mbb Sideband}\\\hline\hline
+Sample  	& mww 	& bbpt210 	& bbpt300 	& wwpt250 	  \\\hline
+\ttbar 	& 23776.6 $\pm$ 87.2 	& 531.7 $\pm$ 13.1 	& 109.9 $\pm$ 5.9 	& 63.9 $\pm$ 4.6 \\\hline 
+QCD 	& 13310.5 $\pm$ 500.3 	& 250.2 $\pm$ 30.6 	& 33.7 $\pm$ 4.1 	& 21.4 $\pm$ 2.6	\\\hline 
+W+jets 	& 3938.9 $\pm$ 31.1 	& 124.7 $\pm$ 3.5 	& 29.3 $\pm$ 1.4 	& 17.1 $\pm$ 1.1 	\\\hline 
+SingleTop 	& 1605.4 $\pm$ 18.0 	& 76.0 $\pm$ 3.8 	& 20.1 $\pm$ 2.0 	& 13.5 $\pm$ 1.7\\\hline 
+Dibosons 	& 109.9 $\pm$ 2.7 	& 8.3 $\pm$ 0.8 	& 2.2 $\pm$ 0.4 	& 1.5 $\pm$ 0.4 	\\\hline 
+Z+jets 	& 1107.6 $\pm$ 8.4 	& 27.1 $\pm$ 0.8 	& 6.7 $\pm$ 0.4 	& 2.4 $\pm$ 0.2 	\\\hline 
+\hline
+Background Sum 	& 43849.0$\pm$ 509.2 	& 1017.9$\pm$ 33.7 	& 201.9$\pm$ 7.6 	& 119.8$\pm$ 5.7 \\\hline 
+\hline
+XhhSM 	& 44.6 $\pm$ 2.2 	& 9.1 $\pm$ 0.7 	& 1.5 $\pm$ 0.2 	& 1.1 $\pm$ 0.1 	\\\hline 
+Data 	& 43902.0 	& 1069.0 	& 206.0 	& 138.0 \\\hline 
+\hline
+\end{tabular}
+\label{tab:CR1}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}
+\caption{ The number of observed
+events and expected background events in the $m_{bb}$ side-bands for the low-mass selection, m500. The top CR2 is defined at the bbpt210 selection. To show how well the prediction matches data, no NF has been applied to any background. Only statistical uncertainties are shown.}
+\begin{tabular}{l|c|c|c|c}
+\hline\hline
+\multicolumn{5}{c}{\textbf{CR2}: \mbb Sideband}\\\hline\hline
+Sample  	& mww 	& bbpt210 	& wwpt150 	& hh500  \\\hline
+\ttbar 	& 23776.6 $\pm$ 87.2 	& 531.7 $\pm$ 13.1 	& 432.7 $\pm$ 11.8 	& 35.5 $\pm$ 3.2 		\\\hline 
+QCD 	& 13310.5 $\pm$ 500.3 	& 250.2 $\pm$ 30.6 	& 206.3 $\pm$ 25.3 	& 16.9 $\pm$ 2.1 		\\\hline 
+W+jets 	& 3938.9 $\pm$ 31.1 	& 124.7 $\pm$ 3.5 	& 105.9 $\pm$ 3.3 	& 4.9 $\pm$ 0.6 	\\\hline 
+SingleTop 	& 1605.4 $\pm$ 18.0 	& 76.0 $\pm$ 3.8 	& 64.9 $\pm$ 3.5 	& 2.8 $\pm$ 0.6 	\\\hline 
+Dibosons 	& 109.9 $\pm$ 2.7 	& 8.3 $\pm$ 0.8 	& 6.7 $\pm$ 0.8 	& 0.9 $\pm$ 0.2 	\\\hline 
+Z+jets 	& 1107.6 $\pm$ 8.4 	& 27.1 $\pm$ 0.8 	& 19.0 $\pm$ 0.7 	& 1.5 $\pm$ 0.2 		\\\hline 
+\hline
+Background Sum 	& 43849.0$\pm$ 509.2 	& 1017.9$\pm$ 33.7 	& 835.5$\pm$ 28.3 	& 62.5$\pm$ 3.9	\\\hline 
+\hline
+Xhh500 	& 3.2 $\pm$ 0.1 	& 0.6 $\pm$ 0.1 	& 0.6 $\pm$ 0.1 	& 0.2 $\pm$ 0.1 	\\\hline 
+Data 	& 43902.0 	& 1069.0 	& 898.0 	& 73.0 	\\\hline 
+\end{tabular}
+\label{tab:CR2_500}
+\end{table}
+\end{center}
+%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{table}
+\caption{ The number of observed
+events and expected background events in the $m_{bb}$ side-bands for the low-mass selection, m700. The top CR2 is defined at the bbpt210 selection. To show how well the prediction matches data, no NF has been applied to any background. Only statistical uncertainties are shown.}
+\begin{tabular}{l|c|c|c|c}
+\hline\hline
+\multicolumn{5}{c}{\textbf{CR2}: \mbb Sideband}\\\hline\hline
+Sample  	& mww 	& bbpt210 	& wwpt250 	& hh700   \\\hline
+\ttbar 	& 23776.6 $\pm$ 87.2 	& 531.7 $\pm$ 13.1 	& 175.6 $\pm$ 7.5 	& 49.9 $\pm$ 3.9 	\\\hline 
+QCD 	& 13310.5 $\pm$ 500.3 	& 250.2 $\pm$ 30.6 	& 72.4 $\pm$ 8.9 	& 28.4 $\pm$ 3.5 		\\\hline 
+W+jets 	& 3938.9 $\pm$ 31.1 	& 124.7 $\pm$ 3.5 	& 45.7 $\pm$ 2.1 	& 13.7 $\pm$ 1.4 	\\\hline 
+SingleTop 	& 1605.4 $\pm$ 18.0 	& 76.0 $\pm$ 3.8 	& 28.4 $\pm$ 2.4 	& 6.9 $\pm$ 1.1 		\\\hline 
+Diboson 	& 109.9 $\pm$ 2.7 	& 8.3 $\pm$ 0.8 	& 2.8 $\pm$ 0.5 	& 0.7 $\pm$ 0.2 		\\\hline 
+Z+jets 	& 1107.6 $\pm$ 8.4 	& 27.1 $\pm$ 0.8 	& 5.8 $\pm$ 0.4 	& 2.0 $\pm$ 0.3 		\\\hline 
+\hline
+Background Sum 	& 43849.0$\pm$ 509.2 	& 1017.9$\pm$ 33.7 	& 330.7$\pm$ 12.1 	& 101.5$\pm$ 5.5 	\\\hline 
+\hline
+Xhh700 	& 4.2 $\pm$ 0.2 	& 2.2 $\pm$ 0.1 	& 1.5 $\pm$ 0.1 	& 1.0 $\pm$ 0.1 	\\\hline 
+Data 	& 43902.0 	& 1069.0 	& 367.0 	& 124.0	\\\hline 
+
+
+\end{tabular}
+\label{tab:CR2_700}
+\end{table}
+\end{center}
+%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{table}
+\caption{ The number of observed
+events and expected background events in the $m_{bb}$ side-bands for
+the high-mass selection. The top CR3 is defined at the bbpt350
+selection. No NF has been applied to the background yields. Only statistical uncertainties are shown.}
+\begin{center}
+\begin{tabular}{l|c|c|c|c}
+\hline\hline
+\multicolumn{5}{c}{\textbf{CR3}: \mbb Sideband}\\\hline\hline
+Sample  	& bbpt350 	& wwpt250 	& drww15 	& hh2000 	\\\hline
+\ttbar 	& 8568.7 $\pm$ 52.1 	& 7095.6 $\pm$ 47.5 	& 1940.5 $\pm$ 25.1 	& 122.3 $\pm$ 6.5 \\\hline 
+QCD 	& 1538.7 $\pm$ 252.7 	& 1359.5 $\pm$ 75.9 	& 392.7 $\pm$ 21.9 	& 20.7 $\pm$ 1.2 	\\\hline 
+W+jets 	& 2259.5 $\pm$ 7.9 	& 1952.1 $\pm$ 7.4 	& 696.6 $\pm$ 4.6 	& 55.5 $\pm$ 1.1 	\\\hline 
+SingleTop 	& 1778.1 $\pm$ 19.4 	& 1601.6 $\pm$ 18.4 	& 405.4 $\pm$ 9.2 	& 29.6 $\pm$ 2.6 	\\\hline 
+Dibosons 	& 170.6 $\pm$ 3.9 	& 147.1 $\pm$ 3.7 	& 46.8 $\pm$ 2.1 	& 3.4 $\pm$ 0.6 	\\\hline 
+Z+jets 	& 403.6 $\pm$ 2.1 	& 307.6 $\pm$ 1.8 	& 95.6 $\pm$ 1.1 	& 7.5 $\pm$ 0.3 	\\\hline 
+\hline
+Background Sum 	& 14719.1$\pm$ 258.9 	& 12463.5$\pm$ 91.8 	& 3577.5$\pm$ 35.0 	& 238.9$\pm$ 7.2	\\\hline 
+\hline
+Xhh2000 	& 25.7 $\pm$ 0.4 	& 24.0 $\pm$ 0.4 	& 9.6 $\pm$ 0.3 	& 2.9 $\pm$ 0.1	\\\hline 
+Data 	& 14862.0 	& 12450.0 	& 3761.0 	& 250.0 	\\\hline 
+
+\end{tabular}
+\end{center}
+\label{tab:CR3}
+\end{table}
+\end{center}
+
+\begin{table}
+\caption{Normalisation factors for the two CRs, the statistical error
+  includes only data statistics, the systematic error is obtained
+  subtracting in quadrature the statistical error from the total error.} \label{tab:NFs}
+\begin{center}
+\begin{tabular}{c|c|c|c}
+\multicolumn{4}{c}{Top background normalisation factors in the two
+  CRs.} \\
+\hline
+region & NF & $\sigma_{stat.}$ & $\sigma_{syst.}$ \\
+\hline
+non-res   & 1.04  &  $\pm$0.20  &  $\pm$0.43\\
+low-mass  & 1.14  &  $\pm$0.10  &  $\pm$0.35\\
+high-mass & 1.02  &  $\pm$0.02  &  $\pm$0.07\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+Table \ref{tab:CR1} through \ref{tab:CR3} show the number of observed
+events and expected background events in the top CRs before the
+normalisation factors have been applied to the top background sample.
+
+The top normalisation factors are determined by a simultaneous fit  of
+signal and control regions, which include both Top CR and QCD CR~\ref{sec:multijet}. It also depends slightly on the $m_{hh}$ window due to the presence of top background in the signal region, and it is furthermore different for the \emph{non  res}, \emph{low  mass} and \emph{high mass} analyses. The normalisation
+factors of the three top control regions are shown in Table \ref{tab:NFs}.
+
+Fig.~\ref{fig:mbb_mhh} shows the $m_{bb}$ and $m_{hh}$ distributions in the two CRs while in Appendix \ref{app:data_exp_reOptNonRes} through ~\ref{app:data_exp_reOpt2000} we show the complete distributions of the
+relevant variables used in the analysis selection in the top CR.  
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOptNonRes/C_reOptNonRes_mww_bbpt210_bbpt300_bbMass_regionA_met25d020}
+\includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOptNonRes/C_mBBcr_reOptNonRes_mww_bbpt210_bbpt300_hhMass_regionA_met25d020}
+
+\includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOpt700/C_reOpt700_mww_bbpt210_bbMass_regionA_met25d020}
+\includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOpt700/C_mBBcr_reOpt700_mww_bbpt210_hhMass_regionA_met25d020}
+
+\includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOpt2000/C_reOpt2000_bbpt350_bbMass_regionA_met25d020}
+\includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOpt2000/C_mBBcr_reOpt2000_bbpt350_hhMass_regionA_met25d020}
+
+\caption[$m_{bb}$ and $m_{hh}$ in CR1, CR2 and CR3.]{$m_{bb}$ and $m_{hh}$ in CR1, CR2 and CR3.  \ttbar NFs as described in~\ref{subsec:topCR} have been applied. The uncertainties shown include the statistical and systematic uncertainties described in ~\ref{sec:syst}. Data are blinded in the region $100 < m_{bb} < 140 $. }
+\label{fig:mbb_mhh}
+\end{center}
+\end{figure}
+
+\subsection{Multi-jet background}
+
+\label{sec:multijet}
+Multi-jet backgrounds can enter in the event selection if a jet from
+heavy flavour decays is mis-identified as an electron or a muon and used
+as a lepton in the analysis. Such phenomena are not accurately reproduced by MC
+simulation, due to large uncertainties in the jet shower shape simulation
+and uncertainties in muon fragmentation functions and kinematics. In order 
+to estimate the contributions of multi-jet processes, a data-driven ABCD 
+method is used to estimate this background in the present analysis.
+%%Such methods are used extensively in the top group analyses.
+
+The ABCD method uses three control regions (the B, C, and D regions) to estimate
+the contribution of a given background in the signal (A) region. Cuts on two ideally
+orthogonal variables are used to create the signal and various control regions, e.g. 
+the A region passes both cuts, the B and C regions each pass one cut and fail the other, 
+while the D region fails both cuts. The absolute value of the significance of the lepton 
+impact parameter and the missing transverse energy (MET) are used as the two variables 
+used to define the regions in the ABCD method for this analysis. The regions are thus 
+defined 
+\begin{itemize}
+\item A region: MET $>$ 25 GeV, \dsig $<$ 2.0
+\item B region: MET $<$ 25 GeV, \dsig $<$ 2.0
+\item C region: MET $>$ 25 GeV, \dsig $>$ 2.0
+\item D region: MET $<$ 25 GeV, \dsig $>$ 2.0
+\end{itemize}
+Figure~\ref{fig:abcdCartoon} shows a pictoral representation of the four regions.
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{figures/multijet/abcdExample_met_vs_d0sigBL20}
+\end{center}
+\caption{A pictoral representation of the four regions used in the
+  ABCD calculation.} \label{fig:abcdCartoon}
+\end{figure}
+Assuming that the two variables chosen to define the ABCD regions are completely uncorrelated, the 
+yield of the process being modelled (QCD multi-jets in this case) in the A region is given by
+\begin{equation}
+N_{A} = N_C \frac{N_B}{N_D}
+\label{eq:simpleABCD}
+\end{equation}
+where the yields $N_i$ are yields calculated from data - all Monte Carlo backgrounds (\ttbar, 
+W/Z+jets, single top, diboson processes) in region $i$ ($N_i = N_i^{\text{data}} - N_i^{\text{MC Bkgs}}$). 
+The assumption underlying Equation~\ref{eq:simpleABCD} is that the relationship between the 
+yields in the B and D regions is the same as the relationship between the A and C regions, i.e.
+\begin{equation}
+\frac{N_{A}}{N_{C}} = \frac{N_B}{N_D}
+\label{eq:correlationStatement}
+\end{equation}
+Using equation ~\ref{eq:correlationStatement}, the quantity $R= \frac{N_{C} N_B}{N_{A} N_D}$ can be 
+defined. In the case of two completely uncorrelated variables, $R=1$ and the ABCD estimation reduces 
+to Equation~\ref{eq:simpleABCD}. If the two variables are not completely uncorrelated, the $R$ 
+factor enters as a correction to Equation~\ref{eq:simpleABCD} for the multi-jet estimation in the A 
+region, and the expression can be rewritten as
+\begin{equation}
+N_{A} = R \frac{N_C N_B}{N_D}
+\label{eq:advancedABCD}
+\end{equation}
+The $R$ factor is calculated for each selection (non-resonant, low mass, and high mass) individually,
+and the results at each cut in each selection is provided in
+Table~\ref{tab:rValues}.
+
+
+\begin{table}[h!]
+\centering
+\input{R_table_reOpt.tex}
+\caption{Values calculated for $R$ at each stage in the non-resonant,
+  low mass, and high mass selections. The estimate of multi-jet
+  contribution in the A region uses the $R$ value calculated after the
+  first cut of each selection.} \label{tab:rValues}
+\end{table}
+In order to minimize the statistical error on $R$, the $R$ value calculated after 
+the first cut of each selection (0.74 and 0.48) is used in Equation~\ref{eq:advancedABCD} to estimate the multi-jet
+background after each subsequent cut. This can be done given the
+compatibility of the $R$ value at the end of the cut flow with that at
+the point where $R$ is evaluated. In order to check such compatibility
+with higher statistics, the $R$ value has been calculated applying
+each selection cut just after the cut where $R$ is evaluated, in order
+to check that $R$ is not correlated with each of the selection cuts.
+The result is shown in Table \ref{tab:R_after_X}.
+
+\begin{table}[h!]
+\centering
+
+\begin{tabular}{c|c|c|c}
+\hline\hline
+
+%\multicolumn{2}{c}{QCD $R$ Values, Non-resonant Selection}\\\hline\hline
+%mww 	                & mww + bbpt210 	\\\hline 
+%0.74 $\pm$ 0.04 	& 0.79 $\pm$ 0.23 	\\\hline \hline
+%\multicolumn{2}{c}{QCD $R$ Values, Low Mass Selection}\\\hline\hline
+%mww 	                & mww + bbpt210 	\\\hline 
+%0.74 $\pm$ 0.04 	& 0.79 $\pm$ 0.23 	  \\\hline \hline
+%\multicolumn{2}{c}{QCD $R$ Values, High Mass Selection}\\\hline\hline
+%bbpt350 	        & bbpt350 + wwpt250 	\\\hline 
+%0.48 $\pm$ 0.09 	& 0.43 $\pm$ 0.08 	\\\hline 
+
+
+\multicolumn{4}{c}{QCD $R$ Values, Non-resonant Selection}\\\hline\hline
+mww 	                & mww + bbpt210 	& mww + bbpt300 	& mww + wwpt250 	\\\hline 
+0.74 $\pm$ 0.04 	& 0.79 $\pm$ 0.23 	& 1.12 $\pm$ 1.22 	& 0.25 $\pm$ 0.20 	\\\hline \hline
+\multicolumn{4}{c}{QCD $R$ Values, Low Mass (m500) Selection}\\\hline\hline
+mww 	                & mww + bbpt210 	& mww + wwpt150 	& mww + hh500	  \\\hline 
+0.74 $\pm$ 0.04 	& 0.79 $\pm$ 0.23 	& 0.50 $\pm$ 0.08 	& 0.52 $\pm$ 0.09  \\\hline \hline
+\multicolumn{4}{c}{QCD $R$ Values, Low Mass (m700) Selection}\\\hline\hline
+mww 	                & mww + bbpt210 	& mww + wwpt250 	& mww + hh700	  \\\hline 
+0.74 $\pm$ 0.04 	& 0.79 $\pm$ 0.23 	& 0.25 $\pm$ 0.20 	& 0.63 $\pm$ 0.13  \\\hline \hline
+\multicolumn{4}{c}{QCD $R$ Values, High Mass Selection}\\\hline\hline
+bbpt350 	        & bbpt350 + wwpt250 	& bbpt350 + drww15 	& bbpt350 + hh2000	\\\hline 
+0.47 $\pm$ 0.06 	& 0.44 $\pm$ 0.08 	& 0.52 $\pm$ 0.17	& 1.07 $\pm$ 0.67 	\\\hline 
+
+\hline\hline
+\end{tabular}
+
+\caption{Values of $R$ obtained applying a single selection cut after the cut stage where $R$ is nominally evaluated.} \label{tab:R_after_X}
+\end{table}
+
+
+Once the normalization of the multi-jet background in the A region is calculated using Equation~\ref{eq:advancedABCD}, the shape of the multi-jet template is taken from the data - Monte Carlo distribution in the C region since the two are kinematically identical except for the cut on \dsig.
+
+The uncertainty due to the limited statistics in the B and D regions is the
+main source of the multi-jet estimation method systematics. In order to minimise
+such error,  the yields from the  B and D regions used in the ABCD
+calculation are frozen at a level of the cutflow to minimise statistical fluctuations.
+The B and D region yields are frozen after the \ptbb $>$ 210 GeV cut for the non-resonant and low mass selection, and after the $p_{T}(WW)>$ 250 GeV for the high mass selection. Appendix~\ref{app:qcd_BDregionStudy_appendix} details the study carried out to select the stage at which to freeze the B and D regions. 
+
+To further reduce the error coming from the C region, the shape of the data - Monte Carlo, i.e. non-prompt, 
+\mbb distribution was studied as a function of each individual cut for each selection. If the \mbb shape is 
+unchanged by the additions of cuts later in a given selection, the C region shape can be taken from an 
+earlier stage in the cutflow, reducing the shape uncertainty and overall statistical error on the QCD yield.
+To determine the stability of the \mbb shape, the ratio of events in the \mbb signal region ([100, 140] GeV)
+over the numbers of events in the full \mbb spectrum was computed for each individual cut using the C region 
+of the ABCD method. This ratio was found to be stable across each selection, and the results of this 
+calculation are provided in Table~\ref{tab:efficiencyFactor}. 
+
+  \begin{table}[h!]%\fontsize{8}{9}\selectfont
+    \centering
+    \begin{tabular}{c|c|c|c}
+      \hline\hline
+      \multicolumn{4}{c}{reOptNonRes: \mbb SR/Total Ratios For Individual Cuts}\\\hline\hline 
+      mww 	& bbpt210 	& bbpt300 	& wwpt250 	\\\hline 
+      0.17 $\pm$ 0.02 	& 0.15 $\pm$ 0.03 	& 0.13 $\pm$ 0.05 	& 0.16 $\pm$ 0.05 	\\\hline 
+    \end{tabular}
+    \vspace{5pt}
+    
+    \begin{tabular}{c|c|c|c}
+      \hline\hline
+      \multicolumn{4}{c}{reOpt500: \mbb SR/CR Ratios For Individual Cuts}\\\hline\hline 
+      mww 	& bbpt210 	& wwpt150 	& hh500 	\\\hline 
+      0.17 $\pm$ 0.02 	& 0.15 $\pm$ 0.03 	& 0.18 $\pm$ 0.02 	& 0.22 $\pm$ 0.03 	\\\hline 
+    \end{tabular}
+    \vspace{5pt}
+
+    \begin{tabular}{c|c|c|c}
+      \hline\hline
+      \multicolumn{4}{c}{reOpt700: \mbb SR/Total Ratios For Individual Cuts}\\\hline\hline 
+      mww 	& bbpt210 	& wwpt250 	& hh700 	\\\hline 
+      0.17 $\pm$ 0.02 	& 0.15 $\pm$ 0.03 	& 0.16 $\pm$ 0.05 	& 0.16 $\pm$ 0.02 	\\\hline 
+    \end{tabular}
+    \vspace{5pt}
+
+    \begin{tabular}{c|c|c|c}
+      \hline\hline
+      \multicolumn{4}{c}{reOpt2000: \mbb SR/Total Ratios For Individual Cuts}\\\hline\hline 
+      bbpt350 	& wwpt250 	& drww15 	& hh2000 	\\\hline 
+      0.12 $\pm$ 0.08 	& 0.16 $\pm$ 0.05 	& 0.19 $\pm$ 0.02 	& 0.11 $\pm$ 0.14 	\\\hline 
+      \hline 
+    \end{tabular}
+    \caption{The ratio of events in the \mbb signal region ([100, 140] GeV) over the numbers of events in the full \mbb spectrum for each individual cut. Both event yields are calculated in the C region of the ABCD method. The ratios are found to be stable across each selection.}        \label{tab:efficiencyFactor}
+  \end{table}
+
+The normalized shapes of the full \mbb distributions after each 
+cut are shown in Figure~\ref{fig:mbbShapes}. The earliest selection cut with a consistent shape was chosen as the
+shape for each cutflow and this corresponds to the shape obtained
+after the  \ptbb $>$ 210 GeV cut 
+for the non-resonant the m500 and m700  selections,  and after the  \ptww $>$ 250 GeV for the m2000 selection.
+
+
+
 \subsection{Signal Region plots and Cutflow}
 \subsection{Systematic Uncertainties}
 
