@@ -1,0 +1,129 @@
+
+Two complementary techniques are used to reconstruct the Higgs boson candidates that decays into two b-quarks. Both techniques use the ${\textrm{anti-}k_{t}}$ jet algorithm but with different radius parameters. The first technique uses jets with a radius parameter R = 0.4 and it is used when each b-quark from the ${H\rightarrow b\overline{b}}$ decay can be reconstructed as a distinct b-jet. This is referred to as the ``resolved analysis". The second technique uses jets with a radius parameter R = 1.0, also know as fatjets, and is used when the b-quarks cannot be reconstructed as two distinct b-jets. Instead the Higgs boson candidate is identified as the single fatjet. This technique is referred to as the ``boosted analysis". In both analyses, the jets from the hadronically decaying W boson are reconstructed as ${\textrm{anti-}k_{t}}$ jets with radius parameter R = 0.4. The non-resonant, SM production, search uses the resolved analysis exclusively, while the resonant analysis is performed using either the resolved or boosted analysis technique with the most sensitive technique chosen for each particular model and HH mass being tested.
+\section{Data and Monte Carlo Samples}
+\subsection{Data}
+\indent The analysis presented uses the full proton-proton collision dataset collected in 2015 and 2016 as the center-of-mass energy of 13 TeV passing data quality checks requiring good conditions of all sub-detectors. The data that are currently used correspond to an integrated luminosity of 36.1 fb\textsuperscript{-1} (3.2 fb\textsuperscript{-1} from 2015 plus 32.8 fb\textsuperscript{-1} from 2016)\footnote{The following GoodRunLists (GRL) are used:\\  
+data15\_13TeV.periodAllYear\_DetStatus-v79-repro20-02\_DQDefects-00-02-02\_PHYS\_StandardGRL\_All\_Good\_25ns.xml\\
+and\\
+data16\_13TeV.periodAllYear\_DetStatus-v88-pro20-21\_DQDefects-00-02-04\_PHYS\_StandardGRL\_All\_Good\_25ns.xml.\\
+The GRLs were retrieved from the \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/GoodRunListsForAnalysisRun2}{GoodRunListsForAnalysisRun2 twiki}}.
+
+. 
+\subsection{Monte Carlo Samples}
+With the exception of the QCD multijet background described in~\ref{sec:multijet}, MC simulated events are used to estimate SM
+backgrounds and the signal acceptances. Table~\ref{tabular:mc_samples} summarizes the MC samples
+used for background estimation.
+
+\begin{table}[!htb]
+\begin{center}
+\begin{tabular}{|l|c|c|}
+  \hline
+ Process & Generator       & $\sigma\times\text{BR}$ [pb]  \\ 
+\hline
+
+$t\bar{t} \to WWbb \to l \nu bb + X$ & \textsc{Powheg+Pythia6} & 451.65 \\
+$Wt$~incl. & \textsc{Powheg+Pythia6} & 71.7 \\
+single $t$,  s-channel, $\to l \nu + X$  & \textsc{Powheg+Pythia6} & 3.31 \\ 
+single $t$,  t-channel, $\to l \nu + X$  & \textsc{Powheg+Pythia6} & 69.5 \\ 
+$W$+jets, $W \to l \nu$ & \textsc{Sherpa} & 61510 \\
+$Z$+jets, $Z \to l l$ & \textsc{Sherpa} & 6425  \\
+Dibosons~incl. & \textsc{Sherpa} & 47.3 \\
+$ggh~incl.$ & \textsc{Powheg+Pythia8} & 48.5 \\
+$tth$, $\to l \nu + X$  & \textsc{aMC@NLO + Herwig++} & 0.223 \\
+\hline
+\end{tabular}
+\caption{SM MC samples used for background estimation.}
+\label{tabular:mc_samples}
+\end{center}
+\end{table}
+The $t\bar{t}$ and single top-quark samples are generated
+with \textsc{Powheg-Box} v2~\cite{Frixione:2007vw} using \textsc{CT10} parton distribution functions (PDF)
+interfaced to \textsc{Pythia} 6.428~\cite{Sjostrand:2006za} for parton shower,
+using the \textsc{Perugia2012}~\cite{Skands:2010ak} tune with
+CTEQ6L1~\cite{Pumplin:2002vw} PDF for the underlying event descriptions.
+\textsc{EvtGen} v1.2.0~\cite{Lange:2001uf} is used for properties of the bottomed
+and charmed hadron decays. The mass of the top quark is set to $m_{t} =
+172.5\,\GeV$. At least one top quark in the $t\bar{t}$ event is required to
+decay to a final state with a lepton. The cross section of $t\bar{t}$ is 
+known to NNLO in QCD
+including re-summation of next-to-next-to-leading logarithmic (NNLL) soft gluon
+terms, and the reference value used in ATLAS is calculated using \textsc{Top++}
+2.0~\cite{Czakon:2011xx}. The parameter \textsc{Hdamp}, used to regulate the
+high-\pt\ radiation in \textsc{Powheg}, is set to $m_{t}$ for good data/MC
+agreement in the high \pt\ region~\cite{ATL-PHYS-PUB-2014-005}. Each process of
+single top-quark ($t$-channel, $s$-channel and $Wt$-channel) is generated separately. The cross
+section of single-top is calculated with the prescriptions in
+Ref.~~\cite{Kidonakis:2011wy, Kidonakis:2010ux}. 
+
+\textsc{Sherpa} v2.2.1~\cite{Gleisberg:2008ta} with the
+\textsc{NNPDF 3.0}~\cite{Lai:2010vv} PDF set is used as the baseline
+generator for the ($W \to \ell\nu$)/($Z\to \ell\ell$)+jets background.
+The diboson processes ($WW$,
+$WZ$ and $ZZ$) are generated with \textsc{Sherpa} with the \textsc{CT10} PDF
+set.  
+
+The $ggH$ and $VBF$ inclusive samples are generated with \textsc{Powheg} using
+the \textsc{CT10} PDF set interfaced to \textsc{Pythia8} for parton
+shower, while $ttH$ is a semi-leptonic sample generated with
+\textsc{MADGRAPH5\_aMCAtNLO} interfaced to \textsc{Herwig++}. The ggF cross
+section is normalised by using computations including up to three QCD
+loops (N3LO \cite{Anastasiou:2016cez}. VBF, $Wh$ and $Zh$ samples,
+  with inclusive $h$, $W$ and $Z$ decays
+are also generated using \textsc{Pythia8}. 
+%{\textbf under
+%  generation...}
+
+
+Signal samples are
+generated with \textsc{MADGRAPH5\_aMCAtNLO}~\cite{Alwall:2014hca} interfaced to
+\textsc{Herwig++} according to the procedure defined in Ref.~\cite{CP3Paper}. 
+Events are generated with an effective
+Lagrangian in the infinite top-quark mass approximation, and  reweighting the
+generated events  with form factors that take into
+account the finite mass of the top quark.  This procedure partially
+accounts for the finite top-quark mass effects ~\cite{Degrassi_Ramona}. After the full analysis chain was developed, there were also developments in the theoretical front, which took full NLO calculation and top mass into account~\cite{Borowka:2016ypz, Borowka:2016ehy}. This led to a slight difference in $m_{HH}$ shape. A re-weighting scheme was then developed to correct $m_{HH}$ shape as described in these slides. {\footnote {https://indico.cern.ch/event/652372/}} The overall effect in the sensitivity is a loss of signal efficiency by about 30\%, which is also seen by other analysis such as $HH \rightarrow bbbb$. 
+
+%Additional interpretation of the result is carried out in the context of bulk Randall-Sundrum (RS) model, which predict spin-2 Kaluza-Klein gravitons, $G_{KK}$~\cite{Agashe:2007zd, Fitzpatrick:2007qr}. Graviton signal samples are generated in the $G_{KK}\rightarrow HH \rightarrow bbWW$ channel. Events were generated at leading order with \textsc{MADGRAPH5\_aMCAtNLO v2.2.2}~\cite{Alwall:2014hca} using the \textsc{NNPDF 2.3} LO PDF set~\cite{Ball:2012cx}. The matrix elements were passed to  \textsc{Pythia 8.186}~\cite{Sjostrand:2007gs} for parton
+%shower, hadronisation and simulation of the underlying event. The A14 set of tuned underlying event parameters~\cite{ATL-PHYS-PUB-2014-021} was used. The graviton signals were generated with $C = \kappa / M_{Pl} = 2.0$. For the interpretation of C = 1.0 case, the samples are then re-weighted as described in Ref.~\cite{Borowka:2016ypz, Borowka:2016ehy}.
+ 
+Table~\ref{tabular:mc_samples_hh} shows the list of HH signals. 
+%Two sets of samples are used. The 
+%non-resonant signal sample use 
+%SM production for the 
+They use a heavy Higgs scalar model as the signal hypothesis. The 
+masses of the heavy Higgs range from 260 GeV to 3000 GeV while
+the Higgs width is set to$~10$ MeV, therefore the model is valid in
+the Narrow Width Approximation (NWA).
+The non resonnat signal is normalised to $\sigma {\rm (pp} \to {\rm  HH)} \times
+{\rm Br(HH}\to{\rm  WWbb)} = 0.590$ pb, the resonant ones are
+normalised to 0.044 pb for $m_H < 2000$~GeV and to 0.041 for $m_H \ge
+2000$~GeV.
+
+% The signals are normalised to the cross section upper limits from the Run1 ATLAS combined result~\cite{Aad:2015xja}. 
+
+
+
+\begin{table}[!htb]
+\begin{center}
+\scriptsize
+\begin{tabular}{|c|l|c|c|c|c|r|}
+	\hline
+ Process                                    & Generator    \\ \hline
+HH SM & \textsc{MADGRAPH5\_aMCAtNLO} + Herwig++ including Form Factor \\
+$H \to HH$ ($m_H =260 - 3000$) GeV & \textsc{MADGRAPH5\_aMCAtNLO} +
+                                     Herwig++including Form Factor \\
+\hline
+\end{tabular}
+\caption{Di-Higgs signal samples used in the analysis. }
+\label{tabular:mc_samples_hh}
+\end{center}
+\end{table}
+
+
+Additional pp collisions generated with \textsc{Pythia} 8.186 are
+overlaid to model the effects of the pileup for all simulated
+events. All simulated events are processed with the same
+reconstruction algorithm used for data. All background samples are processed
+through the full ATLAS detector simulation~\cite{Aad:2010ah} based 
+on \textsc{GEANT4}~\cite{Agostinelli:2002hh} while signal samples use
+the Atlas Fast simulation.

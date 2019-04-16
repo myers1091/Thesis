@@ -1,0 +1,244 @@
+
+The final state of this analysis includes electrons, muons, neutrinos and jets, including $b$-jets. 
+The identification criteria and the selection applied to the reconstructed objects are defined in the
+present section.
+
+\subsection{Electrons}
+\label{sec:el_def}
+
+\subsubsection{Electron reconstruction}
+\label{sec:el_reco}
+Electromagnetic (EM) clusters are reconstructed with a sliding window algorithm. EM clusters are associated with 
+a track refitted with GSF (Gaussion Sum Filter model)~\cite{ATLAS-CONF-2012-047} to account for bremsstrahlung energy losses. 
+%No vertex from conversion is required for the EM cluster of the electron candidate.
+ 
+Electron identification is performed using likelihood-based method. Variables used by likelihood identification are the longitudinal 
+and transverse shower profiles, the track quality, the track and cluster positions to match in $\eta$ and $\phi$ and the presence 
+of high-threshold TRT hits. 
+%The likelihood-based method includes most of the discriminating variables 
+%that are difficult to use with explicit requirement without incurring significant efficiency loss. 
+
+The isolation variables quantify the energy of the particles produced 
+around the electron candidate and allow to disentangle prompt electrons 
+from other, non-isolated electron candidates such as electrons originating 
+from converted photons produced in hadron decays, electrons from heavy flavor hadron decays, 
+and light hadrons mis-identified as electrons. The isolation variable we use for reconstructed electrons 
+is \textit{Track}-based isolation, ${p_{T}^{\textrm{varcone0.2}}}$, defined as the sum of transverse momenta
+of all tracks, satisfying quality requirements, within a cone of $\Delta R = \mathrm{min}(0.2,10 \GeV/E_{T})$
+around the candidate electron track.
+
+A more detailed discussion on the electron likelihood identification and isolation variables 
+and their performance with Run 2 data can be found in Ref.~\cite{ATLAS-CONF-2016-024}. 
+The electron energy scale is calibrated such that it is uniform throughout the detector and the residual differences
+between data and simulation are corrected. The calibration strategy is based on the same strategy developed 
+in Run 1 ~\cite{ATLAS-EGAMMACALIB-RUN1} and updates to the calibration strategy for Run 2 is 
+documented in Ref.~\cite{ATL-PHYS-PUB-2016-015}.
+
+For this analysis, two set of electron selections are defined. They are denoted as VHLooseElectron and SignalElectron.
+The selections are defined as the following
+
+\textbf{VHLooseElectron}: The electron \pt~is required to be greater than 7 GeV. 
+The electron cluster should be in the range of $|\eta|< 2.47$. 
+Loose likelihood identification is applied in this criteria. 
+Impact parameter significance ($|d_{0}^{\textrm{sig}}| = d_{0}/\sigma{_{d_{0}}}$) less than 10 standard deviations. 
+and $|\Delta{z_{0}^{\textrm{IBL}}}\sin\theta| < 0.5$ mm are also required, where IBL refers to the ATLAS Insertable $B$-Layer. 
+
+\textbf{SignalElectron}: The electron is required to pass the VHLooseElectron selection with its \pt~required to be greater than 27 GeV. 
+The electron cluster should be in the range of $|\eta|< 2.47$ but excluded from the crack region ($1.37 < |\eta| < 1.52$).
+Tight likelihood identification is applied in SignalElectron criteria with the impact parameter significance required to be 
+less than 2. In addition, the electron is required to be isolated by passing the \texttt{FixedCutTightTrackOnly} 
+isolation working point which corresponds to a cut on the ratio of ${p_{T}^{\textrm{varcone0.2}}}$ to electron \pt of 0.06 (i.e ${p_{T}^{\textrm{varcone0.2}}/ \pt < 0.06}$).
+
+A summary of the electron selections is shown in Table~\ref{tab:electronsel}.
+
+\begin{table}[htbp!]
+\begin{adjustbox}{width=1\textwidth}
+\centering
+\begin{tabular}{ccccccc} \hline \hline
+Electron Selection & \pt & $|\eta|$ & ID & $|d_{0}^{\textrm{sig}}|$ &  $|\Delta{z_{0}^{\textrm{IBL}}}\sin\theta|$ & Isolation \\ \hline
+VHLoooseElectron   & $>$7~GeV  & $< 2.47$ & LH Loose & $ <10$ & $<0.5$ mm & - \\
+SignalElectron     & $>$27~GeV & $< 2.47$ and $\notin [1.37, 1.52]$ & LH Tight & $  <2$ & $<0.5$ mm & \texttt{FixedCutTightTrackOnly} \\
+\hline\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Electron selection requirements.}\label{tab:electronsel}
+\end{table}
+
+\subsection{Muons}
+\label{sec:mu_def}
+ 
+\subsubsection{Muon reconstruction}
+\label{sec:mu_reco}
+Muon candidates are identified by using the algorithm described in
+Ref.~\cite{Muons2015}. Muons are selected within $|\eta| < 2.5$
+using track quality criteria based on the number of hits in the
+inner detector and in the muon spectrometer. Medium quality criteria 
+are used for muon identification. The criteria include muons
+identified in both the inner detector and muon spectrometer with
+good matching of the two tracks for $|\eta| < 2.5$.
+
+The muon isolation variables are similar to the electron isolation variables above 
+which is the \textit{track}-based isolation, ${p_{T}^{textrm{varcone0.3}}}$, defined as the 
+sum of transverse momenta of all tracks, satisfying quality requirements, 
+within a cone of $\Delta R = \mathrm{min}(0.3,10 \GeV/\pt)$
+around the candidate muon.
+
+
+The performance of the muon identification and isolation variables are documented in Ref.~\cite{Aad:2016jkr}.
+%The identification and isolation efficiencies for muons are corrected using scale factors derived 
+%using $Z\to \mu \mu$ and $J/\Psi \to \mu \mu$ events\footnote{The scale factors are provided by the
+%MuonEfficiencyScaleFactors tool, as outlined in 
+%\href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/MCPAnalysisGuidelinesMC15}{MCPAnalysisGuidelinesMC15 twiki}}.
+
+Corrections to the muon momentum scale and resolution are applied to MC simulation using the MuonCalibrationAndSmearingTool\footnote{as prescribed 
+in \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/MCPAnalysisGuidelinesMC15\#Muon_momentum_scale_and_resoluti} {MCPAnalysisGuidelinesMC15 twiki}} 
+to correct for  data/MC differences. The correction factors were derived from data/MC 
+simulation comparisons with $Z\to \mu \mu$ and $J/\Psi \to \mu \mu$ events (the calibration procedure to derive the factors 
+is documented in Ref.~\cite{Aad:2016jkr}).
+For this analysis, two sets of muon selections are defined. They are denoted as VHLooseMuon and SignalMuon.
+The selections are defined as the following:
+
+\textbf{VHLooseMuon}: The muon \pt~is required to be greater than 7 GeV. 
+The muon cluster should be in the range of $|\eta|< 2.7$. 
+Loose identification is applied in this criteria. 
+Impact parameter significance ($|d_{0}^{sig}|$) less than 6 standard deviations. 
+and $|\Delta{z_{0}^{\textrm{IBL}}}\sin\theta| < 0.5$ mm are also required. 
+
+\textbf{SignalMuon}: The muon is required to pass the VHLooseMuon selection with its \pt~required to be greater than 27 GeV 
+and should be in the range of $|\eta|< 2.4$. Medium identification is applied in SignalMuon criteria with the 
+impact parameter significance required to be less than 2. In addition, the muon is required to be isolated by passing 
+the \texttt{FixedCutTightTrackOnly} isolation working point which corresponds to a cut on the ratio of ${p_{T}^{textrm{varcone0.3}}}$ to 
+muon \pt of 0.06 (i.e ${p_{T}^{textrm{varcone0.3}}/ \pt < 0.06}$).
+
+A summary of the muon selections is shown in Table~\ref{tab:muonsel}.
+
+\begin{table}[htbp!]
+\begin{adjustbox}{width=1\textwidth}
+\centering
+\begin{tabular}{ccccccc} \hline \hline
+Muon Selection & \pt & $|\eta|$ & ID & $|d_{0}^{\textrm{sig}}|$ & $|\Delta{z_{0}^{\textrm{IBL}}}\sin\theta|$ & Isolation \\ \hline
+VHLoooseMuon   & $>$7 GeV  & $ < 2.7$ & Loose quality  & $ <6$ & $<0.5$ mm & - \\
+SignalMuon     & $>$27 GeV & $ < 2.4$ & Medium quality & $ <2$ & $<0.5$ mm & \texttt{FixedCutTightTrackOnly} \\
+\hline\hline
+\end{tabular}
+\end{adjustbox}
+\caption{Muon selection requirements.}
+\label{tab:muonsel}
+\end{table}
+
+\subsection{Jets}
+\label{sec:jet_def}
+\subsubsection{Large-R jets}
+For signal processes with a large resonant mass the b-jets produced by the Higgs may be too close together
+to be resolved by the R=0.4 calorimeter-based jets (calo-jets). This effect is expected to be noticeable when ${p_{T}^{H} > 500\mathrm{GeV}}$\footnote{Using the rule of thumb ${}\Delta R = 2m/\pt$, where ${m = m_{H}}$ and ${\Delta R = 0.4}$}.
+Our approach to reconstructing the ${H\rightarrow b\overline{b}}$ system in this ``boosted" regime is to use a large radius (large-R) jet with radius parameter R =1.0. The large-R jets are clustered using the ${\mathrm{anti-}k_{t}}$ jet algorithm \cite{antikt_algorithm} with topological calorimeter clusters as inputs. The clusters are calibrated to the ``local hadronic cell weighting"(LCW) scale \cite{ATLAS-TopoClustering}.
+In order to minimize the effects from pileup on the large-R jet kinematics, the large-R jet is then groomed
+using the trimming algorithm. The large-R jet energy and mass is then calibrated to the particle-level
+scale. The calibration factors were derived from MC simulation of multijet events \cite{ATLAS-CONF-2016-035}. The large-R jets are required to have ${\pt > 250 \mathrm{GeV}}$ and ${|\eta| < 2.0}$.
+\subsubsection{Track jets}
+To identify a large-R jet that is consistent with decay of ${H\rightarrow b\overline{b}}$, a method developed by ATLAS is to reconstruct subjets within the large-R jet and identify the subjets whether it is a b-jet or not by using a b-tagging algorithm. The baseline method is to use subjets built from tracks (track jets).
+Track jets are built by clustering Inner Detector tracks using the ${\mathrm{anti-}k_{t}}$ algorithm with a radius parameter R = 0.2. The selected tracks are required to have \pt greater than 400 MeV and pass a loose set of cuts, as listed in reference \cite{ATL-PHYS-PUB-2015-035}. The smaller R parameter coupled with the fact that tracks have better angular resolution than calorimeter clusters, mean that the decay products of highly boosted heavy objects can still be resolved. The selected track jets are then associated to the large-R calorimeter jets via ghost association \cite{Cacciari:2008gn} method. A b-tagging algorithm is used to identify track jets which are likely to contain b-hadrons which consist of the b-quarks from the Higgs boson decay. The MV2c10 algorithm exploit the relatively long lifetime of B-hadrons with respect to lighter hadrons, as well as the kinematics of the charged particle tracks.
+For the boosted analysis, track jets are required to have ${\pt > 10 \mathrm{GeV}}$ and ${|\eta| < 2.5}$ for them to be within the inner detector acceptance. They are also required to have at least 2 track constituents. The MV2c10 working point for track jets is the 77\% Fixed Cut efficiency.
+
+\subsubsection{Small-R jets}
+Small-R jets are reconstructed from three-dimensional topological calorimeter 
+clusters~\cite{ATLAS-TopoClustering} using the anti-$k_t$ jet 
+algorithm~~\cite{antikt_algorithm} with a radius parameter of 0.4. 
+Jet energies are corrected~\cite{ATLAS-JES-RUN2} for detector inhomogeneities, the non-compensating nature of the calorimeter, and the impact of multiple overlapping $pp$ interactions. Correction factors are derived using test beam, cosmic ray, $pp$ collision data, and a detailed Geant4 detector simulation.
+Jet cleaning is applied to remove events with jets built from noisy
+calorimeter cells or non-collision backgrounds, requiring that jets
+are not of ``bad'' quality.\footnote{\textit{LooseBad} jets, 
+defined on the \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/HowToCleanJets2016}{HowToCleanJets2016 twiki}, 
+are removed.}
+
+To avoid selecting jets originating from pile-up interactions a ``jet vertex tagger'' (JVT) criterion~\cite{ATLAS-JVTPaper} is applied for jets with $p_T < 60$ GeV and $|\eta|< 2.5$ requiring a JVT $ > 0.59$ cut. This cut corresponds to the \texttt{\textbf{Default}} working point, as described on the \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/JVTCalibration}{JVTCalibration twiki}.
+
+\textbf{Signal jets} are defined as jets which passes the jet cleaning and JVT criteria, described in the previous section.
+They are further required to have \pt > 20~\GeV ~and $|\eta|$ < 2.5.
+
+\newcommand{\BTagWPFootNote}{The charm quark component is suppressed by a factor 3.10 while the 
+light quark component is suppressed by a factor 33.5. The expected performance is documented 
+on the \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/BTaggingBenchmarks\#MV2c10_tagger_added_on_11th_May}{BTaggingBenchmarks twiki}.}
+
+The ATLAS jet flavor tagging algorithm, here the \texttt{MV2c10} algorithm~\cite{ATL-PHYS-PUB-2016-012}, is used to select signal jets and suppress multi-jet, $W$+jets, $Z$+jets and di-boson background. 
+Out of the possible working points corresponding to different $b$-tagging efficiencies, the 85\% Fixed-Cut\footnote{\BTagWPFootNote} working point (WP) is selected as to keep the signal efficiency high. Signal jets are labeled \textbf{b-jets} if they pass the \texttt{MV2c10} 85\% WP cut and labeled as \textbf{light-jets} if they fail the cut.
+
+The difference in the efficiency of $b$-tagging between data and simulation 
+is taken into account by applying scale factors provided by the Flavour Tagging CP group, 
+as prescribed on the \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/BTagCalib2015}{BTagCalib2015 twiki}. 
+The uncertainties associated with $b$-tagging are considered for $b$-, $c$- and light-flavor-induced jets, separately. 
+
+Table~\ref{tab:sjdefinit} summarizes the jets selection. 
+
+\begin{table}[htbp!]
+\centering 
+\small
+\begin{tabular}{|c||c|}        
+ \hline
+ & Signal Jets\\
+ \hline
+ Algorithm            & anti$-k_t$\\
+ $p_T$                & 20~GeV\\
+ $|\eta|$             & $< 2.5 $\\
+ Quality              & not ``bad'' jet\\
+ Pile-up jet removal & JVT $> 0.59$ when $|\eta| < 2.5 ~ and ~p_T < 60 $ GeV\\    
+ $b$-tagging          &  \texttt{MV2c10}, 85\% fixed-cut WP, labelled as b-jets pass cut, light-jets if fail cut\\ 
+\hline                          
+\end{tabular}
+\caption{Selection for jets with distance parameter $R = 0.4$.}
+\label{tab:sjdefinit}
+\end{table}
+
+\subsection{Missing transverse momentum ($\met$)}
+\label{sec:met_def}
+
+The neutrino is not directly detectable and, thus, appears only as an imbalance in
+transverse momentum.
+%\footnote{Transverse momentum is defined as the components of
+%momentum in the plane perpendicular to the beam axis.}.
+	
+The missing transverse momentum (MET, or \met)~\cite{ATL-PHYS-PUB-2015-027} used in this analysis is computed by using electrons that pass the VHLooseElectron selection, muons passing the VHLooseMuon selection and jets of the analysis.\footnote{From MET\_Core\_AntiKt4EMTopo with the MissingETAssociationMap using the METMaker tool. All calibrated jets are passed to the METMaker tool as prescribed on the EtMiss subgroup \apkg{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/EtmissSubgroup}{twiki}} The track-based soft term\footnote{Defined on this \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/EtmissSubgroupTrackSoftTermDescription}{twiki}.} (TST) is the recommended soft term component for the MET calculation. Photons and hadronically decaying taus are included in the $\met$ calculation as jets since they are not used explicitly in the event reconstruction.
+
+\subsection{Overlap removal}
+\label{sec:overlapremoval}
+In order to uniquely identify objects, overlapping objects are removed according to the overlap removal procedure defined in this section. 
+Electrons and muons that pass the VHLooseElectron and VHLooseMuon selections (as defined in Sec.~\ref{sec:el_reco} and ~\ref{sec:mu_reco}) are considered for overlap removal. 
+Calorimeter jets which pass the JVT requirement are also considered for overlap removal. The procedure is defined as follows.
+
+If an electron and a muon shares a track, the muon is removed if it is \textit{calo-tagged}. Otherwise, the electron is removed.
+Calorimeter jets are then removed if they are within $\Delta R(\text{calo-jet}, \text{electron})$ < 0.2 of surviving electrons. 
+Electrons that satisfy $\Delta R(\text{electron},\text{calo-jet})$ < min(0.4, 0.04 + 10 \GeV /$E^\text{electron}_\text{T}$) are removed. 
+The surviving calorimeter jets are removed if they are within $\Delta R(\text{calo-jet}, \text{muon})$ < 0.2 and 
+do \textbf{not} pass any of the following criteria:
+
+\begin{itemize}
+\item The number of tracks in the jet are more than 2.
+\item $\pt^{\text{muon}} / \pt^{\text{calo-jet}} < 0.5$  AND  $\pt^{\text{muon}} / \pt^{\text{tracks in calo-jet}} < 0.7$.
+\end{itemize}
+
+Muons that satisfy $\Delta R(\text{muon},\text{calo-jet})$ < min(0.4, 0.04 + 10 \GeV /$\pt^\text{muon}$) are removed. 
+The overlap removal procedure is implemented using ASG's 
+\apkg{https://svnweb.cern.ch/trac/atlasoff/browser/PhysicsAnalysis/AnalysisCommon/AssociationUtils/trunk/doc/README.rst}{AssociationUtils} 
+package and summarized in Table~\ref{tab:overlapremoval}.
+
+\begin{table}[htbp!]
+\centering
+\tiny
+\begin{tabular}{l | l}
+\toprule
+Overlapping Objects & Removal Procedure \\
+\midrule
+Electron - Muon   & If share track, remove muon if calo-tagged. Otherwise remove electron.\\ 
+\hline
+\multirow{2}{*}{Electron - Calo-jet} & If $\Delta R(\text{calo-jet}, \text{electron})$ < 0.2, remove calo-jet.\\
+& If $\Delta R(\text{electron},\text{calo-jet})$ < min(0.4, 0.04 + 10 \GeV /$E^\text{electron}_\text{T}$), remove electron.\\ 
+\hline
+\multirow{4}{*}{Muon - Calo-jet} & If $\Delta R(\text{calo-jet}, \text{muon})$ < 0.2, remove calo-jet if: \\
+& a) Number of tracks in calo-jet $\leq$ 2, OR \\  
+& b) $\pt^{\text{muon}} / \pt^{\text{calo-jet}} > 0.5$  AND  $\pt^{\text{muon}} / \pt^{\text{tracks in calo-jet}} > 0.7$.\\
+& If $\Delta R(\text{muon},\text{calo-jet})$ < min(0.4, 0.04 + 10 \GeV /$\pt^\text{muon}$), remove muon.\\ 
+\bottomrule
+\end{tabular}
+\caption{A summary of the overlap removal procedure.} 
+\label{tab:overlapremoval}
+\end{table}

@@ -1,0 +1,43 @@
+\section{Derivation (HIGG5D2)}
+
+Pre-selection is applied to both data and MC samples using the
+derivation framework in order to reduce the xAOD sample size.
+We use the HIGG5D2 derivation for our DxAOD sample production.
+More information on the derivation framework can be found in the 
+Higgs group's Twiki.\footnote{\url {https://twiki.cern.ch/twiki/bin/view/AtlasProtected/HSG2xAODMigration}} 
+
+\iffalse
+
+At this stage, the following event selection is applied:
+\begin{itemize}
+\item at least one lepton (electron or muon) with $p_{\text{T}}>6$
+  GeV passing `Medium' identification criteria\footnote{The definition
+    of `Medium' identification criteria is found in
+    Section~\ref{sec:obj}.};
+\item at least one large coned jet with distance parameter $R=1.0$
+  (''large-R'' or ''fat'' jet) with $p_{\text{T}}>150$ GeV or one small-coned jet with distance
+  parameter $R=0.4$ (''small-R'' jet) reconstructed by the anti-$k_t$
+  algorithm with $p_{\text{T}}>100$ GeV or two small-coned jets with $p_{\text{T}}>25$ GeV
+\end{itemize}
+No trigger requirements are applied on the derivation level.
+
+Moreover, objects which do not satisfy one of the following
+requirements are removed from the event:
+\begin{itemize}
+\item track-particles associated with reconstructed electrons;
+\item track-particles associated with reconstructed muons;
+\item track-particles associated with $R=0.4$ jets with $p_{\text{T}}>15$ GeV and $|\eta|<2.8$;
+\item track-particles associated with $R=1.0$ jets with $p_{\text{T}}>150$ GeV and $|\eta|<2.8$.
+\end{itemize}
+
+In addition, for MC samples within an event particles are kept in
+accordance to one of two sets:
+\begin{itemize}
+\item hadrons, b-hadrons, leptons not from hadron decays;
+\item BSM particles, bosons, BSM particle decay products, top partons
+  and immediate decay products, leptons not from hadron decays.
+\end{itemize}
+
+The trimming of the large-R jets (see Section~\ref{sec:jet_def}) is
+also performed during the derivation.
+\fi
