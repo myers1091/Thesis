@@ -1,4 +1,5 @@
 \subsection{Event Reconstruction}
+\label{sec:boosted_evtreco}
 For the boosted analysis, events are reconstructed by requiring at least one reconstructed lepton. This lepton will be referred to as the selected lepton. To reconstruct the ${H\rightarrow b\overline{b}}$ candidate, there should be at least one large-R jet with ${\Delta{R} > 1.0}$ from the selected lepton. The highest \pT large-R jet is chosen as the ${H\rightarrow b\overline{b}}$ candidate. The large-R jet is then required to have two at least two track jets associated to it. Events with the large-R jet mass to be in the range of ${30 \mathrm{GeV} < m_{\textrm{large-R jet}} < 300 \mathrm{GeV}}$ are retained for further analysis.\newline
 \indent In order to reconstruct ${W\rightarrow q\overline{q}}$ candidate, events are required have at least two signal small-R jets with ${\Delta{R} > 1.4}$ of the ${H\rightarrow b\overline{b}}$ candidate. The ${\Delta{R}}$ requirement ensures that the small-R jets used for ${W\rightarrow q\overline{q}}$ reconstruction do not overlap with the ${H\rightarrow b\overline{b}}$ candidate large-R jet. If there are exactly two signal small-R jets, they are used to reconstruct the ${W\rightarrow q\overline{q}}$ candidate. If there are at least three signal small-R jets, the ${W\rightarrow q\overline{q}}$ candidate is reconstructed from the combination of pairs of the three highest \pT small-R jets with the smallest ${\Delta{R}}$ between the small-R jets.\newline
 \indent The full ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ is reconstructed identically to the resolved analysis as described in section \ref{ssec:event_reco_res}.
@@ -17,6 +18,7 @@ After the event is reconstructed, a b-jet veto is applied on the event by requir
 
 \subsection{Kinematic Selection}
 \subsubsection{Signal Region}
+\label{sec:boosted_regiondefs}
 In order to enhance the sensitivity to a resonant HH signal, similarly to the resolved analysis, it is required
 that the ${H\rightarrow b\overline{b}}$ candidate large-R jet has a mass consistent with the Standard Model Higgs boson mass.
 Events which have the ${H\rightarrow b\overline{b}}$ candidate large-R jet mass in a window of ${90 \mathrm{GeV} < m_{\mathrm{Large-R jet}} < 140 \mathrm{GeV}}$ is considered to be in the signal region (SR).
@@ -419,7 +421,7 @@ for each lepton channel. The total uncertainty calculated by adding in quadratur
 \label{sec:boosted_bkgd_qcdmultijet_shape_unc}
  
 The uncertainty on the $m_{HH}$ distribution prediction for the QCD multijet background is estimated by comparing
-the $m_{HH}$ distribution shape in the 2-tag region C and 1-tag region C (Figure~\ref{fig:abcd_shapesyst_1}).
+the $m_{HH}$ distribution shape in the 2-tag region C and 1-tag region C (Figure~\ref{fig:abcd_shapesyst}).
  
 \begin{figure}[!h]
 \begin{center}
@@ -531,9 +533,7 @@ the predicted background and the red box band is the statistical+systematics unc
 The systematics uncertainty on the predicted background consists of the detector modeling systematic uncertainties,
 MC background modeling uncertainties and uncertainties from the ABCD method for QCD multijet background.
  
-Figure~\ref{fig:mbbcr_hhmass} is the invariant mass of the reconstructed di-Higgs (hh)
-system distribution and as it can be seen that it is reasonably modelled. Figure~\ref{fig:mbbcr_met} and~\ref{fig:mbbcr_mt}
-are the $\met$ and $W \to l\nu$ system transverse mass distributions, respectively, and the good modeling observed of the
+Figure~\ref{fig:boosted_mbbcr_mainplots} is the invariant mass of the reconstructed di-Higgs (hh)system distribution, the $\met$, and $W \to l\nu$ system transverse mass distributions and as it can be seen that it is reasonably modelled. The good modeling observed of the
 distributions gives confidence to the QCD multijet prediction as the events from the background tend to have
 low values of $\met$ and transverse mass.
  
@@ -667,10 +667,10 @@ the large-$R$ jet in the mBB control region (mBBcr).}
 \end{center}
 \end{figure}
  
- 
+\newpage
   
-
-\subsection{Dectector modeling uncertainties}
+\subsection{Systematics}
+\subsubsection{Dectector modeling uncertainties}
 \label{sec:boosted_syst_detector}
  
 The experimental uncertainties considered in the analysis are listed in Table~\ref{tab:boosted_syst_detector}.
@@ -750,11 +750,11 @@ Systematic uncertainty & Short description \\
 \hline
 \end{tabular}
 }
-\caption{Summary of the (nuisance parameter) names and meanings of the detector modeling sytematic uncertainties.}
+\caption{Summary of the (nuisance parameter) names and meanings of the detector modeling systematic uncertainties.}
 \label{tab:boosted_syst_detector}
 \end{table}
  
-\subsubsection{$|d_{0}^{\textrm{sig}}|$ cut efficiency modeling}
+\paragraph{$|d_{0}^{\textrm{sig}}|$ cut efficiency modeling}
 \label{sec:boosted_syst_d0cut}
  
 In this analysis, the $|d_{0}^{\textrm{sig}}|$ cut value used for electrons and muons are not the recommended
@@ -813,17 +813,17 @@ for events with leptons that pass (< 2.0) or fail (> 2.0) the $|d_{0}^{\textrm{s
 \FloatBarrier
 %---------------------------------------------------------------------------------------------------------------
  
-\subsection{Background and Signal modeling Systematics}
+\subsubsection{Background and Signal modeling Systematics}
 \label{sec:boosted_syst_modeling}
  
 %---------------------------------------------------------------------------------------------------------------
  
-\subsubsection{Methodology}
+\paragraph{Methodology}
 \label{sec:boosted_syst_modeling_method}
  
 Uncertainties in the $m_{hh}$ distributions are assigned to the dominant backgrounds, $t\bar{t}$ and V+Jets and
 single top by comparing the nominal MC samples to a number of alternative MC generators at the reconstruction
-level. The comparisons are performed in with the same event selection in Sect~\ref{sec:boosted_reco_sel}.
+level. The comparisons are performed in with the same event selection in Sect~\ref{sec:Boosted}.
 Each uncertainty contains 2 components, a shape systematic and a normalization systematic due to acceptance.
  
 The shape systematic corresponds to a reweighting function derived by fitting a 1$^\text{st}$ order polynomial to the
@@ -855,7 +855,7 @@ the variation sample is normalized to the same number of events of the norminal 
  
 %---------------------------------------------------------------------------------------------------------------
  
-\subsubsection{Top-quark processes ($t \bar{t}$ \& single top) }
+\paragraph{Top-quark processes ($t \bar{t}$ \& single top) }
 \label{sec:boosted_syst_modeling_top}
  
 Four alternative MC $t \bar{t}$ samples are used to assess 3 aspects of the MC modeling,
@@ -963,7 +963,7 @@ the sources.}
  
 %---------------------------------------------------------------------------------------------------------------
  
-\subsubsection{V+Jets processes}
+\paragraph{V+Jets processes}
 \label{sec:boosted_syst_modeling_vjets}
  
 The nominal V+Jets prediction, uses the ME+PS generator \SHERPA 2.2.1 interfaced with the NNPDF 3.0 NNLO PDF set.
@@ -1061,13 +1061,13 @@ the sources.}
  
 \FloatBarrier
 %---------------------------------------------------------------------------------------------------------------
-\subsubsection{Diboson processes}
+\paragraph{Diboson processes}
 \label{sec:boosted_syst_modeling_diboson}
 The systematic uncertainty on the normalization of the Diboson background is assigned to be 40\%. This uncertainty
 is taken from the resolved analysis. As the background is small, the uncertainty is considered to be conservative.
  
 %---------------------------------------------------------------------------------------------------------------
-\subsubsection{Signal production}
+\paragraph{production}
 \label{sec:boosted_syst_modeling_signal}
 Systematic uncertainties on the acceptance of signal processes are computed by generating alternative variation signal samples
 and then compare their acceptance with respect to the nominal signal samples. The difference sources of uncertainty considered are:
@@ -1101,7 +1101,7 @@ Shower       &    0.4    &    0.8   &  1.6    &  3.4   &  4.1  \\
  
 \end{table}
 %---------------------------------------------------------------------------------------------------------------
-\subsection{QCD multijet modeling}
+\subsubsection{QCD multijet modeling}
 \label{sec:boosted_syst_modeling_multijet}
  
 Systematic uncertainties related to the modeling of the multijet background were discussed in Section~\ref{sec:boosted_bkgd_qcdmultijet_yield_unc}
