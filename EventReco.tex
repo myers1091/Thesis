@@ -3,7 +3,7 @@
 \chapter{Simulation and Event Reconstruction}
 
 \section{Simulation}
-In order to draw conclusion from ATLAS data, it is necessary to compare to theoretical predictions. For particle collisions, it is not practical to create exact predictions, especially including detector effects such as resolution. To get the best estimate of these effects, ATLAS uses the Monte Carlo (MC) method to simulate data. This is done in multiple steps as illustrated by figure ~\ref{fig:eventsim}. \newline
+In order to draw conclusion from ATLAS data, it is necessary to compare to theoretical predictions. For particle collisions, it is not practical to create exact predictions, especially including detector effects such as resolution. To get the best estimate of these effects, ATLAS uses the Monte Carlo (MC) method to simulate data and detector response to the incident particles. This is done in multiple steps as illustrated by figure ~\ref{fig:eventsim}. These steps are the simulation of the hard process, where the deep inelastic collision simulated using the initial state (Parton Distribution Functions) and interaction amplitudes; the parton shower; the hadronization; the detector simulation; and finally the reconstruction. These steps together form the complete MC simulation of ATLAS data.\newline
 
 \begin{figure}[h]
 \begin{center}
@@ -13,8 +13,8 @@ In order to draw conclusion from ATLAS data, it is necessary to compare to theor
 \end{center}
 \end{figure}
 
-
-\indent At the energies at the LHC, collisions usually do not involve entire protons. Instead, they involve constituents known as partons. Protons, while often described as two up quarks and a down quark, contain a sea of gluons. This sea of gluons also creates many virtual quark-antiquark pairs. The up and down quarks are the outer, or valance, quarks. These valance quarks are the primary role players in shallow inelastic interactions. At the LHC, the collision energies are sufficient for deep inelastic scattering, where the affects of the internal quarks and gluons are non-trivial. This internal structure of the proton is described  by a Parton Distribution Function (PDF), figure ~\ref{fig:pdf}. A PDF shows the probability density of finding a parton carrying a momentum fraction ${x}$ at a squared energy scale. %(http://www.scholarpedia.org/article/Introduction_to_Parton_Distribution_Functions)
+\subsection{Parton Distribution Functions}
+\indent At the energies at the LHC, collisions usually do not involve entire protons. Instead, they involve constituents known as partons. Protons, while often described as two up quarks and a down quark, contain a sea of gluons. This sea of gluons also creates many virtual quark-antiquark pairs. The up and down quarks are the outer, or valance, quarks. These valance quarks are the primary role players in shallow inelastic interactions. At the LHC, the collision energies are sufficient for deep inelastic scattering, where the affects of the internal quarks and gluons are non-trivial. For di-Higgs events, the dominant form of production is gluon-gluon fusion (ggF) This internal structure of the proton is described  by a Parton Distribution Function (PDF), figure ~\ref{fig:pdf}. A PDF shows the probability density of finding a parton carrying a momentum fraction ${x}$ at a squared energy scale. %(http://www.scholarpedia.org/article/Introduction_to_Parton_Distribution_Functions)
 \newline
 
 \begin{figure}[h]
@@ -29,11 +29,15 @@ ${\alpha_{s}(M^{2}_{Z}) = 0.118}$.}
 \end{center}
 \end{figure}
 
-
-\indent The hard scattering process can be described using Feynman diagrams. These diagrams are a pictorial representation of amplitudes. These amplitudes go into calculating the matrix elements (ME) various interactions. In the event generation, these MEs are calculated to a specified order in perturbation theory. Common examples are leading order(LO), next-to-leading order(NLO) , and so on. The higher the order of the calculation, the more accurate the predictions. However, higher orders can be extremely hard to theoretically calculate. Often restricting the level of the event generator. \newline
+\subsection{Hard Scattering}
+\indent The hard scattering process can be described using Feynman diagrams. These diagrams are a pictorial representation of amplitudes. These amplitudes go into calculating the matrix elements (ME) of various interactions. In the event generation, these MEs are calculated to a specified order in perturbation theory. Common examples are leading order(LO), next-to-leading order(NLO) , and so on. The higher the order of the calculation, the more accurate the predictions. However, higher orders can be extremely hard to theoretically calculate, often restricting the level of the event generator. \newline
+\subsection{Parton Shower Calculation}
 \indent  After the ME generator, the hard partons are used as the inputs to the Parton Shower (PS) calculation. The PS calculation takes the hard scattering process from the event generator and calculates the parton shower. In addition to calculating the parton shower, the PS also calculates additional hard radiation processes not included in the base interaction. Colored particles can spontaneously emit gluons. These gluons, in turn, create either more gluons, or quark-antiquark pairs. This can happen either before (ISR) or after (FSR) the hard scattering process. Along with the ISR and FSR emittance, the PS generator can also describes the hadronization and subsequent decay of the hadrons into the final state particles. The precision of the PS generators are described similarly to the ME, with their contributions coming in as leading log (LL), next-to-leading-log (NLL), etc. for the parton showering process. \newline
-\indent Finally, once the PS generator is complete, it is necessary to model the interactions of the final state particles as they pass through the ATLAS detector. ATLAS uses GEANT4  to handle this propagation\cite{geant4}. \newline
-\indent The final result of the MC event generation is a set of simulated data that resembles actual data from the p-p collisions in the ATLAS detector. 
+\subsection{Detector Simulation}
+\indent The MC simulation up to this point can be done with generators that are written outside of the ATLAS collaboration. These generators are used by ATLAS to simulate the underlying processes which are fed into the detector simulation software. ATLAS uses GEANT4 to handle this propagation\cite{geant4} through the detetor. GEANT4 uses a detailed geometric description of the ATLAS detector to simulate particle interactions with the matter in the detector. \newline
+\indent The final result of the MC event generation is a set of simulated data that resembles actual data from the p-p collisions in the ATLAS detector.
+\subsection{Reconstruction}
+Once the data has been simulated, it is necessary to transform it into meaningful objects through reconstruction. This involves taking the raw energy deposits in each of the subdetectors and turning them into tracks or calibrated energy deposits. These groomed objects are then used to build a picture of the physics event through particle identification and event reconstruction. 
 \section{Particle Identification}
 For all events, either MC or actual collision data, it is important to be able to identify and reconstruct the underlying physics event. In particle collisions, the energy from the final state particles is deposited in the various subdetectors within ATLAS. These energy deposits must be translated to physically meaningful objects. This is the task of the event reconstruction, to use the ATLAS detector to recreate the final state particles for any given interaction. For this analysis, the final state particles present in the signal events are a lepton, either an electron or a muon; a neutrino, in the from of missing transverse energy; two light flavor quarks; and two b quarks. Each of these particles has a particular signal in each of the subdetectors, figure ~\ref{fig:crossSec}.
 
@@ -48,7 +52,7 @@ For all events, either MC or actual collision data, it is important to be able t
 
 \subsection{Electrons}
 Electrons are reconstructed by fitting a track using the Inner Detector and matching this track to an energy cluster in the EM calorimeter\cite{Tarna:2286383}. As an electron passes through the EM calorimeter, it produces Bremsstahlung radiation photons. These photons then convert back to electron-positron pairs and the process repeats. This shower of electrons, positrons, and photons give the signature energy cluster in the calorimeter. Particles with the required Inner Detector track and matching EM energy cluster are selected as electron candidates.\newline
-\indent Electron identification algorithms are applied to these electron candidates. These algorithms separate prompt, isolated electron candidates from backgrounds such as converted photons and misidentified jets. The electron identification algorithm is a multivariate likelihood discriminant using shower shape, track and track-to-cluster matching discriminating variables. There are three identification working points for electron identification: Loose, Medium, and Tight. Where the operating points wit higher background rejection are a subset of electron candidates with lower background rejection.\newline
+\indent Electron identification algorithms are applied to these electron candidates. These algorithms separate prompt, isolated electron candidates from backgrounds such as converted photons and misidentified jets. The electron identification algorithm uses the energy-momentum ratio, shower shape, track and track-to-cluster matching to identify electron candidates, with E/p being the most important discriminant. There are three identification working points for electron identification: Loose, Medium, and Tight. Where the operating points wit higher background rejection are a subset of electron candidates with lower background rejection.\newline
 \subsection{Muons}
 The Muon Spectrometer specializes in muon detection and precision momentum measurement. Unsurprisingly, this makes the Muon Spectrometer (MS) a vital part of muon identification, but it is not the only subdetector used. The Inner Detector is also has an important part in reconstructing muons. In ATLAS, muon reconstruction is performed independently in the Inner Detector and the MS. The information is then combined to for the muon tracks. In the Inner Detector, the muons are reconstructed similarly to any other charged particle.\newline
 \indent In the MS, the reconstruction looks for a hit pattern within each chamber to form segments \cite{Aad:2016jkr}. The MDT segments are combined using a straight-line fit. Segments in the CSCs are combined using a combinatorial search in the ${\eta}$ and ${\phi}$ planes. \newline
@@ -56,7 +60,7 @@ The Muon Spectrometer specializes in muon detection and precision momentum measu
 \indent The information from the Inner Detector and the MS are then combined to give a muon signature. The combination method depends on the information available. The main method used is the Combined Muon reconstruction, where track reconstruction is performed in the Inner Detector and MS independently. Most of these muons are reconstructed using an ''outside-in" reconstruction. This  means tracks in the MS are extrapolated inward and matched to an Inner Detector track. \newline
 \subsection{Jets}
 Quarks very quickly undergo hadronization, with only the top quark decaying before hadronizing. This makes it impossible to measure a singular quark. Instead, collections of hadrons are formed and these are what deposit energy in the ATLAS detector. These collections of energy are called jets and can be made from various detector object. In this analysis in particular, two different types of jets are used: calo-jets, jets constructed from energy deposited in the calorimeters; and track-jets, jets constructed from tracks in the Inner Detector. \newline
-\indent Since a jet is not a physical object, rather a collection of energy deposits, there are many ways to define a jet. Two important characteristics of any jet algorithm are Infrared (IR) Safety and Collinear (CL) Safety. For a jet algorithm to be IR Safe, the addition or subtraction of a soft jet will not change the jet collection. A jet algorithm is CL Safe if splitting or merging high transverse momentum particles does not change the jet collection. Figure \ref{fig:IR_CL} illustrates both IR and CL Safety.
+\indent Since a jet is not a physical object, rather a collection of energy deposits, there are many ways to define a jet. A jet algorithm groups objects together, based on some criteria, into a collection of jet objects.   Two important characteristics of any jet algorithm are Infrared (IR) Safety and Collinear (CL) Safety. For a jet algorithm to be IR Safe, the addition or subtraction of small energy deposits will not change the jet collection. A jet algorithm is CL Safe if splitting or merging high transverse momentum particles does not change the jet collection. Figure \ref{fig:IR_CL} illustrates both IR and CL Safety.
 
 \begin{figure}[h]
 \begin{center}
@@ -66,11 +70,21 @@ Quarks very quickly undergo hadronization, with only the top quark decaying befo
 \end{center}
 \end{figure}
 
-\indent Some examples of jet algorithms are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the ${\textrm{anti-}k_{t}}$ algorithm is selected. In addition to being IR and CL safe, the ${\textrm{anti-}k_{t}}$ algorithm gives roughly circular jets. This makes calculating the energy density much easier than non-circular jets. The ${\textrm{anti-}k_{t}}$ algorithm has a radius parameter R. R acts as a cutoff radius for energy clustering and is not strictly a radius. The track-jets used in the analysis have R = 0.2, while the R = 0.4 and R = 1.0 calo-jets are used. \newline 
+\indent Some examples of jet algorithms are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the ${\textrm{anti-}k_{t}}$ algorithm is selected. In addition to being IR and CL safe, the ${\textrm{anti-}k_{t}}$ algorithm gives roughly circular jets. This makes calculating the energy density much easier than non-circular jets. The ${\textrm{anti-}k_{t}}$ algorithm calculates the distance between objects $i$ and $j$ and $i$ and the beam $B$. If ${d_{ij}}$ is smaller than ${d_{iB}}$, the objects are combined. If ${d_i{B}}$ is smaller the object is removed and the algorithm is rerun. An important distinction between ${\textrm{anti-}k_{t}}$ and other jet algorithms is the definition of the distances ${d_{ij}\mathrm{ and} d_{iB}}$
+\begin{equation}
+\begin{split}
+d_{ij} = \mathrm{min}(k^{2p}_{ti},k^{2p}_{tj})\frac{\Delta^{2}_{ij}}{R^{2}},\\
+d_{iB} = k^{2p}_{ti}
+\end{split}
+\end{equation}
+Where ${k_{ti}}$ is the transverse momentum, ${\Delta}$ is the distance between objects, and ${p=-1}$. The ${\textrm{anti-}k_{t}}$ algorithm has a radius parameter R. R acts as a cutoff radius for energy clustering and is not strictly a radius, as objects with a ${\Delta > R}$ can still be clustered together. The track-jets used in the analysis have R = 0.2, while the R = 0.4 and R = 1.0 calo-jets are used. \newline 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics*[width=0.70\textwidth] {figures/jetalgo}
+\includegraphics*[width=0.40\textwidth] {figures/kt_stuff/kt}
+\includegraphics*[width=0.40\textwidth] {figures/kt_stuff/ca}\\
+\includegraphics*[width=0.40\textwidth] {figures/kt_stuff/siscone}
+\includegraphics*[width=0.40\textwidth] {figures/kt_stuff/antikt}
 \caption{A sample parton-level event, together with many random soft
 ``ghosts", clustered with four different jets algorithms, illustrating the ``active" catchment areas of
 the resulting hard jets\cite{Cacciari:2008gp}.}
@@ -91,6 +105,17 @@ B-Hadrons, composite particles that contain b quarks, travel a small distance be
 \end{figure}
 
 \subsection{Missing Transverse Momentum}
-Neutrinos do not interact with the detector as they pass through. This means they cannot be measured like the other particles. In order to measure neutrinos, ATLAS relies on the conservation of momentum. As previously mentioned, the exact collision energy is unknown, as each partons does not carry a consistent fraction of the proton energy. However, in the transverse plane, the plane perpendicular to the beam line, the total momentum is known exactly. Before the collision, there is zero momentum in the transverse plane. After the collision, this must also be true. This implies the vector summation of all objects should have zero momentum in the transverse plane. Any imbalance in this is referred to as  Missing Transverse Momentum (\met). The \met{} is constructed as the negative vector sum of all reconstructed objects with an additional soft term reconstructed from detector signal objects not associated with any object\cite{ATL-PHYS-PUB-2015-027}. \newline
+Neutrinos do not interact with the detector as they pass through. This means they cannot be measured like the other particles. In order to measure neutrinos, ATLAS relies on the conservation of momentum. As previously mentioned, the exact collision energy is unknown, as each partons does not carry a consistent fraction of the proton energy. However, in the transverse plane, the plane perpendicular to the beam line, the total momentum is known exactly. Before the collision, there is zero momentum in the transverse plane. After the collision, this must also be true. This implies the vector summation of all objects should have zero momentum in the transverse plane. Any imbalance in this is referred to as  Missing Transverse Momentum (\met). The \met{} is constructed as the negative vector sum of all reconstructed objects with an additional soft term reconstructed from detector signal objects not associated with any object\cite{ATL-PHYS-PUB-2015-027}. 
+\begin{equation}
+E^{\mathrm{miss}}_{x(y)} = E^{\mathrm{miss, e}}_{x(y)}+E^{\mathrm{miss, \gamma}}_{x(y)} + E^{\mathrm{miss, \tau}}_{x(y)} + E^{\mathrm{miss, jets}}_{x(y)} + E^{\mathrm{miss, \mu}}_{x(y)} + E^{\mathrm{miss, soft}}_{x(y)}
+\end{equation}
+From the $x$ and $y$ components of ${E^{\mathrm{miss}}}$, the magnitude and azimuthal angle  are calculated.
+\begin{equation}
+\begin{split}
+E^{\mathrm{miss}}_{T} = \sqrt{(E^{\mathrm{miss}}_{x})^{2} + (E^{\mathrm{miss}}_{y})^{2}},\\
+\phi^{\mathrm{miss}} = \arctan(E^{\mathrm{miss}}_{y}/E^{\mathrm{miss}}_{x})
+\end{split}
+\end{equation}
+In this analysis, the \met is reconstructed using VHLooseElectrons, VHLooseMuons the analysis jets, and the track-based soft term.\newline
 \indent The \met{} vector is a vector in the transverse plane, meaning it does not directly correspond to a neutrino. Additional information is needed to exactly reconstruct a neutrino. In this analysis, a Higgs mass constraint is used to supply the direction of the signal neutrino. \newline
 
