@@ -1,1 +1,76 @@
 \chapter{Improvements to the Boosted Analysis}
+The boosted analysis described in chapter \cite{chap:anal} is optimized for the case where the ${H\rightarrow b\overline{b}}$ system is boosted and the ${H\rightarrow WW^{*}}$ system is resolved. However, at high resonant masses, one would expect both the ${H\rightarrow b\overline{b}}$ and the ${H\rightarrow WW^{*}}$ to be boosted. However, the semileptonic decay of the W boson pair adds an additional complication of having a lepton within the radius of a large-R jet. This chapter will describe a method for reconstructing this complex topology and the improvements if offers to the boosted, semi-leptonic ${HH\rightarrow b\overline{b}WW^{*}}$ analysis.
+\section{Motivation}
+The resonant analysis covers a large range of mass hypotheses, from 400 - 3000 GeV. As the resonant mass increases, the two Higgs systems become more and more collimated. Figure ~\ref{fig:dr} shows the average distance between final state partons as a function of the resonant mass for simulated HH events. The $WW$ bosons become very collimated (within dR = 0.5) around 1000 GeV. \newline
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.33]{DRMhhPlots_fine/drbb}
+\includegraphics[scale=0.33]{DRMhhPlots_fine/drWW}
+\\
+\includegraphics[scale=0.33]{DRMhhPlots_fine/drqq}
+\includegraphics[scale=0.33]{DRMhhPlots_fine/drmaxlq}
+
+\caption{Distance between the two b partons (top left); the two W bosons (top right); the two light quarks (bottom left); and the lepton and the most distant light quark (bottom right) for resonant $HH$ production as a function of resonant mass.}
+\label{fig:dr}
+\end{center}
+\end{figure}
+\indent On the ${H\rightarrow b\overline{b}}$ side, this is accounted for through the boosted analysis selection. Moving toward the full Run 2 analysis, it is worth while to look at the potential gain from including a boosted ${H\rightarrow WW^{*}}$ selection. This ``fully-boosted" analysis can be used in conjunction with the current boosted and resolved analysis to increase sensitivity and reach.\newline
+%\section{Fully Boosted Analysis}
+\indent The ``fully-boosted" analysis piggybacks off of the analysis presented in Chapter ~\ref{chap:anal}. This means the data and Monte Carlo Samples , object reconstruction, and trigger requirements are the same as the previously presented analysis. \newline
+\section{Event Reconstruction}
+Identically to the boosted analysis, section \ref{sec:Boosted}, events are reconstructed by requiring at least one reconstructed lepton. To reconstruct the ${H\rightarrow b\overline{b}}$ candidate, there should be at least one large-R jet with ${\Delta{R} > 1.0}$ from the selected lepton. The highest of these large-R jets is selected as the ${H\rightarrow b\overline{b}}$ candidate. This large-R jet is then required to have at least to track jets associated to it. Events with a ${H\rightarrow b\overline{b}}$ in the range ${30 \mathrm{GeV} < m_{\mathrm{bb}} < 300 \mathrm{GeV}}$ are retained for further analysis.\newline
+\indent To reconstruct the ${H\rightarrow WW^{*}}$ candidate, there should be at least one large-R jet with ${\Delta{R} < 1.0}$ from the selected lepton. This large-R jet is selected as the ${H\rightarrow WW^{*}}$ jet candidate. Once the ${H\rightarrow b\overline{b}}$ jet has been selected, they are split into either electron or muon channel for the full reconstruction.\newline
+\indent Calorimeter jets are clusters of energy that are grouped together into an object based on distances. If an electron, which deposits the majority of its energy into the calorimeter, were to fall within the radius of a calorimeter jet, its energy should be measured as part of the jet energy. Using this, it is possible to use a single large-R to measure the energy of the ${W\rightarrow qq}$ system and the electron.  With the large-R jet and the \met, it is possible to fully reconstruct the ${H\rightarrow WW^{*}}$ system. The neutrino is reconstructed using a similar method as in Section ~\ref{ssec:event_reco_res}. Imposing the relation:
+\begin{equation}
+\label{eq:mh}
+m_h^2 = (p^{\nu} + p^{\mathrm{large-R jet}})^2
+\end{equation}
+the neutrino $p_z$ can be reconstructed using the relations:
+\[
+p_E^{\nu} = E^{\nu} = \sqrt{P_T^2 + p_z^2} \quad p_x^{\nu} = P_Tcos(\phi) \quad p_y^{\nu} = P_T sin(\phi)
+\]
+where $\phi$ is the azimuthal angle of the $\met$, $E^{\nu}$ the neutrino energy, $p_x$ and $p_y$ the two transverse spatial components of the neutrino momentum.\newline
+\indent Muons do not deposit a significant amount of energy in the calorimeters, this means we cannot use the same reconstruction as for the electrons. Instead, the muons are treated in a more traditional fashion. In the muon channel, the large-R jet contains the energy of the ${W\rightarrow qq}$ system. The muon is reconstructed using the MS and ID information and the neutrino is reconstructed identically to \ref{ssec:event_reco_res}, with the hadronic $W$ as a single object.\newline
+\indent Figure ~\ref{fig:topo} shows a diagram of the event topology after the event reconstruction.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.4]{figures/full_boosted}
+\caption{Diagram of the fully-boosted event topology}
+\label{fig:topo}
+\end{center}
+\end{figure}
+\section{Event selection}
+After the event is reconstructed, a b-tag requirement is applied to the 2 track-jets in the ${H\rightarrow b\overline{b}}$ large-R jet. The \met is required to be more than 50 GeV to reject events from QCD background. Finally a  \pt requirement is placed on the ${H\rightarrow WW^{*}}$ candidate. It is important to cut on the same physics objects. To accomplish this, an ``adjusted \pt " (${\pt^{'}}$) cut of 250 GeV is applied. Table ~\ref{tab:adjpt} defines the ${\pt^{'}}$ for both channels.
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l|c}
+Muon Channel & ${\pt^{'} = \pt^{\mathrm{Large-R jet}}}$\\
+\hline
+\\
+Electron channel & ${\pt^{'} = \sqrt{(p_{x}^{\mathrm{Large-R jet}} - p_{x}^{\mathrm{electron}})^{2}+(p_{y}^{\mathrm{Large-R jet}} - p_{y}^{\mathrm{electron}})^{2}}}$
+\end{tabular}
+\caption{}
+\label{tab:adjpt}
+\end{center}
+\end{table}
+
+\subsection{Signal Region Definition}
+As with the boosted analysis in Section ~\ref{sec:Boosted}, the ${h\rightarrow b\overline{b}}$ candidate must have a jet mass in the window ${90 \mathrm{ GeV } < m_{bb} < 140 \mathrm{GeV}}$ to be considered in the signal region (SR)
+\subsection{mBB Control Region}
+To check the modeling of the background, a control region is created with an inverted ${m_{bb}}$ cut. 
+\subsection{Multijet Background}
+The QCD multijet background is estimated using the same data-driven background as the boosted analysis. The ABCD method with the regions defined as:
+\begin{itemize}
+\item Region A: \met > 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
+\item Region B: \met < 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
+\item Region C: \met > 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
+\item Region D: \met < 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
+\end{itemize}
+
+%%Yields in ABCD regions, 
+
+
+\subsubsection{Hadronic ${WW^{*}}$ \pt}
