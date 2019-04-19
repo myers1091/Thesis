@@ -41,7 +41,7 @@ where $\phi$ is the azimuthal angle of the $\met$, $E^{\nu}$ the neutrino energy
 \end{center}
 \end{figure}
 \section{Event selection}
-After the event is reconstructed, a b-tag requirement is applied to the 2 track-jets in the ${H\rightarrow b\overline{b}}$ large-R jet. The \met is required to be more than 50 GeV to reject events from QCD background. Finally a  \pt requirement is placed on the ${H\rightarrow WW^{*}}$ candidate. It is important to cut on the same physics objects. To accomplish this, an ``adjusted \pt " (${\pt^{'}}$) cut of 250 GeV is applied. Table ~\ref{tab:adjpt} defines the ${\pt^{'}}$ for both channels.
+After the event is reconstructed, a b-tag requirement is applied to the 2 track-jets in the ${H\rightarrow b\overline{b}}$ large-R jet. The \met is required to be more than 50 GeV to reject events from QCD background. Finally a  \pt requirement is placed on the ${H\rightarrow WW^{*}}$ candidate. It is important to cut on the same physics objects. To accomplish this, an ``adjusted \pt " (${\pt^{'}}$) cut of 250 GeV is applied. Table ~\ref{tab:adjpt} defines the ${\pt^{'}}$ for both channels. 
 
 
 \begin{table}
@@ -57,6 +57,9 @@ Electron channel & ${\pt^{'} = \sqrt{(p_{x}^{\mathrm{Large-R jet}} - p_{x}^{\mat
 \end{center}
 \end{table}
 
+\subsection{Comparison of reconstruction objects}
+With this new event reconstruction method and a basic set of cuts, we can compare a few basic kinematic variables to check the performance. Figure XXX shows a comparison of the old boosted analysis reconstruction and the new fully-boosted analysis.
+
 \subsection{Signal Region Definition}
 As with the boosted analysis in Section ~\ref{sec:Boosted}, the ${h\rightarrow b\overline{b}}$ candidate must have a jet mass in the window ${90 \mathrm{ GeV } < m_{bb} < 140 \mathrm{GeV}}$ to be considered in the signal region (SR)
 \subsection{mBB Control Region}
@@ -69,6 +72,157 @@ The QCD multijet background is estimated using the same data-driven background a
 \item Region C: \met > 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
 \item Region D: \met < 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
 \end{itemize}
+
+\subsubsection{Yield Prediction}
+Table \ref{tab:boosted_region_bd_promptbkgd_data_new} lists the MC predicted prompt lepton backgrounds, observed data and calculated multijet yields in Region B and D before the ${H\rightarrow b\overline{b}}$ mass cut is applied and Table \ref{tab:boosted_region_c_promptbkgd_data_new} shows the yields in Region C mBB control region and signal region.\newline
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l|c|c||c|c}
+             &\multicolumn{2}{c||}{Region B}                &\multicolumn{2}{c}{Region D} \\
+\hline
+Samples       & Electron               & Muon                & Electron          & Muon \\      
+\hline
+$t\bar{t}$    &  138.7 $\pm$ 7.3      & 146.1 $\pm$ 8.3      & 14.4 $\pm$ 2.7    & 6.3  $\pm$ 1.5  \\
+W+Jets        &  27.3 $\pm$ 1.7       & 27.9 $\pm$ 1.9       & 1.1 $\pm$ 0.3    & 2.0  $\pm$ 0.4  \\        
+Single-top    &  7.1  $\pm$ 1.4       & 5.2  $\pm$ 1.4     &  0.2 $\pm$ 0.2    &  0.4  $\pm$ 0.3  \\
+Z+Jets        &  18.3  $\pm$ 0.8       & 9.3  $\pm$ 0.5     &  1.9 $\pm$ 0.3    &  0.9  $\pm$ 0.2  \\
+Dibosons      &  3.1  $\pm$ 0.5       & 1.3  $\pm$ 0.3     &  0.2 $\pm$ 0.1    &  0.2  $\pm$ 0.1  \\
+\hline
+Total Prompt  &  194.4 $\pm$ 7.7      & 189.9 $\pm$ 8.7    & 17.8 $\pm$ 2.7    & 9.8  $\pm$ 1.6  \\
+\hline
+Data          &  274.0  $\pm$ 16.6      & 218.0   $\pm$ 14.8    & 34.0  $\pm$ 5.8   & 30.0   $\pm$ 5.5  \\
+\hline
+QCD           & 79.6 $\pm$ 18.3       & 28.1 $\pm$ 17.1    & 16.2 $\pm$ 6.4  & 20.2 $\pm$ 5.7 \\
+\end{tabular}
+\end{center}
+\caption{MC predicted prompt lepton backgrounds, observed data and calculated multijet yields
+in Region B and D. The multijet yield is calculated by subtracting the estimated total prompt lepton
+backgrounds from the observed data. The statistical uncertainty on the yields is shown.}
+\label{tab:boosted_region_bd_promptbkgd_data_new}
+\end{table}
+
+
+\begin{table}
+\begin{center}
+\begin{tabular}{l|c|c||c|c}
+             &\multicolumn{2}{c||}{mBBcr}               &\multicolumn{2}{c}{SR}\\
+\hline
+Samples       & Electron            & Muon               & Electron         & Muon     \\      
+\hline
+$t\bar{t}$          &   21.7	$\pm$ 4.1   &   12.8 $\pm$ 2.1	&  	6.4 $\pm$ 1.4		& 	5.4 $\pm$ 1.2\\
+W+Jets          &   3.4 	$\pm$ 0.6   &    2.3 $\pm$ 0.3	&	1.4 $\pm$ 0.3		&  	1.2 $\pm$ 0.3\\
+Single-top      &   0.7 	$\pm$ 0.5   &    0.3 $\pm$ 0.2	&	0.4 $\pm$ 0.3       	&  	0.2 $\pm$ 0.2\\
+Z+Jets          &   1.0 	$\pm$ 0.2   &    0.4 $\pm$ 0.1	& 	0.4 $\pm$ 0.1        & 	0.2 $\pm$ 0.1\\
+Dibosons   &   0.2 	$\pm$ 0.1   &    0.0 $\pm$ 0.0	&	0.1 $\pm$ 0.1       	& 	0.0 $\pm$ 0.0\\
+\hline
+Total Prompt         &   26.9 	$\pm$ 4.1   &   15.9 $\pm$ 2.2	&	8.7 $\pm$ 1.5       	& 	7.0 $\pm$ 1.3\\
+\hline
+Data           &   53.0 $\pm$ 7.3   &   33.0 $\pm$ 5.7	&	12.0 $\pm$ 3.5      	& 	20.0 $\pm$ 4.5\\
+\hline
+QCD            &   26.1 $\pm$ 8.4   &   17.1 $\pm$ 6.1	&	3.3 $\pm$ 3.8       	& 	13.0 $\pm$ 4.7\\
+\end{tabular}
+\end{center}
+\caption{MC predicted prompt lepton backgrounds, observed data and calculated multijet yields
+in Region C mBBcr and SR. The multijet yield is calculated by subtracting the estimated total prompt lepton
+backgrounds from the observed data. The statistical uncertainty on the yields is shown.}
+\label{tab:boosted_region_c_promptbkgd_data_new}
+\end{table}
+
+
+\indent Table XXX shows the ratio in the electron channel and muon channel.
+The predicted yields of the QCD multijet background in the mBB control region and signal region are presented in table XXX. The QCD multijet background is estimated to be XXX\% of the total background in the signal region (Table XXX).
+
+\begin{table}
+\begin{center}
+\begin{tabular}{c|c|c}
+Multijet yield in region              & Electron                & Muon   \\      
+\hline
+$N_B^\text{QCD}$                      & 79.6 $\pm$ 18.3      & 28.1 $\pm$ 17.1 \\
+$N_D^\text{QCD}$                      & 16.2 $\pm$ 6.4      & 20.2 $\pm$ 5.7  \\
+\hline
+$N_{B}^\text{QCD}$/$N_{D}^\text{QCD}$     & 4.9 $\pm$ 2.62 (46.0\%) & 1.4 $\pm$ 0.94 (67.2\%)   \\
+\end{tabular}
+\end{center}
+\caption{Multijet yields in region B and region D and also the ratio of the yields for each lepton channel. The error
+on the $\frac{N_B^\text{QCD}}{N_D^\text{QCD}}$ ratio is propagated from the statistical uncertainties on the multijet yields in each region.}
+\label{tab:boosted_bkgd_abcd_ratio_new}
+\end{table}
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{tabular}{c|c|c}
+Multijet yield in region & Electron  & Muon  \\  
+\hline
+\multicolumn{3}{c}{SR} \\
+\hline
+$N_C^\text{QCD}$         & 3.3  $\pm$ 3.8 & 13.0 $\pm$ 4.7 \\
+$N_A^\text{QCD}$         & 16.4 $\pm$ 20.5 (126.8\%) & 18.1 $\pm$ 13.9 (76.8\%) \\
+\hline
+\multicolumn{3}{c}{mBBcr} \\
+\hline
+$N_C^\text{QCD}$       & 26.1  $\pm$ 8.4 & 17.1  $\pm$ 6.1  \\
+$N_A^\text{QCD}$       & 128.3 $\pm$ 79.4 (61.9\%) & 23.9 $\pm$ 18.1 (75.7\%)  \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Multijet yield in region C and predicted yield in region A in the SR. The error on $N_A^\text{QCD}$
+are propagated from the error on the $N_B^\text{QCD}$/$N_D^\text{QCD}$ ratio and statistical uncertainty on $N_C^\text{QCD}$ yield.
+The numbers in brackets are the relative uncertainty in percentage.}
+\label{tab:boosted_bkgd_abcd_yield_new}
+\end{table}
+
+
+\subsubsection{Shape prediction}
+See Section \ref{sec:boosted_bkgd_qcdmultijet_shape}.
+
+\subsubsection{Multijet yield uncertainties}
+\label{sec:boosted_bkgd_qcdmultijet_yield_unc}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Statistical
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\paragraph{Statistical} 
+The uncertainty on the predicted yield of the multijet background is determined by propagating the statistical uncertainty
+of the $\frac{N_B^\text{QCD}}{N_D^\text{QCD}}$ ratio, as shown in Table~\ref{tab:boosted_bkgd_abcd_ratio_new}, and the statisical
+uncertainty on the multijet yield in region C ($N_C^\text{QCD}$), as in Table~\ref{tab:boosted_bkgd_abcd_yield_new}.
+ 
+\paragraph{1-tag/2-tag jet mass acceptance} 
+Another source of uncertainty on the multijet yield is the  
+the difference of acceptance of the large-$R$ jet mass cut between 1-tag and 2-tag.
+This uncertainty is included since the template for or the multijet shape prediction uses the multijet shape
+from the 1-tag region C. Table~\ref{tab:boosted_syst_qcd_norm_mBBAcc} shows the acceptance
+of the large-$R$ jet mass signal and mBB control region selection in the multijet 1-tag region C and 2-tag region C yields.
+The relative difference between the acceptance in 1-tag region C and in 2-tag region C is considered as an uncertainty on the normalization
+of the QCD multijet prediction.
+ 
+\begin{table}[!htbp]
+\begin{center}
+\begin{tabular}{c|c|c}
+\hline
+Region    & Electron          & Muon      \\
+\hline
+\multicolumn{3}{c}{SR} \\
+\hline
+1-tag $\frac{N_\text{SR}}{N_\text{Inc}}$ &  32\% & 23 \% \\
+2-tag $\frac{N_\text{SR}}{N_\text{Inc}}$ &  11\% & 43 \% \\
+\hline \hline
+Rel. difference between 1-tag and 2-tag & 26.4 \% & 46 \% \\
+\hline
+\multicolumn{3}{c}{mBBcr} \\
+\hline
+1-tag $\frac{N_\text{mBBcr}}{N_\text{Inc}}$ &  68\% & 77 \% \\
+2-tag $\frac{N_\text{mBBcr}}{N_\text{Inc}}$ &  89\% & 56 \% \\
+\hline \hline
+Rel. difference between 1-tag and 2-tag &  24 \% &   37 \% \\
+\end{tabular}
+\end{center}
+\caption{The acceptance of the large-$R$ jet mass signal region selection on the multijet
+1-tag and 2-tag region C. $N_\text{SR}$($N_\text{Inc}$) is the multijet yield
+with (without) the signal region large-$R$ jet mass selection.}
+\label{tab:boosted_syst_qcd_norm_mBBAcc}
+\end{table}
+ 
 
 %%Yields in ABCD regions, 
 
