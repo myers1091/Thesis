@@ -58,19 +58,50 @@ Electron channel & ${\pt^{'} = \sqrt{(p_{x}^{\mathrm{Large-R jet}} - p_{x}^{\mat
 \end{table}
 
 \subsection{Comparison of reconstruction objects}
-With this new event reconstruction method and a basic set of cuts, we can compare a few basic kinematic variables to check the performance. Figure XXX shows a comparison of the old boosted analysis reconstruction and the new fully-boosted analysis.
+Figure \ref{fig:elec_sel} and \ref{fig:muon_sel} show a comparison of the old boosted analysis reconstruction and the new fully-boosted analysis for the electron and muon selection respectively. The most 
+
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000}
+\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000}\\
+\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh2000}
+\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000}
+\caption{Comparison of ${H\rightarrow WW^{*}}$ mass (top left), ${H\rightarrow WW^{*}}$ \pt (top right), \met (bottom left), and $HH$ mass for the  previous boosted analysis reconstruction and new fully boosted selection for a resonant signal with a mass of 2000 GeV in the electron channel.}
+\label{fig:elec_sel}
+\end{center}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000}
+\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000}\\
+\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000}
+\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000}
+\caption{Comparison of ${H\rightarrow WW^{*}}$ mass (top left), ${H\rightarrow WW^{*}}$ \pt (top right), \met (bottom left), and $HH$ mass for the  previous boosted analysis reconstruction and new fully boosted selection for a resonant signal with a mass of 2000 GeV in the muon channel.}
+\label{fig:muon_sel}
+\end{center}
+\end{figure}
+
+
+
+
 
 \subsection{Signal Region Definition}
-As with the boosted analysis in Section ~\ref{sec:Boosted}, the ${h\rightarrow b\overline{b}}$ candidate must have a jet mass in the window ${90 \mathrm{ GeV } < m_{bb} < 140 \mathrm{GeV}}$ to be considered in the signal region (SR)
+As with the boosted analysis in Section ~\ref{sec:Boosted}, the ${h\rightarrow b\overline{b}}$ candidate must have a jet mass in the window ${90 \mathrm{ GeV } < m_{bb} < 140 \mathrm{GeV}}$ to be considered in the signal region (SR). The previous boosted analysis included a b-jet veto for all jets outside of the ${H\rightarrow b\overline{b}}$ candidate. In order to increase statistics for the QCD multijet estimate, this was removed from the fully boosted analysis.
+
 \subsection{mBB Control Region}
 To check the modeling of the background, a control region is created with an inverted ${m_{bb}}$ cut. 
 \subsection{Multijet Background}
 The QCD multijet background is estimated using the same data-driven background as the boosted analysis. The ABCD method with the regions defined as:
 \begin{itemize}
-\item Region A: \met > 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
-\item Region B: \met < 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
-\item Region C: \met > 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
-\item Region D: \met < 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
+\item Region A: \met $>$ 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
+\item Region B: \met $<$ 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
+\item Region C: \met $>$ 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
+\item Region D: \met $<$ 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
 \end{itemize}
 
 \subsubsection{Yield Prediction}
@@ -223,8 +254,68 @@ with (without) the signal region large-$R$ jet mass selection.}
 \label{tab:boosted_syst_qcd_norm_mBBAcc}
 \end{table}
  
+\subsection{mBBcr Plots}
+Plots in the mBB control region, Figure \ref{fig:mbbcr_plots} show an agreement between data and background estimates.
 
-%%Yields in ABCD regions, 
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.33]{figures/abcd_plots/elec_mbbcr_RegionA_hhMass_withDD}
+\includegraphics[scale=0.33]{figures/abcd_plots/elec_mbbcr_RegionA_hhMass_withDD}
+\caption{${M_{HH}}$ Distribution in the mBB control region for the electron (left) and muon (right) channels.}
+\label{fig:mbbcr_plots}
+\end{center}
+\end{figure}
 
-\subsubsection{Hadronic ${WW^{*}}$ \pt}
+\section{Results}
+The fully boosted analysis reconstructs the ${m_{HH}}$ distribution and the shape is fit to data using MC signal and background templates. The distribution is fit using 17
+bins, with almost uniform width except at low and high $m_{HH}$, where
+the bin width is modified in order to have a MC statistical uncertainty
+%from the MC finite sample-size
+smaller than 20\%. All backgrounds, except multijet, are
+simulated using MC generators and normalised using the cross section of the
+simulated process. The multijet background is estimated using the ABCD
+method, and its normalisation obtained from this method is kept fixed in the fit. The bias due
+to possible signal contamination in the ABCD regions was studied
+and found to have negligible effect on the result.  The integral of the $m_{HH}$
+distribution for the boosted analysis is shown in
+Table~\ref{tab:event_yields_high_new}.
+\begin{table}
+\caption{Data event yields, and post-fit signal and background event yields in the final signal region for the boosted analysis and the scalar $S$ particle hypothesis. The errors shown are the MC statistical and systematic uncertainties described in Section~\ref{sec:boosted_systematics}. For illustration a signal mass point of
+2000~\GeV\ is reported in the table. The signal samples are normalized to the expected upper limit cross sections.}  
+\label{tab:event_yields_high_new}
+\small
+\begin{center}
+\begin{tabular}{c|c|c|c}
+$m_X$ [\GeV] & $S$ &  Total Bkg. & Data
+\vspace{0.2mm}\\
+\hline
+2000 & XXX $\pm$ XXX  & 271 $\pm$ XX  & 268 \\
+\end{tabular}
+\end{center}
+\end{table}
+ 
+ The contribution of the systematic uncertainties to the
+total uncertainty is decomposed into the dominant components and summarised  in
+Table~\ref{XXXXX}.
+
+Figure~\ref{fig:boosted_postfit_mhh} shows the $m_{HH}$ distribution for
+data and the background components for the boosted analysis.
+Data are generally in good agreement with the background expectations within the quoted systematic errors.
+The signal $m_{HH}$ distribution is shown in the figure for  the scalar resonance.
+Figure~\ref{fig:boosted_only_limits_new} shows the observed and the expected
+upper limit on the production cross section of the scalar $S$ particle.
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[scale=0.65]{figures/Final_limits}
+\caption{Expected and observed upper limits at 95\% CL on the cross section of the resonant pair production for heavy scalar boson S model. The expected limits without including the systematic errors is also shown to show their impact.}
+\label{fig:boosted_only_limits_new}
+\end{center}
+\end{figure}
+
+\section{Conclusion}
+The fully boosted ${HH\rightarrow b\overline{b}WW^{*}}$ semi-leptonic analysis can strengthen the limit on the cross section of the resonant pair production by approximately a factor of 2 over a large range of resonant masses. \newline
+\indent Several improvements can be made to the fully boosted analysis moving toward the full Run 2 analysis. The isolated lepton trigger that is used for these studies is not suitable for highly collimated topologies and likely leads to a loss of signal efficiency at high resonant masses. A large-R jet trigger would allow for leptons much closer to other objects and could increase the number of events, especially in the high resonant mass region. Additionally, the QCD multijet estimation suffers from a lack of statistics in the C and D regions. This gives a large error on the QCD background estimation. A different method of QCD estimation, such as the matrix method, may be more suitable.\newline
+\indent The fully boosted analysis can be combined with the previous resolved and boosted analysis for the full Run-2 search. By using all three regions, it is possible to maximize the reach of the analysis across the entire mass range, even extending the range higher. 
+
