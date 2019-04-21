@@ -109,7 +109,7 @@ The following selection cuts are applied at the pre-selection level to the recor
 	$p_{{\rm T,trk}}$ is the transverse momentum of tracks
 	associated with the vertex, is retained as the primary
   interaction vertex;
-\item at least one SignalElectron ($e$) or SignalMuon ($\mu$), as defined in Sec.~\ref{sec:el_sel} and Sec.~\ref{sec:mu_sel}, and it must be trigger matched to the 
+\item at least one SignalElectron ($e$) or SignalMuon ($\mu$), as defined in Sec.~\ref{sec:el_reco} and Sec.~\ref{sec:mu_reco}, and it must be trigger matched to the 
 corresponding HLT object which fires the trigger;
 \item at least 4 jets, of which 2 and only 2 are $b$-tagged.
 \end{itemize}
@@ -224,7 +224,7 @@ An additional mass point with $m_H = 1400$ GeV was also checked. The resulting s
 %The signals have been normalised to the Run 1 upper limit scaled by the $13/8$ TeV cross section ratio expected from the
 %PDF luminosity scale of a narrow resonance of that mass. 
 
-The signal regions for the  reference signal hypotheses are summarised in 
+The signal regions for the  reference signal hypotheses are summarized in 
 Table~\ref{tab:sig_reg_summary}.
 
 
@@ -499,7 +499,7 @@ The top normalisation factors are determined by a simultaneous fit  of
 signal and control regions, which include both Top CR and QCD CR~\ref{sec:multijet}. It also depends slightly on the $m_{hh}$ window due to the presence of top background in the signal region, and it is furthermore different for the \emph{non  res}, \emph{low  mass} and \emph{high mass} analyses. The normalisation
 factors of the three top control regions are shown in Table \ref{tab:NFs}.
 
-Fig.~\ref{fig:mbb_mhh} shows the $m_{bb}$ and $m_{hh}$ distributions in the two CRs while in Appendix \ref{app:data_exp_reOptNonRes} through ~\ref{app:data_exp_reOpt2000} we show the complete distributions of the
+Fig.~\ref{fig:mbb_mhh} shows the $m_{bb}$ and $m_{hh}$ distributions in the two CRs.% while in Appendix \ref{app:data_exp_reOptNonRes} through ~\ref{app:data_exp_reOpt2000} we show the complete distributions of the
 relevant variables used in the analysis selection in the top CR.  
 
 \begin{figure}[!h]
@@ -513,7 +513,7 @@ relevant variables used in the analysis selection in the top CR.
 \includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOpt2000/C_reOpt2000_bbpt350_bbMass_regionA_met25d020}
 \includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOpt2000/C_mBBcr_reOpt2000_bbpt350_hhMass_regionA_met25d020}
 
-\caption[$m_{bb}$ and $m_{hh}$ in CR1, CR2 and CR3.]{$m_{bb}$ and $m_{hh}$ in CR1, CR2 and CR3.  \ttbar NFs as described in~\ref{subsec:topCR} have been applied. The uncertainties shown include the statistical and systematic uncertainties described in ~\ref{sec:syst}. Data are blinded in the region $100 < m_{bb} < 140 $. }
+\caption[$m_{bb}$ and $m_{hh}$ in CR1, CR2 and CR3.]{$m_{bb}$ and $m_{hh}$ in CR1, CR2 and CR3.  \ttbar NFs as described in~\ref{subsec:topCR} have been applied. The uncertainties shown include the statistical and systematic uncertainties described in ~\ref{sec:systematics}. Data are blinded in the region $100 < m_{bb} < 140 $. }
 \label{fig:mbb_mhh}
 \end{center}
 \end{figure}
@@ -835,7 +835,7 @@ close to the signal region in particular. All simulated backgrounds are normalis
 \caption{The $m_{b \bar{b}}$ distribution in the resolved analysis for the \emph{non-res} and \emph{m500} selections at the end of the
  selection sequence, before applying the $m_{b \bar{b}}$ requirement. The signals shown
  are from SM non-resonant $HH$ production scaled up by a factor of 300 (left) and from a scalar resonance with mass 500~\GeV\ scaled to the expected upper-limit
- cross section reported in Section~\ref{sec:MainResults} (right).  The lower panel shows the fractional difference
+ cross section reported in Section~\ref{sec:Analysis_results} (right).  The lower panel shows the fractional difference
   between data and the total expected background
  with the corresponding statistical and total uncertainty.
 } \label{fig:mbb_1}
@@ -851,7 +851,7 @@ close to the signal region in particular. All simulated backgrounds are normalis
  selection sequence, before applying the $m_{b \bar{b}}$ requirement. The signals shown
  are from scalar resonances with mass 1000~\GeV\ (left) and 2000~\GeV\ (right)
  scaled to the expected upper-limit cross section reported in
- Section~\ref{sec:MainResults}.  The lower panel shows the fractional difference
+ Section~\ref{sec:Analysis_results}.  The lower panel shows the fractional difference
   between data and the total expected background
  with the corresponding statistical and total uncertainty.} \label{fig:mbb_2}
 \end{figure}
@@ -1251,7 +1251,7 @@ The Samples used for the systematic uncertainties are the following:
 Theoretical cross section uncertainties of 5.3\% is assigned to the associated $Wt$ production,  3.9\% to the s-channel and 4.2\% to t-channel single top production.  The dominant production for this analysis is the $Wt$ channel.  The single top modelling systematic uncertainties have been calculated employing the difference between the nominal (DR scheme) and the (available) systematic variation sample (DS scheme) in SR for the $Wt$ channel. The uncertainties are computed to be 48\%, 48\%, and 84\% for non-resonant, low-mass and high-mass analyses respectively.  Single top is a very small background in the analysis. However, the large difference between the two schemes warranted getting feedback from the Top Group. We narrowed the huge difference down to very tight $p_{T} (bb)$ cut. See Figure~\ref{fig:stop_bbpt}. The Top Group is working on a better prescription but in the meantime this is the recommended method and the huge difference is what we keep. 
 Additional uncertainties on single top have been calculated employing the difference between the nominal and the (available) systematic variation samples. The recommendation is taken from the Top Twiki.{\footnote {\url{https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/TopSystematics2015}}} 
 The comparison is done between the nominal sample and the Powheg+Herwig for fragmentation, MC@NLO for Matrix Element, and RadHi/RadLo for ISR/FSR uncertainties. The comparison is done at the selection where MC statistical uncertainties are small. This leads to $p_{T}(bb) < 120$ for non-resonance and low-mass selections, and $\Delta R(WW) < 1.5$ for high-mass selection. 
-The uncertainties vary across selections being 3.5\% at the smallest to 23\% at the largest. Appendix~\ref{app:app_stop_unc} provides detailed tables of the comparison of nominal with alternative single top samples. 
+The uncertainties vary across selections being 3.5\% at the smallest to 23\% at the largest.% Appendix~\ref{app:app_stop_unc} provides detailed tables of the comparison of nominal with alternative single top samples. 
 
 \begin{figure}[!h]
 \begin{center}

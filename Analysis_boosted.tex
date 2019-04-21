@@ -14,7 +14,8 @@ With the ${H\rightarrow b\overline{b}}$ candidate identified and ${h\rightarrow 
 \end{figure}
 
 \subsection{Event Selection}
-After the event is reconstructed, a b-jet veto is applied on the event by requiring all signal small-R jets do not pass b-tagging requirement to reject \ttbar events. The two highest \pT track-jets in the large-R jet are required to be b-tagged and events that passes this requirement is considered to be in the "2-tag" region. In addition, the \met is required to be more than 50 GeV to reject events from QCD multijet background. The cutflow for MC backgrounds and signal samples are documented in Appendix \ref{} and studies on the efficiency of the event reconstruction and selections can be found in Appendix \ref{}.
+\label{sec:boosted_selection}
+After the event is reconstructed, a b-jet veto is applied on the event by requiring all signal small-R jets do not pass b-tagging requirement to reject \ttbar events. The two highest \pT track-jets in the large-R jet are required to be b-tagged and events that passes this requirement is considered to be in the "2-tag" region. In addition, the \met is required to be more than 50 GeV to reject events from QCD multijet background.%The cutflow for MC backgrounds and signal samples are documented in Appendix \ref{} and studies on the efficiency of the event reconstruction and selections can be found in Appendix \ref{}.
 
 \subsection{Kinematic Selection}
 \subsubsection{Signal Region}
@@ -42,10 +43,10 @@ the lepton impact parameter ($d_{0}^{\textrm{sig}}$) and the missing transverse 
 with respect to the resolved analysis. The regions are defined as follow:
  
 \begin{itemize}
-\item Region A: \met > 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
-\item Region B: \met < 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
-\item Region C: \met > 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
-\item Region D: \met < 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
+\item Region A: \met $>$ 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
+\item Region B: \met $<$ 50 GeV, $|d_{0}^{\textrm{sig}}|$ $<$ 2.0
+\item Region C: \met $>$ 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
+\item Region D: \met $<$ 50 GeV, $|d_{0}^{\textrm{sig}}|$ $>$ 2.0
 \end{itemize}
  
 \begin{figure}[!h]
@@ -60,7 +61,7 @@ yield in region C to predict the multijet background yield in region A.}
 \end{figure}
  
 Figure~\ref{fig:boosted_bkgd_abcd} shows the four regions represented on on the lepton $d_{0}$ significance vs \met plane.
-Assuming that the two variables chosen to define the ABCD regions are completely uncorrelated, the QCD multijet yield in region A can be predicted. The The correlation between $|d_{0}^{\textrm{sig}}|$ vs \met is estimated in multiple MC background samples and also in data, and they are found to negligible (Appendix~\ref{app:boosted_qcd_d0met_plots}).
+Assuming that the two variables chosen to define the ABCD regions are completely uncorrelated, the QCD multijet yield in region A can be predicted. The The correlation between $|d_{0}^{\textrm{sig}}|$ vs \met is estimated in multiple MC background samples and also in data, and they are found to negligible.% (Appendix~\ref{app:boosted_qcd_d0met_plots}).
  
 The ABCD method is done separately between the muon and electron channel as it is expected that the $\frac{N_B^\text{QCD}}{N_D^\text{QCD}}$ ratio and QCD multijet contribution to the total predicted background will be significantly different between the channels.
  
@@ -190,7 +191,7 @@ The numbers in brackets are the relative uncertainty in percentage.}
 In order to predict the shape of the HH mass distribution (and also other kinematic distribution) of the QCD multijet background, the shape template of all kinematic distributions are obtained by subtracting all the MC backgrounds from data
 in region C.
  
-It was found that distributions in region C suffer from lack of statistics due the low number of data events which results in shape templates with severe statistical fluctuations. To overcome this, the shape templates are derived from a sample of 1 $b$-tagged (1-tag) events in region C. This sample requires that one of the two leading track-jet is $b$-tagged but not both at the same time. Comparisons between 2-tag and 1-tag shape templates are documented in Appendix~\ref{app:boosted_qcd_2tag1tag}.
+It was found that distributions in region C suffer from lack of statistics due the low number of data events which results in shape templates with severe statistical fluctuations. To overcome this, the shape templates are derived from a sample of 1 $b$-tagged (1-tag) events in region C. This sample requires that one of the two leading track-jet is $b$-tagged but not both at the same time.% Comparisons between 2-tag and 1-tag shape templates are documented in Appendix~\ref{app:boosted_qcd_2tag1tag}.
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -250,7 +251,8 @@ with (without) the signal region large-$R$ jet mass selection.}
 \paragraph{mBB control region fit} 
  A likelihood fit of the large-$R$ jet mass in the mBB control region
 is performed with the normalization of the multijet background to be unconstrained in the fit.
-This study is documented in Appendix~\ref{app:boosted_qcd_float_2tag_mbbcr_fit}. In the muon channel,
+%This study is documented in Appendix~\ref{app:boosted_qcd_float_2tag_mbbcr_fit}. 
+In the muon channel,
 the post-fit normalization factor is consistent with unity and in the electron channel,
 the normalization factor is 0.676 $\pm$ 0.130. Due to this significant deviation from unity for the electron channel,
 we assign a normalization uncertainty of 32.4\% for the multijet background in both the mBB control
@@ -267,7 +269,7 @@ background is calculated by subtracting the prompt background from observed data
 on the normalization of $t\bar{t}$ and W+jets in each region are calculated by comparing the yields
 between the nominal $t\bar{t}$ and W+jets samples with their alternative samples
 (see Section~\ref{sec:boosted_syst_modeling_top} and~\ref{sec:boosted_syst_modeling_vjets}).
-The comparisons are documented in Appendix~\ref{app:boosted_qcd_region_mcmodeling_unc}.
+%The comparisons are documented in Appendix~\ref{app:boosted_qcd_region_mcmodeling_unc}.
  
 The uncertainty on the multijet yield prediction in region A is then calculated
 by recalculating the multijet yield in each region with the $t\bar{t}$ and W+jets
@@ -308,8 +310,7 @@ uncertainty of the $t\bar{t}$ and W+jets backgrounds in region C.}
  The detector modeling systematic uncertainties
 on the prompt background in regions B, D and C are propagated through the ABCD method to estimate
 the uncertainty on the multijet yield prediction region A. Table~\ref{tab:boosted_syst_qcd_norm_detmodel}
-shows the uncertainties on the predicted multijet yield in both lepton channels. The impact of each detector
-modeling systematics on the predicted multijet yield are listed in Appendix~\ref{app:boosted_qcd_prompt_detector_modeling_unc}.
+shows the uncertainties on the predicted multijet yield in both lepton channels. %The impact of each detector modeling systematics on the predicted multijet yield are listed in Appendix~\ref{app:boosted_qcd_prompt_detector_modeling_unc}.
  
 \begin{table}[!htbp]
 \begin{center}
@@ -343,9 +344,7 @@ by varying the normalization of the prompt backgrounds in regions B, D and C sim
 the uncertainty on the multijet yield prediction region A and is treated as anti-correlated between regions B and regions D,C.
 Table~\ref{tab:boosted_syst_qcd_norm_d0sigacc} shows the uncertainties on the predicted multijet yield due
 $|d_{0}^{\textrm{sig}}|$ cut efficiency modeling uncertainty on prompt MC backgrounds in both lepton channels.
-The breakdown of the multijet yield and its variation due to the $|d_{0}^{\textrm{sig}}|$ cut efficiency modeling uncertainty
-on the prompt MC backgrounds in each region and channel is listed in Table~\ref{tab:boosted_qcd_d0syst_breakdown} of
-Appendix~\ref{app:boosted_qcd_prompt_d0cut_modeling_unc}.
+%The breakdown of the multijet yield and its variation due to the $|d_{0}^{\textrm{sig}}|$ cut efficiency modeling uncertainty on the prompt MC backgrounds in each region and channel is listed in Table~\ref{tab:boosted_qcd_d0syst_breakdown} of Appendix~\ref{app:boosted_qcd_prompt_d0cut_modeling_unc}.
  
 \begin{table}[!htbp]
 \begin{center}
@@ -421,7 +420,7 @@ for each lepton channel. The total uncertainty calculated by adding in quadratur
 \label{sec:boosted_bkgd_qcdmultijet_shape_unc}
  
 The uncertainty on the $m_{HH}$ distribution prediction for the QCD multijet background is estimated by comparing
-the $m_{HH}$ distribution shape in the 2-tag region C and 1-tag region C (Figure~\ref{fig:abcd_shapesyst}).
+the $m_{HH}$ distribution shape in the 2-tag region C and 1-tag region C (Figure~\ref{fig:boosted_abcd_shapesyst}).
  
 \begin{figure}[!h]
 \begin{center}
@@ -471,8 +470,7 @@ in the mBB control region. This is dicussed in Section~\ref{sec:boosted_bkgd_dat
  
 MC simulation is used to model the shape of the $t\bar{t}$ background. The background
 is predicted to be the largest (\textasciitilde 52\%) of the total background. A top-enriched control region
-is used to validate the modeling of the $t\bar{t}$ background and the comparison between Data and
-background prediction is documented in Appendix~\ref{app:boosted_ttbarmodel_topcr}.
+is used to validate the modeling of the $t\bar{t}$ background.% and the comparison between Data andbackground prediction is documented in Appendix~\ref{app:boosted_ttbarmodel_topcr}.
 % The normalization of the $t\bar{t}$ background is obtained by fitting the large-$R$ jet mass distribution
 % in the mBB control region and extract the normalization factor on the $t\bar{t}$ normalization from the fit.
 % Both the $t\bar{t}$ and W+jets backgrounds are allowed to float simultaneously in the fit. The studies are documented in
@@ -537,9 +535,7 @@ Figure~\ref{fig:boosted_mbbcr_mainplots} is the invariant mass of the reconstruc
 distributions gives confidence to the QCD multijet prediction as the events from the background tend to have
 low values of $\met$ and transverse mass.
  
-In Appendix~\ref{app:boosted_mbbcontrolregion}, the kinematic distributions are shown separately in the low mBB and high mBB region
-of the mBB control region (App.~\ref{app:boosted_mbbcontrolregion_highlow}). The distributions separated by the lepton channels are
-also shown (App.~\ref{app:boosted_mbbcontrolregion_leptonchannels}).
+%In Appendix~\ref{app:boosted_mbbcontrolregion}, the kinematic distributions are shown separately in the low mBB and high mBB region of the mBB control region (App.~\ref{app:boosted_mbbcontrolregion_highlow}). The distributions separated by the lepton channels are also shown (App.~\ref{app:boosted_mbbcontrolregion_leptonchannels}).
  
 \renewcommand{\arraystretch}{1.5}
 \begin{table}
@@ -670,6 +666,7 @@ the large-$R$ jet in the mBB control region (mBBcr).}
 \newpage
   
 \subsection{Systematics}
+\label{sec:boosted_systematics}
 \subsubsection{Dectector modeling uncertainties}
 \label{sec:boosted_syst_detector}
  
@@ -894,8 +891,7 @@ which is about \textasciitilde8.4\% with similar level of uncertainties from alt
 The normalization of $t\bar{t}$ background is assinged with a single nuisance parameter with the total uncertainty set as the prior uncertainty.
  
 Shape comparisons of the $m_{hh}$ distribution between the nominal $t\bar{t}$ sample to the alternative samples were made and they are shown in
-Figure~\ref{fig:boosted_unc_ttbar_shape_sr}. Appendix~\ref{app:boosted_syst_ttbar} documents studies on the normalization and shape systematics
-for $t\bar{t}$ background.
+Figure~\ref{fig:boosted_unc_ttbar_shape_sr}. %Appendix~\ref{app:boosted_syst_ttbar} documents studies on the normalization and shape systematics for $t\bar{t}$ background.
  
 \begin{table}[htbp!]
 \begin{center}
@@ -1000,7 +996,7 @@ background is assinged with a single nuisance parameter with the total uncertain
  
 Shape comparisons of the $m_{hh}$ distribution between the nominal W+jets sample to the alternative samples were made and only one
 variation was found to have noticeable difference: the scale variation of $\mu_{R}$=0.5, $\mu_{F}$=0.5 as in Figure~\ref{fig:boosted_unc_wjets_sr_scale_fit}.
-Appendix~\ref{app:boosted_syst_wjets} documents studies on the normalization and shape systematics for W+jets background.
+%Appendix~\ref{app:boosted_syst_wjets} documents studies on the normalization and shape systematics for W+jets background.
  
 \begin{table}[htbp!]
 \begin{center}
@@ -1037,8 +1033,7 @@ Table~\ref{tab:boosted_unc_zjets} shows the estimated uncertainty on the normali
 from the comparison of the nominal Z+jets sample to the alternative samples. The largest uncertainty comes from the renormalization
 and resummation scale, which is about \textasciitilde48\% and dominates the total uncertainty on Z+jets background. The normalization of Z+jets
 background is assinged with a single nuisance parameter with the total uncertainty set as the prior uncertainty. The uncertainty on the
-$m_{hh}$ shape is found to be negligible and therefore ignored. Appendix~\ref{app:boosted_syst_zjets} documents studies on the normalization
-and shape systematics for Z+jets background.
+$m_{hh}$ shape is found to be negligible and therefore ignored. %Appendix~\ref{app:boosted_syst_zjets} documents studies on the normalization and shape systematics for Z+jets background.
  
 \begin{table}[htbp!]
 \begin{center}
