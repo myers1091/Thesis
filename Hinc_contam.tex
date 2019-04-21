@@ -1,0 +1,74 @@
+\section{Inclusive Higgs Contamination} 
+%%%%%%%%%%%%%%%%
+We have also considered possible contamination from additional
+processes such as WH, ZH, VBF-H, gg-H, and ttH productions. The signal
+samples considered for this are shown in Table \ref{tab:Hinc_samples}
+with the cross section used for their normalisation.  The corresponding cross section, filter efficiency, k-factors are taken from the Twiki{\footnote {\url {https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/CentralMC15ProductionListHiggs_samples} }}. Tables~\ref{tab:Hinc_contam_sidebands} and ~\ref{tab:Hinc_contam_sr} show that the contamination is either 0, or much smaller than the current statistical uncertainty in our expected dominant backgrounds. 
+
+%%%%%%%
+\begin{table}[!h]
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+sample & $\sigma$ (pb) \\
+\hline
+MC15.342282.PowhegPythia8EvtGen\_CT10\_AZNLOCTEQ6L1\_ggH125\_inc & 48.52
+\\
+MC15.342283. PowhegPythia8EvtGen\_CT10\_AZNLOCTEQ6L1\_VBFH125\_inc & 3.78
+\\
+MC15.342284.Pythia8EvtGen\_A14NNPDF23LO\_WH125\_inc  & 1.37 \\
+MC15.342285.Pythia8EvtGen\_A14NNPDF23LO\_ZH125\_inc  & 0.88 \\
+MC15.341270.aMcAtNloHerwigppEvtGen\_UEEE5\_CTEQ6L1\_CT10ME\_ttH125\_inc  & 0.51\\
+\hline
+\end{tabular}
+\caption[Various inclusive Higgs samples studied for contamination. ]{Various inclusive Higgs samples studied for contamination.}
+\label{tab:Hinc_samples}
+\end{center}
+\end{table}
+
+%%%%%%%%%%%%%%%%%
+\begin{table}
+\caption{Contamination from inclusive Higgs processes compared to contribution from the sum of dominant backgrounds, in the sidebands. The contamination, computed at the first selection cut, decreases with subsequent cuts. Note that the first cut is the same for non-resonance and low-mass analyses.} 
+\begin{center}
+\begin{tabular}{c|c|c|}
+Selection/Sample & $m_{WW}<130$ & $p_{T}(bb)>350$ \\
+\hline
+VBFHinc              & 0\% & 0\%   \\
+\hline
+ ggHinc       & 0.003\% & 0.008\%  \\
+ \hline
+ WHinc	        & 0.006\% & 0.04\%   \\
+  \hline
+ ZHinc       & 0.005\% & 0.007\%  \\
+  \hline
+  ttHinc	& 0.05\%	& 0.25\%\\
+\hline
+\hline
+\label{tab:Hinc_contam_sidebands}
+\end{tabular}
+\end{center}
+\end{table}
+
+%%%%%%%%%%%%%%%%%
+\begin{table}
+\caption{Contamination from inclusive Higgs processes compared to contribution from the sum of dominant backgrounds, in the signal region.} 
+\begin{center}
+\begin{tabular}{c|c|c|c|c|}
+Selection/Sample & non-res & m500 & m700 & m2000 \\
+\hline
+VBFHinc              & 0\% & 0\%  & 0\% & 0\%\\
+\hline
+ ggHinc       & 0\% & 0\%   & 0\%  & 0\%\\
+ \hline
+ WHinc       & 1.8\% & 0\%  & 0\% & 4.8\% \\
+  \hline
+ ZHinc	       & 0\% & 0\%  & 0\% & 0\%\\
+  \hline
+  ttHinc		& 0.7\% & 0.5\% & 0.3\% & 0\%\\
+\hline
+\label{tab:Hinc_contam_sr}
+\end{tabular}
+\end{center}
+\end{table}
+
+%%%%%%%%%%%%%%%%%

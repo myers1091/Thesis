@@ -1,0 +1,64 @@
+\section{Stability of \ttbar Normalization in QCD Estimate}
+\label{app:qcd_ttbarNFstability_appendix}
+
+This appendix contains tables tables summarizing a study performed to test the stability of the normalization factor applied to \ttbar events when calculated iteratively with the ABCD method for QCD estimation. Since both the ABCD method and the \ttbar normalization are calculated using data-driven techniques, and they contaminate each other control region, the aim is to check that  the \ttbar normalization and the QCD estimate converge to stable values after a small number of iterations. The iterative procedure begins with the QCD estimate set to zero and continues as follows:
+\begin{itemize}
+\item Calulate \ttbar NF at appropriate cut \textbf{before} QCD is calculated
+\item Start at beginning of cutflow, apply \ttbar NF, and calculate QCD
+\item Move through cutflow to \ttbar NF cut
+\item Calculate new \ttbar NF
+\item Repeat steps 2 - 4
+\end{itemize}
+If the procedure converges, the estimate is said to be stable. The following tables show the iteration for the non-resonant, low mass, and high mass selections. Iteration 0 starts with zero QCD in the background estimate. Yields are provided for QCD and \ttbar after the first selection cut (noted as sample\_first) and in the final \mbb signal region (noted as sample\_SR). The QCD yield at the \ttbar normalization cut is also provided. The final column shows the calculated normalization factor for \ttbar. For all selections, convergence (change in \ttbar normalization $<$5\%) is observed after just a few iterations. 
+\begin{center}
+\begin{table}[h!]%\fontsize{9}{10}\selectfont
+  \begin{tabular}{l|c|c|c|c|c|c}
+    \hline\hline
+    Iteration &      nQCD\_first &   n\_QCD\_nf &    nQCD\_SR &      ttbar\_first &           ttbar\_SR &     ttbarNF       \\\hline
+    0        &       0.00 &          0.00 &          0.00 &          24637.64 &      65.92 &         1.43 $\pm$ 0.02  \\\hline
+    1        &       4226.57 &       273.95 &        3.30 &          35249.05 &      94.31 &         0.92 $\pm$ 0.02   \\\hline
+    2        &       15765.74 &      1381.06 &       19.04 &         22708.20 &      60.75 &         0.94 $\pm$ 0.03   \\\hline
+    3        &       15311.64 &      1335.16 &       18.33 &         23145.35 &      61.92 &         0.94 $\pm$ 0.03   \\\hline
+    4        &       15254.28 &      1329.37 &       18.24 &         23200.59 &      62.07 &         0.94 $\pm$ 0.03  \\\hline
+    5        &       15247.34 &      1328.67 &       18.23 &         23207.28 &      62.09 &         0.94 $\pm$ 0.03   \\\hline
+    6        &       15246.50 &      1328.58 &       18.23 &         23208.09 &      62.09 &         0.94 $\pm$ 0.03   \\\hline
+    7        &       15246.40 &      1328.57 &       18.23 &         23208.18 &      62.09 &         0.94 $\pm$ 0.03   \\\hline
+    \hline
+  \end{tabular}
+\caption{Iteration of \ttbar normalization and QCD estimate for the non-resonant selection. The '\_first' region is defined after the \mww $<$ 130 GeV cut and the '\_nf' region is defined after requiring \ptbb $>$ 150 GeV. Convergence is observed after two iterations.}
+\end{table}
+
+\begin{table}[h!]%\fontsize{9}{10}\selectfont
+  \begin{tabular}{l|c|c|c|c|c|c}
+    \hline\hline
+    Iteration &      nQCD\_first &   n\_QCD\_nf &    nQCD\_SR &      ttbar\_first &           ttbar\_SR &     ttbarNF       \\\hline
+    0        &       0.00 &          0.00 &          0.00 &          24637.64 &      11.28 &         1.43 $\pm$ 0.02        \\\hline
+    1        &       4226.57 &       273.95 &        1.13 &          35249.05 &      16.14 &         0.92 $\pm$ 0.02        \\\hline
+    2        &       15765.74 &      1381.06 &       8.14 &          22708.20 &      10.40 &         0.94 $\pm$ 0.03        \\\hline
+    3        &       15311.64 &      1335.16 &       7.81 &          23145.35 &      10.60 &         0.94 $\pm$ 0.03        \\\hline
+    4        &       15254.28 &      1329.37 &       7.76 &          23200.59 &      10.62 &         0.94 $\pm$ 0.03        \\\hline
+    5        &       15247.34 &      1328.67 &       7.76 &          23207.28 &      10.63 &         0.94 $\pm$ 0.03        \\\hline
+    6        &       15246.50 &      1328.58 &       7.76 &          23208.09 &      10.63 &         0.94 $\pm$ 0.03        \\\hline
+    7        &       15246.40 &      1328.57 &       7.76 &          23208.18 &      10.63 &         0.94 $\pm$ 0.03        \\\hline
+    \hline
+  \end{tabular}
+\caption{Iteration of \ttbar normalization and QCD estimate for the low mass selection. The '\_first' region is defined after the \mww $<$ 130 GeV cut and the '\_nf' region is defined after requiring \ptbb $>$ 150 GeV. Convergence is observed after two iterations.}
+\end{table}
+
+\begin{table}[h!]%\fontsize{9}{10}\selectfont
+  \begin{tabular}{l|c|c|c|c|c|c}
+    \hline\hline
+    Iteration &      nQCD\_first &   n\_QCD\_nf &    nQCD\_SR &      ttbar\_first &           ttbar\_SR &     ttbarNF       \\\hline
+    0        &       0.00 &          0.00 &          0.00 &          8810.24 &       6.70 &          1.26 $\pm$ 0.02        \\\hline
+    1        &       92.73 &         40.56 &         0.11 &          11133.25 &      8.47 &          0.99 $\pm$ 0.02        \\\hline
+    2        &       1595.54 &       541.28 &        1.40 &          8679.56 &       6.60 &          1.03 $\pm$ 0.03        \\\hline
+    3        &       1238.18 &       432.83 &        1.12 &          9063.72 &       6.90 &          1.03 $\pm$ 0.02        \\\hline
+    4        &       1196.43 &       419.79 &        1.09 &          9108.80 &       6.93 &          1.03 $\pm$ 0.02        \\\hline
+    5        &       1190.60 &       417.96 &        1.09 &          9115.10 &       6.94 &          1.03 $\pm$ 0.02        \\\hline
+    6        &       1189.77 &       417.70 &        1.09 &          9115.99 &       6.94 &          1.03 $\pm$ 0.02        \\\hline
+    7        &       1189.65 &       417.66 &        1.09 &          9116.12 &       6.94 &          1.03 $\pm$ 0.02        \\\hline
+    \hline
+  \end{tabular}
+\caption{Iteration of \ttbar normalization and QCD estimate for the low mass selection. The '\_first' region is defined after the \ptbb $>$ 350 GeV cut and the '\_nf' region is defined after requiring \ptww $>$ 360 GeV. Convergence is observed after two iterations.}
+\end{table}
+\end{center}

@@ -1,0 +1,107 @@
+In this appendix, the cutflow for the MC backgrounds, signals and observed data are presented. Table~\ref{tab:boosted_cutflow_description} presents 
+the description for each cut level in the event reconstruction and selection. The cutflow for MC backgrounds and observed data are shown in 
+Table~\ref{tab:boosted_cutflow_mcdata_leptonchannel} and for several signal samples are shown in Table~\ref{tab:boosted_cutflow_signals_leptonchannel}.
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{| l | c | }
+Cut levels                &   Description \\
+\hline
+1Lepton                   &   $\geq$ 1 triggered muon or electron. \\
+>=1FatJet                 &   $\geq$ 1 large-$R$ jet. \\
+>=1FatJetORWithLepton     &   $\geq$ 1 large-$R$ jet with $\Delta R$ > 1.0 from the selected lepton. \\
+>=2TrackJets              &   The highest \pt large-$R$ jet has $\geq$ 2 track jets. \\
+FatJetMassPreCut          &   Large-$R$ jet mass has $30~\GeV < m_\text{Large-R jet} < 300~\GeV$ \\
+>=2CentralJets            &   $\geq$ 2 signal small-$R$ jets. \\
+>=2CentralJetsPassOR      &   $\geq$ 2 signal small-$R$ jets which do not overlap ($\Delta R$ > 1.4) with large-$R$ jet. \\
+CentralBJetsPassORVeto    &   No $b$-tagged signal small-$R$ jets. \\
+2BTagLeadFatjet           &   Two highest \pt track jet are $b$-tagged. \\
+JVTSF                     &   JVT scale factors are applied to event weight.\\
+LeptonSF                  &   Lepton reco, ID, and isolation scale factors are applied to event weight.\\
+LeptonTrigSF              &   Lepton trigger scale factors are applied to event weight.\\
+TrkJetsBTagSF             &   Flavour tagging scale factors for track jets are applied to event weight.\\
+CaloJetsBTagSF            &   Flavour tagging scale factors for signal small-$R$ jets are applied to event weight.\\
+FatJetMassSR              &   Large-$R$ jet mass is required to be consistent with the mass of the Higgs Boson. \\
+MET50                     &   \met > 50~\GeV. \\
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\caption{Brief description of cut levels in the event reconstruction and selection. JVTSF, LeptonSF, LeptonTrigSF, TrkJetBTagSF and CaloJetBTagSF
+are applicable only to MC background and signal samples.}
+\label{tab:boosted_cutflow_description}
+\end{table}
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{| l | c | c | c | c | c | c |}
+Cuts                      &   $t\bar{t}$    &     W+Jets      &     Z+Jets      &   Single-Top    &    Dibosons     &      Data       \\
+\hline
+1Lepton                   &    4017151.7    &    3243174.3    &    752657.3     &    393983.3     &     74821.1     &   10560257      \\
+>=1FatJet                 &    432683.2     &    790794.7     &    175155.5     &     49236.3     &     22509.9     &    1537023      \\
+>=1FatJetORWithLepton     &    380515.4     &    739678.5     &    148444.9     &     44826.7     &     20924.8     &    1319992      \\
+>=2TrackJets              &    286419.9     &    319633.4     &     63026.0     &     25614.1     &     13006.7     &    670512       \\
+FatJetMassPreCut          &    276766.2     &    283001.7     &     55652.4     &     24008.0     &     12053.5     &    613636       \\
+>=2CentralJets            &    276208.4     &    271875.1     &     53574.2     &     23851.2     &     11869.3     &    596152       \\
+>=2CentralJetsPassOR      &    212349.6     &    168283.4     &     33783.3     &     16850.6     &     8136.7      &    394144       \\
+CentralBJetsPassORVeto    &     55118.0     &    152141.7     &     29938.1     &     5506.4      &     6985.0      &    215746       \\
+2BTagLeadFatjet           &     2459.6      &     1163.6      &      231.9      &      378.1      &      108.2      &    5000         \\
+JVTSF                     &     2463.3      &     1163.5      &      232.3      &      375.6      &      107.9      &      -          \\
+LeptonSF                  &     2400.4      &     1131.5      &      226.8      &      367.1      &      105.2      &      -          \\
+LeptonTrigSF              &     2303.2      &     1096.5      &      219.8      &      352.2      &      101.3      &      -          \\
+TrkJetsBTagSF             &     2261.3      &     1145.9      &      229.7      &      349.6      &      102.0      &      -          \\
+CaloJetsBTagSF            &     2233.0      &     1135.0      &      227.4      &      346.8      &      100.9      &      -          \\
+FatJetMassSR              &      892.4      &      309.7      &      64.4       &      144.3      &      40.7       &     1645        \\
+MET50                     &      648.7      &      217.0      &      20.5       &      109.2      &      24.4       &     1107        \\
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\caption{Cutflow for MC backgrounds and observed data in the combined lepton channel. All backgrounds are normalized to cross-section prediction.
+Observed data yields are now unblinded after >=2CentralJetsPassOR cut level. JVTSF, LeptonSF, LeptonTrigSF, TrkJetBTagSF and CaloJetBTagSF
+are applicable only to MC background samples.}
+\label{tab:boosted_cutflow_mcdata_leptonchannel}
+\end{table}
+
+
+\begin{table}[!htbp]
+\begin{center}
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{| l | c | c | c | c | c | c |}
+Cuts                      &     Xhh1000     &     Xhh1500     &     Xhh2000     &     Xhh2500     &     Xhh3000     &      XhhSM      \\
+\hline
+1Lepton                   &      309.3      &      316.0      &      273.8      &      254.9      &      230.0      &     2430.1      \\
+>=1FatJet                 &      269.3      &      299.4      &      266.4      &      249.8      &      225.9      &      425.8      \\
+>=1FatJetORWithLepton     &      259.9      &      293.5      &      261.8      &      245.9      &      222.8      &      378.1      \\
+>=2TrackJets              &      225.6      &      265.2      &      237.8      &      206.3      &      158.3      &      284.7      \\
+FatJetMassPreCut          &      215.4      &      248.9      &      221.5      &      189.0      &      139.8      &      271.8      \\
+>=2CentralJets            &      214.8      &      242.7      &      213.4      &      182.1      &      136.2      &      270.9      \\
+>=2CentralJetsPassOR      &      151.2      &      176.0      &      160.2      &      140.1      &      105.3      &      197.6      \\
+CentralBJetsPassORVeto    &      131.3      &      154.1      &      141.2      &      124.2      &      92.8       &      151.0      \\
+2BTagLeadFatjet           &      66.4       &      76.0       &      60.2       &      44.7       &      26.9       &      76.1       \\
+JVTSF                     &      66.2       &      75.7       &      60.2       &      44.7       &      26.9       &      76.6       \\
+LeptonSF                  &      65.0       &      74.5       &      59.3       &      44.1       &      26.6       &      74.7       \\
+LeptonTrigSF              &      62.2       &      71.3       &      56.6       &      42.1       &      25.5       &      71.6       \\
+TrkJetsBTagSF             &      60.9       &      68.1       &      53.4       &      39.6       &      24.1       &      71.3       \\
+CaloJetsBTagSF            &      60.6       &      67.6       &      53.0       &      39.3       &      23.9       &      70.9       \\
+FatJetMassSR              &      50.0       &      55.6       &      43.1       &      31.9       &      18.9       &      60.4       \\
+MET50                     &      39.0       &      48.1       &      38.8       &      29.0       &      17.4       &      41.9       \\
+\end{tabular}
+\end{adjustbox}
+\end{center}
+\caption{Cutflow for signal samples of various masses in the combined lepton channel.}
+\label{tab:boosted_cutflow_signals_leptonchannel}
+\end{table}
+
+
+%
+% Trigger studies. With and without unsupported electron triggers.
+%
+%                              |     Xhh1000     |     Xhh1500     |     Xhh2000     |     Xhh2500     |     Xhh3000    
+% WITHOUT unsupported triggers |      39.0       |      48.0       |      38.7       |      28.9       |      17.4     
+% WITH unsupported triggers    |      39.0       |      48.1       |      38.8       |      29.0       |      17.4  
+%
+%                              |     ttbar      | W+Jets   |  Z+Jets      | Single-Top    |   Dibosons  
+% WITHOUT unsupported triggers |     648.7      |  216.9   |   20.5       |    109.0      |     24.4    
+% WITH unsupported triggers    |     648.7      |  217.0   |   20.5       |    109.2      |     24.4   
+
