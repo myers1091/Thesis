@@ -1,24 +1,25 @@
 \chapter{Improvements to the Boosted Analysis}
+\label{chap:fully}
 The boosted analysis described in chapter \cite{chap:anal} is optimized for the case where the ${H\rightarrow b\overline{b}}$ system is boosted and the ${H\rightarrow WW^{*}}$ system is resolved. However, at high resonant masses, one would expect both the ${H\rightarrow b\overline{b}}$ and the ${H\rightarrow WW^{*}}$ to be boosted. However, the semileptonic decay of the W boson pair adds an additional complication of having a lepton within the radius of a large-R jet. This chapter will describe a method for reconstructing this complex topology and the improvements it offers to the boosted, semi-leptonic ${HH\rightarrow b\overline{b}WW^{*}}$ analysis.
 \section{Motivation}
-The resonant analysis covers a large range of mass hypotheses, from 400 - 3000 GeV. As the resonant mass increases, the two Higgs systems become more and more collimated. Figure ~\ref{fig:dr} shows the average distance between final state partons as a function of the resonant mass for simulated HH events. The $WW$ bosons become very collimated (within ${\Delta{R} = 0.5}$) around 1000 GeV. \newline
+The resonant analysis covers a large range of mass hypotheses, from 400 - 3000 GeV. As the resonant mass increases, the two Higgs systems become more and more collimated. Figure ~\ref{fig:dr} shows the average distance between final state partons as a function of the resonant mass for simulated HH events. The $WW$ bosons become very collimated (within ${\Delta{R} = \sqrt{\Delta{\phi}^{2}+\Delta{\eta}^{2}} = 0.5}$) around 1000 GeV. \newline
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.33]{DRMhhPlots_fine/drbb}
 \includegraphics[scale=0.33]{DRMhhPlots_fine/drWW}
 \\
 \includegraphics[scale=0.33]{DRMhhPlots_fine/drqq}
-\includegraphics[scale=0.33]{DRMhhPlots_fine/drmaxlq}
+\includegraphics[scale=0.33]{DRMhhPlots_fine/drminlq}
 
 \caption[Distance between parton objects]{Distance between the two b partons (top left); the two W bosons (top right); the two light quarks (bottom left); and the lepton and the most distant light quark (bottom right) for resonant $HH$ production as a function of resonant mass.}
 \label{fig:dr}
 \end{center}
 \end{figure}
-\indent On the ${H\rightarrow b\overline{b}}$ side, this is accounted for through the boosted analysis selection. Moving toward the full Run 2 analysis, it is worth while to look at the potential gain from including a boosted ${H\rightarrow WW^{*}}$ selection. This ``fully-boosted" analysis can be used in conjunction with the current boosted and resolved analysis to increase sensitivity and reach.\newline
+\indent On the ${H\rightarrow b\overline{b}}$ side, this is accounted for through the boosted analysis selection described in Secion ~\ref{sec:boosted_evtreco}. Moving toward the full Run 2 analysis, it is worthwhile to look at the potential gain from including a boosted ${H\rightarrow WW^{*}}$ selection. This ``fully-boosted" analysis can be used in conjunction with the current boosted and resolved analysis to increase sensitivity and reach.\newline
 %\section{Fully Boosted Analysis}
 \indent The ``fully-boosted" analysis piggybacks off of the analysis presented in Chapter ~\ref{chap:anal}. This means the data and Monte Carlo Samples , object reconstruction, and trigger requirements are the same as the previously presented analysis. \newline
 \section{Event Reconstruction}
-Identically to the boosted analysis, section \ref{sec:Boosted}, events are reconstructed by requiring at least one reconstructed lepton. To reconstruct the ${H\rightarrow b\overline{b}}$ candidate, there should be at least one large-R jet with ${\Delta{R} > 1.0}$ from the selected lepton. The highest of these large-R jets is selected as the ${H\rightarrow b\overline{b}}$ candidate. This large-R jet is then required to have at least to track jets associated to it. Events with a ${H\rightarrow b\overline{b}}$ in the range ${30 \mathrm{GeV} < m_{\mathrm{bb}} < 300 \mathrm{GeV}}$ are retained for further analysis.\newline
+Identically to the boosted analysis, section \ref{sec:Boosted}, events are reconstructed by requiring at least one reconstructed lepton. To reconstruct the ${H\rightarrow b\overline{b}}$ candidate, there should be at least one large-R jet with ${\Delta{R} > 1.0}$ from the selected lepton. The highest of these large-R jets is selected as the ${H\rightarrow b\overline{b}}$ candidate. This large-R jet is then required to have at least two track jets associated to it. Events with a ${H\rightarrow b\overline{b}}$ in the range ${30 \mathrm{GeV} < m_{\mathrm{bb}} < 300 \mathrm{GeV}}$ are retained for further analysis.\newline
 \indent To reconstruct the ${H\rightarrow WW^{*}}$ candidate, there should be at least one large-R jet with ${\Delta{R} < 1.0}$ from the selected lepton. This large-R jet is selected as the ${H\rightarrow WW^{*}}$ jet candidate. Once the ${H\rightarrow b\overline{b}}$ jet has been selected, they are split into either electron or muon channel for the full reconstruction.\newline
 \indent Calorimeter jets are clusters of energy that are grouped together into an object based on distances. If an electron, which deposits the majority of its energy into the calorimeter, were to fall within the radius of a calorimeter jet, its energy should be measured as part of the jet energy. Using this, it is possible to use a single large-R to measure the energy of the ${W\rightarrow qq}$ system and the electron.  With the large-R jet and the \met, it is possible to fully reconstruct the ${H\rightarrow WW^{*}}$ system. The neutrino is reconstructed using a similar method as in Section ~\ref{ssec:event_reco_res}. Imposing the relation:
 \begin{equation}
@@ -56,23 +57,23 @@ Muon Channel & ${\pt^{'} = \pt^{\mathrm{Large-R jet}}}$\\
 \\
 Electron channel & ${\pt^{'} = \sqrt{(p_{x}^{\mathrm{Large-R jet}} - p_{x}^{\mathrm{electron}})^{2}+(p_{y}^{\mathrm{Large-R jet}} - p_{y}^{\mathrm{electron}})^{2}}}$
 \end{tabular}
-\caption{Alternative \pt definition for the electron and muon channels}
+\caption[Alternative \pt definition for the electron and muon channels]{Alternative \pt definition for the electron and muon channels. A cut of $\pt^{'} > 250 \mathrm{GeV}$ is applied to the selected ${H\rightarrow WW^{*}}$ large-R jet.}
 \label{tab:adjpt}
 \end{center}
 \end{table}
 
 \subsection{Comparison of reconstruction objects}
-Figure \ref{fig:elec_sel} and \ref{fig:muon_sel} show a comparison of the old boosted analysis reconstruction and the new fully-boosted analysis for the electron and muon selection respectively. The most 
+Figure \ref{fig:elec_sel} and \ref{fig:muon_sel} show a comparison of the old boosted analysis reconstruction and the new fully-boosted analysis for the electron and muon selection respectively. The $m_{WW^*{}}$ distribution shows a much shorter tail in the fully-boosted analysis than in the old boosted analysis. Along with this, the $m_{HH}$ distribution has a sharper peak around the resonant mass. A sharper peak allows for tighter cuts around the signal mass, leading to a better signal/background ratio.
 
 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000}
-\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000}\\
-\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh2000}
-\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000}
-\caption[Comparison of ${H\rightarrow WW^{*}}$ mass, ${H\rightarrow WW^{*}}$ \pt, \met , and $HH$ mass for the electron channel]{Comparison of ${H\rightarrow WW^{*}}$ mass (top left), ${H\rightarrow WW^{*}}$ \pt (top right), \met (bottom left), and $HH$ mass for the  previous boosted analysis reconstruction and new fully boosted selection for a resonant signal with a mass of 2000 GeV in the electron channel.}
+\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000}
+\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000}\\
+\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh2000}
+\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000}
+\caption[Comparison of ${H\rightarrow WW^{*}}$ mass, ${H\rightarrow WW^{*}}$ \pt, \met , and $HH$ mass for the electron channel]{Comparison of reconstructed ${H\rightarrow WW^{*}}$ mass (top left), ${H\rightarrow WW^{*}}$ \pt (top right), \met (bottom left), and $HH$ mass for the  previous boosted analysis reconstruction and new fully boosted selection for a resonant signal with a mass of 2000 GeV in the electron channel.}
 \label{fig:elec_sel}
 \end{center}
 \end{figure}
@@ -81,10 +82,10 @@ Figure \ref{fig:elec_sel} and \ref{fig:muon_sel} show a comparison of the old bo
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000}
-\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000}\\
-\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000}
-\includegraphics[scale=0.33]{figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000}
+\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000}
+\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000}\\
+\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000}
+\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000}
 \caption[Comparison of ${H\rightarrow WW^{*}}$ mass, ${H\rightarrow WW^{*}}$ \pt, \met , and $HH$ mass for the muon channel]{Comparison of ${H\rightarrow WW^{*}}$ mass (top left), ${H\rightarrow WW^{*}}$ \pt (top right), \met (bottom left), and $HH$ mass for the  previous boosted analysis reconstruction and new fully boosted selection for a resonant signal with a mass of 2000 GeV in the muon channel.}
 \label{fig:muon_sel}
 \end{center}
@@ -95,10 +96,10 @@ Figure \ref{fig:elec_sel} and \ref{fig:muon_sel} show a comparison of the old bo
 
 
 \subsection{Signal Region Definition}
-As with the boosted analysis in Section ~\ref{sec:Boosted}, the ${h\rightarrow b\overline{b}}$ candidate must have a jet mass in the window ${90 \mathrm{ GeV } < m_{bb} < 140 \mathrm{GeV}}$ to be considered in the signal region (SR). The previous boosted analysis included a b-jet veto for all jets outside of the ${H\rightarrow b\overline{b}}$ candidate. In order to increase statistics for the QCD multijet estimate, this was removed from the fully boosted analysis.
+As with the boosted analysis in Section ~\ref{sec:Boosted}, the ${h\rightarrow b\overline{b}}$ candidate must have a jet mass in the window ${90 \mathrm{ GeV } < m_{bb} < 140 \mathrm{GeV}}$ to be considered in the signal region (SR). The previous boosted analysis included a b-jet veto for all jets outside of the ${H\rightarrow b\overline{b}}$ candidate. In order to increase statistics for the QCD multijet estimate, this requirement was removed from the fully boosted analysis.
 
 \subsection{mBB Control Region}
-To check the modeling of the background, a control region is created with an inverted ${m_{bb}}$ cut. 
+To check the modeling of the background, a control region is created with an inverted ${m_{bb}}$ cut. Section ~\ref{ssec:mbbcr_plots_whad} shows various kinematic distributions in  the mBB control region to check the background shape with respect to data.
 \subsection{Multijet Background}
 The QCD multijet background is estimated using the same data-driven background as the boosted analysis. The ABCD method with the regions defined as:
 \begin{itemize}
@@ -226,7 +227,7 @@ uncertainty on the multijet yield in region C ($N_C^\text{QCD}$), as in Table~\r
  
 \paragraph{1-tag/2-tag jet mass acceptance} 
 Another source of uncertainty on the multijet yield is the  
-the difference of acceptance of the large-$R$ jet mass cut between 1-tag and 2-tag.
+the difference of acceptance of the large-$R$ jet mass cut between the single b-tag (1-tag) and two b-tag (2-tag) selections.
 This uncertainty is included since the template for or the multijet shape prediction uses the multijet shape
 from the 1-tag region C. Table~\ref{tab:boosted_syst_qcd_norm_mBBAcc} shows the acceptance
 of the large-$R$ jet mass signal and mBB control region selection in the multijet 1-tag region C and 2-tag region C yields.
@@ -262,17 +263,28 @@ with (without) the signal region large-$R$ jet mass selection.}
 \end{table}
  
 \subsection{mBBcr Plots}
-Plots in the mBB control region, Figure \ref{fig:mbbcr_plots} show an agreement between data and background estimates.
+\label{ssec:mbbcr_plots_whad}
+Figure ~\ref{fig:mbbcr_plots} shows the $m_{HH}$ distribution in the mbb control region for the electron and muon channels. The figure shows a reasonable agreement between data and background in the mBB control region but with large uncertainties. Appendix ~\ref{app:fully_mbb_plots} has a more complete set of kinematic plots. 
 
-
-\begin{figure}[h]
+\newpage
+\begin{figure}[H]
 \begin{center}
-\includegraphics[scale=0.33]{figures/abcd_plots/elec_mbbcr_RegionA_hhMass_withDD}
-\includegraphics[scale=0.33]{figures/abcd_plots/elec_mbbcr_RegionA_hhMass_withDD}
-\caption[${M_{HH}}$ Distribution in the mBB control region for the electron and muon channels]{${M_{HH}}$ Distribution in the mBB control region for the electron (left) and muon (right) channels.}
+%\includegraphics[scale=0.33]{figures/abcd_plots/elec_mbbcr_RegionA_hhMass_withDD}
+%\includegraphics[scale=0.33]{figures/abcd_plots/muon_mbbcr_RegionA_hhMass_withDD}\\
+\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_WWMass}
+\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_WWMass}\\
+\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_WWPt}
+\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_WWPt}\\
+\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_MET}
+\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_MET}\\
+\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_hhMassRebin1}
+\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_hhMassRebin1}
+\caption[Kinematic distributions in the mBB control region for the electron and muon channels]{$m_{WW}$, $\pt^WW$, \met, and $m_{HH}$ (from top to bottom) distribution in the mBB control region for the electron (left) and muon (right) channels.}
 \label{fig:mbbcr_plots}
 \end{center}
 \end{figure}
+\newpage
+
 
 \section{Results}
 
@@ -340,7 +352,7 @@ The dominant components of the systematic uncertainties are summarized in Table~
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.65]{figures/C_2tab_SR_lepton_presel_met50_hhMassRebin1}
+\includegraphics[scale=0.65]{figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1}
 \caption{The ${m_{HH}}$ distribution for data and background in the final signal region.}
 \label{fig:fully_boost_mhh}
 \end{center}
@@ -348,7 +360,7 @@ The dominant components of the systematic uncertainties are summarized in Table~
 
 
 Figure~\ref{fig:fully_boost_mhh} shows the $m_{HH}$ distribution for
-data and the background components for the boosted analysis.
+data and the background components for the boosted analysis. Appendix ~\ref{app:sr_john} shows a more complete set of kinematic plots. 
 Data are generally in good agreement with the background expectations within the quoted systematic errors.
 The signal $m_{HH}$ distribution is shown in the figure for  the scalar resonance.
 Figure~\ref{fig:boosted_only_limits_new} shows the observed and the expected
