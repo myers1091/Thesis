@@ -1,13 +1,13 @@
 \subsection{Event Reconstruction}
 \label{sec:boosted_evtreco}
-For the boosted analysis, events are reconstructed by requiring at least one reconstructed lepton. This lepton will be referred to as the selected lepton. To reconstruct the ${H\rightarrow b\overline{b}}$ candidate, there should be at least one large-R jet with ${\Delta{R} > 1.0}$ from the selected lepton. The highest \pT large-R jet is chosen as the ${H\rightarrow b\overline{b}}$ candidate. The large-R jet is then required to have two at least two track jets associated to it. Events with the large-R jet mass to be in the range of ${30 \mathrm{GeV} < m_{\textrm{large-R jet}} < 300 \mathrm{GeV}}$ are retained for further analysis.\newline
+For the boosted analysis, events are reconstructed by requiring at least one reconstructed lepton. This lepton will be referred to as the selected lepton. To reconstruct the ${H\rightarrow b\overline{b}}$ candidate, there should be at least one large-R jet with ${\Delta{R} > 1.0}$ from the selected lepton. The highest \pT large-R jet is chosen as the ${H\rightarrow b\overline{b}}$ candidate. The large-R jet is then required to have two at least two track jets associated to it. Events with the large-R jet mass to be in the range of ${30 \text{ GeV} < m_{\textrm{large-R jet}} < 300 \text{ GeV}}$ are retained for further analysis.\newline
 \indent In order to reconstruct ${W\rightarrow q\overline{q}}$ candidate, events are required have at least two signal small-R jets with ${\Delta{R} > 1.4}$ of the ${H\rightarrow b\overline{b}}$ candidate. The ${\Delta{R}}$ requirement ensures that the small-R jets used for ${W\rightarrow q\overline{q}}$ reconstruction do not overlap with the ${H\rightarrow b\overline{b}}$ candidate large-R jet. If there are exactly two signal small-R jets, they are used to reconstruct the ${W\rightarrow q\overline{q}}$ candidate. If there are at least three signal small-R jets, the ${W\rightarrow q\overline{q}}$ candidate is reconstructed from the combination of pairs of the three highest \pT small-R jets with the smallest ${\Delta{R}}$ between the small-R jets.\newline
 \indent The full ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ is reconstructed identically to the resolved analysis as described in section \ref{ssec:event_reco_res}.
-With the ${H\rightarrow b\overline{b}}$ candidate identified and ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ system fully reconstructed, the di-Higgs (HH) system is reconstructed by the sum of four-momenta of the ${H\rightarrow b\overline{b}}$ candidate large-R jet and the 552 reconstructed ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ system. Figure ~\ref{fig:boost_topo} shows a diagram of the event topology after the event reconstruction.
+With the ${H\rightarrow b\overline{b}}$ candidate identified and ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ system fully reconstructed, the di-Higgs (HH) system is reconstructed by the sum of four-momenta of the ${H\rightarrow b\overline{b}}$ candidate large-R jet and the reconstructed ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ system. Figure ~\ref{fig:boost_topo} shows a diagram of the event topology after the event reconstruction.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.65]{figures/boosted_topo}
+\includegraphics[scale=0.8]{figures/boosted_topo}
 \caption{Diagram of the reconstructed event topology}
 \label{fig:boost_topo}
 \end{center}
@@ -15,20 +15,20 @@ With the ${H\rightarrow b\overline{b}}$ candidate identified and ${h\rightarrow 
 
 \subsection{Event Selection}
 \label{sec:boosted_selection}
-After the event is reconstructed, a b-jet veto is applied on the event by requiring all signal small-R jets do not pass b-tagging requirement to reject \ttbar events. The two highest \pT track-jets in the large-R jet are required to be b-tagged and events that passes this requirement is considered to be in the "2-tag" region. In addition, the \met is required to be more than 50 GeV to reject events from QCD multijet background.%The cutflow for MC backgrounds and signal samples are documented in Appendix \ref{} and studies on the efficiency of the event reconstruction and selections can be found in Appendix \ref{}.
+After the event is reconstructed, a b-jet veto is applied on the event by requiring all signal small-R jets do not pass b-tagging requirement to reject \ttbar events. The two highest \pT track-jets in the large-R jet are required to be b-tagged and events that passes this requirement is considered to be in the "2-tag" region. In addition, the \met{} is required to be more than 50 GeV to reject events from QCD multijet background.%The cutflow for MC backgrounds and signal samples are documented in Appendix \ref{} and studies on the efficiency of the event reconstruction and selections can be found in Appendix \ref{}.
 
 \subsection{Kinematic Selection}
 \subsubsection{Signal Region}
 \label{sec:boosted_regiondefs}
 In order to enhance the sensitivity to a resonant HH signal, similarly to the resolved analysis, it is required
 that the ${H\rightarrow b\overline{b}}$ candidate large-R jet has a mass consistent with the Standard Model Higgs boson mass.
-Events which have the ${H\rightarrow b\overline{b}}$ candidate large-R jet mass in a window of ${90 \mathrm{GeV} < m_{\mathrm{Large-R jet}} < 140 \mathrm{GeV}}$ is considered to be in the signal region (SR).
+Events which have the ${H\rightarrow b\overline{b}}$ candidate large-R jet mass in a window of ${90 \text{ GeV} < m_{\mathrm{Large-R jet}} < 140 \text{ GeV}}$ is considered to be in the signal region (SR).
 The signal region is blinded and the blinding strategy is implemented by removing any events in data that passes the signal region requirement on the large-R jet mass.
 
 \subsubsection{mBB Control Region}
 In order to asses the modeling of the backgrounds, a control region is defined to be any events which fails the large-R jet signal region mass window requirement. Any event which has a large-R jet mass
- ${90 \mathrm{GeV} < m_{\mathrm{Large-R jet}}}$
- or ${m_{\mathrm{Large-R jet}} > 140 \mathrm{GeV}}$ 
+ ${90 \text{ GeV} < m_{\mathrm{Large-R jet}}}$
+ or ${m_{\mathrm{Large-R jet}} > 140 \text{ GeV}}$ 
  falls in the mBB control region (mBBcr). By construction, this region is orthogonal to the signal region.
 
 \subsection{Multijet Background}
@@ -567,7 +567,7 @@ from ABCD method are considered for the systematic uncertainties.}
 \label{tab:boosted_bkgd_mbbcr_yields}
 \end{table}
 \renewcommand{\arraystretch}{1.0}
- 
+\newpage
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.33]{./figures/boosted/PlotsInMbbCR/DataMC_2tag_0bjet_mbbcr_lepton_presel_met50_hhMassRebin1}
@@ -579,6 +579,7 @@ distributions of events in the mBB control region (mBBcr).}
 \label{fig:boosted_mbbcr_mainplots}
 \end{center}
 \end{figure}
+\newpage
 % 
 \begin{figure}[!h]
 \begin{center}
@@ -591,7 +592,7 @@ distributions of events in the mBB control region (mBBcr).}
 \label{fig:boosted_mbbcr_largerjet}
 \end{center}
 \end{figure}
- 
+\newpage
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.33]{./figures/boosted/PlotsInMbbCR/DataMC_2tag_0bjet_mbbcr_lepton_presel_met50_WWPt}
@@ -603,7 +604,7 @@ distributions of events in the mBB control region (mBBcr).}
 \label{fig:boosted_mbbcr_wwsystem}
 \end{center}
 \end{figure}
- 
+ \newpage
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.33]{./figures/boosted/PlotsInMbbCR/DataMC_2tag_0bjet_mbbcr_lepton_presel_met50_WhadPt}
@@ -615,7 +616,7 @@ distributions of events in the mBB control region (mBBcr).}
 \label{fig:boosted_mbbcr_whad}
 \end{center}
 \end{figure}
- 
+ \newpage
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.33]{./figures/boosted/PlotsInMbbCR/DataMC_2tag_0bjet_mbbcr_lepton_presel_met50_WlepPt}
@@ -627,7 +628,7 @@ distributions of events in the mBB control region (mBBcr).}
 \label{fig:boosted_mbbcr_wlep}
 \end{center}
 \end{figure}
- 
+ \newpage
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.33]{./figures/boosted/PlotsInMbbCR/DataMC_2tag_0bjet_mbbcr_lepton_presel_met50_LepPt}
@@ -639,9 +640,9 @@ distributions of events in the mBB control region (mBBcr).}
 \label{fig:boosted_mbbcr_lepton}
 \end{center}
 \end{figure}
+ \newpage
  
- 
-\begin{figure}[!ht]
+\begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.33]{./figures/boosted/PlotsInMbbCR/DataMC_2tag_0bjet_mbbcr_lepton_presel_met50_LightJet1Pt}
 \includegraphics[scale=0.33]{./figures/boosted/PlotsInMbbCR/DataMC_2tag_0bjet_mbbcr_lepton_presel_met50_LightJet2Pt}\\
@@ -656,7 +657,7 @@ in the mBB control region (mBBcr).}
 \label{fig:boosted_mbbcr_whad_jets}
 \end{center}
 \end{figure}
- 
+ \newpage
 \begin{figure}[!h]
 \begin{center}
 \includegraphics[scale=0.33]{./figures/boosted/PlotsInMbbCR/DataMC_2tag_0bjet_mbbcr_lepton_presel_met50_drHbbLep}
@@ -922,14 +923,14 @@ the sources.}
  
 \begin{figure}[!htbp]
 \begin{center}
-\includegraphics[scale=0.33]{./figures/boosted/systematics/ttbar_alt_hhMass_SR_RadHi_rebin} 
-\includegraphics[scale=0.33]{./figures/boosted/systematics/ttbar_fromfit_hhMass_SR_RadHi}  \\
-\includegraphics[scale=0.33]{./figures/boosted/systematics/ttbar_alt_hhMass_SR_RadLo_rebin}
-\includegraphics[scale=0.33]{./figures/boosted/systematics/ttbar_fromfit_hhMass_SR_RadLo}  \\
-\includegraphics[scale=0.33]{./figures/boosted/systematics/ttbar_alt_hhMass_SR_Gen_rebin}  
-\includegraphics[scale=0.33]{./figures/boosted/systematics/ttbar_fromfit_hhMass_SR_Gen}     \\
-\includegraphics[scale=0.33]{./figures/boosted/systematics/ttbar_alt_hhMass_SR_Shower_rebin}
-\includegraphics[scale=0.33]{./figures/boosted/systematics/ttbar_fromfit_hhMass_SR_Shower}   \\
+\includegraphics[scale=0.25]{./figures/boosted/systematics/ttbar_alt_hhMass_SR_RadHi_rebin} 
+\includegraphics[scale=0.25]{./figures/boosted/systematics/ttbar_fromfit_hhMass_SR_RadHi}  \\
+\includegraphics[scale=0.25]{./figures/boosted/systematics/ttbar_alt_hhMass_SR_RadLo_rebin}
+\includegraphics[scale=0.25]{./figures/boosted/systematics/ttbar_fromfit_hhMass_SR_RadLo}  \\
+\includegraphics[scale=0.25]{./figures/boosted/systematics/ttbar_alt_hhMass_SR_Gen_rebin}  
+\includegraphics[scale=0.25]{./figures/boosted/systematics/ttbar_fromfit_hhMass_SR_Gen}     \\
+\includegraphics[scale=0.25]{./figures/boosted/systematics/ttbar_alt_hhMass_SR_Shower_rebin}
+\includegraphics[scale=0.25]{./figures/boosted/systematics/ttbar_fromfit_hhMass_SR_Shower}   \\
 \caption[$m_{hh}$ distribution shape comparison between nominal $t\bar{t}$ sample and alternative samples]{$m_{hh}$ distribution shape comparison between nominal $t\bar{t}$ sample and alternative samples. Plot on the left is a direct
 comparison between the nominal and alternative sample while on the right, the variation comes from the reweighted function applied to
 the nominal $t\bar{t}$ sample. The linear fit in the ratio of the left plot is used as the reweighted function.}

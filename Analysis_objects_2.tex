@@ -150,18 +150,18 @@ Table~\ref{tab:sjdefinit} summarizes the jets selection.
 %\footnote{Transverse momentum is defined as the components of
 %momentum in the plane perpendicular to the beam axis.}.
 	
-The missing transverse momentum (MET, or \met)~\cite{ATL-PHYS-PUB-2015-027} used in this analysis is computed by using electrons that pass the VHLooseElectron selection, muons passing the VHLooseMuon selection and jets of the analysis.\footnote{From MET\_Core\_AntiKt4EMTopo with the MissingETAssociationMap using the METMaker tool. All calibrated jets are passed to the METMaker tool as prescribed on the EtMiss subgroup \apkg{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/EtmissSubgroup}{twiki}} The track-based soft term\footnote{Defined on this \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/EtmissSubgroupTrackSoftTermDescription}{twiki}.} (TST) is the recommended soft term component for the MET calculation. Photons and hadronically decaying taus are included in the $\met$ calculation as jets since they are not used explicitly in the event reconstruction.
+The missing transverse momentum (MET, or \met)~\cite{ATL-PHYS-PUB-2015-027} used in this analysis is computed by using electrons that pass the VHLooseElectron selection, muons passing the VHLooseMuon selection and jets of the analysis.\footnote{From MET\_Core\_AntiKt4EMTopo with the MissingETAssociationMap using the METMaker tool. All calibrated jets are passed to the METMaker tool as prescribed on the EtMiss subgroup \apkg{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/EtmissSubgroup}{twiki}} The track-based soft term\footnote{Defined on this \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/EtmissSubgroupTrackSoftTermDescription}{twiki}.} (TST) is the recommended soft term component for the MET calculation. Photons and hadronically decaying taus are included in the \met{} calculation as jets since they are not used explicitly in the event reconstruction.
 
 \subsection{Overlap removal}
 \label{sec:overlapremoval}
-In order to uniquely identify objects, overlapping objects are removed according to the overlap removal procedure defined in this section. 
+Each object identification algorithm in ATLAS runs independently. This means the same physical object can be identified as multiple things. One example is electrons and jets, both of which can have tracks and EM calorimeter signatures. In order to uniquely identify objects, overlapping objects are removed according to the overlap removal procedure defined in this section. 
 Electrons and muons that pass the VHLooseElectron and VHLooseMuon selections (as defined in Sec.~\ref{sec:el_reco} and ~\ref{sec:mu_reco}) are considered for overlap removal. 
 Calorimeter jets which pass the JVT requirement are also considered for overlap removal. The procedure is defined as follows.
 
 If an electron and a muon shares a track, the muon is removed if it is \textit{calo-tagged}. Otherwise, the electron is removed.
 Calorimeter jets are then removed if they are within $\Delta R(\text{calo-jet}, \text{electron})$ < 0.2 of surviving electrons. 
 Electrons that satisfy $\Delta R(\text{electron},\text{calo-jet})$ < min(0.4, 0.04 + 10 \GeV /$E^\text{electron}_\text{T}$) are removed. 
-The surviving calorimeter jets are removed if they are within $\Delta R(\text{calo-jet}, \text{muon})$ < 0.2 and 
+The surviving calorimeter jets are removed if they are within $\Delta R(\text{calo-jet}, \text{muon}) < 0.2$ and 
 do \textbf{not} pass any of the following criteria:
 
 \begin{itemize}
