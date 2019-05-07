@@ -1,7 +1,7 @@
 %%%%Use this as a filler to get the template working
 %%Introduction
 \chapter{Simulation and Event Reconstruction}
-\label{chap:fully} 
+\label{chap:EvtReco} 
 \section{Simulation}
 In order to draw conclusion from ATLAS data, it is necessary to compare to theoretical predictions. For particle collisions, it is not practical to create exact predictions, especially including detector effects such as resolution. To get the best estimate of these effects, ATLAS uses the Monte Carlo (MC) method to simulate data and detector response to the incident particles. This is done in multiple steps as illustrated by figure ~\ref{fig:eventsim}. These steps are the simulation of the hard process, where the deep inelastic collision simulated using the initial state (Parton Distribution Functions) and interaction amplitudes; the parton shower; the hadronization; the detector simulation; and finally the reconstruction. These steps together form the complete MC simulation of ATLAS data.\newline
 
@@ -39,7 +39,7 @@ The precision of the PS generators are described similarly to the ME, with their
 \indent The MC simulation up to this point can be done with generators that are written outside of the ATLAS collaboration. These generators are used by ATLAS to simulate the underlying processes which are fed into the detector simulation software. ATLAS uses GEANT4 to handle this propagation\cite{geant4} through the detetor. GEANT4 uses a detailed geometric description of the ATLAS detector to simulate particle interactions with the detector material. This includes simulation of energy deposition and the readout process. \newline
 \indent The final result of the MC event generation is a set of simulated data that resembles actual data from the p-p collisions in the ATLAS detector.
 \subsection{Reconstruction}
-Once the data has been simulated, it is necessary to transform it into meaningful objects through reconstruction. There are two main types of reconstruction in ATLAS: turning patterns of hits in tracking detectors (Inner Detector and Muon Spectrometer) into tracks with direction and momentum information, and turning energy deposits in the calorimeter into calibrated energy deposits.These objects are then used to build a picture of the physics event through particle identification and event reconstruction. 
+Once the data has been simulated, it is necessary to transform it into meaningful objects through reconstruction. There are two main types of reconstruction in ATLAS: turning patterns of hits in tracking detectors (Inner Detector and Muon Spectrometer) into tracks with direction and momentum information, and turning energy deposits in the calorimeter into calibrated energy deposits. These objects are then used to build a picture of the physics event through particle identification and event reconstruction. 
 \section{Particle Identification}
 For all events, either MC or actual collision data, it is important to be able to identify and reconstruct the underlying physics event. In particle collisions, the energy from the final state particles is deposited in the various subdetectors within ATLAS. These energy deposits must be translated to physically meaningful objects. This is the task of the event reconstruction, to use the ATLAS detector to recreate the final state particles for any given interaction. For this analysis, the final state particles present in the signal events are a lepton, either an electron or a muon; a neutrino, in the from of missing transverse energy; two light flavor quarks; and two b quarks. Each of these particles has a particular signal in each of the subdetectors, figure ~\ref{fig:crossSec}.
 
@@ -55,7 +55,7 @@ For all events, either MC or actual collision data, it is important to be able t
 \subsection{Electrons}
 Electrons are reconstructed by fitting a track using the Inner Detector and matching this track to an energy cluster in the EM calorimeter\cite{Tarna:2286383}. As an electron passes through the EM calorimeter, it produces Bremsstahlung radiation photons. These photons then convert back to electron-positron pairs and the process repeats. This shower of electrons, positrons, and photons give the signature energy cluster in the calorimeter. Particles with the required Inner Detector track and matching EM energy cluster are selected as electron candidates.\newline
 \indent Electron identification algorithms are applied to these electron candidates. These algorithms separate prompt, isolated electron candidates from backgrounds such as converted photons and misidentified jets. The electron identification algorithm uses the energy-momentum ratio, shower shape, track and track-to-cluster matching to identify electron candidates, with E/p being the most important discriminant. There are three identification working points for electron identification: Loose, Medium, and Tight. The operating points with higher background rejection are a subset of electron candidates with lower background rejection with a tighter background rejection giving a lower electron efficiency. \newline
-The isolation variables quantify the energy around the electron candidate and allow us to disentangle prompt electrons 
+\indent The isolation variables quantify the energy around the electron candidate and allow us to disentangle prompt electrons 
 from other, non-isolated electron candidates such as electrons originating 
 from converted photons produced in hadron decays, electrons from heavy flavor hadron decays, 
 and light hadrons mis-identified as electrons. The isolation variable we use for reconstructed electrons 
@@ -74,7 +74,7 @@ The Muon Spectrometer specializes in muon detection and precision momentum measu
 \indent Muon candidates are built by fitting together hits from segments in different layers. A combinatorial search, using segments in the middle layer as seeds, is performed. The inner and outer layers are then used as seeds as the search is extended. A minimum of 2 segments are required to build a track. It is possible for a segment to be included in multiple tracks, an overlap removal algorithm selects the best assigned track or can allow for a segment to be shared between two tracks. A global ${\chi^{2}}$ fit is performed on the hits of each track. If the ${\chi^{2}}$ of the fit passes a selection criteria, the track is accepted.\newline
 \indent The information from the Inner Detector and the MS are then combined to give a muon signature. The combination method depends on the information available. The main method used is the Combined Muon reconstruction, where track reconstruction is performed in the Inner Detector and MS independently. Most of these muons are reconstructed using an ''outside-in" reconstruction. This  means tracks in the MS are extrapolated inward and matched to an Inner Detector track. \newline
 The muon isolation variables are similar to the electron isolation variables above 
-which is the \textit{track}-based isolation, ${p_{T}^{mathrm{varcone0.3}}}$, defined as the 
+which is the \textit{track}-based isolation, ${p_{T}^{\mathrm{varcone0.3}}}$, defined as the 
 sum of transverse momenta of all tracks, satisfying quality requirements, 
 within a cone of $\Delta R = \text{ min}(0.3,10 \GeV/\pt)$
 around the candidate muon.
@@ -103,7 +103,7 @@ Quarks very quickly undergo showering. Once the average energy of a quark (or gl
 \end{center}
 \end{figure}
 
-\indent Some examples of jet algorithms are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the ${\text{anti-}k_{t}}$ algorithm is selected. In addition to being IR and CL safe, the ${\text{anti-}k_{t}}$ algorithm gives roughly circular jets. This makes calculating the energy density much easier than non-circular jets. The ${\text{anti-}k_{t}}$ algorithm calculates the distance between objects $i$ and $j$ and $i$ and the beam $B$. If ${d_{ij}}$ is smaller than ${d_{iB}}$, the objects are combined. If ${d_i{B}}$ is smaller the object is removed and the algorithm is rerun. An important distinction between ${\textrm{anti-}k_{t}}$ and other jet algorithms is the definition of the distances ${d_{ij}\text{ and } d_{iB}}$
+\indent Some examples of jet algorithms are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the ${\text{anti-}k_{t}}$ algorithm is selected. In addition to being IR and CL safe, the ${\text{anti-}k_{t}}$ algorithm gives roughly circular jets. This makes calculating the energy density much easier than non-circular jets. The ${\text{anti-}k_{t}}$ algorithm calculates the distance between objects $i$ and $j$ and $i$ and the beam $B$. If ${d_{ij}}$ is smaller than ${d_{iB}}$, the objects are combined. If ${d_{iB}}$ is smaller the object is removed and the algorithm is rerun. An important distinction between ${\textrm{anti-}k_{t}}$ and other jet algorithms is the definition of the distances ${d_{ij}\text{ and } d_{iB}}$
 \begin{equation}
 \begin{split}
 d_{ij} = \text{ min}(k^{2p}_{ti},k^{2p}_{tj})\frac{\Delta^{2}_{ij}}{R^{2}},\\
@@ -149,7 +149,7 @@ the resulting hard jets\cite{Cacciari:2008gp}.}
 \subsection{b Tagging}\label{ssec:btag}
 B-Hadrons, composite particles that contain b quarks, travel a small distance before they decay. This means the track from the decay products can be traced back to the point at which the b-hadron decays, called the secondary, or displaced, vertex, figure ~\ref{fig:bjets} . This displaced vertex is used to tag jets that are likely to come from b quarks through b-tagging algorithms.\newline
 \indent In this analysis, the MV2c10 is used to tag b-jets \cite{ATL-PHYS-PUB-2016-012}. MV2 is a multivariate discriminant that combines 3 b-tagging algorithms. The c10 signifies a 10\% c-jet fraction in the background training sample. The three algorithms that are used as inputs to the MV2 discriminant are: an impact parameter-based algorithm, an inclusive secondary vertex reconstruction algorithm, and a decay chain multi-vertex reconstruction algorithm. For this analysis, the 85\% fixed-cut working point is used for b-jet identification.\newline
-The difference in the efficiency of $b$-tagging between data and simulation 
+\indent The difference in the efficiency of $b$-tagging between data and simulation 
 is taken into account by applying scale factors provided by the Flavour Tagging CP group, 
 as prescribed on the \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/BTagCalib2015}{BTagCalib2015 twiki}. 
 The uncertainties associated with $b$-tagging are considered for $b$-, $c$- and light-flavor-induced jets, separately. 

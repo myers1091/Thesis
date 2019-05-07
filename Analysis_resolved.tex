@@ -119,7 +119,7 @@ lowest $\Delta R$ between them are selected as $W$ jet candidates. This
 procedure yields the correct jet assignment in 70\% of the cases for
 signal events where the
 hadronic daughters of the $W$ boson can be correctly matched to reconstructed
-jets as described in Appendix~\ref{app:jetTruthStudies}.
+jets. %as described in Appendix~\ref{app:jetTruthStudies}.
 %After preselection both light jets from $W$ bosons can be correctly matched in  20 \% of events.(see Appendix \ref{sec:BenStudy}).  
 
 The event kinematics of the $H \to WW^* \to l \nu qq$ topology can be fully
@@ -167,9 +167,11 @@ Kinematic selection is used to suppress mainly $t\bar{t}$ background while keepi
 high signal efficiency.  A schematic view of the $HH \to WW{*}b\overline{b}$ and the
 $t \bar{t} \to WWbb$ event topology is shown in Figure \ref{fig:cartoon}.
 \begin{figure}
+\begin{center}
 \includegraphics[width=0.4\textwidth]{figures/cartoon_hh.pdf}
 \includegraphics[width=0.4\textwidth]{figures/cartoon_tt.pdf}
 \caption[Comparison signal and \ttbar events]{Schematic view of a $HH \to WWbb$ event compared to a $t\bar{t} \to WWbb$ event.} 
+\end{center}
 \label{fig:cartoon}
 \end{figure}
 
@@ -209,11 +211,11 @@ normalised to data with $m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV,
 such region rejects, in fact, the majority of the signal. Four signal
 hypotheses have been used in the optimisation:
 \begin{itemize}
-\item{ a heavy Higgs with $m_H = 500$ GeV and $m_H = 700$ GeV (defined as low-mass analysis)},
-\item{ a heavy Higgs with $m_H = 2000$ GeV (defined as high-mass analysis) and}
+\item{ a heavy Higgs with $m_S = 500$ GeV and $m_S = 700$ GeV (defined as low-mass analysis)},
+\item{ a heavy Higgs with $m_S = 2000$ GeV (defined as high-mass analysis) and}
 \item{ a non-resonant di-Higgs production (defined as non-resonant analysis).}
 \end{itemize}
-An additional mass point with $m_H = 1400$ GeV was also checked. The resulting selection and the corresponding sensitivity are very similar to the selection for $m_H = 2000$ GeV, and hence that selection is dropped.{\footnote {See \url {https://indico.cern.ch/event/641988/contributions/2604588/attachments/1465307/2265002/bbWW_Weekly_Optimization_Revisited_24May2018.pdf}}} 
+An additional mass point with $m_S = 1400$ GeV was also checked. The resulting selection and the corresponding sensitivity are very similar to the selection for $m_S = 2000$ GeV, and hence that selection is dropped.{\footnote {See \url {https://indico.cern.ch/event/641988/contributions/2604588/attachments/1465307/2265002/bbWW_Weekly_Optimization_Revisited_24May2018.pdf}}} 
 %The signals have been normalised to the Run 1 upper limit scaled by the $13/8$ TeV cross section ratio expected from the
 %PDF luminosity scale of a narrow resonance of that mass. 
 
@@ -226,7 +228,7 @@ Table~\ref{tab:sig_reg_summary}.
 \begin{tabular}{c|c|c|c|c}
  variable & \emph{Non-Res} & \emph{m500} & \emph{low-mass} & \emph{high-mass}\\
 \hline
-$E^{\rm T}_{miss}$ (GeV)		&$> 25$&$>25$&$> 25$& $> 25$ \\
+$\met$ (GeV)		&$> 25$&$>25$&$> 25$& $> 25$ \\
 $m_{WW}$ (GeV) 	   		&$< 130$ &$< 130$ & $< 130$& no-cut\\
 $p_{\rm T}^{bb}$ (GeV) 		&$> 300$& $> 210$&$> 210$&$> 350$\\
 $p_{\rm T}^{WW}$ (GeV) 		&$> 250$&$> 150$&$> 250$&$> 250$ \\
@@ -235,34 +237,34 @@ $m_{bb}$ (GeV)   		&105-135&105-135&105-135&105-135\\
 \end{tabular}
 \caption[Criteria for non-resonant, \emph{m500}, \emph{low-mass} and 
     \emph{high-mass} selection]{Criteria for non-resonant, \emph{m500}, \emph{low-mass} and 
-    \emph{high-mass} selection. The $m_{hh}$ window cut is not applied for 
-    non-resonant signal, and for resonant signals $m_{hh}$ depends on 
+    \emph{high-mass} selection. The $m_{HH}$ window cut is not applied for 
+    non-resonant signal, and for resonant signals $m_{HH}$ depends on 
     the mass.} 
 \label{tab:sig_reg_summary}
 \end{center}
 \end{table}
 
 
-The \textit{non-res} and \textit{m500} selections are exclusively used for non-resonant signal and resonant signal with mass 500 GeV respectively. The \textit{low-mass} selection is used for signal masses from 600 to 1300 GeV, while the \textit{high-mass} selection is used for signals with masses between 1400 and 3000 GeV. In addition, requirements are placed on the reconstructed di-Higgs invariant mass ${m_{HH}}$ as a function of the signal resonance mass ${m_{X}}$, as shown in Table \ref{tab:mhh_sig_cuts}. The resolution of the reconstructed mH H ranges from 6\% at 500 GeV to 10\% at 3000 GeV.
+The \textit{non-res} and \textit{m500} selections are exclusively used for non-resonant signal and resonant signal with mass 500 GeV respectively. The \textit{low-mass} selection is used for signal masses from 600 to 1300 GeV, while the \textit{high-mass} selection is used for signals with masses between 1400 and 3000 GeV. In addition, requirements are placed on the reconstructed di-Higgs invariant mass ${m_{HH}}$ as a function of the signal resonance mass ${m_{S}}$, as shown in Table \ref{tab:mhh_sig_cuts}. The resolution of the reconstructed $m_{HH}$ ranges from 6\% at 500 GeV to 10\% at 3000 GeV.
 
 \begin{table}
 \begin{center}
 \begin{tabular}{c|c|c|c|c|c}
-$m_{H}$ (GeV)      &   500   &   600   &   700   &   750   &   800 \\
-$m_{hh}$ cut (GeV) & 480-530 & 560-640 & 625-775 & 660-840 & 695 - 905 \\ 
+$m_{S}$ (GeV)      &   500   &   600   &   700   &   750   &   800 \\
+$m_{HH}$ cut (GeV) & 480-530 & 560-640 & 625-775 & 660-840 & 695 - 905 \\ 
 \hline 
-$m_{H}$ (GeV)      &  900   &   1000  	   &  1100   	&  1200   		&   1300    \\
-$m_{hh}$ cut (GeV) & 760-970	& 840-1160 & 925-1275	&1010-1390	&1095-1505  \\
+$m_{S}$ (GeV)      &  900   &   1000  	   &  1100   	&  1200   		&   1300    \\
+$m_{HH}$ cut (GeV) & 760-970	& 840-1160 & 925-1275	&1010-1390	&1095-1505  \\
 \hline 
-$m_{H}$ (GeV)      &   1400  		&  1500   		&  1600   		& 1800  		& 2000\\
-$m_{hh}$ cut (GeV) &1250-1550	&1340-1660	&1430-1770	& 1750-2020 	& 1910-2170\\
+$m_{S}$ (GeV)      &   1400  		&  1500   		&  1600   		& 1800  		& 2000\\
+$m_{HH}$ cut (GeV) &1250-1550	&1340-1660	&1430-1770	& 1750-2020 	& 1910-2170\\
 \hline
 
 \hline 
-$m_{H}$ (GeV)      &   2250  		&  2500   		&  2750   		& 3000  		& \\
-$m_{hh}$ cut (GeV) &2040-2460	&2330-2740	&2570-2950	& 2760-3210 	& \\
+$m_{S}$ (GeV)      &   2250  		&  2500   		&  2750   		& 3000  		& \\
+$m_{HH}$ cut (GeV) &2040-2460	&2330-2740	&2570-2950	& 2760-3210 	& \\
 \end{tabular}
-\caption[Window cuts on ${m_HH}$]{Window cuts on $m_{H}$ as a function of the resonance mass
+\caption[Window cuts on ${m_HH}$]{Window cuts on $m_{HH}$ as a function of the resonance mass
   $m_{S}$.}
 \label{tab:mhh_sig_cuts}
 \end{center}
@@ -490,11 +492,10 @@ events and expected background events in the top CRs before the
 normalisation factors have been applied to the top background sample.
 
 The top normalisation factors are determined by a simultaneous fit  of
-signal and control regions, which include both Top CR and QCD CR~\ref{sec:multijet}. It also depends slightly on the $m_{hh}$ window due to the presence of top background in the signal region, and it is furthermore different for the \emph{non  res}, \emph{low  mass} and \emph{high mass} analyses. The normalisation
+signal and control regions, which include both Top CR and QCD CR~\ref{sec:multijet}. It also depends slightly on the $m_{HH}$ window due to the presence of top background in the signal region, and it is furthermore different for the \emph{non  res}, \emph{low  mass} and \emph{high mass} analyses. The normalisation
 factors of the three top control regions are shown in Table \ref{tab:NFs}.
 
-Fig.~\ref{fig:mbb_mhh} shows the $m_{bb}$ and $m_{hh}$ distributions in the two CRs.% while in Appendix \ref{app:data_exp_reOptNonRes} through ~\ref{app:data_exp_reOpt2000} we show the complete distributions of the
-relevant variables used in the analysis selection in the top CR.  
+Fig.~\ref{fig:mbb_mhh} shows the $m_{bb}$ and $m_{HH}$ distributions in the two CRs.% while in Appendix \ref{app:data_exp_reOptNonRes} through ~\ref{app:data_exp_reOpt2000} we show the complete distributions of the relevant variables used in the analysis selection in the top CR.  
 
 \begin{figure}[!h]
 \begin{center}
@@ -507,7 +508,7 @@ relevant variables used in the analysis selection in the top CR.
 \includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOpt2000/C_reOpt2000_bbpt350_bbMass_regionA_met25d020}
 \includegraphics*[width=0.47\textwidth] {figures/ControlPlots_new/reOpt2000/C_mBBcr_reOpt2000_bbpt350_hhMass_regionA_met25d020}
 
-\caption[$m_{bb}$ and $m_{hh}$ in CR1, CR2 and CR3.]{$m_{bb}$ and $m_{hh}$ in CR1, CR2 and CR3.  \ttbar NFs as described in~\ref{subsec:topCR} have been applied. The uncertainties shown include the statistical and systematic uncertainties described in ~\ref{sec:systematics}. Data are blinded in the region $100 < m_{bb} < 140 $. }
+\caption[$m_{bb}$ and $m_{HH}$ in CR1, CR2 and CR3.]{$m_{bb}$ and $m_{HH}$ in CR1, CR2 and CR3.  \ttbar NFs as described in~\ref{subsec:topCR} have been applied. The uncertainties shown include the statistical and systematic uncertainties described in ~\ref{sec:systematics}. Data are blinded in the region $100 < m_{bb} < 140 $. }
 \label{fig:mbb_mhh}
 \end{center}
 \end{figure}
@@ -531,8 +532,9 @@ orthogonal variables are used to create the signal and various control regions, 
 the A region passes both cuts, the B and C regions each pass one cut and fail the other, 
 while the D region fails both cuts. The absolute value of the significance of the lepton 
 impact parameter and the missing transverse energy (MET) are used as the two variables 
-used to define the regions in the ABCD method for this analysis. The regions are thus 
-defined 
+used to define the regions in the ABCD method for this analysis. 
+\newpage
+The regions are thus defined 
 \begin{itemize}
 \item A region: MET $>$ 25 GeV, \dsig $<$ 2.0
 \item B region: MET $<$ 25 GeV, \dsig $<$ 2.0
@@ -829,7 +831,7 @@ close to the signal region in particular. All simulated backgrounds are normalis
 \caption[The $m_{b \bar{b}}$ distribution]{The $m_{b \bar{b}}$ distribution in the resolved analysis for the \emph{non-res} and \emph{m500} selections at the end of the
  selection sequence, before applying the $m_{b \bar{b}}$ requirement. The signals shown
  are from SM non-resonant $HH$ production scaled up by a factor of 300 (left) and from a scalar resonance with mass 500~\GeV\ scaled to the expected upper-limit
- cross section reported in Section~\ref{sec:Analysis_results} (right).  The lower panel shows the fractional difference
+ cross section reported in Section~\ref{sec:results} (right).  The lower panel shows the fractional difference
   between data and the total expected background
  with the corresponding statistical and total uncertainty.
 } \label{fig:mbb_1}
@@ -845,7 +847,7 @@ close to the signal region in particular. All simulated backgrounds are normalis
  selection sequence, before applying the $m_{b \bar{b}}$ requirement. The signals shown
  are from scalar resonances with mass 1000~\GeV\ (left) and 2000~\GeV\ (right)
  scaled to the expected upper-limit cross section reported in
- Section~\ref{sec:Analysis_results}.  The lower panel shows the fractional difference
+ Section~\ref{sec:results}.  The lower panel shows the fractional difference
   between data and the total expected background
  with the corresponding statistical and total uncertainty.} \label{fig:mbb_2}
 \end{figure}
@@ -1225,7 +1227,7 @@ Scale                & 3.3 			& 2.2                		&               3.7        
 
 
 \iffalse
-An uncertainty on the shape of the $m_{hh}$  for $t\bar{t}$ is derived
+An uncertainty on the shape of the $m_{HH}$  for $t\bar{t}$ is derived
 comparing  the default Powheg+Herwig++ sample with the distribution obtained
 using aMC@NLO+Heriwg++ as alternative generator. Additional systematic
 uncertainties are evaluated by comparing the nominal sample showered
