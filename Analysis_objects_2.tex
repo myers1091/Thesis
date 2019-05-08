@@ -1,5 +1,5 @@
 
-The final state of this analysis includes electrons, muons, neutrinos and jets, including $b$-jets. 
+The observable particles of this analysis includes electrons, muons, neutrinos and jets, including $b$-jets. 
 The identification criteria and the selection applied to the reconstructed objects are defined in the
 present section.
 
@@ -21,7 +21,7 @@ present section.
 
 
 For this analysis, two set of electron selections are defined. They are denoted as VHLooseElectron and SignalElectron.
-The selections are defined as the following
+The selections are defined as the following:
 
 \textbf{VHLooseElectron}: The electron \pt~is required to be greater than 7 GeV. 
 The electron cluster should be in the range of $|\eta|< 2.47$. 
@@ -32,7 +32,7 @@ and $|\Delta{z_{0}^{\mathrm{IBL}}}\sin\theta| < 0.5$ mm are also required, where
 \textbf{SignalElectron}: The electron is required to pass the VHLooseElectron selection with its \pt~required to be greater than 27 GeV. 
 The electron cluster should be in the range of $|\eta|< 2.47$ but excluded from the crack region ($1.37 < |\eta| < 1.52$).
 Tight likelihood identification is applied in SignalElectron criteria with the impact parameter significance required to be 
-less than 2. In addition, the electron is required to be isolated by passing the \texttt{FixedCutTightTrackOnly} 
+less than two. In addition, the electron is required to be isolated by passing the \texttt{FixedCutTightTrackOnly} 
 isolation working point which corresponds to a cut on the ratio of ${p_{T}^{\mathrm{varcone0.2}}}$ to electron \pt of 0.06 (i.e ${p_{T}^{\mathrm{varcone0.2}}/ \pt < 0.06}$).
 
 A summary of the electron selections is shown in Table~\ref{tab:electronsel}.
@@ -99,11 +99,11 @@ SignalMuon     & $>$27 GeV & $ < 2.4$ & Medium quality & $ <2$ & $<0.5$ mm & \te
 \label{sec:jet_def}
 \subsubsection{Large-R jets}
 For signal processes with a large resonant mass the b-jets produced by the Higgs may be too close together
-to be resolved by the R=0.4 calorimeter-based jets (calo-jets). This effect is expected to be noticeable when ${p_{T}^{H} > 500\mathrm{GeV}}$\footnote{Using the rule of thumb ${}\Delta R = 2m/\pt$, where ${m = m_{H}}$ and ${\Delta R = 0.4}$}.
-Our approach to reconstructing the ${H\rightarrow b\overline{b}}$ system in this ``boosted" regime is to use a large radius (large-R) jet with radius parameter R =1.0. The large-R jets are required to have ${\pt > 250 \mathrm{GeV}}$ and ${|\eta| < 2.0}$.
+to be resolved by the R=0.4 calorimeter-based jets (calo-jets). This effect is expected to be noticeable when ${p_{T}^{H} > 500\text{ GeV}}$\footnote{Using the rule of thumb ${}\Delta R = 2m/\pt$, where ${m = m_{H}}$ and ${\Delta R = 0.4}$}.
+Our approach to reconstructing the ${H\rightarrow b\overline{b}}$ system in this ``boosted" regime is to use a large radius (large-R) jet with radius parameter R =1.0. The large-R jets are required to have ${\pt > 250 \text{ GeV}}$ and ${|\eta| < 2.0}$.
 \subsubsection{Track jets}
-To identify a large-R jet that is consistent with decay of ${H\rightarrow b\overline{b}}$, a method developed by ATLAS is to reconstruct subjets within the large-R jet and identify the subjets whether it is a b-jet or not by using a b-tagging algorithm. The baseline method is to use subjets built from tracks (track jets).
-For the boosted analysis, track jets are required to have ${\pt > 10 \mathrm{GeV}}$ and ${|\eta| < 2.5}$ for them to be within the inner detector acceptance. They are also required to have at least 2 track constituents. The MV2c10 working point for track jets is the 77\% Fixed Cut efficiency.
+To identify a large-R jet that is consistent, the decay of ${H\rightarrow b\overline{b}}$, a method developed by ATLAS is to reconstruct subjets within the large-R jet and identify the subjets whether it is a b-jet or not by using a b-tagging algorithm. The baseline method is to use subjets built from tracks (track jets).
+For the boosted analysis, track jets are required to have ${\pt > 10 \mathrm{GeV}}$ and ${|\eta| < 2.5}$ for them to be within the inner detector acceptance. They are also required to have at least two track constituents. The MV2c10 working point for track jets is the 77\% Fixed Cut efficiency.
 
 \subsubsection{Small-R jets}
 
@@ -159,24 +159,24 @@ Electrons and muons that pass the VHLooseElectron and VHLooseMuon selections (as
 Calorimeter jets which pass the JVT requirement are also considered for overlap removal. The procedure is defined as follows.
 
 If an electron and a muon shares a track, the muon is removed if it is \textit{calo-tagged}. Otherwise, the electron is removed.
-Calorimeter jets are then removed if they are within $\Delta R(\text{calo-jet}, \text{electron})$ < 0.2 of surviving electrons. 
-Electrons that satisfy $\Delta R(\text{electron},\text{calo-jet})$ < min(0.4, 0.04 + 10 \GeV /$E^\text{electron}_\text{T}$) are removed. 
+Calorimeter jets are then removed if they are within $\Delta R(\text{calo-jet}, \text{electron}) < 0.2$ of surviving electrons. 
+Electrons that satisfy $\Delta R(\text{electron},\text{calo-jet}) <$ min(0.4, 0.04 + 10 \GeV /$E^\text{electron}_\text{T}$) are removed. 
 The surviving calorimeter jets are removed if they are within $\Delta R(\text{calo-jet}, \text{muon}) < 0.2$ and 
 do \textbf{not} pass any of the following criteria:
 
 \begin{itemize}
-\item The number of tracks in the jet are more than 2.
+\item The number of tracks in the jet are more than two.
 \item $\pt^{\text{muon}} / \pt^{\text{calo-jet}} < 0.5$  AND  $\pt^{\text{muon}} / \pt^{\text{tracks in calo-jet}} < 0.7$.
 \end{itemize}
 
-Muons that satisfy $\Delta R(\text{muon},\text{calo-jet})$ < min(0.4, 0.04 + 10 \GeV /$\pt^\text{muon}$) are removed. 
+Muons that satisfy $\Delta R(\text{muon},\text{calo-jet}) <$ min(0.4, 0.04 + 10 \GeV /$\pt^\text{muon}$) are removed. 
 The overlap removal procedure is implemented using ASG's 
 \apkg{https://svnweb.cern.ch/trac/atlasoff/browser/PhysicsAnalysis/AnalysisCommon/AssociationUtils/trunk/doc/README.rst}{AssociationUtils} 
 package and summarized in Table~\ref{tab:overlapremoval}.
 
 \begin{table}[htbp!]
 \centering
-\tiny
+\footnotesize
 \begin{tabular}{l | l}
 \toprule
 Overlapping Objects & Removal Procedure \\

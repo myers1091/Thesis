@@ -2,7 +2,7 @@
 \label{sec:boosted_evtreco}
 For the boosted analysis, events are reconstructed by requiring at least one reconstructed lepton. This lepton will be referred to as the selected lepton. To reconstruct the ${H\rightarrow b\overline{b}}$ candidate, there should be at least one large-R jet with ${\Delta{R} > 1.0}$ from the selected lepton. The highest \pT large-R jet is chosen as the ${H\rightarrow b\overline{b}}$ candidate. The large-R jet is then required to have two at least two track jets associated to it. Events with the large-R jet mass to be in the range of ${30 \text{ GeV} < m_{\textrm{large-R jet}} < 300 \text{ GeV}}$ are retained for further analysis.\newline
 \indent In order to reconstruct ${W\rightarrow q\overline{q}}$ candidate, events are required have at least two signal small-R jets with ${\Delta{R} > 1.4}$ of the ${H\rightarrow b\overline{b}}$ candidate. The ${\Delta{R}}$ requirement ensures that the small-R jets used for ${W\rightarrow q\overline{q}}$ reconstruction do not overlap with the ${H\rightarrow b\overline{b}}$ candidate large-R jet. If there are exactly two signal small-R jets, they are used to reconstruct the ${W\rightarrow q\overline{q}}$ candidate. If there are at least three signal small-R jets, the ${W\rightarrow q\overline{q}}$ candidate is reconstructed from the combination of pairs of the three highest \pT small-R jets with the smallest ${\Delta{R}}$ between the small-R jets.\newline
-\indent The full ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ is reconstructed identically to the resolved analysis as described in section \ref{ssec:event_reco_res}.
+\indent The full ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ is reconstructed identically to the resolved analysis as described in Section \ref{ssec:event_reco_res}.
 With the ${H\rightarrow b\overline{b}}$ candidate identified and ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ system fully reconstructed, the di-Higgs (HH) system is reconstructed by the sum of four-momenta of the ${H\rightarrow b\overline{b}}$ candidate large-R jet and the reconstructed ${h\rightarrow WW^{*}\rightarrow l\nu qq}$ system. Figure ~\ref{fig:boost_topo} shows a diagram of the event topology after the event reconstruction.
 
 \begin{figure}[h]
@@ -338,7 +338,7 @@ uncertainties of the prompt backgrounds in region B, C and D.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % d0sig cut efficiency
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\paragraph{$|d_{0}^{\textrm{sig}}|$ cut efficiency modeling}
+\paragraph{$\mathbf{|d_{0}^{\textrm{sig}}|}$ cut efficiency modeling}
 The $|d_{0}^{\textrm{sig}}|$ cut efficiency modeling uncertainty for the prompt MC backgrounds
 are also taken into account in the ABCD method due to the tigther cut on the leptons' $|d_{0}^{\textrm{sig}}|$,
 than the recommended value. The determination of the $|d_{0}^{\textrm{sig}}|$ cut efficiency modeling uncertainty
@@ -789,7 +789,7 @@ and it is assigned for all processes with prompt leptons modelled by MC simulati
 \begin{tabular}{c|c|c}
 &  Electron  & Muon  \\  
 \hline
-\multicolumn{3}{c}{$|d_{0}^{\textrm{sig}}|$ < 2.0} \\
+\multicolumn{3}{c}{$|d_{0}^{\textrm{sig}}| < 2.0$} \\
 \hline
 Data                &  0.884  & 0.897 \\
 MC                  &  0.926  & 0.937 \\
@@ -797,7 +797,7 @@ MC                  &  0.926  & 0.937 \\
 Data/MC             &  0.955  & 0.957 \\
 \hline
 \hline
-\multicolumn{3}{c}{$|d_{0}^{\textrm{sig}}|$ > 2.0} \\
+\multicolumn{3}{c}{$|d_{0}^{\textrm{sig}}| > 2.0$} \\
 \hline
 Data                &  0.115  & 0.104  \\
 MC                  &  0.074  & 0.063  \\
@@ -809,7 +809,7 @@ Data/MC             &  1.572  & 1.640  \\
 and MC]{Efficiency of the $|d_{0}^{\textrm{sig}}|$ cut for electrons and muons in Data
 and MC. The Data/MC ratio is also calculated and the difference between the ratio and unity
 is taken as the systematic uncertainty on the $|d_{0}^{\textrm{sig}}|$ efficiency modeling
-for events with leptons that pass (< 2.0) or fail (> 2.0) the $|d_{0}^{\textrm{sig}}|$ cut.}
+for events with leptons that pass ($< 2.0$) or fail ($> 2.0$) the $|d_{0}^{\textrm{sig}}|$ cut.}
 \label{tab:syst_d0_topcr_eff_datamc}
 \end{table}
  
@@ -826,8 +826,8 @@ for events with leptons that pass (< 2.0) or fail (> 2.0) the $|d_{0}^{\textrm{s
  
 Uncertainties in the $m_{HH}$ distributions are assigned to the dominant backgrounds, $t\bar{t}$ and V+Jets and
 single top by comparing the nominal MC samples to a number of alternative MC generators at the reconstruction
-level. The comparisons are performed in with the same event selection in Sect~\ref{sec:Boosted}.
-Each uncertainty contains 2 components, a shape systematic and a normalization systematic due to acceptance.
+level. The comparisons are performed in with the same event selection in Section ~\ref{sec:Boosted}.
+Each uncertainty contains two components, a shape systematic and a normalization systematic due to acceptance.
  
 The shape systematic corresponds to a reweighting function derived by fitting a 1$^\text{st}$ order polynomial to the
 ratio of $m_{HH}$ distribution of the variation sample over the nominal sample. The $m_{HH}$ distribution for the
@@ -840,7 +840,7 @@ the variation sample is normalized to the same number of events of the norminal 
  
 % Where $h^{nom}_{i}$ ($h^{var}_{i}$) corresponds to the $i^{th}$ $m_{hh}$ bin of the nominal (variation) MC sample.
  
-% Differences in the normalisation of each fit region can also be tested using the MC-to-MC comparisons, and are incorporated into the fit as
+% Differences in the normalization of each fit region can also be tested using the MC-to-MC comparisons, and are incorporated into the fit as
 % a nuisance parameter $\theta_{k}$ that controls the relative ratio of two coupled regions. A single nuisance paramter controls the relative ratio
 % of each set of coupled fit regions denoted as $R = \frac{A}{B}$, where $A/B$ represent a pair of coupled analysis fit regions that satisfy the
 % condition $A \neq B$. The sets of coupled regions are as follows: $A/B = [\{SR,CR\}(\text{1-lep only}), \, \{0-lep,1-lep\}, \, \{1-lep,2-lep\},
@@ -879,10 +879,9 @@ This fixes the PS generator component, but alters the hard scattering generator,
 the RadHi and RadLo samples correspond to either the enhancement (high) or reduction (low) of initial/final state radiation (IFSR).
 The two samples are compared to the nominal sample setup, and so are sensitive to variations of IFSR models.
    \begin{itemize}
-   \item RadHi: The renormalisation ($\mu_{R}$) and factorisation scale ($\mu_{F}$) scales are decreased by a factor of 0.5,
+   \item RadHi: The renormalization ($\mu_{R}$) and factorisation scale ($\mu_{F}$) scales are decreased by a factor of 0.5,
    the \POWHEG \, \textsf{hdamp} parameter is doubled ($2 \times m_{top}$), and the high radiation PERUGIA2012 tune is used.
-   \item RadLo: The renormalisation ($\mu_{R}$) and factorisation scale ($\mu_{F}$) scales are increased by a factor of 2,
-   the \POWHEG \, \textsf{hdamp} parameter is kept at $m_{top}$, and the low radiation PERUGIA2012 tune is used.
+   \item RadLo: The renormalization ($\mu_{R}$) and factorisation scale ($\mu_{F}$) scales are increased by a factor of two,   the \POWHEG \, \textsf{hdamp} parameter is kept at $m_{top}$, and the low radiation PERUGIA2012 tune is used.
    \end{itemize}
  
 \item \textbf{\POWHEG+\PYTHIA6 Diagram Subtraction:} For the production of a single top quark in association with a W-boson ($Wt$)
@@ -981,20 +980,20 @@ The alternative samples used to assess the modeling uncertainties are:
 \begin{itemize}
 \item \textbf{MadGraph5+\PYTHIA8.186 :} The LO ME generator MadGraph5 using the NNPDF3.0(2.3) NLO(LO) PDF set interfaced
 with \PYTHIA8 version 8.186 using the A14 tune, offers a LO+NLL accurate prediction for vector boson production in association
-with jets for up to 4 extra partons from the ME and 4+ parton from \PYTHIA8 at NLL accuracy. The comparison between the nominal  
+with jets for up to four extra partons from the ME and 4+ parton from \PYTHIA8 at NLL accuracy. The comparison between the nominal  
 \SHERPA 2.2.1 sample with this sample convolves the ME and PS model variation. Due to the unavailability of this sample at
 reconstruction level, the comparison is made at (particle) truth level.
  
 \item \textbf{\SHERPA 2.2.1 scale variations:} Configured in the same manner as the nominal V+Jets sample,
-the renormalisation $\mu_{R}$ and resummation $\mu_{F}$ scales are varied up/down by a factor of 2.
+the renormalization $\mu_{R}$ and resummation $\mu_{F}$ scales are varied up/down by a factor of two.
  
 \item \textbf{\SHERPA 2.2.1 PDF variations:} Configured in the same manner as the nominal V+Jets sample. The
-100 NNPDF3.0NNLO replicas variations are available. The central values of 2 alternative PDF sets, MMHT2014NNLO 68\%CL and CT14NNLO
+100 NNPDF3.0NNLO replicas variations are available. The central values of two alternative PDF sets, MMHT2014NNLO 68\% CL and CT14NNLO
 are also available.
  
 \item \textbf{\SHERPA 2.2.1 $\alpha_{s}(PDF)$ variations:} Configured in the same manner as the nominal V+Jets sample,
 the $\alpha_{s}$ value used by the nominal NNPDF 3.0 NNLO PDF is varied up and down according to a variation of
-the $\mu_{R}$ scale by a factor of 2.
+the $\mu_{R}$ scale by a factor of two.
 \end{itemize}
  
 Table~\ref{tab:boosted_unc_wjets} shows the estimated uncertainty on the normalization of the W+jets background in the signal region
@@ -1072,14 +1071,14 @@ The systematic uncertainty on the normalization of the Diboson background is ass
 is taken from the resolved analysis. As the background is small, the uncertainty is considered to be conservative.
  
 %---------------------------------------------------------------------------------------------------------------
-\paragraph{production}
+\paragraph{Production}
 \label{sec:boosted_syst_modeling_signal}
 Systematic uncertainties on the acceptance of signal processes are computed by generating alternative variation signal samples
 and then compare their acceptance with respect to the nominal signal samples. The difference sources of uncertainty considered are:
  
 \begin{itemize}
 \item \textbf{Scale variations:} Configured in the same manner as the nominal signal samples but
-the renormalisation and resummation scales are varied up/down by a factor of 2.
+the renormalization and resummation scales are varied up/down by a factor of two.
  
 % \item \textbf{PDF:}
  
@@ -1087,7 +1086,7 @@ the renormalisation and resummation scales are varied up/down by a factor of 2.
 with Pythia 8 chosen as the shower generator instead of Herwig++.
 \end{itemize}
  
-Table~\ref{tab:boosted_unc_signal} lists the systematic uncertainties for 4 different scalar signal sample
+Table~\ref{tab:boosted_unc_signal} lists the systematic uncertainties for four different scalar signal sample
 mass points.
  
 \begin{table}[htbp!]

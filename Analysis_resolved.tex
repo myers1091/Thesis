@@ -81,7 +81,7 @@ All triggers are unprescaled.}
 
 
 \subsubsection{Pre-selection}
-The following selection cuts are applied at the pre-selection level to the recorded events:
+The following selection criteria are applied at the pre-selection level to the recorded events:
 \begin{itemize}
 \item Good detector conditions are required based on data quality assessment. See Appendix ~\ref{app:app-data} for more details.
   \iffalse
@@ -102,9 +102,9 @@ The following selection cuts are applied at the pre-selection level to the recor
 	$p_{{\rm T,trk}}$ is the transverse momentum of tracks
 	associated with the vertex, is retained as the primary
   interaction vertex;
-\item at least one SignalElectron ($e$) or SignalMuon ($\mu$), as defined in Sec.~\ref{sec:el_reco} and Sec.~\ref{sec:mu_reco}, and it must be trigger matched to the 
+\item at least one SignalElectron ($e$) or SignalMuon ($\mu$), as defined in Section~\ref{sec:el_reco} and Section~\ref{sec:mu_reco}, and it must be trigger matched to the 
 corresponding HLT object which fires the trigger;
-\item at least 4 jets, of which 2 and only 2 are $b$-tagged.
+\item at least four jets, of which two and only two are $b$-tagged.
 \end{itemize}
 
 \subsection{Event Reconstruction}
@@ -113,8 +113,8 @@ corresponding HLT object which fires the trigger;
 %%two being $b$-quraks. Hence the detector signature consists of one charged lepton, missing 
 %%transverse momentum, and four or more jets of which two are $b$ jets from the $h$ decay while 
 %%the other two are light jets from the hadronic decay of the $W$ boson. 
-Events are reconstructed by first requiring exactly two 2 $b$-tag jets and at least 2 light
-jets and at most 3 light jets. In events with 3 light jets, the pair with the 
+Events are reconstructed by first requiring exactly two 2 $b$-tag jets and at least two light
+jets and at most three light jets. In events with three light jets, the pair with the 
 lowest $\Delta R$ between them are selected as $W$ jet candidates. This
 procedure yields the correct jet assignment in 70\% of the cases for
 signal events where the
@@ -137,14 +137,14 @@ p_E^{\nu} = E^{\nu} = \sqrt{P_T^2 + p_z^2} \quad p_x^{\nu} = P_Tcos(\phi) \quad 
 \]
 where $\phi$ is the azimuthal angle of the $\met$, $E^{\nu}$ the neutrino
 energy, $p_x$ and $p_y$ the two transverse spatial components of the neutrino momentum.
-Eq. \ref{eq:mh} is a quadratic expression in $p_z$. It can have two real,
+Equation \ref{eq:mh} is a quadratic expression in $p_z$. It can have two real,
 one real  or two complex solutions. In the last case only the real part of the
 complex solution is taken into account, therefore a single value of $p_z$ is
 obtained. In the first case the solution with the neutrino direction closest
 to the charged lepton is retained. It has been shown that this algorithm
 selects the correct solution in approximately 60\% of the cases
 (see Appendix~\ref{app:nupz_studies}).
-
+\newpage
 \subsection{$\mathbf{bb\tau\tau}$ analysis overlap removal}
 In order to remove overlap with the $bb\tau \tau$ analysis we reject
 any event containing at least one hadronic $\tau$ candidate that could be
@@ -165,20 +165,21 @@ The rejection of such events causes a signal efficiency drop of about 3\%.
 
 Kinematic selection is used to suppress mainly $t\bar{t}$ background while keeping
 high signal efficiency.  A schematic view of the $HH \to WW{*}b\overline{b}$ and the
-$t \bar{t} \to WWbb$ event topology is shown in Figure \ref{fig:cartoon}.
-\begin{figure}
+$t \bar{t} \to WWbb$ event topology is shown in Figure ~\ref{fig:cartoon}.
+
+\begin{figure}[h]
 \begin{center}
 \includegraphics[width=0.4\textwidth]{figures/cartoon_hh.pdf}
 \includegraphics[width=0.4\textwidth]{figures/cartoon_tt.pdf}
 \caption[Comparison signal and \ttbar events]{Schematic view of a $HH \to WWbb$ event compared to a $t\bar{t} \to WWbb$ event.} 
-\end{center}
 \label{fig:cartoon}
+\end{center}
 \end{figure}
 
-The $t \bar{t}$ events are typically characterised by two $b$-jets and
+The $t \bar{t}$ events are typically characterized by two $b$-jets and
 two $W$ bosons such that the $\Delta R$ separation between the two
 $b$-jets and between the $W$ bosons is large. On the contrary, in particular
-when the invariant mass of the $m_{HH}$ is high, the signal is characterised
+when the invariant mass of the $m_{HH}$ is high, the signal is characterized
 by two $b$-jets which are close together in $\Delta R$ and by two $W$ bosons
 which are also relatively closer than in the $t \bar{t}$
 case. Moreover, while for the signal the two $b$-jets have an
@@ -199,24 +200,18 @@ invariant mass equal to $m_h$, this is not necessarily the case for the $t \bar{
 
 \subsection{Signal region definitions}
 \label{subsec:SR}
-The cuts of the selection have been optimized by maximizing the Poisson
-significance at the end of the selection \footnote{a two step procedure has
-been implemented. In the first step each cut is optimised, in the second step,
-all cuts are set to their optimal value and cuts are varied one by one to
-look for a different optimisation point. Correlation among variables 
-could in fact spoil the results obtained at the first step.}. The Poisson
-significance formula depends on the absolute yield of expected signal and
-background events. For the optimisation formula the \ttbar background was
-normalised to data with $m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV, 
-such region rejects, in fact, the majority of the signal. Four signal
-hypotheses have been used in the optimisation:
+The signal selection criteria have been optimized by maximizing the Poisson significance at the end of the selection based on MC simulation \footnote{a two step procedure has been implemented. In the first step each selection criteria is optimized, in the second step, all selections are set to their optimal value and selections are varied one by one to
+look for a different optimization point. Correlation among variables could in fact spoil the results obtained at the first step.}. The Poisson significance formula depends on the absolute yield of expected signal and
+background events. For the optimization formula the \ttbar background was
+normalized to data with $m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV, where the majority of the signal is rejected. Four signal
+hypotheses have been used in the optimization:
 \begin{itemize}
 \item{ a heavy Higgs with $m_S = 500$ GeV and $m_S = 700$ GeV (defined as low-mass analysis)},
 \item{ a heavy Higgs with $m_S = 2000$ GeV (defined as high-mass analysis) and}
 \item{ a non-resonant di-Higgs production (defined as non-resonant analysis).}
 \end{itemize}
 An additional mass point with $m_S = 1400$ GeV was also checked. The resulting selection and the corresponding sensitivity are very similar to the selection for $m_S = 2000$ GeV, and hence that selection is dropped.{\footnote {See \url {https://indico.cern.ch/event/641988/contributions/2604588/attachments/1465307/2265002/bbWW_Weekly_Optimization_Revisited_24May2018.pdf}}} 
-%The signals have been normalised to the Run 1 upper limit scaled by the $13/8$ TeV cross section ratio expected from the
+%The signals have been normalized to the Run 1 upper limit scaled by the $13/8$ TeV cross section ratio expected from the
 %PDF luminosity scale of a narrow resonance of that mass. 
 
 The signal regions for the  reference signal hypotheses are summarized in 
@@ -235,9 +230,9 @@ $p_{\rm T}^{WW}$ (GeV) 		&$> 250$&$> 150$&$> 250$&$> 250$ \\
 $\Delta R_{WW}$  		&no-cut& no-cut&no-cut&$<1.5$\\
 $m_{bb}$ (GeV)   		&105-135&105-135&105-135&105-135\\
 \end{tabular}
-\caption[Criteria for non-resonant, \emph{m500}, \emph{low-mass} and 
+\caption[Criteria for \emph{non-res}, \emph{m500}, \emph{low-mass} and 
     \emph{high-mass} selection]{Criteria for non-resonant, \emph{m500}, \emph{low-mass} and 
-    \emph{high-mass} selection. The $m_{HH}$ window cut is not applied for 
+    \emph{high-mass} selection. The $m_{HH}$ window is not applied for 
     non-resonant signal, and for resonant signals $m_{HH}$ depends on 
     the mass.} 
 \label{tab:sig_reg_summary}
@@ -245,26 +240,26 @@ $m_{bb}$ (GeV)   		&105-135&105-135&105-135&105-135\\
 \end{table}
 
 
-The \textit{non-res} and \textit{m500} selections are exclusively used for non-resonant signal and resonant signal with mass 500 GeV respectively. The \textit{low-mass} selection is used for signal masses from 600 to 1300 GeV, while the \textit{high-mass} selection is used for signals with masses between 1400 and 3000 GeV. In addition, requirements are placed on the reconstructed di-Higgs invariant mass ${m_{HH}}$ as a function of the signal resonance mass ${m_{S}}$, as shown in Table \ref{tab:mhh_sig_cuts}. The resolution of the reconstructed $m_{HH}$ ranges from 6\% at 500 GeV to 10\% at 3000 GeV.
+The \emph{non-res} and \emph{m500} selections are exclusively used for non-resonant signal and resonant signal with mass 500 GeV respectively. The \emph{low-mass} selection is used for signal masses from 600 to 1300 GeV, while the \emph{high-mass} selection is used for signals with masses between 1400 and 3000 GeV. In addition, requirements are placed on the reconstructed di-Higgs invariant mass ${m_{HH}}$ as a function of the signal resonance mass ${m_{S}}$, as shown in Table \ref{tab:mhh_sig_cuts}. The resolution of the reconstructed $m_{HH}$ ranges from 6\% at 500 GeV to 10\% at 3000 GeV.
 
 \begin{table}
 \begin{center}
 \begin{tabular}{c|c|c|c|c|c}
 $m_{S}$ (GeV)      &   500   &   600   &   700   &   750   &   800 \\
-$m_{HH}$ cut (GeV) & 480-530 & 560-640 & 625-775 & 660-840 & 695 - 905 \\ 
+$m_{HH}$  (GeV) & 480-530 & 560-640 & 625-775 & 660-840 & 695 - 905 \\ 
 \hline 
 $m_{S}$ (GeV)      &  900   &   1000  	   &  1100   	&  1200   		&   1300    \\
-$m_{HH}$ cut (GeV) & 760-970	& 840-1160 & 925-1275	&1010-1390	&1095-1505  \\
+$m_{HH}$  (GeV) & 760-970	& 840-1160 & 925-1275	&1010-1390	&1095-1505  \\
 \hline 
 $m_{S}$ (GeV)      &   1400  		&  1500   		&  1600   		& 1800  		& 2000\\
-$m_{HH}$ cut (GeV) &1250-1550	&1340-1660	&1430-1770	& 1750-2020 	& 1910-2170\\
+$m_{HH}$  (GeV) &1250-1550	&1340-1660	&1430-1770	& 1750-2020 	& 1910-2170\\
 \hline
 
 \hline 
 $m_{S}$ (GeV)      &   2250  		&  2500   		&  2750   		& 3000  		& \\
-$m_{HH}$ cut (GeV) &2040-2460	&2330-2740	&2570-2950	& 2760-3210 	& \\
+$m_{HH}$  (GeV) &2040-2460	&2330-2740	&2570-2950	& 2760-3210 	& \\
 \end{tabular}
-\caption[Window cuts on ${m_HH}$]{Window cuts on $m_{HH}$ as a function of the resonance mass
+\caption[Window selection on ${m_HH}$]{Window selection on $m_{HH}$ as a function of the resonance mass
   $m_{S}$.}
 \label{tab:mhh_sig_cuts}
 \end{center}
@@ -273,7 +268,7 @@ $m_{HH}$ cut (GeV) &2040-2460	&2330-2740	&2570-2950	& 2760-3210 	& \\
 
 \subsection{Background Determination}
 In the present analysis we expect that at the end of the event selection the
-sample will be largely dominated by $t \bar{t}$ and multi-jet background, therefore the $t\bar{t}$ background normalisation
+sample will be largely dominated by $t \bar{t}$ and multi-jet background, therefore the $t\bar{t}$ background normalization
 is derived from data while, as described in Sec. \ref{sec:multijet}, the multi-jet
 background is derived using a data-driven ABCD method.
 For all the other backgrounds, e.g. di-boson, Higgs, $W$+jets, the
@@ -282,12 +277,12 @@ integrated luminosity that has been collected.
 
 \subsubsection{Top normalization and control region}
 \label{subsec:topCR}
-The \ttbar background is normalised and validated using  dedicated
-control regions (CR). Three CR's are defined, one for the SR's of the non-resonant (CR1), one for the low-mass analysis (CR2), and one for the high-mass analysis (CR3).  The CRs are defined in Table \ref{tab:CRdef}.
+The \ttbar background is normalized and validated using  dedicated
+control regions (CR). Three CR's are defined, one for the SR's of the \emph{non-res} (CR1), one for the \emph{low-mass} analysis (CR2), and one for the \emph{high-mass} analysis (CR3).  The CRs are defined in Table \ref{tab:CRdef}.
 
 
 Table \ref{tab:CR1} through \ref{tab:CR3} show the number of observed
-events and expected background events in the top CRs, and also in the sideband across selections that serve as validation regions. The final signal region is defined by $m_{bb}$ cut of $105~\textrm{GeV} < m_{bb} < 135~\textrm{GeV}$ based on optimization. The sidebands are orthogonal to the SR by virtue of having the $m_{bb}$ cut reversed. $m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV defines the sidebands in which the control regions are defined.  The 5 GeV buffer region is kept on both sides so as to be less affected by systematic effects at the edge. Fig.~\ref{fig:mbb_signal} shows $m_{bb}$ for various signal mass points. A comparative study of signal over background in these three regions shows that S/B in the final SR is 5 (20) times higher than in the sidebands for m2000 (non-resonance) while S/B in the final SR is approximate twice as high as in the buffer zones.  Table~\ref{tab:sigOverBkg} shows the ratios of S/B in the buffer zones and sidebands compared to the S/B in the final SR. 
+events and expected background events in the top CRs, and also in the sideband across selections that serve as validation regions. The final signal region is defined by $m_{bb}$ of $105~\textrm{GeV} < m_{bb} < 135~\textrm{GeV}$ based on optimization. The sidebands are orthogonal to the SR by virtue of having the $m_{bb}$ reversed. $m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV defines the sidebands in which the control regions are defined.  The 5 GeV buffer region is kept on both sides so as to be less affected by systematic effects at the edge. Fig.~\ref{fig:mbb_signal} shows $m_{bb}$ for various signal mass points. A comparative study of signal over background in these three regions shows that S/B in the final SR is 5 (20) times higher than in the sidebands for m2000 (non-resonance) while S/B in the final SR is approximate twice as high as in the buffer zones.  Table~\ref{tab:sigOverBkg} shows the ratios of S/B in the buffer zones and sidebands compared to the S/B in the final SR. \newline
 
 \begin{figure}[!h]
 \begin{center}
@@ -312,20 +307,9 @@ Buffer/SR              	& 1.85 & 1.95  & 1.90 & 1.63\\
 \end{center}
 \end{table}
 
-\newpage
 %%%%%%%%%%%%%%
 \begin{table}
 \begin{center}
-%\begin{tabular}{c|c|c|c|c|cxs}
-% variable 						& Non-Res 	 	& X700 		& X2000\\
-%\hline
-%$m_{WW}$ (GeV)   				& $<130$ 		   	&$<130$ 		& no-cut \\
-%$p_{\rm T}^{bb}$ (GeV) 			& $>150$ 		  	& $>150$ 		&$>350$\\
-%$\Delta R_{bb}$  				& no-cut 	 		& no-cut		& no-cut  \\
-%$p_{\rm T}^{WW}$ (GeV) 			& no-cut	 	 	& no-cut   		& no-cut \\
-%$\Delta R_{WW}$  				& no-cut 		 	& no-cut 		& no-cut \\
-%$m_{hh}$ (GeV)  				& no-cut 			& no-cut 		& no-cut\\
-%\hline
 \begin{tabular}{c|c|c|c|}
  variable 						&CR1 				& CR2 	& CR3 \\
 \hline					
@@ -336,31 +320,10 @@ $p_{\rm T}^{bb}$ (GeV) 			& $>300$ 		 		& $>210$		&$>350$\\
 
 
 \end{tabular}
-\caption[Definition of the kinematic regions used to normalise the Top background]{Definition of the kinematic regions used to normalise the Top background. $m_{bb} < 100$~GeV or $m_{bb} > 140~GeV$ defines the sidebands in which the control regions are defined. Expected SM backgrounds are then checked against data at each subsequent selection.} \label{tab:CRdef}
+\caption[Definition of the kinematic regions used to normalize the Top background]{Definition of the kinematic regions used to normalize the Top background. $m_{bb} < 100$~GeV or $m_{bb} > 140~GeV$ defines the sidebands in which the control regions are defined. Expected SM backgrounds are then checked against data at each subsequent selection.} \label{tab:CRdef}
 \end{center}
 \end{table}
 %%%%%%%%%%%%%%%
-\iffalse
-\begin{table}
-\begin{center}
-\begin{tabular}{c|c}
-\hline
-\multicolumn{2}{c}{Top CR definitions} \\
-\hline
-non-res  &  ($m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV ), $m_{WW} < 130$ GeV  and $p_T^{\rm bb} > 150$ GeV (to be edited) \\
-low-mass &  ($m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV ), $m_{WW} < 130$ GeV  and $p_T^{\rm bb} > 150$ GeV \\
-high-mass &   ({$m_{bb} < 100$ GeV or $m_{bb} > 140$ GeV}) and $p_T^{\rm bb} > 350$ GeV \\
-\hline
-\end{tabular}
-\caption{Definition of the kinematic regions used to normalise the Top background.} \label{tab:CRdef}
-
-\end{center}
-\end{table}
-\fi
-%%tables to be added yet
-
-
-\newpage
 
 \begin{center}
 \begin{table}
@@ -383,7 +346,7 @@ Data 	& 43902.0 	& 1069.0 	& 206.0 	& 138.0 \\\hline
 \end{tabular}
 \caption[The number of events in the $m_{bb}$ sideband for the non-res selection]{ The number of observed
 events and expected background events in the $m_{bb}$ side-bands for
-the non-resonant selection. The top CR1 is defined at the bbpt300
+the \emph{non-res} selection. The top CR1 is defined at the bbpt300
 selection. No NF has been applied to the background yields to show the level of data/expectation agreement before normalizing ttbar.  Only statistical uncertainties are shown.}
 \label{tab:CR1}
 \end{table}
@@ -471,7 +434,7 @@ selection. No NF has been applied to the background yields. Only statistical unc
 \begin{table}
 \begin{center}
 \begin{tabular}{c|c|c|c}
-\multicolumn{4}{c}{Top background normalisation factors in the two
+\multicolumn{4}{c}{Top background normalization factors in the two
   CRs.} \\
 \hline
 region & NF & $\sigma_{stat.}$ & $\sigma_{syst.}$ \\
@@ -489,10 +452,10 @@ high-mass & 1.02  &  $\pm$0.02  &  $\pm$0.07\\
 
 Table \ref{tab:CR1} through \ref{tab:CR3} show the number of observed
 events and expected background events in the top CRs before the
-normalisation factors have been applied to the top background sample.
+normalization factors have been applied to the top background sample.
 
-The top normalisation factors are determined by a simultaneous fit  of
-signal and control regions, which include both Top CR and QCD CR~\ref{sec:multijet}. It also depends slightly on the $m_{HH}$ window due to the presence of top background in the signal region, and it is furthermore different for the \emph{non  res}, \emph{low  mass} and \emph{high mass} analyses. The normalisation
+The top normalization factors are determined by a simultaneous fit  of
+signal and control regions, which include both Top CR and QCD CR~\ref{sec:multijet}. It also depends slightly on the $m_{HH}$ window due to the presence of top background in the signal region, and it is furthermore different for the \emph{non-res}, \emph{low-mass} and \emph{high-mass} analyses. The normalization
 factors of the three top control regions are shown in Table \ref{tab:NFs}.
 
 Fig.~\ref{fig:mbb_mhh} shows the $m_{bb}$ and $m_{HH}$ distributions in the two CRs.% while in Appendix \ref{app:data_exp_reOptNonRes} through ~\ref{app:data_exp_reOpt2000} we show the complete distributions of the relevant variables used in the analysis selection in the top CR.  
@@ -518,7 +481,7 @@ Fig.~\ref{fig:mbb_mhh} shows the $m_{bb}$ and $m_{HH}$ distributions in the two 
 
 \label{sec:multijet}
 Multi-jet backgrounds can enter in the event selection if a jet from
-heavy flavour decays is mis-identified as an electron or a muon and used
+heavy flavor decays is mis-identified as an electron or a muon and used
 as a lepton in the analysis. Such phenomena are not accurately reproduced by MC
 simulation, due to large uncertainties in the jet shower shape simulation
 and uncertainties in muon fragmentation functions and kinematics. In order 
@@ -527,21 +490,21 @@ method is used to estimate this background in the present analysis.
 %%Such methods are used extensively in the top group analyses.
 
 The ABCD method uses three control regions (the B, C, and D regions) to estimate
-the contribution of a given background in the signal (A) region. Cuts on two ideally
+the contribution of a given background in the signal (A) region. Selections on two ideally
 orthogonal variables are used to create the signal and various control regions, e.g. 
-the A region passes both cuts, the B and C regions each pass one cut and fail the other, 
-while the D region fails both cuts. The absolute value of the significance of the lepton 
+the A region passes both selections, the B and C regions each pass one selection and fail the other, 
+while the D region fails both selections. The absolute value of the significance of the lepton 
 impact parameter and the missing transverse energy (MET) are used as the two variables 
 used to define the regions in the ABCD method for this analysis. 
-\newpage
-The regions are thus defined 
+The regions are thus defined:
 \begin{itemize}
 \item A region: MET $>$ 25 GeV, \dsig $<$ 2.0
 \item B region: MET $<$ 25 GeV, \dsig $<$ 2.0
 \item C region: MET $>$ 25 GeV, \dsig $>$ 2.0
 \item D region: MET $<$ 25 GeV, \dsig $>$ 2.0
 \end{itemize}
-Figure~\ref{fig:abcdCartoon} shows a pictoral representation of the four regions.
+Figure~\ref{fig:abcdCartoon} shows a pictoral representation of the four regions.\newline
+\newpage
 \begin{figure}[h!]
 \begin{center}
 \includegraphics[width=0.6\textwidth]{figures/multijet/abcdExample_met_vs_d0sigBL20}
@@ -550,7 +513,7 @@ Figure~\ref{fig:abcdCartoon} shows a pictoral representation of the four regions
   ABCD calculation.} \label{fig:abcdCartoon}
 \end{figure}
 Assuming that the two variables chosen to define the ABCD regions are completely uncorrelated, the 
-yield of the process being modelled (QCD multi-jets in this case) in the A region is given by
+yield of the process being modeled (QCD multi-jets in this case) in the A region is given by
 \begin{equation}
 N_{A} = N_C \frac{N_B}{N_D}
 \label{eq:simpleABCD}
@@ -572,27 +535,27 @@ region, and the expression can be rewritten as
 N_{A} = R \frac{N_C N_B}{N_D}
 \label{eq:advancedABCD}
 \end{equation}
-The $R$ factor is calculated for each selection (non-resonant, low mass, and high mass) individually,
-and the results at each cut in each selection is provided in
+The $R$ factor is calculated for each selection (\emph{non-res}, \emph{low-mass}, and \emph{high-mass}) individually,
+and the results at each step of the selection is provided in
 Table~\ref{tab:rValues}.
 
 
 \begin{table}[h!]
 \centering
 \input{R_table_reOpt.tex}
-\caption[Values of R at each selection]{Values calculated for $R$ at each stage in the non-resonant,
-  low mass, and high mass selections. The estimate of multi-jet
+\caption[Values of R at each selection]{Values calculated for $R$ at each stage in the \emph{non-res},
+  \emph{low-mass}, and \emph{high-mass} selections. The estimate of multi-jet
   contribution in the A region uses the $R$ value calculated after the
-  first cut of each selection.} \label{tab:rValues}
+  first criteria of each selection.} \label{tab:rValues}
 \end{table}
 In order to minimize the statistical error on $R$, the $R$ value calculated after 
-the first cut of each selection (0.74 and 0.48) is used in Equation~\ref{eq:advancedABCD} to estimate the multi-jet
-background after each subsequent cut. This can be done given the
-compatibility of the $R$ value at the end of the cut flow with that at
+the first criteria of each selection (0.74 and 0.48) is used in Equation~\ref{eq:advancedABCD} to estimate the multi-jet
+background after each subsequent selection. This can be done given the
+compatibility of the $R$ value at the end of the cutflow with that at
 the point where $R$ is evaluated. In order to check such compatibility
 with higher statistics, the $R$ value has been calculated applying
-each selection cut just after the cut where $R$ is evaluated, in order
-to check that $R$ is not correlated with each of the selection cuts.
+each selection just after $R$ is evaluated, in order
+to check that $R$ is not correlated with each of the selections.
 The result is shown in Table \ref{tab:R_after_X}.
 
 \begin{table}[h!]
@@ -628,24 +591,24 @@ bbpt350 	        & bbpt350 + wwpt250 	& bbpt350 + drww15 	& bbpt350 + hh2000	\\\
 \hline\hline
 \end{tabular}
 
-\caption[Cross check for coorelation with R]{Values of $R$ obtained applying a single selection cut after the cut stage where $R$ is nominally evaluated.} \label{tab:R_after_X}
+\caption[Cross check for coorelation with R]{Values of $R$ obtained applying a single selection after $R$ is nominally evaluated.} \label{tab:R_after_X}
 \end{table}
 
 
-Once the normalization of the multi-jet background in the A region is calculated using Equation~\ref{eq:advancedABCD}, the shape of the multi-jet template is taken from the data - Monte Carlo distribution in the C region since the two are kinematically identical except for the cut on \dsig.
+Once the normalization of the multi-jet background in the A region is calculated using Equation~\ref{eq:advancedABCD}, the shape of the multi-jet template is taken from the data minus Monte Carlo distribution in the C region since the two are kinematically identical except for \dsig.
 
 The uncertainty due to the limited statistics in the B and D regions is the
 main source of the multi-jet estimation method systematics. In order to minimise
 such error,  the yields from the  B and D regions used in the ABCD
 calculation are frozen at a level of the cutflow to minimise statistical fluctuations.
-The B and D region yields are frozen after the \ptbb $>$ 210 GeV cut for the non-resonant and low mass selection, and after the $p_{T}(WW)>$ 250 GeV for the high mass selection. Appendix~\ref{app:qcd_BDregionStudy_appendix} details the study carried out to select the stage at which to freeze the B and D regions. 
+The B and D region yields are frozen after the \ptbb $>$ 210 GeV for the \emph{non-res} and \emph{low-mass} selection, and after the $p_{T}(WW)>$ 250 GeV for the \emph{high-mass} selection. Appendix~\ref{app:qcd_BDregionStudy_appendix} details the study carried out to select the stage at which to freeze the B and D regions. 
 
-To further reduce the error coming from the C region, the shape of the data - Monte Carlo, i.e. non-prompt, 
-\mbb distribution was studied as a function of each individual cut for each selection. If the \mbb shape is 
-unchanged by the additions of cuts later in a given selection, the C region shape can be taken from an 
+To further reduce the error coming from the C region, the shape of the data minus Monte Carlo, i.e. non-prompt, 
+\mbb distribution was studied as a function of each individual criteria for each selection. If the \mbb shape is 
+unchanged by the additions of further kinematic selections, the C region shape can be taken from an 
 earlier stage in the cutflow, reducing the shape uncertainty and overall statistical error on the QCD yield.
 To determine the stability of the \mbb shape, the ratio of events in the \mbb signal region ([100, 140] GeV)
-over the numbers of events in the full \mbb spectrum was computed for each individual cut using the C region 
+over the numbers of events in the full \mbb spectrum was computed for each individual criteria using the C region 
 of the ABCD method. This ratio was found to be stable across each selection, and the results of this 
 calculation are provided in Table~\ref{tab:efficiencyFactor}. 
 
@@ -653,7 +616,7 @@ calculation are provided in Table~\ref{tab:efficiencyFactor}.
     \centering
     \begin{tabular}{c|c|c|c}
       \hline\hline
-      \multicolumn{4}{c}{reOptNonRes: \mbb SR/Total Ratios For Individual Cuts}\\\hline\hline 
+      \multicolumn{4}{c}{reOptNonRes: \mbb SR/Total Ratios For Individual Selections}\\\hline\hline 
       mww 	& bbpt210 	& bbpt300 	& wwpt250 	\\\hline 
       0.17 $\pm$ 0.02 	& 0.15 $\pm$ 0.03 	& 0.13 $\pm$ 0.05 	& 0.16 $\pm$ 0.05 	\\\hline 
     \end{tabular}
@@ -661,7 +624,7 @@ calculation are provided in Table~\ref{tab:efficiencyFactor}.
     
     \begin{tabular}{c|c|c|c}
       \hline\hline
-      \multicolumn{4}{c}{reOpt500: \mbb SR/CR Ratios For Individual Cuts}\\\hline\hline 
+      \multicolumn{4}{c}{reOpt500: \mbb SR/CR Ratios For Individual Selections}\\\hline\hline 
       mww 	& bbpt210 	& wwpt150 	& hh500 	\\\hline 
       0.17 $\pm$ 0.02 	& 0.15 $\pm$ 0.03 	& 0.18 $\pm$ 0.02 	& 0.22 $\pm$ 0.03 	\\\hline 
     \end{tabular}
@@ -669,7 +632,7 @@ calculation are provided in Table~\ref{tab:efficiencyFactor}.
 
     \begin{tabular}{c|c|c|c}
       \hline\hline
-      \multicolumn{4}{c}{reOpt700: \mbb SR/Total Ratios For Individual Cuts}\\\hline\hline 
+      \multicolumn{4}{c}{reOpt700: \mbb SR/Total Ratios For Individual Selections}\\\hline\hline 
       mww 	& bbpt210 	& wwpt250 	& hh700 	\\\hline 
       0.17 $\pm$ 0.02 	& 0.15 $\pm$ 0.03 	& 0.16 $\pm$ 0.05 	& 0.16 $\pm$ 0.02 	\\\hline 
     \end{tabular}
@@ -677,19 +640,18 @@ calculation are provided in Table~\ref{tab:efficiencyFactor}.
 
     \begin{tabular}{c|c|c|c}
       \hline\hline
-      \multicolumn{4}{c}{reOpt2000: \mbb SR/Total Ratios For Individual Cuts}\\\hline\hline 
+      \multicolumn{4}{c}{reOpt2000: \mbb SR/Total Ratios For Individual Selections}\\\hline\hline 
       bbpt350 	& wwpt250 	& drww15 	& hh2000 	\\\hline 
       0.12 $\pm$ 0.08 	& 0.16 $\pm$ 0.05 	& 0.19 $\pm$ 0.02 	& 0.11 $\pm$ 0.14 	\\\hline 
       \hline 
     \end{tabular}
-    \caption[Ratio of events in SR over SR+CR]{The ratio of events in the \mbb signal region ([100, 140] GeV) over the numbers of events in the full \mbb spectrum for each individual cut. Both event yields are calculated in the C region of the ABCD method. The ratios are found to be stable across each selection.}        \label{tab:efficiencyFactor}
+    \caption[Ratio of events in SR over SR+CR]{The ratio of events in the \mbb signal region ([100, 140] GeV) over the numbers of events in the full \mbb spectrum for each individual selection. Both event yields are calculated in the C region of the ABCD method. The ratios are found to be stable across each selection.}        \label{tab:efficiencyFactor}
   \end{table}
 
 The normalized shapes of the full \mbb distributions after each 
-cut are shown in Figure~\ref{fig:mbbShapes}. The earliest selection cut with a consistent shape was chosen as the
+selection are shown in Figure~\ref{fig:mbbShapes}. The earliest selection with a consistent shape was chosen as the
 shape for each cutflow and this corresponds to the shape obtained
-after the  \ptbb $>$ 210 GeV cut 
-for the non-resonant the m500 and m700  selections,  and after the  \ptww $>$ 250 GeV for the m2000 selection.
+after the  \ptbb $>$ 210 GeV for the non-resonant the m500 and m700  selections,  and after the  \ptww $>$ 250 GeV for the m2000 selection.
 
 \begin{figure}[h!]
 \begin{center}
@@ -700,13 +662,13 @@ for the non-resonant the m500 and m700  selections,  and after the  \ptww $>$ 25
 
 \caption[The normalized shapes of the full \mbb distributions]{The normalized shapes of the full \mbb distributions after
   each in each selection. Shapes from the non-resonant cutflow are
-  shown at the top left, shapes from the low mass selection are shown
-  at the top left, and shapes from the high mass selection are shown
-  at the bottom. The earliest selection cut with a consistent shape
+  shown at the top left, shapes from the \emph{low-mass} selection are shown
+  at the top left, and shapes from the \emph{high-mass} selection are shown
+  at the bottom. The earliest selection with a consistent shape
   was chosen as the shape for each cutflow and this corresponds to the
-  shape obtained after the \mww and \ptbb $>$ 210 GeV cuts for the
-  non-resonant and low mass selections and after the \ptbb $>$ 350 GeV
-  and \ptww $>$ 250 GeV for the high mass mass selection.} \label{fig:mbbShapes}
+  shape obtained after the \mww and \ptbb $>$ 210 GeV for the
+  \emph{non-res} and \emph{low-mass} selections and after the \ptbb $>$ 350 GeV
+  and \ptww $>$ 250 GeV for the \emph{high-mass} mass selection.} \label{fig:mbbShapes}
 \end{figure}
 
 Since \ttbar and  multi-jet contaminate the control
@@ -725,14 +687,14 @@ were found to converge (stable within $<5\%$) after a few iterations for each cu
 
 To evaluate the systematic error of the estimation, a Sherpa multi-jet $bb$ sample is used to compare 
 the ABCD prediction to the Monte Carlo expectation using events with exactly one lepton and four jets. 
-No $b$-tagging requirements or other event selection cuts are applied. Pseudo-data is produced using
+No $b$-tagging requirements or other event selection criteria are applied. Pseudo-data is produced using
 the multi-jet Monte Carlo and events from the nominal \ttbar Monte Carlo. The $R$ factor is calculated
 using the inclusive $b$-tag (0, 1, or 2 $b$-tags) and used to estimate the QCD contribution in the two
 $b$-tag exclusive region. The percent difference between the number of events from the ABCD estimation 
 and the number of multi-jet events from Monte Carlo used to produce the pseudo-data is taken as the 
 systematic uncertainty. This uncertainty is calculated to be 36\%. In addition, the $bb$ MC is used to
-calculate the $R$ factor for each selection (non-resonant, low mass, and high mass) and each lepton 
-channel, and the results at each cut in each selection are provided in the Table~\ref{tab:lepR}. 
+calculate the $R$ factor for each selection (\emph{non-res}, \emph{low-mass}, and \emph{high-mass}) and each lepton 
+channel, and the results at each kinematic criteria in each selection are provided in the Table~\ref{tab:lepR}. 
 
 \begin{table}[h!]
 \centering
@@ -769,7 +731,7 @@ Muons     & 0.44 $\pm$ 0.20 	& 0.59 $\pm$ 0.10 	& 0.82 $\pm$ 0.07 	& 0.65 $\pm$ 
 
 
 \end{tabular}
-\caption[$R_{non-prompt}$]{$R_{non-prompt}$ calculated for the QCD Monte Carlo sample at using each cut individually from all selections. The lepton channels are shown separated and combined.}
+\caption[$R_{non-prompt}$]{$R_{non-prompt}$ calculated for the QCD Monte Carlo sample at using each kinematic criteria individually from all selections. The lepton channels are shown separated and combined.}
 \label{tab:lepR}
 \end{table}
 
@@ -784,7 +746,7 @@ Muons     & 0.44 $\pm$ 0.20 	& 0.59 $\pm$ 0.10 	& 0.82 $\pm$ 0.07 	& 0.65 $\pm$ 
 
 \subsection{Background Shape and Cutflow}
 \label{sec:systematics}
- The modelling of the background was checked at all selection
+ The modeling of the background was checked at all selection
 stages and, in general, shows good agreement with data.
 Figure~\ref{fig:resolved_mtlep} shows the $\mT$ distribution of the
 leptonic $W$ boson candidate  in the three
@@ -794,7 +756,7 @@ top control regions. The $\mT$ variable is defined as:
 \]
 where $\Delta \phi$ is the azimuthal
 angle between $\pt^{\ell}$ and $\met$. The multijet background populates the
-low values of the $\mT$ distribution, so any mis-modelling of the multijet background would be clearly visible in the $\mT$ distribution.
+low values of the $\mT$ distribution, so any mis-modeling of the multijet background would be clearly visible in the $\mT$ distribution.
 %QCD multijet background is estimated in each top control region following the ABCD method described above.
  
 \begin{figure}
@@ -818,9 +780,9 @@ low values of the $\mT$ distribution, so any mis-modelling of the multijet backg
  
  
 Figures~\ref{fig:mbb_1} and ~\ref{fig:mbb_2} show the $m_{b \bar{b}}$ distributions at the
-selection stage where all requirements, including the $m_{HH}$ cut, are applied except the one on $m_{b \bar{b}}$ itself.
+selection stage where all requirements, including $m_{HH}$, are applied except the one on $m_{b \bar{b}}$ itself.
 The expected background is in agreement with the data over the entire distribution, and  
-close to the signal region in particular. All simulated backgrounds are normalised according to their theoretical cross-sections, except \ttbar, which is normalised in the top CRs.
+close to the signal region in particular. All simulated backgrounds are normalized according to their theoretical cross-sections, except \ttbar, which is normalized in the top CRs.
  
 \begin{figure}
 \begin{flushleft}
@@ -971,14 +933,14 @@ Data 	& 2182.0 	& 1830.0 	& 587.0 	& 11.0 	& 9.0	\\\hline
 This section describes the sources of systematic uncertainties
 considered in the analysis. These uncertainties are divided into four
 categories: experimental uncertainties, uncertainties on the data
-driven background estimation,  uncertainties on the modelling
+driven background estimation,  uncertainties on the modeling
 of background processes estimated from simulation, and theoretical
 uncertainties on the signal processes. In the statistical analysis
 each systematic uncertainty is treated as a nuisance parameter the
 names of which are defined below. These systematic variations are
 estimated on the final expected yield in the signal regions.
 
-\subsection{Experimental uncertainties}
+\subsubsection{Experimental uncertainties}
 
 Each reconstructed object has several sources of uncertainties, each
 of which are evaluated separately. Wherever possible, we follow the
@@ -1107,10 +1069,10 @@ $b$-tagging     & Flavor tagging scale factors    &    FT\_EFF\_Eigen\_C3       
 $b$-tagging     & Flavor tagging scale factors    &    FT\_EFF\_Eigen\_extrapolation                               \\
 $b$-tagging     & Flavor tagging scale factors    &   FT\_EFF\_Eigen\_extrapolation\_from\_charm                               \\
 \hline
-Modelling      & $t\bar{t}$ ME              & Matching &       TopMCaNLOtt    \\ 
-Modelling      & $t\bar{t}$ Scale             &      ScaleVariation  & Top\_Scale      \\ 
-Modelling      & $t\bar{t}$ PDF             &    PDFVariation &    Top\_PDF     \\ 
-Modelling      & $t\bar{t}$ PS               & Parton Shower &       Top\_PS    \\ 
+modeling      & $t\bar{t}$ ME              & Matching &       TopMCaNLOtt    \\ 
+modeling      & $t\bar{t}$ Scale             &      ScaleVariation  & Top\_Scale      \\ 
+modeling      & $t\bar{t}$ PDF             &    PDFVariation &    Top\_PDF     \\ 
+modeling      & $t\bar{t}$ PS               & Parton Shower &       Top\_PS    \\ 
 \hline
 \end{tabular}
 \caption{ Qualitative summary of the systematic uncertainties included in this analysis. }
@@ -1121,14 +1083,14 @@ Modelling      & $t\bar{t}$ PS               & Parton Shower &       Top\_PS    
 
 \clearpage
 
-\subsubsection{Luminosity}
+\paragraph{Luminosity}
 The uncertainty in the combined 2015+2016 integrated luminosity is 2.1\%\footnote{\url{https://twiki.cern.ch/twiki/bin/view/Atlas/LuminosityForPhysics}}. It is derived, following a methodology similar to that detailed in ~\cite{Aaboud:2016hhf}, from a preliminary calibration of the luminosity scale using x-y beam-separation scans performed in August 2015 and May 2016. The luminosity uncertainty is applied to those backgrounds estimated from simulation and the signal samples.
 
-\subsubsection{Trigger}
+\paragraph{Trigger}
 Systematic uncertainties on the efficiency of electron and muon triggers are
 evaluated as recommended by the corresponding combined performance groups as documented here.\footnote{el:\url{https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/ElectronEfficiencyRun2} \\ mu:\url{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/MCPAnalysisGuidelinesMC15}} 
 
-\subsubsection{Muons}
+\paragraph{Muons}
 The following systematic uncertainties are applied to muons in estimations based on the simulation:
 
 \begin{itemize}
@@ -1136,7 +1098,7 @@ The following systematic uncertainties are applied to muons in estimations based
 \item Energy and Momentum scales: These are also measured with $Z$ mass line shape, and provided by the CP groups. 
 \end{itemize}
 
-\subsubsection{Electrons}
+\paragraph{Electrons}
 
 The following systematic uncertainties are applied to electron in estimations based on the simulation:
 
@@ -1147,7 +1109,7 @@ The following systematic uncertainties are applied to electron in estimations ba
 \item Energy and Momentum scales: These are also measured with $Z$ mass line shape, and provided by the CP groups. 
 \end{itemize}
 
-\subsubsection{Jet uncertainties}
+\paragraph{Jet uncertainties}
 The jet energy uncertainties are derived based on in situ measurements
 performed during Run 2 conditions ~~\cite{ATL-PHYS-PUB-2015-015}. The jet energy
 resolution uncertainty is evaluated by smearing jet energies according
@@ -1159,7 +1121,7 @@ $b$-jets~~\cite{ATLAS-CONF-2014-004}. The ``Loose'' reduction scheme
 is used.
 
 
-\subsubsection{Missing transverse energy}
+\paragraph{Missing transverse energy}
 The systematic uncertainties related to the missing transverse energy
 are obtained by the propagation of the systematic uncertainty on the
 objects that build the MET, in particular the muon, electron and jets
@@ -1167,19 +1129,19 @@ energy resolution and scale.
 The resolution and scale of the MET soft-term is broken down into its components: METScale, METResoPara, METResoPerp, and full uncertainties from each component is taken into account in the final fit. 
  
 % ($|d_{0}^{\textrm{sig}}| = d_{0}/\sigma{_{\textrm{d_{0}}}}$)
-\subsubsection{$d_{0}^{\textrm{sig}}$ uncertainties}
-The uncertainty due to the $d_{0}^{\textrm{sig}}$ cut has been evaluated by making the ratio between the efficiency of the cut for data and the efficiency of the cut for the MC background samples. 
-We selected di-electron or di-muon event, requiring an invariant di-leptons mass within 80-100 GeV Z Mass window. To be as similar to our signal region as possible but to keep high statistics, loose pre-selection cuts are applied in selecting the events. The leading lepton is required to have $\pt > 27$~GeV and $\met > 25$~GeV. At least 4 resolved jets are required of which exactly 2 are $b$-jets. 
+\paragraph{$d_{0}^{\textrm{sig}}$ uncertainties}
+The uncertainty due to the $d_{0}^{\textrm{sig}}$ criteria has been evaluated by making the ratio between the efficiency of the criteria for data and the efficiency of the criteria for the MC background samples. 
+We selected di-electron or di-muon event, requiring an invariant di-leptons mass within 80-100 GeV Z Mass window. To be as similar to our signal region as possible but to keep high statistics, loose pre-selection criteria are applied in selecting the events. The leading lepton is required to have $\pt > 27$~GeV and $\met > 25$~GeV. At least four resolved jets are required of which exactly two are $b$-jets. 
 The $d_{0}^{\textrm{sig}}$ distributions for data and MC samples for each lepton channel are shown in the Figure~\ref{fig:d0lep}, in Figure~\ref{fig:d0ratio} the relative ratio of the total distributions is shown.
-The ratio of the efficiency of the $d_{0}^{\textrm{sig}}$ cut for data over MC samples si about 96\%, this is equivalent if the ratio is estimated by using only muons or only electrons. 
-The difference of this ratio from one is the fractional uncertainty due to the $d_{0}^{\textrm{sig}}$ cut efficiency.
+The ratio of the efficiency of the $d_{0}^{\textrm{sig}}$ criteria for data over MC samples si about 96\%, this is equivalent if the ratio is estimated by using only muons or only electrons. 
+The difference of this ratio from one is the fractional uncertainty due to the $d_{0}^{\textrm{sig}}$ criteria efficiency.
 
 
 %\begin{equation}                                                                                                                          
 %$\{Uncertainty}_{\sigma_{d_0}~cut}= {\frac{\epsilon_{\sigma_{d_0}~cut}}_{DATA}}{{\epsilon_{\sigma_{d_0}~cut}_{MC}}}$                      
 %$\epsilon_{\sigma_{d_0}~cut}= \frac{N~passing~\sigma_{d_0}\le2.0}{N~Total}$                                                               
 %\end{equation}                                                                                                                            
-This results in about 4\% for the $d_{0}^{\textrm{sig}}$ uncertainty independent from the lepton flavour.
+This results in about 4\% for the $d_{0}^{\textrm{sig}}$ uncertainty independent from the lepton flavor.
 \begin{figure}[!h]
 \begin{center}
 \includegraphics*[width=0.47\textwidth] {figures/d0_data}
@@ -1198,15 +1160,15 @@ This results in about 4\% for the $d_{0}^{\textrm{sig}}$ uncertainty independent
 \end{figure}
 
 
-\subsection{Background modelling uncertainties}
+\subsubsection{Background modeling uncertainties}
 Several systematics have been evaluated to take into account the
-uncertainties on the modelling of backgrounds. 
+uncertainties on the modeling of backgrounds. 
 
-\subsubsection{Uncertainties from the modelling of $t\bar{t}$}
+\paragraph{Uncertainties from the modeling of $t\bar{t}$}
 \label{sec:topsys}
-The dominant background $t\bar{t}$ is normalised in dedicated CRs. MC is used to extrapolate the shapes from the control regions to the signal region, so theoretical uncertainties are related to such extrapolation. PDF and scale uncertainties are evaluated by applying event selection at truth level. The resulting uncertainties are approximately 5 to 6\% and are included in the final fit.  
+The dominant background $t\bar{t}$ is normalized in dedicated CRs. MC is used to extrapolate the shapes from the control regions to the signal region, so theoretical uncertainties are related to such extrapolation. PDF and scale uncertainties are evaluated by applying event selection at truth level. The resulting uncertainties are approximately 5\% to 6\% and are included in the final fit.  
 
-Additional uncertainties in $t\bar{t}$ modelling stems from the difference in the matrix element (ME) implementation across generators, hadronisation and fragmentation modelling (called parton shower, PS), and the amount of initial and final state radiation (ISR/FSR). The ME uncertainty is computed by comparing the events generated by \textsc{aMC@NLO} with the events generated by \textsc{Powheg-Box} v2, both interfaced to \textsc{Herwig++}  for parton shower. The difference computed close to the signal region with enough statistics is used. The PS uncertainty is computed by comparing the the nominal \textsc{Powheg+Pythia6} sample with the PS variation \textsc{Powheg+Herwig++} sample in a region close to the SR but with enough statistics. For ISR/FSR, the dedicated \textsc{radHi} and \textsc{radLo} samples with modified \textsc{hDamp} parameter are compared. The sample with the higher impact on the fit is kept as the uncertainty due to ISR/FSR. Table~\ref{tab:ttbarModeling} shows the numbers provided to the fit for the various \ttbar modelling systematics for the low and high mass selections. Since the uncertainties are computed based on extrapolation from the CRs, these uncertainties are input to the statistical fit as rate uncertainties in the SR only. 
+Additional uncertainties in $t\bar{t}$ modeling stems from the difference in the matrix element (ME) implementation across generators, hadronization and fragmentation modeling (called parton shower, PS), and the amount of initial and final state radiation (ISR/FSR). The ME uncertainty is computed by comparing the events generated by \textsc{aMC@NLO} with the events generated by \textsc{Powheg-Box} v2, both interfaced to \textsc{Herwig++}  for parton shower. The difference computed close to the signal region with enough statistics is used. The PS uncertainty is computed by comparing the the nominal \textsc{Powheg+Pythia6} sample with the PS variation \textsc{Powheg+Herwig++} sample in a region close to the SR but with enough statistics. For ISR/FSR, the dedicated \textsc{radHi} and \textsc{radLo} samples with modified \textsc{hDamp} parameter are compared. The sample with the higher impact on the fit is kept as the uncertainty due to ISR/FSR. Table~\ref{tab:ttbarModeling} shows the numbers provided to the fit for the various \ttbar modeling systematics for the \emph{low-} and \emph{high-mass} selections. Since the uncertainties are computed based on extrapolation from the CRs, these uncertainties are input to the statistical fit as rate uncertainties in the SR only. 
 
 \begin{table}
 \centering
@@ -1220,7 +1182,7 @@ PDF                  & 5.2 			&  3.5 			&           6.1                 \\\hline
 Scale                & 3.3 			& 2.2                		&               3.7                 \\\hline\hline
 
 \end{tabular}
-\caption[Extrapolation uncertainties]{Extrapolation uncertainties in percentage from the CR to the SR for all selections,  provided to the fit for the \ttbar modelling systematics.}
+\caption[Extrapolation uncertainties]{Extrapolation uncertainties in percentage from the CR to the SR for all selections,  provided to the fit for the \ttbar modeling systematics.}
 \label{tab:ttbarModeling}
 \end{table}
 
@@ -1231,8 +1193,8 @@ An uncertainty on the shape of the $m_{HH}$  for $t\bar{t}$ is derived
 comparing  the default Powheg+Herwig++ sample with the distribution obtained
 using aMC@NLO+Heriwg++ as alternative generator. Additional systematic
 uncertainties are evaluated by comparing the nominal sample showered
-with Pythia to one showered with Herwig++. Sample with renormalisation
-and factorisation scales doubled
+with Pythia to one showered with Herwig++. Sample with renormalization
+and factorization scales doubled
 and halved are also available and used as systematic uncertainty. 
 The Samples used for the systematic uncertainties are the following:
 
@@ -1243,8 +1205,8 @@ The Samples used for the systematic uncertainties are the following:
 \end{itemize}
 \fi
 
-\subsubsection{Single top uncertainty}
-Theoretical cross section uncertainties of 5.3\% is assigned to the associated $Wt$ production,  3.9\% to the s-channel and 4.2\% to t-channel single top production.  The dominant production for this analysis is the $Wt$ channel.  The single top modelling systematic uncertainties have been calculated employing the difference between the nominal (DR scheme) and the (available) systematic variation sample (DS scheme) in SR for the $Wt$ channel. The uncertainties are computed to be 48\%, 48\%, and 84\% for non-resonant, low-mass and high-mass analyses respectively.  Single top is a very small background in the analysis. However, the large difference between the two schemes warranted getting feedback from the Top Group. We narrowed the huge difference down to very tight $p_{T} (bb)$ cut. See Figure~\ref{fig:stop_bbpt}. The Top Group is working on a better prescription but in the meantime this is the recommended method and the huge difference is what we keep. 
+\paragraph{Single top uncertainty}
+Theoretical cross section uncertainties of 5.3\% is assigned to the associated $Wt$ production,  3.9\% to the s-channel and 4.2\% to t-channel single top production.  The dominant production for this analysis is the $Wt$ channel.  The single top modeling systematic uncertainties have been calculated employing the difference between the nominal (DR scheme) and the (available) systematic variation sample (DS scheme) in SR for the $Wt$ channel. The uncertainties are computed to be 48\%, 48\%, and 84\% for non-resonant, low-mass and high-mass analyses respectively.  Single top is a very small background in the analysis. However, the large difference between the two schemes warranted getting feedback from the Top Group. We narrowed the huge difference down to very tight $p_{T} (bb)$. See Figure~\ref{fig:stop_bbpt}. The Top Group is working on a better prescription but in the meantime this is the recommended method and the huge difference is what we keep. 
 Additional uncertainties on single top have been calculated employing the difference between the nominal and the (available) systematic variation samples. The recommendation is taken from the Top Twiki.{\footnote {\url{https://twiki.cern.ch/twiki/bin/viewauth/AtlasProtected/TopSystematics2015}}} 
 The comparison is done between the nominal sample and the Powheg+Herwig for fragmentation, MC@NLO for Matrix Element, and RadHi/RadLo for ISR/FSR uncertainties. The comparison is done at the selection where MC statistical uncertainties are small. This leads to $p_{T}(bb) < 120$ for non-resonance and low-mass selections, and $\Delta R(WW) < 1.5$ for high-mass selection. 
 The uncertainties vary across selections being 3.5\% at the smallest to 23\% at the largest.% Appendix~\ref{app:app_stop_unc} provides detailed tables of the comparison of nominal with alternative single top samples. 
@@ -1252,7 +1214,7 @@ The uncertainties vary across selections being 3.5\% at the smallest to 23\% at 
 \begin{figure}[!h]
 \begin{center}
 \includegraphics*[width=0.47\textwidth] {figures/DR_DS_bbpt.eps}
-\caption[$p_{T}(bb)$  for DR and DS schemes for single top modelling.]{$p_{T}(bb)$  for DR and DS schemes for single top modelling.}
+\caption[$p_{T}(bb)$  for DR and DS schemes for single top modeling.]{$p_{T}(bb)$  for DR and DS schemes for single top modeling.}
 \label{fig:stop_bbpt}
 \end{center}
 \end{figure}
@@ -1261,18 +1223,18 @@ The uncertainties vary across selections being 3.5\% at the smallest to 23\% at 
 %The uncertainties vary across Wt, t, and s channels , and for low mass versus high mass selection. At the smallest it is 3.9\% and at the largest 67\%. To avoid too many nuisance parameters, we have added them in quadrature and now use the following: For Low Mass, 16\% in CR and 34\% in SR. For high mass, 66\% in CR and 69\% in SR.
 
 
-\subsubsection{$W/Z$+jets modelling uncertainty}
+\paragraph{$\mathbf{W/Z}$+jets modeling uncertainty}
 \label{sec:WjetsModeling}
-Uncertainties on the modelling of $W$+jets background were computed in
+Uncertainties on the modeling of $W$+jets background were computed in
 each SR and top CR. Three sources of uncertainties were considered:
-scale variation uncertainties, PDF uncertainties and PS/modelling
+scale variation uncertainties, PDF uncertainties and PS/modeling
 uncertainties. Scale uncertainties were computed by varying by a
-factor 2 the nominal renormalisation and factorisation scales, PDF
+factor of two the nominal renormalization and factorization scales, PDF
 uncertainties were computed according to the NNPDF recipe, that is
 computing the standard deviation of the 100 PDF eigenset, while
-modelling uncertainties were computed comparing Sherpa with
+modeling uncertainties were computed comparing Sherpa with
 Alpgen+Pythia6. The values obtained in each region are
-summarised in Table \ref{tab:wplusjet_uncertainties}. Same
+summarized in Table \ref{tab:wplusjet_uncertainties}. Same
 uncertainties are used for the subleading $Z$+jets background.
 \begin{table}
 \centering
@@ -1283,35 +1245,35 @@ Source               &\multicolumn{2}{c} {Non-resonant} 	& \multicolumn{2}{c}{Lo
 & SR & CR & SR & CR & SR & CR \\
 \hline
 
-Modelling/PS       & 37 & 37 	&   37 & 37 &  18 & 18             \\\hline
+modeling/PS       & 37 & 37 	&   37 & 37 &  18 & 18             \\\hline
 PDF                  & 7 & 30 	&  10 & 36 & 17 & 31         \\\hline
 Scale                & 25 & 35 & 17 & 31 & 29 & 28      \\\hline\hline
 \end{tabular}
 \caption[Theoretical uncertainties in percentage on $W/Z$+jets event
   yield]{Theoretical uncertainties in percentage on $W/Z$+jets event
   yield computed in the CR  and the  SR of all selections,  provided
-  to the fit for the W/Z jets modelling systematics.}
+  to the fit for the W/Z jets modeling systematics.}
 
 \label{tab:wplusjet_uncertainties}
 \end{table}
 
 
-\subsubsection{QCD uncertainty}
+\paragraph{QCD uncertainty}
 An overall 36\% uncertainty is assigned to the QCD multijet background. The systematic uncertainty was calculated following the steps described in Section~\ref{sec:multijet}. 
 
 
-\subsection{Model uncertainties on the signal}
+\subsubsection{Model uncertainties on the signal}
 
 Systematics on signal acceptance are computed generating
 multiple-weight samples that include weights corresponding to
-variation of the normalisation and factorisation scales by a factor
+variation of the normalization and factorization scales by a factor
 $(\xi_r, \xi_f)= 2$. The envelope is built excluding the cases where
 $\xi_r/\xi_f = 4$ and $\xi_r/\xi_f = 1/4$. The fractional uncertainty
 is obtained dividing $1/2$ of the envelop by the central value.
 PDF uncertainties are compute using PD4LHC\_mc\_30 pdf sets, that
 include the envelope of three PDF sets, namely the CT14, MMHT'14,
 NNPDF3. The CTEQ error formula is used to compute the uncertainties.
-Results are summarised in table \ref{tab:sig_systs} for each signal
+Results are summarized in Table \ref{tab:sig_systs} for each signal
 hypothesis.
 
 \begin{table}
