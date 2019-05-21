@@ -70,111 +70,106 @@
 
 \begin{frame}
 \begin{center}
-\header{About Me}
+\header{Overview}
 \end{center}
-\begin{columns}
-\begin{column}{0.8\textwidth}
 \begin{itemize}
-\small
-\item{B.Sc. at Ohio State University, 2013}
+%\small
+\item The Standard Model
 \begin{itemize}
-\footnotesize
-\item Worked with Harris Kagan and KK. Gan on accelerated lifetime testing for IBL optical readouts
+%\footnotesize
+\item Higgs Physics
 \end{itemize}
-\item Began work at UO with Stephanie Majewski in 2013
-\begin{itemize}
-\footnotesize
-\item Worked on LAr Phase-II Upgrade TDR
-\end{itemize}
-\end{itemize}
-\end{column}
-\begin{column}{0.2\textwidth}
-\begin{center}
-\vspace{-1cm}
-\includegraphics[width=1.2\textwidth]{figures/fig_01a}\\
-\includegraphics[width=1.2\textwidth]{figures/fig_01b}
-\end{center}
-\end{column}
-\end{columns}
-\begin{itemize}
-\small
-\item Began working with Eric Torrence in 2015 on $\tau$ trigger upgrade studies Qualification task
-\item Started work on full Run 2 Boosted $HH\rightarrow{}b\bar{b}WW^{*}$ analysis
-\begin{itemize}
-\footnotesize
-\item 2015-2016 analysis needed manpower to move toward publication
-\end{itemize}
-\item Started working as HLT Reprocessing Expert in 2017
-\begin{itemize}
-\item Moved to Coordinator within 9 months
-\end{itemize}
-\item Served as Trigger Online On-call during 2018
+\item BSM Di-Higgs Production
+\item The LHC and ATLAS
+\item $HH\rightarrow{}b\bar{b}WW^{*}$ Analysis
+\item Improvements to the Analysis
+\item Conclusion and Outlook
 \end{itemize}
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\header{Motivation}
+\header{The Standard Model}
 \end{center}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\textcolor{MyPurple}{SM di-Higgs production}\\
 \begin{itemize}
-\item Two dominant production modes
-\item Destructively interfere 
-\item Gives very small cross section 
-\item Measurement of trilinear Higgs coupling is an important measurement for the HL-LHC
+\item Describes matter (fermions) and force carriers (gauge bosons)
+\item Very successful model
+\item Final piece (Higgs Boson) discovered in 2012
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
-\begin{figure}[h]
-\footnotesize
-\begin{center}
-\begin{tikzpicture}
-\begin{feynman}
-\vertex (i1);
-\vertex [right = of i1] (t1);
-\vertex [dot][below right =of t1] (t3);
-\vertex [below left= of t3] (t2);
-\vertex [left = of t2] (i2);
-\vertex [right =of t3][dot](h){};
-\vertex [above right = of h] (f1){\(H\)};
-\vertex [below right = of h] (f2){\(H\)};
-\diagram* {
-(i1) -- [gluon] (t1),
-(i2) -- [gluon] (t2),
-(t1) -- [fermion](t3) -- [fermion] (t2) -- [fermion,edge label'=\(t/b\)](t1),
-(t3) -- [scalar,edge label'=\(H^{*}\)] (h),
-(f1) -- [scalar] (h) -- [scalar](f2)
-};
-\vertex [right=0.75cm of h] {\(\lambda_{HHH}\)};
-\end{feynman}
-\end{tikzpicture}
-\hspace{1cm}
-\begin{tikzpicture}
-\begin{feynman}
-\vertex (i1);
-\vertex [ right = of i1] (t1);
-\vertex [right = of t1] (t2);
-\vertex [below = of t2] (t3);
-\vertex [left = of t3] (t4);
-\vertex [ left=of t4] (i2);
-\vertex [ right =of t2] (f1){\(H\)};
-\vertex [ right=of t3] (f2){\(H\)};
-\diagram* {
-(i1) -- [gluon] (t1),
-(i2) -- [gluon] (t4),
-(t1) -- [fermion](t2) -- [fermion] (t3) -- [fermion](t4) -- [fermion,edge label'=\(t/b\)] (t1),
-(t2) -- [scalar] (f1),
-(t3) -- [scalar] (f2)
-};
-\end{feynman}
-\end{tikzpicture}
-\end{center}
-\end{figure}
+\includegraphics[width=1\textwidth]{figures/Standard_Model_of_Elementary_Particles}
 \end{column}
 \end{columns}
 \end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Higgs Mechanism}
+\end{center}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\color{MyPurple}{Scalar Boson}\color{black}
+\begin{center}
+$\phi_0 = \frac{1}{\sqrt{2}}\binom{0}{v}$\\~\\
+\huge$\Downarrow$ \normalsize EWSB \huge$\Downarrow$ \normalsize\\~\\
+$\phi(x) = \frac{1}{\sqrt{2}}\binom{0}{v + h(x)}$\\~\\
+Coupling to Gauge Bosons gives $W^{\pm},\ Z,\ A(\gamma)$\\~\\
+$M_W^2 = \frac{1}{4}g^2v^2$\\~\\
+\vspace{-0.3cm}$M_Z^2 = \frac{1}{4}(g^2 + g'^{2})v^2$\\~\\
+\vspace{-0.3cm}$M_A^2 = 0$
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth]{figures/Higgs_mech}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Higgs Self-Coupling}
+\end{center}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth]{figures/higgspotential}
+\end{column}
+\begin{column}{0.5\textwidth}
+\color{MyPurple}{Higgs Potential}\color{black}
+\begin{center}
+$V = \mu^2|\Phi^{\dagger}\Phi| + \lambda(|\Phi^{\dagger}\Phi|)^2$\\~\\
+Expand self-coupling around VEV\\~\\
+$V_\mathrm{self-coupling} \supset{} \lambda{}v\Phi^3 + \frac{\lambda}{4}\Phi^4$\\~\\
+Tri-linear Higgs coupling strength $\lambda_{HHH}\equiv{}\lambda v$
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Higgs Self-Coupling}
+\end{center}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figures/sm_fey}\\~\\
+SM Theory cross section:\\
+\small$\sigma_{\mathrm{HH}} \approx 33.53\mathrm{fb}$
+\end{center}
+\end{column}
+\begin{column}{0.5\textwidth}
+Two Dominant production modes at the LHC\\~\\
+Interfere destructively to give small theoretical cross section\\
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figures/SM_continuum}
+\end{center}
+\end{column}
+\end{columns}
+\end{frame}
+
 
 \begin{frame}
 \begin{center}
@@ -184,13 +179,15 @@
 \begin{column}{0.5\textwidth}
 \textcolor{MyPurple}{Resonant di-Higgs production}\\
 \begin{itemize}
-\itemDuring Run 2, more interesting to perform search for BSM production
-\item Eg: Heavy Higgs-like Scalar
+\item A New process could decay to $HH$
+\item E.g. Real Higgs Singlet Extension
 \begin{itemize}
 \item Couples to SM Higgs
 \item Large enhancement to HH production rate
+\begin{itemize}
+\item Up to 30 times SM 
 \end{itemize}
-\item This was the original focus of my thesis
+\end{itemize}
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -215,7 +212,8 @@
 (f1) -- [scalar] (h) -- [scalar](f2)
 };
 \end{feynman}
-\end{tikzpicture}
+\end{tikzpicture}\\
+\includegraphics[width=0.75\textwidth]{figures/ian6}
 \end{center}
 \end{figure}
 \end{column}
@@ -224,85 +222,184 @@
 
 \begin{frame}
 \begin{center}
+\header{The Large Hadron Collider}
+\end{center}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/LHC}
+\end{center}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\small
+\item 13 TeV Proton-Proton Collider
+\item 27 Km Circumference under the French-Swiss border
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\small
+\item 4 primary interaction points, each with a dedicated detector
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{The ATLAS Detector}
+\end{center}
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figures/ATLAS_det}
+\end{center}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item General purpose detector
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item 3.9 T Toroid
+\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{ATLAS Trigger}
+\end{center}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\begin{itemize}
+\item LHC has 40 MHZ Collision Rate
+\begin{itemize}
+\item $\sim$64 TB/s 
+\end{itemize}
+\item 2 Level Trigger System
+\begin{itemize}
+\item Level-1 Trigger (L1)
+\item High Level Trigger (HLT)
+\end{itemize}
+\item Reduces rate from 40MHz to $\sim$2 kHz ($\sim$3 GB/s)
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\includegraphics[width=1\textwidth]{figures/run2TDAQ}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Particles in the Detector}
+\end{center}
+\begin{center}
+\includegraphics[width=0.75\textwidth]{figures/layers}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
 \header{$b\bar{b}WW^{*}$ semi-leptonic channel}
 \end{center}
 \vspace{-0.6cm}
 \begin{columns}
-\begin{column}{0.4\textwidth}
+\begin{column}{0.5\textwidth}
 \begin{itemize}
-\small
-\item Lower QCD background but more \ttbar than 4b 
-\item Lepton is strong discriminate for QCD but decay contains neutrino
-\item This search is not currently competitive for SM measurement
-\item Could be competitive at large resonant mass
+\item $b\bar{b}WW^*$ has the second highest BR behind $b\bar{b}b\bar{b}$
+\begin{itemize}
+\footnotesize
+\item One of the W bosons is off-shell
+\end{itemize}
+\item $bbl\nu$ final state 
+\begin{itemize}
+\footnotesize
+\item Lepton helps against QCD
+\item Neutrino makes reco. more challenging
+\end{itemize}
 \end{itemize}
 \end{column}
-\begin{column}{0.6\textwidth}
+\begin{column}{0.5\textwidth}
 \begin{center}
-\includegraphics[width=0.75\textwidth]{figures/DiHiggsBRs}\\
-\includegraphics[width=0.75\textwidth]{figures/comb_limit}
+\includegraphics[width=01.2\textwidth]{figures/DiHiggsBRs}
+%\includegraphics[width=0.75\textwidth]{figures/comb_limit}
 \end{center}
 \end{column}
 \end{columns}
 \end{frame}
 
-
 \begin{frame}
 \begin{center}
-\header{$\mathbf{HH\rightarrow b\bar{b}WW}$ Analysis Strategy}
+\header{${\mathbf{bbl\boldsymbol{\nu{}}}}$ Final State}
 \end{center}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\begin{center}
-\vspace{-0.2cm}
-\color{MyPurple}{Resolved Analysis}
-\includegraphics[width=1\textwidth]{figures/resolved_topo}
-\end{center}
 \begin{itemize}
-\item SM production is not very boosted
-\item A resolved topology is used for a SM, non-resonant measurement and a low mass resonance search
+\item electron or muon
+\item 2 b quarks
+\item 2 light flavor quarks
+\item \met
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
-%\vspace{-0.5cm}
 \begin{center}
-\color{MyPurple}{Boosted Analysis}
-\includegraphics[width=1\textwidth]{figures/boosted_topo}
+\includegraphics[width=1\textwidth]{figures/res_prod}
 \end{center}
-\begin{itemize}
-\item As the resonant mass increases, the system becomes more boosted
-\item Boosted analysis focuses on high resonant masses (1-3 TeV)
-\end{itemize}
 \end{column}
 \end{columns}
 \end{frame}
 
+
 \begin{frame}
 \begin{center}
-\header{Data and Background}
+\header{Jets}
 \end{center}
+\begin{itemize}
+\item Quarks hadronize before they interact with the detector
+\item Gives sprays of energy deposits
+\item Energy deposits grouped together into ``Jets" by algorithms
+\end{itemize}
+\begin{center}
+\includegraphics[height=0.5\textheight]{figures/antikt}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Neutrinos}
+\end{center}
+\begin{itemize}
+\item Neutrinos do not interact with detector
+\item Have transverse (perpendicular to beam line) information from \met
+\item Need another piece to fully reconstruct 4-momentum
+\begin{itemize}
+\item This analysis used Higgs mass
+\end{itemize}
+\end{itemize}
+\begin{center}
+\includegraphics[height=0.5\textheight]{figures/met}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Background}
 \begin{columns}
 \begin{column}{0.3\textwidth}
+\color{MyPurple}{Major}
+\begin{itemize}
 \small
-\color{MyPurple}{Final State}
-\begin{itemize}
-\item $b\bar{b}l\nu{}qq$
+\item \ttbar
+\item W+Jets
+\item QCD multijet
 \end{itemize}
-\color{MyPurple}{Data}
+Minor
 \begin{itemize}
-\footnotesize
-\item $36.1\text{ fb}^{-1}$ 
-\end{itemize}
-\color{MyPurple}{Major Backgrounds}
-\begin{itemize}
-\footnotesize
-\item \ttbar ($\sim{}50\%$)
-\item W+Jets ($\sim{}20\%$ ($\sim{}5\%$ Res.))
-\item QCD Multi-jet ($\sim{}20\%$)
-\begin{itemize}
-\scriptsize
-\item (from data)
-\end{itemize}
+\small
+\item Z+Jets
+\item Single Top
+\item Diboson
 \end{itemize}
 \end{column}
 \begin{column}{0.7\textwidth}
@@ -315,33 +412,51 @@
 \end{center}
 \end{column}
 \end{columns}
+\end{center}
 \end{frame}
 
 \begin{frame}
 \begin{center}
 \header{Resolved Event Selection}
 \end{center}
-\color{MyPurple}{Pre-selection}
-\begin{itemize}
-\item 1+ trigger matched electron or muon
-\item 4+ jets, exactly 2 b-tags
-\end{itemize}
-\color{MyPurple}{Event Selection}\color{black}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/resolvedv2}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Boosted Event Selection}
+\end{center}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/boostedv2}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Signal Region}
+\end{center}
 \begin{columns}
 \begin{column}{0.5\textwidth}
+\begin{center}
+\color{MyPurple}{Resolved}
 \begin{itemize}
-\item $\met$
-\item high $p_{T}^{WW}$ and $p_{T}^{bb}$
-\item $m_{bb}\sim{}m_{H}$
+\item \met
+\item $p_T^{bb}$
+\item $p_T^{WW}$
+\item $m_{bb}\sim{}m_H$
+\item $m_{HH}\sim{}m_{S}$
 \end{itemize}
+\end{center}
 \end{column}
 \begin{column}{0.5\textwidth}
+\begin{center}
+\vspace{-1.4cm}\color{MyPurple}{Boosted}
+\end{center}
 \begin{itemize}
-\item $m_{HH}$ window
-\begin{itemize}
-\item Depends on resonant signal mass hypothesis
-\item I helped develop an implement these windows 
-\end{itemize}
+\item \met
+\item $m_\mathrm{Large-R\ jet}\sim{}m_H$
 \end{itemize}
 \end{column}
 \end{columns}
@@ -355,15 +470,18 @@
 \begin{column}{0.5\textwidth}
 \color{MyPurple}{\ttbar}
 \begin{itemize}
-\item Normalized in $m_{bb}$ CRs
+\footnotesize
+\item Normalized in $m_{bb}$ CR
 \begin{itemize}
-\item reversed $m_{bb}$ cut
+\scriptsize
+\item Boosted \ttbar VR
 \end{itemize}
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \color{MyPurple}{Other MC Bkg.}
 \begin{itemize}
+\footnotesize
 \item Modeled using MC and normilized to SM XSec
 \end{itemize}
 \end{column}
@@ -375,11 +493,16 @@
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \vspace{-0.5cm}
+\footnotesize
 \item ABCD data driven estimate
 \begin{itemize}
 \item $N_A = F N_C N_B / N_D$
 \item $F$ is a correction factor determined earlier in the cutflow
-\item I developed the correction factor to overcome low stats in C region
+\item Boosted uses $\met>50\text{ GeV}$
+\begin{itemize}
+\scriptsize
+\item Takes shape from 1 b-tag C Region
+\end{itemize}
 \end{itemize}
 \end{itemize}
 \end{column}
@@ -391,48 +514,13 @@
 
 \begin{frame}
 \begin{center}
-\header{Resolved Background Shape Check}
+\header{Background Shape Check}
 \end{center}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA_met25d020-eps-converted-to}
 \end{center}
 \small
 $m_T = \sqrt{2p_T^l\met\times{}(1-\cos{\Delta{\phi}})}$
-\end{frame}
-
-
-\begin{frame}
-\begin{center}
-\header{Boosted Analysis}
-\end{center}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\color{MyPurple}{Signal Region}
-\begin{itemize}
-\footnotesize
-\item slightly larger \met cut
-\item $m_{\mathrm{Large-R}}\sim{}m_{H}$
-\end{itemize}
-\color{MyPurple}{Background Modeling}
-\begin{itemize}
-\footnotesize
-\item \ttbar VR
-\item Other MC Bkg: Normalized to SM XSec
-\item Multijet: Similar to resolved
-\begin{itemize}
-\scriptsize
-\item $\met > 50 \text{ GeV}$
-\item $m_{HH}$ dist, taken from 1 b-tag selection
-\end{itemize}
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-
-\begin{center}
-\includegraphics[width=1\textwidth]{figures/C_2tab_0bjet_mbbcr_lepton_presel_met50_WlepMtATLAS}
-\end{center}
-\end{column}
-\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -451,18 +539,19 @@ $m_T = \sqrt{2p_T^l\met\times{}(1-\cos{\Delta{\phi}})}$
 \header{Combined Limit}
 \end{center}
 \begin{center}
-\includegraphics[width=0.7\textwidth]{figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01}
+\includegraphics[width=0.65\textwidth]{figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01}
 \end{center}
+\small
+\vspace{-0.5cm}$\sigma(pp\rightarrow{}HH)B(HH\rightarrow{}b\bar{b}WW^*) < 300^{+100}_{-80} \times{} SM$
 \end{frame}
 
 \begin{frame}
 \begin{center}
-\header{Improvements for Full Run II}
+\header{Motivation}
 \end{center}
 \vspace{-0.5cm}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\color{MyPurple}{Motivation}
 \begin{itemize}
 \footnotesize
 \item $H\rightarrow{}WW$ becomes boosted around 1 TeV 
@@ -481,10 +570,10 @@ $m_T = \sqrt{2p_T^l\met\times{}(1-\cos{\Delta{\phi}})}$
 
 \begin{frame}
 \begin{center}
-\header{Event Selection}
+\header{Fully Boosted Event Selection}
 \end{center}
 \begin{center}
-\includegraphics[width=0.9\textwidth]{figures/full_boosted}
+\includegraphics[width=1\textwidth]{figures/fullboost}
 \end{center}
 \end{frame}
 
@@ -500,80 +589,31 @@ $m_T = \sqrt{2p_T^l\met\times{}(1-\cos{\Delta{\phi}})}$
 \includegraphics[width=01\textwidth]{figures/electron/mhh_e}
 \end{column}
 \end{columns}
-%\begin{columns}
-%\begin{column}{0.3\textwidth}
-%\small
-%\color{MyPurple}{$H\rightarrow{}b\bar{b}$}
-%\begin{itemize}
-%\footnotesize
-%\item Same as boosted analysis
-%\end{itemize}
-%\small
-%\color{MyPurple}{$H\rightarrow{}WW^{*}$}
-%\begin{itemize}
-%\footnotesize
-%\item ID trigger lepton
-%\item Large-R jet:
-%\begin{itemize}
-%\scriptsize
-%\item $e$ channel: Jet
-%\item $\mu$ channel: Jet + $\mu$
-%\end{itemize}
-%\item Reconstructed $\nu$
-%\end{itemize}
-%\end{column}
-%\begin{column}{0.7\textwidth}
-%\begin{center}
-%\vspace{-0.5cm}
-%\hspace{-0.5cm}\includegraphics[width=0.5\textwidth]{figures/electron/mww_e}\\
-%\hspace{-0.5cm}\includegraphics[width=0.5\textwidth]{figures/electron/mhh_e}
-%\end{center}
-%\end{column}
-%\end{columns}
 \end{frame}
 
 \begin{frame}
 \begin{center}
 \header{Background Modeling}
 \end{center}
-{\color{MyPurple}{Similar to Boosted Analysis}}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\vspace{-1cm}
 \begin{itemize}
-\item \ttbar checked in $m_{bb}$ VR
-\item QCD multijet: ABCD method
-\item Other: Norm to SM XSec
+\item Same procedure as boosted paper analysis
+\item Slightly looser selection to increase statistics
+\item Check shape in mBB control region
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
-\vspace{-0.9cm}
-\begin{table}
-\begin{center}
-\scriptsize
-\begin{tabular}{|l|c|c|c}
-\hline
-Sample        &  Yield   &  Stats Unc \\ 
-\hline 
-$t\bar{t}$    &  187.7  & $\pm$ 8.8    \\
-W+Jets        &  33.7   & $\pm$ 1.9     \\
-QCD           &  34.5   & $\pm$ 5.5     \\
-Single-top    &  7.0   & $\pm$ 1.3     \\
-Z+Jets        &  4.7    & $\pm$ 0.4        \\
-Dibosons      &  3.3    & $\pm$ 0.6      \\
-\hline
-Prediction    &  271.0  & $\pm$ 10.7       \\
-Data          &  268    & - \\
-\hline
-Data/Pred     &  0.99    & -  \\
-\hline
-\end{tabular}
-\end{center}
-\end{table}
+\includegraphics[width=1\textwidth]{figures/ABCD}
 \end{column}
 \end{columns}
+\end{frame}
+
+\begin{frame}
 \begin{center}
-\vspace{-0.4cm}
+\header{Background Shape Check}
+\end{center}
+\begin{center}
 \includegraphics[width=0.5\textwidth]{figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1}
 \end{center}
 \end{frame}
@@ -608,6 +648,50 @@ Data/Pred     &  0.99    & -  \\
 \end{columns}
 \end{frame}
 
+\begin{frame}
+\begin{center}
+\header{Conclusion}
+\end{center}
+\begin{itemize}
+\item Set the first limits for $HH$ resonant production over 1 TeV
+\item Developed analysis for SM $HH$ production in $b\bar{b}l\nu$ channel
+\begin{itemize}
+\item Set limit of 300 X SM cross section
+\end{itemize}
+\item Improved the cross section upper limit for high resonant mass by $\sim$factor of 2
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Outlook}
+\end{center}
+\begin{itemize}
+\item Move to Fatjet trigger
+\begin{itemize}
+\item Lepton ID requirement in derivation limits the high mass analysis
+\end{itemize}
+\item Neutrino reconstruction needs improved at high mass
+\begin{itemize}
+\item Use $H\rightarrow{}b\bar{b}$ information
+\end{itemize}
+\item ABCD estimate is limited by statistics
+\begin{itemize}
+\item Move to alternate QCD estimate like MM
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+Thank you to my committee:\\
+Eric Torrence (Advisor)\\
+Stephanie Majewski (Chair)\\
+Tim Cohen\\
+Hank Childs\\
+And a special thanks to Alison
+\end{center}
+\end{frame}
 
 
 \appendix

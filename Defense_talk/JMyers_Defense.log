@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.22)  19 MAY 2019 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.22)  20 MAY 2019 21:54
 entering extended mode
 **./JMyers_Defense.tex
 (JMyers_Defense.tex
@@ -1540,271 +1540,233 @@ thkerncmss.
 )
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 113.
+(Font)              size <17.28> substituted on input line 88.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 113.
-
-Package epstopdf Info: Source file: <figures/fig_01a.eps>
-(epstopdf)                    date: 2019-05-17 13:42:54
-(epstopdf)                    size: 298822 bytes
-(epstopdf)             Output file: <figures/fig_01a-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-05-17 13:45:48
-(epstopdf)                    size: 62912 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/fig_01a-eps-convert
-ed-to.pdf figures/fig_01a.eps>
-(epstopdf)             \includegraphics on input line 113.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./figures/fig_01a-eps-converted-to.pdf): PDF inc
-lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/fig_01a-eps-converted-to.pdf, id=17, 1374.13374pt x 772.8875pt>
-File: figures/fig_01a-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/fig_01a-eps-converted-to.pdf>
-Package pdftex.def Info: figures/fig_01a-eps-converted-to.pdf  used on input li
-ne 113.
-(pdftex.def)             Requested size: 73.74825pt x 41.47702pt.
-
-Overfull \hbox (12.29121pt too wide) in paragraph at lines 113--113
- [] 
- []
-
-Package epstopdf Info: Source file: <figures/fig_01b.eps>
-(epstopdf)                    date: 2019-05-17 13:42:58
-(epstopdf)                    size: 544156 bytes
-(epstopdf)             Output file: <figures/fig_01b-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-05-17 13:45:50
-(epstopdf)                    size: 95443 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/fig_01b-eps-convert
-ed-to.pdf figures/fig_01b.eps>
-(epstopdf)             \includegraphics on input line 113.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./figures/fig_01b-eps-converted-to.pdf): PDF inc
-lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/fig_01b-eps-converted-to.pdf, id=18, 1374.13374pt x 772.8875pt>
-File: figures/fig_01b-eps-converted-to.pdf Graphic file (type pdf)
-<use figures/fig_01b-eps-converted-to.pdf>
-Package pdftex.def Info: figures/fig_01b-eps-converted-to.pdf  used on input li
-ne 113.
-(pdftex.def)             Requested size: 73.74825pt x 41.47702pt.
-
-Overfull \hbox (12.29121pt too wide) in paragraph at lines 113--113
- [][] 
- []
+(Font)              size <17.28> substituted on input line 88.
 
 [1{C:/Users/jmyers/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-] [2 <./figures/fig_01a-eps-converted-to.pdf> <./figures/fig_01b-eps-converted-
-to.pdf>]
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 177.
-
-
-Overfull \hbox (1.12065pt too wide) in paragraph at lines 177--177
- [] 
- []
+] [2]
+<figures/Standard_Model_of_Elementary_Particles.png, id=42, 2007.5pt x 1507.632
+5pt>
+File: figures/Standard_Model_of_Elementary_Particles.png Graphic file (type png
+)
+<use figures/Standard_Model_of_Elementary_Particles.png>
+Package pdftex.def Info: figures/Standard_Model_of_Elementary_Particles.png  us
+ed on input line 106.
+(pdftex.def)             Requested size: 153.64493pt x 115.36801pt.
 
 [3
 
-]
-! Undefined control sequence.
-<recently read> \itemDuring 
-                            
-l.223 \end{frame}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+ <./figures/Standard_Model_of_Elementary_Particles.png>]
+<figures/Higgs_mech.png, id=51, 2090.81125pt x 2445.135pt>
+File: figures/Higgs_mech.png Graphic file (type png)
+<use figures/Higgs_mech.png>
+Package pdftex.def Info: figures/Higgs_mech.png  used on input line 129.
+(pdftex.def)             Requested size: 153.64493pt x 179.64624pt.
+ [4
 
+ <./figures/Higgs_mech.png>]
+<figures/higgspotential.png, id=61, 563.10374pt x 355.3275pt>
+File: figures/higgspotential.png Graphic file (type png)
+<use figures/higgspotential.png>
+Package pdftex.def Info: figures/higgspotential.png  used on input line 149.
+(pdftex.def)             Requested size: 153.64493pt x 96.95358pt.
+ [5
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+ <./figures/higgspotential.png>]
+<figures/sm_fey.png, id=71, 159.59625pt x 139.11975pt>
+File: figures/sm_fey.png Graphic file (type png)
+<use figures/sm_fey.png>
+Package pdftex.def Info: figures/sm_fey.png  used on input line 171.
+(pdftex.def)             Requested size: 115.23369pt x 100.44846pt.
+<figures/SM_continuum.png, id=72, 659.46375pt x 635.37375pt>
+File: figures/SM_continuum.png Graphic file (type png)
+<use figures/SM_continuum.png>
+Package pdftex.def Info: figures/SM_continuum.png  used on input line 171.
+(pdftex.def)             Requested size: 115.23369pt x 111.01755pt.
+ [6
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.223 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.223 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.223 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.223 \end{frame}
-                 
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+ <./figures/sm_fey.png> <./figures/SM_continuum.png>]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 223.
+tance' requires LuaTeX. It will be ignored. on input line 221.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 223.
+stance' requires LuaTeX. It will be ignored. on input line 221.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 223.
+distance' requires LuaTeX. It will be ignored. on input line 221.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 223.
+tance' requires LuaTeX. It will be ignored. on input line 221.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 223.
+stance' requires LuaTeX. It will be ignored. on input line 221.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 223.
+distance' requires LuaTeX. It will be ignored. on input line 221.
 
 
-Overfull \hbox (1.12065pt too wide) in paragraph at lines 223--223
+Overfull \hbox (1.12065pt too wide) in paragraph at lines 221--221
  [] 
  []
 
-[4
+<figures/ian6.png, id=83, 710.655pt x 566.115pt>
+File: figures/ian6.png Graphic file (type png)
+<use figures/ian6.png>
+Package pdftex.def Info: figures/ian6.png  used on input line 221.
+(pdftex.def)             Requested size: 115.23369pt x 91.7896pt.
+[7
 
-]
-LaTeX Font Info:    Calculating math sizes for size <16> on input line 247.
+ <./figures/ian6.png>]
+<figures/LHC.png, id=95, 551.661pt x 264.99pt>
+File: figures/LHC.png Graphic file (type png)
+<use figures/LHC.png>
+Package pdftex.def Info: figures/LHC.png  used on input line 245.
+(pdftex.def)             Requested size: 307.28987pt x 147.60492pt.
+ [8
+
+ <./figures/LHC.png>]
+<figures/ATLAS_det.jpg, id=102, 867.24pt x 546.44969pt>
+File: figures/ATLAS_det.jpg Graphic file (type jpg)
+<use figures/ATLAS_det.jpg>
+Package pdftex.def Info: figures/ATLAS_det.jpg  used on input line 266.
+(pdftex.def)             Requested size: 230.46739pt x 145.21704pt.
+ [9
+
+ <./figures/ATLAS_det.jpg>]
+<figures/run2TDAQ.png, id=109, 853.1875pt x 642.4pt>
+File: figures/run2TDAQ.png Graphic file (type png)
+<use figures/run2TDAQ.png>
+Package pdftex.def Info: figures/run2TDAQ.png  used on input line 291.
+(pdftex.def)             Requested size: 153.64493pt x 115.68582pt.
+
+[10
+
+ <./figures/run2TDAQ.png>]
+<figures/layers.jpg, id=117, 903.375pt x 732.7375pt>
+File: figures/layers.jpg Graphic file (type jpg)
+<use figures/layers.jpg>
+Package pdftex.def Info: figures/layers.jpg  used on input line 300.
+(pdftex.def)             Requested size: 230.46739pt x 186.92944pt.
+ [11
+
+ <./figures/layers.jpg>]
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 330.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 330.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
-(Font)              size <17.28> substituted on input line 247.
+(Font)              size <17.28> substituted on input line 330.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 247.
+(Font)              size <17.28> substituted on input line 330.
 
-<figures/DiHiggsBRs.pdf, id=67, 1027.84pt x 770.88pt>
+<figures/DiHiggsBRs.pdf, id=124, 1027.84pt x 770.88pt>
 File: figures/DiHiggsBRs.pdf Graphic file (type pdf)
 <use figures/DiHiggsBRs.pdf>
-Package pdftex.def Info: figures/DiHiggsBRs.pdf  used on input line 247.
-(pdftex.def)             Requested size: 138.28185pt x 103.71143pt.
-<figures/comb_limit.pdf, id=68, 569.12625pt x 451.6875pt>
-File: figures/comb_limit.pdf Graphic file (type pdf)
-<use figures/comb_limit.pdf>
-Package pdftex.def Info: figures/comb_limit.pdf  used on input line 247.
-(pdftex.def)             Requested size: 138.28185pt x 109.7443pt.
+Package pdftex.def Info: figures/DiHiggsBRs.pdf  used on input line 330.
+(pdftex.def)             Requested size: 184.37344pt x 138.27014pt.
 
-Overfull \vbox (7.63821pt too high) detected at line 247
+Overfull \hbox (30.72852pt too wide) in paragraph at lines 330--330
+ [] 
  []
 
-[5
+[12
 
- <./figures/DiHiggsBRs.pdf> <./figures/comb_limit.pdf, page is rotated 90 degre
-es>]
-<figures/resolved_topo.png, id=138, 798.3426pt x 296.307pt>
-File: figures/resolved_topo.png Graphic file (type png)
-<use figures/resolved_topo.png>
-Package pdftex.def Info: figures/resolved_topo.png  used on input line 278.
-(pdftex.def)             Requested size: 153.64493pt x 57.02231pt.
-<figures/boosted_topo.png, id=140, 886.0302pt x 315.0972pt>
-File: figures/boosted_topo.png Graphic file (type png)
-<use figures/boosted_topo.png>
-Package pdftex.def Info: figures/boosted_topo.png  used on input line 278.
-(pdftex.def)             Requested size: 153.64493pt x 54.63799pt.
- [6
+ <./figures/DiHiggsBRs.pdf>]
 
- <./figures/resolved_topo.png> <./figures/boosted_topo.png>]
-<figures/cartoon_tt.pdf, id=149, 219.07516pt x 238.35368pt>
+LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <16> not available
+(Font)              size <17.28> substituted on input line 351.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <16> not available
+(Font)              size <17.28> substituted on input line 351.
+
+<figures/res_prod.png, id=151, 269.20575pt x 205.36725pt>
+File: figures/res_prod.png Graphic file (type png)
+<use figures/res_prod.png>
+Package pdftex.def Info: figures/res_prod.png  used on input line 351.
+(pdftex.def)             Requested size: 153.64493pt x 117.21095pt.
+[13
+
+ <./figures/res_prod.png>]
+Package epstopdf Info: Source file: <figures/antikt.eps>
+(epstopdf)                    date: 2019-04-16 16:30:15
+(epstopdf)                    size: 35226 bytes
+(epstopdf)             Output file: <figures/antikt-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-20 19:10:09
+(epstopdf)                    size: 30193 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/antikt-eps-converte
+d-to.pdf figures/antikt.eps>
+(epstopdf)             \includegraphics on input line 366.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/antikt-eps-converted-to.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<figures/antikt-eps-converted-to.pdf, id=162, 999.735pt x 724.7075pt>
+File: figures/antikt-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/antikt-eps-converted-to.pdf>
+Package pdftex.def Info: figures/antikt-eps-converted-to.pdf  used on input lin
+e 366.
+(pdftex.def)             Requested size: 156.66585pt x 113.57338pt.
+[14
+
+ <./figures/antikt-eps-converted-to.pdf>]
+<figures/met.png, id=173, 3576.36125pt x 2386.9175pt>
+File: figures/met.png Graphic file (type png)
+<use figures/met.png>
+Package pdftex.def Info: figures/met.png  used on input line 383.
+(pdftex.def)             Requested size: 170.15178pt x 113.57338pt.
+ [15
+
+ <./figures/met.png>]
+<figures/cartoon_tt.pdf, id=181, 219.07516pt x 238.35368pt>
 File: figures/cartoon_tt.pdf Graphic file (type pdf)
 <use figures/cartoon_tt.pdf>
-Package pdftex.def Info: figures/cartoon_tt.pdf  used on input line 318.
+Package pdftex.def Info: figures/cartoon_tt.pdf  used on input line 416.
 (pdftex.def)             Requested size: 96.79521pt x 105.31238pt.
 
 
 pdfTeX warning: pdflatex (file ./figures/cartoon_hh_crop.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<figures/cartoon_hh_crop.pdf, id=150, 597.50792pt x 666.66864pt>
+<figures/cartoon_hh_crop.pdf, id=182, 597.50792pt x 666.66864pt>
 File: figures/cartoon_hh_crop.pdf Graphic file (type pdf)
 <use figures/cartoon_hh_crop.pdf>
-Package pdftex.def Info: figures/cartoon_hh_crop.pdf  used on input line 318.
+Package pdftex.def Info: figures/cartoon_hh_crop.pdf  used on input line 416.
 (pdftex.def)             Requested size: 96.79521pt x 107.99158pt.
-[7
+[16
 
- <./figures/cartoon_tt.pdf> <./figures/cartoon_hh_crop.pdf>] [8
+ <./figures/cartoon_tt.pdf> <./figures/cartoon_hh_crop.pdf>]
+<figures/resolvedv2.png, id=856, 938.5464pt x 438.9198pt>
+File: figures/resolvedv2.png Graphic file (type png)
+<use figures/resolvedv2.png>
+Package pdftex.def Info: figures/resolvedv2.png  used on input line 425.
+(pdftex.def)             Requested size: 307.28987pt x 143.70541pt.
+ [17
+
+ <./figures/resolvedv2.png>]
+<figures/boostedv2.png, id=864, 886.0302pt x 448.5558pt>
+File: figures/boostedv2.png Graphic file (type png)
+<use figures/boostedv2.png>
+Package pdftex.def Info: figures/boostedv2.png  used on input line 434.
+(pdftex.def)             Requested size: 307.28987pt x 155.56639pt.
+ [18
+
+ <./figures/boostedv2.png>] [19
 
 ]
 Package epstopdf Info: Source file: <figures/abcdExample_met_vs_d0sigBL20.eps>
@@ -1816,72 +1778,41 @@ onverted-to.pdf>
 (epstopdf)                    size: 4521 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/abcdExample_met_vs_
 d0sigBL20-eps-converted-to.pdf figures/abcdExample_met_vs_d0sigBL20.eps>
-(epstopdf)             \includegraphics on input line 390.
+(epstopdf)             \includegraphics on input line 513.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/abcdExample_met_vs_d0sigBL20-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf, id=833, 569.12625pt
+<figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf, id=879, 569.12625pt
  x 386.44376pt>
 File: figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf>
 Package pdftex.def Info: figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.
-pdf  used on input line 390.
+pdf  used on input line 513.
 (pdftex.def)             Requested size: 138.2795pt x 93.89233pt.
-[9
+[20
 
  <./figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf>]
 <figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA_met25d020-eps-converted
--to.pdf, id=846, 569.12625pt x 413.545pt>
+-to.pdf, id=892, 569.12625pt x 413.545pt>
 File: figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA_met25d020-eps-conv
 erted-to.pdf Graphic file (type pdf)
 <use figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA_met25d020-eps-conve
 rted-to.pdf>
 Package pdftex.def Info: figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA
-_met25d020-eps-converted-to.pdf  used on input line 401.
+_met25d020-eps-converted-to.pdf  used on input line 524.
 (pdftex.def)             Requested size: 245.83282pt x 178.62857pt.
 
-Overfull \vbox (0.24196pt too high) detected at line 401
+Overfull \vbox (0.24196pt too high) detected at line 524
  []
 
-[10
+[21
 
  <./figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA_met25d020-eps-conver
 ted-to.pdf>]
-Package epstopdf Info: Source file: <figures/C_2tab_0bjet_mbbcr_lepton_presel_m
-et50_WlepMtATLAS.eps>
-(epstopdf)                    date: 2018-08-25 23:52:17
-(epstopdf)                    size: 25347 bytes
-(epstopdf)             Output file: <figures/C_2tab_0bjet_mbbcr_lepton_presel_m
-et50_WlepMtATLAS-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-05-14 14:01:01
-(epstopdf)                    size: 9482 bytes
-(epstopdf)             Command: <epstopdf --outfile=figures/C_2tab_0bjet_mbbcr_
-lepton_presel_met50_WlepMtATLAS-eps-converted-to.pdf figures/C_2tab_0bjet_mbbcr
-_lepton_presel_met50_WlepMtATLAS.eps>
-(epstopdf)             \includegraphics on input line 436.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./figures/C_2tab_0bjet_mbbcr_lepton_presel_met50
-_WlepMtATLAS-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but
- at most version <1.5> allowed
-<figures/C_2tab_0bjet_mbbcr_lepton_presel_met50_WlepMtATLAS-eps-converted-to.pd
-f, id=861, 569.12625pt x 413.545pt>
-File: figures/C_2tab_0bjet_mbbcr_lepton_presel_met50_WlepMtATLAS-eps-converted-
-to.pdf Graphic file (type pdf)
-<use figures/C_2tab_0bjet_mbbcr_lepton_presel_met50_WlepMtATLAS-eps-converted-t
-o.pdf>
-Package pdftex.def Info: figures/C_2tab_0bjet_mbbcr_lepton_presel_met50_WlepMtA
-TLAS-eps-converted-to.pdf  used on input line 436.
-(pdftex.def)             Requested size: 153.64493pt x 111.64601pt.
-[11
-
- <./figures/C_2tab_0bjet_mbbcr_lepton_presel_met50_WlepMtATLAS-eps-converted-to
-.pdf>]
 Package epstopdf Info: Source file: <figures/C_2tab_0bjet_SR_lepton_presel_met5
 0_hhMassRebin1_postfit.eps>
 (epstopdf)                    date: 2018-10-21 06:33:41
@@ -1893,7 +1824,7 @@ Package epstopdf Info: Source file: <figures/C_2tab_0bjet_SR_lepton_presel_met5
 (epstopdf)             Command: <epstopdf --outfile=figures/C_2tab_0bjet_SR_lep
 ton_presel_met50_hhMassRebin1_postfit-eps-converted-to.pdf figures/C_2tab_0bjet
 _SR_lepton_presel_met50_hhMassRebin1_postfit.eps>
-(epstopdf)             \includegraphics on input line 447.
+(epstopdf)             \includegraphics on input line 535.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1901,32 +1832,28 @@ pdfTeX warning: pdflatex (file ./figures/C_2tab_0bjet_SR_lepton_presel_met50_hh
 MassRebin1_postfit-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7
 >, but at most version <1.5> allowed
 <figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebin1_postfit-eps-converted
--to.pdf, id=877, 569.12625pt x 414.54875pt>
+-to.pdf, id=906, 569.12625pt x 414.54875pt>
 File: figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebin1_postfit-eps-conv
 erted-to.pdf Graphic file (type pdf)
 <use figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebin1_postfit-eps-conve
 rted-to.pdf>
 Package pdftex.def Info: figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebi
-n1_postfit-eps-converted-to.pdf  used on input line 447.
+n1_postfit-eps-converted-to.pdf  used on input line 535.
 (pdftex.def)             Requested size: 245.83282pt x 179.06215pt.
-[12
+[22
 
  <./figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebin1_postfit-eps-conver
 ted-to.pdf>]
 <figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.pdf, 
-id=891, 569.12625pt x 552.0625pt>
+id=920, 569.12625pt x 552.0625pt>
 File: figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.
 pdf Graphic file (type pdf)
 <use figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.p
 df>
 Package pdftex.def Info: figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Co
-mbined_20190312_01.pdf  used on input line 456.
-(pdftex.def)             Requested size: 215.10196pt x 208.65714pt.
-
-Overfull \vbox (7.51038pt too high) detected at line 456
- []
-
-[13
+mbined_20190312_01.pdf  used on input line 546.
+(pdftex.def)             Requested size: 199.73653pt x 193.74704pt.
+ [23
 
  <./figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.pd
 f, page is rotated 90 degrees>]
@@ -1938,42 +1865,51 @@ Package epstopdf Info: Source file: <figures/drminlq.eps>
 (epstopdf)                    size: 79735 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/drminlq-eps-convert
 ed-to.pdf figures/drminlq.eps>
-(epstopdf)             \includegraphics on input line 480.
+(epstopdf)             \includegraphics on input line 569.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/drminlq-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/drminlq-eps-converted-to.pdf, id=942, 569.12625pt x 552.0625pt>
+<figures/drminlq-eps-converted-to.pdf, id=971, 569.12625pt x 552.0625pt>
 File: figures/drminlq-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/drminlq-eps-converted-to.pdf>
 Package pdftex.def Info: figures/drminlq-eps-converted-to.pdf  used on input li
-ne 480.
+ne 569.
 (pdftex.def)             Requested size: 115.23369pt x 111.77519pt.
-[14
+[24
 
  <./figures/drminlq-eps-converted-to.pdf>]
-<figures/full_boosted.png, id=952, 850.8588pt x 274.626pt>
-File: figures/full_boosted.png Graphic file (type png)
-<use figures/full_boosted.png>
-Package pdftex.def Info: figures/full_boosted.png  used on input line 489.
-(pdftex.def)             Requested size: 276.559pt x 89.26076pt.
- [15
+<figures/fullboost.png, id=982, 891.8118pt x 450.0012pt>
+File: figures/fullboost.png Graphic file (type png)
+<use figures/fullboost.png>
+Package pdftex.def Info: figures/fullboost.png  used on input line 578.
+(pdftex.def)             Requested size: 307.28987pt x 155.05832pt.
+ [25
 
- <./figures/full_boosted.png>]
-<figures/electron/mww_e.png, id=960, 558.888pt x 542.025pt>
+ <./figures/fullboost.png>]
+<figures/electron/mww_e.png, id=991, 558.888pt x 542.025pt>
 File: figures/electron/mww_e.png Graphic file (type png)
 <use figures/electron/mww_e.png>
-Package pdftex.def Info: figures/electron/mww_e.png  used on input line 533.
+Package pdftex.def Info: figures/electron/mww_e.png  used on input line 592.
 (pdftex.def)             Requested size: 153.64493pt x 149.01184pt.
-<figures/electron/mhh_e.png, id=961, 558.888pt x 542.025pt>
+<figures/electron/mhh_e.png, id=992, 558.888pt x 542.025pt>
 File: figures/electron/mhh_e.png Graphic file (type png)
 <use figures/electron/mhh_e.png>
-Package pdftex.def Info: figures/electron/mhh_e.png  used on input line 533.
+Package pdftex.def Info: figures/electron/mhh_e.png  used on input line 592.
 (pdftex.def)             Requested size: 153.64493pt x 149.01184pt.
-[16
+
+[26
 
  <./figures/electron/mww_e.png> <./figures/electron/mhh_e.png>]
+<figures/ABCD.pdf, id=1001, 569.12625pt x 408.52625pt>
+File: figures/ABCD.pdf Graphic file (type pdf)
+<use figures/ABCD.pdf>
+Package pdftex.def Info: figures/ABCD.pdf  used on input line 610.
+(pdftex.def)             Requested size: 153.64493pt x 110.29109pt.
+ [27
+
+ <./figures/ABCD.pdf, page is rotated 90 degrees>]
 Package epstopdf Info: Source file: <figures/C_2tag_mbbcr_lepton_presel_met50_h
 hMassRebin1.eps>
 (epstopdf)                    date: 2019-05-19 09:43:09
@@ -1985,7 +1921,7 @@ hMassRebin1-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_2tag_mbbcr_lepton
 _presel_met50_hhMassRebin1-eps-converted-to.pdf figures/C_2tag_mbbcr_lepton_pre
 sel_met50_hhMassRebin1.eps>
-(epstopdf)             \includegraphics on input line 579.
+(epstopdf)             \includegraphics on input line 619.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1993,19 +1929,15 @@ pdfTeX warning: pdflatex (file ./figures/C_2tag_mbbcr_lepton_presel_met50_hhMas
 sRebin1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at m
 ost version <1.5> allowed
 <figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf, id
-=970, 569.12625pt x 413.545pt>
+=1051, 569.12625pt x 413.545pt>
 File: figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-eps-converted-to.pd
 f Graphic file (type pdf)
 <use figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf
 >
 Package pdftex.def Info: figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-
-eps-converted-to.pdf  used on input line 579.
+eps-converted-to.pdf  used on input line 619.
 (pdftex.def)             Requested size: 153.64493pt x 111.64601pt.
-
-Overfull \vbox (10.24002pt too high) detected at line 579
- []
-
-[17
+[28
 
  <./figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf>
 ]
@@ -2020,22 +1952,22 @@ ssRebin1-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_2tag_SR_lepton_pr
 esel_met50_hhMassRebin1-eps-converted-to.pdf figures/C_2tag_SR_lepton_presel_me
 t50_hhMassRebin1.eps>
-(epstopdf)             \includegraphics on input line 589.
+(epstopdf)             \includegraphics on input line 629.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/C_2tag_SR_lepton_presel_met50_hhMassRe
 bin1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
  version <1.5> allowed
-<figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf, id=98
-5, 569.12625pt x 413.545pt>
+<figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf, id=10
+65, 569.12625pt x 413.545pt>
 File: figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf G
 raphic file (type pdf)
 <use figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps
--converted-to.pdf  used on input line 589.
+-converted-to.pdf  used on input line 629.
 (pdftex.def)             Requested size: 276.559pt x 200.96661pt.
-[18
+[29
 
  <./figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf>]
 File: figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.
@@ -2043,22 +1975,29 @@ pdf Graphic file (type pdf)
 <use figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.p
 df>
 Package pdftex.def Info: figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Co
-mbined_20190312_01.pdf  used on input line 609.
+mbined_20190312_01.pdf  used on input line 649.
 (pdftex.def)             Requested size: 153.64493pt x 149.042pt.
-<figures/Final_limits.pdf, id=999, 569.12625pt x 552.0625pt>
+<figures/Final_limits.pdf, id=1079, 569.12625pt x 552.0625pt>
 File: figures/Final_limits.pdf Graphic file (type pdf)
 <use figures/Final_limits.pdf>
-Package pdftex.def Info: figures/Final_limits.pdf  used on input line 609.
+Package pdftex.def Info: figures/Final_limits.pdf  used on input line 649.
 (pdftex.def)             Requested size: 153.64493pt x 149.042pt.
- [19
+ [30
 
- <./figures/Final_limits.pdf, page is rotated 90 degrees>]
+ <./figures/Final_limits.pdf, page is rotated 90 degrees>] [31
+
+] [32
+
+]
+[33
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 614.
+(hyperref)                removing `\translate ' on input line 698.
 
 \c@framenumberappendix=\count189
-[20
+[34
 
 ]
 \tf@nav=\write7
@@ -2070,11 +2009,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 \tf@snm=\write9
 \openout9 = `JMyers_Defense.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 623.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 623.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 707.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 707.
  (JMyers_Defense.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 623.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 623.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 707.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 707.
 Package rerunfilecheck Info: File `JMyers_Defense.out' has not changed.
 (rerunfilecheck)             Checksum: A7F4D589709A975A14292322A595ED53;42.
 
@@ -2084,44 +2023,45 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 26324 strings out of 492902
- 537478 string characters out of 3133547
- 663299 words of memory out of 3000000
- 29538 multiletter control sequences out of 15000+200000
- 24025 words of font info for 87 fonts, out of 3000000 for 9000
+ 26483 strings out of 492902
+ 540126 string characters out of 3133547
+ 646954 words of memory out of 3000000
+ 29652 multiletter control sequences out of 15000+200000
+ 32240 words of font info for 111 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,16n,100p,801b,2143s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 67i,16n,100p,801b,2142s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmssi17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmssi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi9
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/latxfont/line10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/symbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic
-/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on JMyers_Defense.pdf (20 pages, 2734661 bytes).
+msfonts/cm/cmmib10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmss17.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmss9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mssi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi17.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi9.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/latxfont/line10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/s
+ymbols/msam10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/urw/times/utmr8a.pfb>
+Output written on JMyers_Defense.pdf (34 pages, 6286719 bytes).
 PDF statistics:
- 1145 PDF objects out of 1200 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1252 PDF objects out of 1440 (max. 8388607)
+ 70 named destinations out of 1000 (max. 500000)
+ 201 words of extra memory for PDF output out of 10000 (max. 10000000)
 
