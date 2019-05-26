@@ -3,15 +3,15 @@
 The boosted analysis described in Chapter ~\ref{chap:anal} is optimized for the case where the ${H\rightarrow b\overline{b}}$ system is boosted and the ${H\rightarrow WW^{*}}$ system is resolved. However, at high resonant masses, one would expect both the ${H\rightarrow b\overline{b}}$ and the ${H\rightarrow WW^{*}}$ to be boosted. However, the semileptonic decay of the W boson pair adds an additional complication of having a lepton within the radius of a large-R jet. This chapter will describe a method for reconstructing this complex topology and the improvements it offers to the boosted, semi-leptonic ${HH\rightarrow b\overline{b}WW^{*}}$ analysis.
 \section{Motivation}
 The resonant analysis covers a large range of mass hypotheses, from 400 - 3000 GeV. As the resonant mass increases, the two Higgs systems become more and more collimated. Figure ~\ref{fig:dr} shows the average distance between final state partons as a function of the resonant mass for simulated HH events. The $WW$ bosons become very collimated (within ${\Delta{R} = \sqrt{\Delta{\phi}^{2}+\Delta{\eta}^{2}} = 0.5}$) around 1000 GeV. \newline
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.33]{DRMhhPlots_fine/drbb}
-\includegraphics[scale=0.33]{DRMhhPlots_fine/drWW}
+\includegraphics[width=0.49\textwidth]{DRMhhPlots_fine/drbb}
+\includegraphics[width=0.49\textwidth]{DRMhhPlots_fine/drWW}
 \\
-\includegraphics[scale=0.33]{DRMhhPlots_fine/drqq}
-\includegraphics[scale=0.33]{DRMhhPlots_fine/drminlq}
+\includegraphics[width=0.49\textwidth]{DRMhhPlots_fine/drqq}
+\includegraphics[width=0.49\textwidth]{DRMhhPlots_fine/drminlq}
 
-\caption[Distance between parton objects]{Distance between the two b partons (top left); the two W bosons (top right); the two light quarks (bottom left); and the lepton and the most distant light quark (bottom right) for resonant $HH$ production as a function of resonant mass.}
+\caption[Distance between parton objects]{Distance between the two b partons (top left); the two W bosons (top right); the two light quarks (bottom left); and the lepton and the closest light quark (bottom right) for resonant $HH$ production as a function of resonant mass.}
 \label{fig:dr}
 \end{center}
 \end{figure}
@@ -36,7 +36,7 @@ where $\phi$ is the azimuthal angle of the $\met$, $E^{\nu}$ the neutrino energy
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.4]{figures/full_boosted}
+\includegraphics[width=0.9\textwidth]{figures/full_boosted}
 \caption{Diagram of the fully-boosted event topology}
 \label{fig:topo}
 \end{center}
@@ -55,7 +55,7 @@ Lepton Channel & Alternative \pt definition \\
 Muon Channel & ${\pt^{'} = \pt^{\mathrm{Large-R jet}}}$\\
 \hline
 \\
-Electron channel & ${\pt^{'} = \sqrt{(p_{x}^{\mathrm{Large-R jet}} - p_{x}^{\mathrm{electron}})^{2}+(p_{y}^{\mathrm{Large-R jet}} - p_{y}^{\mathrm{electron}})^{2}}}$
+Electron channel & ${\pt^{'} = \sqrt{(p_{x}^{\mathrm{Large-R\ jet}} - p_{x}^{\mathrm{electron}})^{2}+(p_{y}^{\mathrm{Large-R\ jet}} - p_{y}^{\mathrm{electron}})^{2}}}$
 \end{tabular}
 \caption[Alternative \pt definition for the electron and muon channels]{Alternative \pt definition for the electron and muon channels. A cut of $\pt^{'} > 250 \text{ GeV}$ is applied to the selected ${H\rightarrow WW^{*}}$ large-R jet.}
 \label{tab:adjpt}
@@ -67,12 +67,12 @@ Figure \ref{fig:elec_sel} and \ref{fig:muon_sel} show a comparison of the old bo
 
 
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000}
-\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000}\\
-\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh2000}
-\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000}
+\includegraphics[width=0.49\textwidth]{figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000}
+\includegraphics[width=0.49\textwidth]{figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000}\\
+\includegraphics[width=0.49\textwidth]{figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh2000}
+\includegraphics[width=0.49\textwidth]{figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000}
 \caption[Comparison of ${H\rightarrow WW^{*}}$ mass, ${H\rightarrow WW^{*}}$ \pt, \met , and $HH$ mass for the electron channel]{Comparison of reconstructed ${H\rightarrow WW^{*}}$ mass (top left), ${H\rightarrow WW^{*}}$ \pt (top right), \met (bottom left), and $HH$ mass for the  previous boosted analysis reconstruction and new fully boosted selection for a resonant signal with a mass of 2000 GeV in the electron channel.}
 \label{fig:elec_sel}
 \end{center}
@@ -80,12 +80,12 @@ Figure \ref{fig:elec_sel} and \ref{fig:muon_sel} show a comparison of the old bo
 
 \newpage
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{center}
-\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000}
-\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000}\\
-\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000}
-\includegraphics[scale=0.25]{figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000}
+\includegraphics[width=0.49\textwidth]{figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000}
+\includegraphics[width=0.49\textwidth]{figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000}\\
+\includegraphics[width=0.49\textwidth]{figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000}
+\includegraphics[width=0.49\textwidth]{figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000}
 \caption[Comparison of ${H\rightarrow WW^{*}}$ mass, ${H\rightarrow WW^{*}}$ \pt, \met , and $HH$ mass for the muon channel]{Comparison of ${H\rightarrow WW^{*}}$ mass (top left), ${H\rightarrow WW^{*}}$ \pt (top right), \met (bottom left), and $HH$ mass for the  previous boosted analysis reconstruction and new fully boosted selection for a resonant signal with a mass of 2000 GeV in the muon channel.}
 \label{fig:muon_sel}
 \end{center}
@@ -262,26 +262,32 @@ with (without) the signal region large-$R$ jet mass selection.}
  
 \subsection{mBB Control Region Plots}
 \label{ssec:mbbcr_plots_whad}
-Figure ~\ref{fig:mbbcr_plots} shows the $m_{HH}$ distribution in the mBB control region for the electron and muon channels. The figure shows a reasonable agreement between data and background in the mBB control region but with large uncertainties. Appendix ~\ref{app:fully_mbb_plots} has a more complete set of kinematic plots. 
+Figures ~\ref{fig:mbbcr_plots} and s\ref{fig:mbbcr_plots_b} hows the $m_{HH}$ distribution in the mBB control region for the electron and muon channels. The figure shows a reasonable agreement between data and background in the mBB control region but with large uncertainties. Appendix ~\ref{app:fully_mbb_plots} has a more complete set of kinematic plots. 
 
 \newpage
 \begin{figure}[H]
 \begin{center}
 %\includegraphics[scale=0.33]{figures/abcd_plots/elec_mbbcr_RegionA_hhMass_withDD}
 %\includegraphics[scale=0.33]{figures/abcd_plots/muon_mbbcr_RegionA_hhMass_withDD}\\
-\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_WWMass}
-\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_WWMass}\\
-\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_WWPt}
-\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_WWPt}\\
-\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_MET}
-\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_MET}\\
-\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_hhMassRebin1}
-\includegraphics[scale=0.33]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_hhMassRebin1}
-\caption[Kinematic distributions in the mBB control region for the electron and muon channels]{$m_{WW}$, $\pt^WW$, \met, and $m_{HH}$ (from top to bottom) distribution in the mBB control region for the electron (left) and muon (right) channels.}
+\includegraphics[width=0.49\textwidth]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_WWMass}
+\includegraphics[width=0.49\textwidth]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_WWMass}\\
+\includegraphics[width=0.49\textwidth]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_WWPt}
+\includegraphics[width=0.49\textwidth]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_WWPt}\\
+\caption[Kinematic distributions in the mBB control region for the electron and muon channels]{$m_{WW}$ (top) and $\pt^WW$ (bottom) distribution in the mBB control region for the electron (left) and muon (right) channels.}
 \label{fig:mbbcr_plots}
 \end{center}
 \end{figure}
-\newpage
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width=0.49\textwidth]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_MET}
+\includegraphics[width=0.49\textwidth]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_MET}\\
+\includegraphics[width=0.49\textwidth]{figures/kinplots/C_2tag_mbbcr_elec_presel_met50_hhMassRebin1}
+\includegraphics[width=0.49\textwidth]{figures/kinplots/C_2tag_mbbcr_muon_presel_met50_hhMassRebin1}
+\caption[Kinematic distributions in the mBB control region for the electron and muon channels]{\met (top) and $m_{HH}$ (bottom) distribution in the mBB control region for the electron (left) and muon (right) channels.}
+\label{fig:mbbcr_plots_b}
+\end{center}
+\end{figure}
 
 
 \section{Results}
@@ -329,13 +335,13 @@ Z+Jets        &  4.7    & $\pm$ 0.4        \\
 Dibosons      &  3.3    & $\pm$ 0.6      \\
 \hline
 Prediction    &  271.0  & $\pm$ 10.7       \\
-Data          &  268    & - \\
-\hline
-Data/Pred     &  0.99    & -  \\
+%Data          &  268    & - \\
+%\hline
+%Data/Pred     &  0.99    & -  \\
 \hline
 \end{tabular}
 \end{center}
-\caption[Predicted and observed yields in the mBB control region]{Predicted and observed yields in the mBB control region. Detector modeling
+\caption[Predicted and observed yields in the Signal region]{Predicted and observed yields in the Signal region. Detector modeling
 uncertainties, MC background modeling uncertainties and QCD background modeling uncertainties
 from ABCD method are considered for the systematic uncertainties.}
 \label{tab:boosted_bkgd_mbbcr_yields_new}
@@ -352,7 +358,7 @@ The dominant components of the systematic uncertainties are summarized in Table~
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.65]{figures/kinplots/C_2tag_SR_lepton_presel_met50_hhMassRebin1}
+\includegraphics[width=0.9\textwidth]{figures/kinplots/C_2tag_SR_lepton_presel_met50_hhMassRebin1}
 \caption{The ${m_{HH}}$ distribution for data and background in the final signal region.}
 \label{fig:fully_boost_mhh}
 \end{center}
@@ -368,7 +374,7 @@ upper limit on the production cross section of the scalar $S$ particle.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[scale=0.65]{figures/Final_limits}
+\includegraphics[width=0.9\textwidth]{figures/Final_limits}
 \caption[Expected and observed upper limits at 95\% CL on the cross section of the resonant pair production for heavy scalar boson S model]{Expected and observed upper limits at 95\% CL on the cross section of the resonant pair production for heavy scalar boson S model. The expected limits without including the systematic errors is also shown to show their impact.}
 \label{fig:boosted_only_limits_new}
 \end{center}
