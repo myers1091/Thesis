@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.22)  24 MAY 2019 21:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7000 64-bit) (preloaded format=pdflatex 2019.4.22)  26 MAY 2019 23:31
 entering extended mode
 **./JMyers_Defense.tex
 (JMyers_Defense.tex
@@ -1319,40 +1319,40 @@ File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 )))
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
+(hyperref)                removing `math shift' on input line 63.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 60.
+(hyperref)                removing `superscript' on input line 63.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 60.
+(hyperref)                removing `math shift' on input line 63.
 
 (JMyers_Defense.aux)
 \openout1 = `JMyers_Defense.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 60.
-LaTeX Font Info:    Try loading font information for LGR+cmr on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for LGR/cmr/m/n on input line 63.
+LaTeX Font Info:    Try loading font information for LGR+cmr on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/cbfonts-fd\lgrcmr.fd"
 File: lgrcmr.fd 2017/07/29 v1.2 Greek European Computer Regular
 )
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    ... okay on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1416,7 +1416,7 @@ G,.JBIG2,.JB2,.eps]
 )
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring OFF on input line 60.
+Package hyperref Info: Link coloring OFF on input line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1426,66 +1426,66 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count188
 )
-LaTeX Info: Redefining \ref on input line 60.
-LaTeX Info: Redefining \pageref on input line 60.
-LaTeX Info: Redefining \nameref on input line 60.
+LaTeX Info: Redefining \ref on input line 63.
+LaTeX Info: Redefining \pageref on input line 63.
+LaTeX Info: Redefining \nameref on input line 63.
 
 (JMyers_Defense.out) (JMyers_Defense.out)
 \@outlinefile=\write6
 \openout6 = `JMyers_Defense.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 60.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 63.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 60.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 63.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 60.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 60.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 60.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 60.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 60.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 60.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 60.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 60.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 60.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 60.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 63.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 60.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 60.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 63.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 60.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 63.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 60.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 60.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 60.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 60.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 60.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 63.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 60.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 60.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 63.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 63.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 6
-0.
+3.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-60.
+63.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 60.
+ut line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/translator\translator-basic-dictionary-
 English.dict"
@@ -1520,138 +1520,140 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 
 Package tikz-feynman Warning: LuaTeX is required if you wish to have vertices a
 utomatically placed. You can disable this warning by setting /tikzfeynman/warn 
-luatex=false on input line 60.
+luatex=false on input line 63.
 
 (JMyers_Defense.nav)
-LaTeX Font Info:    Try loading font information for U+msa on input line 60.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 60.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 60.
+line 63.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/sansmathaccent\ot1mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
+[1
+
+{C:/Users/jmyers/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 88.
+(Font)              size <17.28> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 88.
+(Font)              size <17.28> substituted on input line 89.
 
-[1{C:/Users/jmyers/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+[2
 
-] [2]
-<figures/Standard_Model_of_Elementary_Particles.png, id=42, 2007.5pt x 1507.632
+]
+<figures/Standard_Model_of_Elementary_Particles.png, id=40, 2007.5pt x 1507.632
 5pt>
 File: figures/Standard_Model_of_Elementary_Particles.png Graphic file (type png
 )
 <use figures/Standard_Model_of_Elementary_Particles.png>
 Package pdftex.def Info: figures/Standard_Model_of_Elementary_Particles.png  us
-ed on input line 106.
+ed on input line 107.
 (pdftex.def)             Requested size: 153.64493pt x 115.36801pt.
-
-[3
+ [3
 
  <./figures/Standard_Model_of_Elementary_Particles.png>]
-<figures/higgspotential.png, id=51, 563.10374pt x 355.3275pt>
+<figures/higgspotential.png, id=49, 563.10374pt x 355.3275pt>
 File: figures/higgspotential.png Graphic file (type png)
 <use figures/higgspotential.png>
-Package pdftex.def Info: figures/higgspotential.png  used on input line 132.
+Package pdftex.def Info: figures/higgspotential.png  used on input line 133.
 (pdftex.def)             Requested size: 115.23369pt x 72.71248pt.
-<figures/Higgs_mech.png, id=52, 2090.81125pt x 2445.135pt>
+<figures/Higgs_mech.png, id=50, 2090.81125pt x 2445.135pt>
 File: figures/Higgs_mech.png Graphic file (type png)
 <use figures/Higgs_mech.png>
-Package pdftex.def Info: figures/Higgs_mech.png  used on input line 132.
+Package pdftex.def Info: figures/Higgs_mech.png  used on input line 133.
 (pdftex.def)             Requested size: 92.18788pt x 107.78773pt.
  [4
 
  <./figures/higgspotential.png> <./figures/Higgs_mech.png>]
 File: figures/higgspotential.png Graphic file (type png)
 <use figures/higgspotential.png>
-Package pdftex.def Info: figures/higgspotential.png  used on input line 152.
+Package pdftex.def Info: figures/higgspotential.png  used on input line 153.
 (pdftex.def)             Requested size: 153.64493pt x 96.95358pt.
  [5
 
 ]
-<figures/sm_fey.png, id=71, 159.59625pt x 139.11975pt>
+<figures/sm_fey.png, id=69, 159.59625pt x 139.11975pt>
 File: figures/sm_fey.png Graphic file (type png)
 <use figures/sm_fey.png>
-Package pdftex.def Info: figures/sm_fey.png  used on input line 174.
+Package pdftex.def Info: figures/sm_fey.png  used on input line 175.
 (pdftex.def)             Requested size: 115.23369pt x 100.44846pt.
-<figures/SM_continuum.png, id=72, 659.46375pt x 635.37375pt>
+<figures/SM_continuum.png, id=70, 659.46375pt x 635.37375pt>
 File: figures/SM_continuum.png Graphic file (type png)
 <use figures/SM_continuum.png>
-Package pdftex.def Info: figures/SM_continuum.png  used on input line 174.
+Package pdftex.def Info: figures/SM_continuum.png  used on input line 175.
 (pdftex.def)             Requested size: 115.23369pt x 111.01755pt.
  [6
 
  <./figures/sm_fey.png> <./figures/SM_continuum.png>]
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 227.
+tance' requires LuaTeX. It will be ignored. on input line 228.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 227.
+stance' requires LuaTeX. It will be ignored. on input line 228.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 227.
+distance' requires LuaTeX. It will be ignored. on input line 228.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/node dis
-tance' requires LuaTeX. It will be ignored. on input line 227.
+tance' requires LuaTeX. It will be ignored. on input line 228.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/level di
-stance' requires LuaTeX. It will be ignored. on input line 227.
+stance' requires LuaTeX. It will be ignored. on input line 228.
 
 
 Package tikz-feynman Warning: The key you tried to use '/graph drawing/sibling 
-distance' requires LuaTeX. It will be ignored. on input line 227.
+distance' requires LuaTeX. It will be ignored. on input line 228.
 
 
-Overfull \hbox (1.12065pt too wide) in paragraph at lines 227--227
+Overfull \hbox (1.12065pt too wide) in paragraph at lines 228--228
  [] 
  []
 
-<figures/ian6.png, id=83, 710.655pt x 566.115pt>
+<figures/ian6.png, id=81, 710.655pt x 566.115pt>
 File: figures/ian6.png Graphic file (type png)
 <use figures/ian6.png>
-Package pdftex.def Info: figures/ian6.png  used on input line 227.
+Package pdftex.def Info: figures/ian6.png  used on input line 228.
 (pdftex.def)             Requested size: 115.23369pt x 91.7896pt.
 [7
 
  <./figures/ian6.png>]
-LaTeX Font Info:    Calculating math sizes for size <16> on input line 265.
+LaTeX Font Info:    Calculating math sizes for size <16> on input line 266.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 265.
+(Font)              size <17.28> substituted on input line 266.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <16> not available
-(Font)              size <17.28> substituted on input line 265.
+(Font)              size <17.28> substituted on input line 266.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 265.
+(Font)              size <17.28> substituted on input line 266.
 
-<figures/pie_chart.jpg, id=95, 604.2575pt x 451.6875pt>
+<figures/pie_chart.jpg, id=93, 604.2575pt x 451.6875pt>
 File: figures/pie_chart.jpg Graphic file (type jpg)
 <use figures/pie_chart.jpg>
-Package pdftex.def Info: figures/pie_chart.jpg  used on input line 265.
+Package pdftex.def Info: figures/pie_chart.jpg  used on input line 266.
 (pdftex.def)             Requested size: 184.37344pt x 137.81616pt.
 
-Overfull \hbox (30.72852pt too wide) in paragraph at lines 265--265
+Overfull \hbox (30.72852pt too wide) in paragraph at lines 266--266
  [] 
  []
 
@@ -1660,16 +1662,16 @@ Overfull \hbox (30.72852pt too wide) in paragraph at lines 265--265
  <./figures/pie_chart.jpg>]
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <16> not available
-(Font)              size <17.28> substituted on input line 286.
+(Font)              size <17.28> substituted on input line 287.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <16> not available
-(Font)              size <17.28> substituted on input line 286.
+(Font)              size <17.28> substituted on input line 287.
 
-<figures/res_prod.png, id=102, 269.20575pt x 205.36725pt>
+<figures/res_prod.png, id=100, 269.20575pt x 205.36725pt>
 File: figures/res_prod.png Graphic file (type png)
 <use figures/res_prod.png>
-Package pdftex.def Info: figures/res_prod.png  used on input line 286.
+Package pdftex.def Info: figures/res_prod.png  used on input line 287.
 (pdftex.def)             Requested size: 153.64493pt x 117.21095pt.
 [9
 
@@ -1682,99 +1684,104 @@ Package epstopdf Info: Source file: <figures/antikt.eps>
 (epstopdf)                    size: 30193 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/antikt-eps-converte
 d-to.pdf figures/antikt.eps>
-(epstopdf)             \includegraphics on input line 300.
+(epstopdf)             \includegraphics on input line 301.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/antikt-eps-converted-to.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/antikt-eps-converted-to.pdf, id=111, 999.735pt x 724.7075pt>
+<figures/antikt-eps-converted-to.pdf, id=109, 999.735pt x 724.7075pt>
 File: figures/antikt-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/antikt-eps-converted-to.pdf>
 Package pdftex.def Info: figures/antikt-eps-converted-to.pdf  used on input lin
-e 300.
+e 301.
 (pdftex.def)             Requested size: 156.66585pt x 113.57338pt.
 [10
 
  <./figures/antikt-eps-converted-to.pdf>]
-<figures/met.png, id=122, 3576.36125pt x 2386.9175pt>
+<figures/met.png, id=120, 3576.36125pt x 2386.9175pt>
 File: figures/met.png Graphic file (type png)
 <use figures/met.png>
-Package pdftex.def Info: figures/met.png  used on input line 317.
+Package pdftex.def Info: figures/met.png  used on input line 318.
 (pdftex.def)             Requested size: 170.15178pt x 113.57338pt.
  [11
 
  <./figures/met.png>]
 File: figures/res_prod.png Graphic file (type png)
 <use figures/res_prod.png>
-Package pdftex.def Info: figures/res_prod.png  used on input line 338.
+Package pdftex.def Info: figures/res_prod.png  used on input line 339.
 (pdftex.def)             Requested size: 153.64493pt x 117.21095pt.
  [12
 
 ]
-<figures/cartoon_tt.pdf, id=137, 219.07516pt x 238.35368pt>
+<figures/cartoon_tt.pdf, id=135, 219.07516pt x 238.35368pt>
 File: figures/cartoon_tt.pdf Graphic file (type pdf)
 <use figures/cartoon_tt.pdf>
-Package pdftex.def Info: figures/cartoon_tt.pdf  used on input line 372.
+Package pdftex.def Info: figures/cartoon_tt.pdf  used on input line 373.
 (pdftex.def)             Requested size: 96.79521pt x 105.31238pt.
 
 
 pdfTeX warning: pdflatex (file ./figures/cartoon_hh_crop.pdf): PDF inclusion: f
 ound PDF version <1.7>, but at most version <1.5> allowed
-<figures/cartoon_hh_crop.pdf, id=138, 597.50792pt x 666.66864pt>
+<figures/cartoon_hh_crop.pdf, id=136, 597.50792pt x 666.66864pt>
 File: figures/cartoon_hh_crop.pdf Graphic file (type pdf)
 <use figures/cartoon_hh_crop.pdf>
-Package pdftex.def Info: figures/cartoon_hh_crop.pdf  used on input line 372.
+Package pdftex.def Info: figures/cartoon_hh_crop.pdf  used on input line 373.
 (pdftex.def)             Requested size: 96.79521pt x 107.99158pt.
 [13
 
  <./figures/cartoon_tt.pdf> <./figures/cartoon_hh_crop.pdf>]
-<figures/LHC.png, id=815, 551.661pt x 264.99pt>
+<figures/LHC.png, id=813, 551.661pt x 264.99pt>
 File: figures/LHC.png Graphic file (type png)
 <use figures/LHC.png>
-Package pdftex.def Info: figures/LHC.png  used on input line 396.
-(pdftex.def)             Requested size: 307.28987pt x 147.60492pt.
+Package pdftex.def Info: figures/LHC.png  used on input line 403.
+(pdftex.def)             Requested size: 184.3758pt x 88.56294pt.
+<figures/dataset.png, id=814, 798.985pt x 574.145pt>
+File: figures/dataset.png Graphic file (type png)
+<use figures/dataset.png>
+Package pdftex.def Info: figures/dataset.png  used on input line 403.
+(pdftex.def)             Requested size: 122.91406pt x 88.32573pt.
  [14
 
- <./figures/LHC.png>]
-<figures/ATLAS_det.jpg, id=822, 867.24pt x 546.44969pt>
+ <./figures/LHC.png> <./figures/dataset.png>]
+<figures/ATLAS_det.jpg, id=821, 867.24pt x 546.44969pt>
 File: figures/ATLAS_det.jpg Graphic file (type jpg)
 <use figures/ATLAS_det.jpg>
-Package pdftex.def Info: figures/ATLAS_det.jpg  used on input line 417.
-(pdftex.def)             Requested size: 230.46739pt x 145.21704pt.
+Package pdftex.def Info: figures/ATLAS_det.jpg  used on input line 424.
+(pdftex.def)             Requested size: 245.83282pt x 154.89761pt.
  [15
 
  <./figures/ATLAS_det.jpg>]
-<figures/layers.jpg, id=829, 903.375pt x 732.7375pt>
+<figures/layers.jpg, id=828, 903.375pt x 732.7375pt>
 File: figures/layers.jpg Graphic file (type jpg)
 <use figures/layers.jpg>
-Package pdftex.def Info: figures/layers.jpg  used on input line 426.
+Package pdftex.def Info: figures/layers.jpg  used on input line 433.
 (pdftex.def)             Requested size: 230.46739pt x 186.92944pt.
  [16
 
  <./figures/layers.jpg>]
-<figures/run2TDAQ.png, id=836, 853.1875pt x 642.4pt>
+<figures/run2TDAQ.png, id=835, 517.33275pt x 395.67825pt>
 File: figures/run2TDAQ.png Graphic file (type png)
 <use figures/run2TDAQ.png>
-Package pdftex.def Info: figures/run2TDAQ.png  used on input line 451.
-(pdftex.def)             Requested size: 153.64493pt x 115.68582pt.
+Package pdftex.def Info: figures/run2TDAQ.png  used on input line 458.
+(pdftex.def)             Requested size: 153.64493pt x 117.50894pt.
  [17
 
  <./figures/run2TDAQ.png>] [18
 
 ]
-<figures/resolvedv2.png, id=851, 938.5464pt x 438.9198pt>
+<figures/resolvedv2.png, id=850, 938.5464pt x 438.9198pt>
 File: figures/resolvedv2.png Graphic file (type png)
 <use figures/resolvedv2.png>
-Package pdftex.def Info: figures/resolvedv2.png  used on input line 475.
+Package pdftex.def Info: figures/resolvedv2.png  used on input line 482.
 (pdftex.def)             Requested size: 307.28987pt x 143.70541pt.
  [19
 
  <./figures/resolvedv2.png>]
-<figures/boostedv2.png, id=860, 886.0302pt x 448.5558pt>
+<figures/boostedv2.png, id=859, 886.0302pt x 448.5558pt>
 File: figures/boostedv2.png Graphic file (type png)
 <use figures/boostedv2.png>
-Package pdftex.def Info: figures/boostedv2.png  used on input line 485.
+Package pdftex.def Info: figures/boostedv2.png  used on input line 492.
 (pdftex.def)             Requested size: 307.28987pt x 155.56639pt.
  [20
 
@@ -1790,35 +1797,35 @@ onverted-to.pdf>
 (epstopdf)                    size: 4521 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/abcdExample_met_vs_
 d0sigBL20-eps-converted-to.pdf figures/abcdExample_met_vs_d0sigBL20.eps>
-(epstopdf)             \includegraphics on input line 564.
+(epstopdf)             \includegraphics on input line 571.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/abcdExample_met_vs_d0sigBL20-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf, id=874, 569.12625pt
+<figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf, id=873, 569.12625pt
  x 386.44376pt>
 File: figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf Graphic file (t
 ype pdf)
 <use figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf>
 Package pdftex.def Info: figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.
-pdf  used on input line 564.
+pdf  used on input line 571.
 (pdftex.def)             Requested size: 138.2795pt x 93.89233pt.
 [22
 
  <./figures/abcdExample_met_vs_d0sigBL20-eps-converted-to.pdf>]
 <figures/C_mBBcr_reOpt2000_bbpt350_wlepmtben_regionA_met25d020-eps-converted-to
-.pdf, id=887, 569.12625pt x 413.545pt>
+.pdf, id=886, 569.12625pt x 413.545pt>
 File: figures/C_mBBcr_reOpt2000_bbpt350_wlepmtben_regionA_met25d020-eps-convert
 ed-to.pdf Graphic file (type pdf)
 <use figures/C_mBBcr_reOpt2000_bbpt350_wlepmtben_regionA_met25d020-eps-converte
 d-to.pdf>
 Package pdftex.def Info: figures/C_mBBcr_reOpt2000_bbpt350_wlepmtben_regionA_me
-t25d020-eps-converted-to.pdf  used on input line 575.
+t25d020-eps-converted-to.pdf  used on input line 582.
 (pdftex.def)             Requested size: 245.83282pt x 178.62857pt.
 
-Overfull \vbox (0.24196pt too high) detected at line 575
+Overfull \vbox (0.24196pt too high) detected at line 582
  []
 
 [23
@@ -1836,7 +1843,7 @@ _hhMass_regionA_met25d020-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_reOpt700_mww_bbpt
 210_wwpt250_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf figures/C_reOpt70
 0_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020.eps>
-(epstopdf)             \includegraphics on input line 586.
+(epstopdf)             \includegraphics on input line 591.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1844,28 +1851,59 @@ pdfTeX warning: pdflatex (file ./figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhM
 ass_regionA_met25d020-eps-converted-to.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.5> allowed
 <figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020-eps-conver
-ted-to.pdf, id=901, 569.12625pt x 413.545pt>
+ted-to.pdf, id=900, 569.12625pt x 413.545pt>
 File: figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020-eps-co
 nverted-to.pdf>
 Package pdftex.def Info: figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regi
-onA_met25d020-eps-converted-to.pdf  used on input line 586.
+onA_met25d020-eps-converted-to.pdf  used on input line 591.
 (pdftex.def)             Requested size: 245.83282pt x 178.62857pt.
 [24
 
  <./figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020-eps-con
 verted-to.pdf>]
+Package epstopdf Info: Source file: <figures/C_reOptNonRes_mww_bbpt210_bbpt300_
+wwpt250_mbb_hhMass_regionA_met25d020.eps>
+(epstopdf)                    date: 2018-10-21 06:33:41
+(epstopdf)                    size: 32937 bytes
+(epstopdf)             Output file: <figures/C_reOptNonRes_mww_bbpt210_bbpt300_
+wwpt250_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-05-14 14:59:07
+(epstopdf)                    size: 9573 bytes
+(epstopdf)             Command: <epstopdf --outfile=figures/C_reOptNonRes_mww_b
+bpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf figure
+s/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d020.eps>
+(epstopdf)             \includegraphics on input line 603.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt
+250_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf): PDF inclusion: found PD
+F version <1.7>, but at most version <1.5> allowed
+<figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d020
+-eps-converted-to.pdf, id=914, 569.12625pt x 413.545pt>
+File: figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met2
+5d020-eps-converted-to.pdf Graphic file (type pdf)
+<use figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25
+d020-eps-converted-to.pdf>
+Package pdftex.def Info: figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_
+hhMass_regionA_met25d020-eps-converted-to.pdf  used on input line 603.
+(pdftex.def)             Requested size: 215.10196pt x 156.30316pt.
+[25
+
+ <./figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d
+020-eps-converted-to.pdf>]
 <figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.pdf, 
-id=915, 569.12625pt x 552.0625pt>
+id=930, 569.12625pt x 552.0625pt>
 File: figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.
 pdf Graphic file (type pdf)
 <use figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.p
 df>
 Package pdftex.def Info: figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Co
-mbined_20190312_01.pdf  used on input line 597.
+mbined_20190312_01.pdf  used on input line 612.
 (pdftex.def)             Requested size: 199.73653pt x 193.74704pt.
- [25
+ [26
 
  <./figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01.pd
 f, page is rotated 90 degrees>]
@@ -1877,49 +1915,49 @@ Package epstopdf Info: Source file: <figures/drminlq.eps>
 (epstopdf)                    size: 79735 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/drminlq-eps-convert
 ed-to.pdf figures/drminlq.eps>
-(epstopdf)             \includegraphics on input line 620.
+(epstopdf)             \includegraphics on input line 635.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/drminlq-eps-converted-to.pdf): PDF inc
 lusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/drminlq-eps-converted-to.pdf, id=967, 569.12625pt x 552.0625pt>
+<figures/drminlq-eps-converted-to.pdf, id=980, 569.12625pt x 552.0625pt>
 File: figures/drminlq-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/drminlq-eps-converted-to.pdf>
 Package pdftex.def Info: figures/drminlq-eps-converted-to.pdf  used on input li
-ne 620.
+ne 635.
 (pdftex.def)             Requested size: 115.23369pt x 111.77519pt.
-[26
+[27
 
  <./figures/drminlq-eps-converted-to.pdf>]
-<figures/fullboost.png, id=978, 891.8118pt x 450.0012pt>
+<figures/fullboost.png, id=992, 891.8118pt x 450.0012pt>
 File: figures/fullboost.png Graphic file (type png)
 <use figures/fullboost.png>
-Package pdftex.def Info: figures/fullboost.png  used on input line 629.
+Package pdftex.def Info: figures/fullboost.png  used on input line 644.
 (pdftex.def)             Requested size: 307.28987pt x 155.05832pt.
- [27
+ [28
 
  <./figures/fullboost.png>]
-<figures/electron/mww_e.png, id=986, 558.888pt x 542.025pt>
+<figures/electron/mww_e.png, id=1000, 558.888pt x 542.025pt>
 File: figures/electron/mww_e.png Graphic file (type png)
 <use figures/electron/mww_e.png>
-Package pdftex.def Info: figures/electron/mww_e.png  used on input line 648.
+Package pdftex.def Info: figures/electron/mww_e.png  used on input line 663.
 (pdftex.def)             Requested size: 153.64493pt x 149.01184pt.
-<figures/electron/mhh_e.png, id=987, 558.888pt x 542.025pt>
+<figures/electron/mhh_e.png, id=1001, 558.888pt x 542.025pt>
 File: figures/electron/mhh_e.png Graphic file (type png)
 <use figures/electron/mhh_e.png>
-Package pdftex.def Info: figures/electron/mhh_e.png  used on input line 648.
+Package pdftex.def Info: figures/electron/mhh_e.png  used on input line 663.
 (pdftex.def)             Requested size: 153.64493pt x 149.01184pt.
 
-[28
+[29
 
  <./figures/electron/mww_e.png> <./figures/electron/mhh_e.png>]
-<figures/ABCD.pdf, id=996, 569.12625pt x 408.52625pt>
+<figures/ABCD.pdf, id=1010, 569.12625pt x 408.52625pt>
 File: figures/ABCD.pdf Graphic file (type pdf)
 <use figures/ABCD.pdf>
-Package pdftex.def Info: figures/ABCD.pdf  used on input line 667.
+Package pdftex.def Info: figures/ABCD.pdf  used on input line 682.
 (pdftex.def)             Requested size: 153.64493pt x 110.29109pt.
- [29
+ [30
 
  <./figures/ABCD.pdf, page is rotated 90 degrees>]
 Package epstopdf Info: Source file: <figures/C_2tag_mbbcr_lepton_presel_met50_h
@@ -1933,7 +1971,7 @@ hMassRebin1-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_2tag_mbbcr_lepton
 _presel_met50_hhMassRebin1-eps-converted-to.pdf figures/C_2tag_mbbcr_lepton_pre
 sel_met50_hhMassRebin1.eps>
-(epstopdf)             \includegraphics on input line 676.
+(epstopdf)             \includegraphics on input line 691.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1941,19 +1979,19 @@ pdfTeX warning: pdflatex (file ./figures/C_2tag_mbbcr_lepton_presel_met50_hhMas
 sRebin1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at m
 ost version <1.5> allowed
 <figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf, id
-=1046, 569.12625pt x 413.545pt>
+=1060, 569.12625pt x 413.545pt>
 File: figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-eps-converted-to.pd
 f Graphic file (type pdf)
 <use figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf
 >
 Package pdftex.def Info: figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-
-eps-converted-to.pdf  used on input line 676.
+eps-converted-to.pdf  used on input line 691.
 (pdftex.def)             Requested size: 276.559pt x 200.96661pt.
 
-Overfull \vbox (3.17986pt too high) detected at line 676
+Overfull \vbox (3.17986pt too high) detected at line 691
  []
 
-[30
+[31
 
  <./figures/C_2tag_mbbcr_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf>
 ]
@@ -1968,7 +2006,7 @@ ssRebin1-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_2tag_SR_lepton_pr
 esel_met50_hhMassRebin1-eps-converted-to.pdf figures/C_2tag_SR_lepton_presel_me
 t50_hhMassRebin1.eps>
-(epstopdf)             \includegraphics on input line 686.
+(epstopdf)             \includegraphics on input line 701.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -1976,18 +2014,18 @@ pdfTeX warning: pdflatex (file ./figures/C_2tag_SR_lepton_presel_met50_hhMassRe
 bin1-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
  version <1.5> allowed
 <figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf, id=10
-60, 569.12625pt x 413.545pt>
+75, 569.12625pt x 413.545pt>
 File: figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf G
 raphic file (type pdf)
 <use figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf>
 Package pdftex.def Info: figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps
--converted-to.pdf  used on input line 686.
+-converted-to.pdf  used on input line 701.
 (pdftex.def)             Requested size: 276.559pt x 200.96661pt.
 
-Overfull \vbox (1.4894pt too high) detected at line 686
+Overfull \vbox (1.4894pt too high) detected at line 701
  []
 
-[31
+[32
 
  <./figures/C_2tag_SR_lepton_presel_met50_hhMassRebin1-eps-converted-to.pdf>]
 
@@ -1995,61 +2033,59 @@ pdfTeX warning: pdflatex (file ./figures/limit_2016_reOpt_HiggsApproved_Scalar_
 Paper_Combined_20190312_01_line.pdf): PDF inclusion: found PDF version <1.7>, b
 ut at most version <1.5> allowed
 <figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01_line.
-pdf, id=1075, 569.12625pt x 552.02237pt>
+pdf, id=1089, 569.12625pt x 552.02237pt>
 File: figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01_
 line.pdf Graphic file (type pdf)
 <use figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01_l
 ine.pdf>
 Package pdftex.def Info: figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Co
-mbined_20190312_01_line.pdf  used on input line 706.
+mbined_20190312_01_line.pdf  used on input line 721.
 (pdftex.def)             Requested size: 153.64493pt x 149.03117pt.
 
 
 pdfTeX warning: pdflatex (file ./figures/Final_limits_line.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<figures/Final_limits_line.pdf, id=1076, 569.12625pt x 552.02237pt>
+<figures/Final_limits_line.pdf, id=1090, 569.12625pt x 552.02237pt>
 File: figures/Final_limits_line.pdf Graphic file (type pdf)
 <use figures/Final_limits_line.pdf>
-Package pdftex.def Info: figures/Final_limits_line.pdf  used on input line 706.
+Package pdftex.def Info: figures/Final_limits_line.pdf  used on input line 721.
 
 (pdftex.def)             Requested size: 153.64493pt x 149.03117pt.
-[32
+[33
 
  <./figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01_li
 ne.pdf> <./figures/Final_limits_line.pdf
 
 pdfTeX warning: pdflatex (file ./figures/Final_limits_line.pdf): PDF inclusion:
  multiple pdfs with page group included in a single page
->] [33
-
-] [34
+>] [34
 
 ] [35
 
 ] [36
 
+] [37
+
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\translate ' on input line 761.
+(hyperref)                removing `\translate ' on input line 776.
 
 \c@framenumberappendix=\count189
-[37
+[38
 
-] [38
+] [39
 
 ]
-Overfull \hbox (9.18805pt too wide) in paragraph at lines 818--818
+Overfull \hbox (9.18805pt too wide) in paragraph at lines 833--833
  [] 
  []
 
 
-Overfull \vbox (1.43167pt too high) detected at line 818
+Overfull \vbox (1.43167pt too high) detected at line 833
  []
 
-[39
-
-] [40
+[40
 
 ] [41
 
@@ -2063,46 +2099,48 @@ Overfull \vbox (1.43167pt too high) detected at line 818
 
 ] [46
 
+] [47
+
 ]
 <figures/C_mBBcr_reOptNonRes_mww_bbpt210_bbpt300_wlepmtben_regionA_met25d020-ep
-s-converted-to.pdf, id=1194, 569.12625pt x 413.545pt>
+s-converted-to.pdf, id=1208, 569.12625pt x 413.545pt>
 File: figures/C_mBBcr_reOptNonRes_mww_bbpt210_bbpt300_wlepmtben_regionA_met25d0
 20-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/C_mBBcr_reOptNonRes_mww_bbpt210_bbpt300_wlepmtben_regionA_met25d02
 0-eps-converted-to.pdf>
 Package pdftex.def Info: figures/C_mBBcr_reOptNonRes_mww_bbpt210_bbpt300_wlepmt
-ben_regionA_met25d020-eps-converted-to.pdf  used on input line 1013.
+ben_regionA_met25d020-eps-converted-to.pdf  used on input line 1028.
 (pdftex.def)             Requested size: 138.2795pt x 100.47699pt.
 <figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA_met25d020-eps-converted
--to.pdf, id=1195, 569.12625pt x 413.545pt>
+-to.pdf, id=1209, 569.12625pt x 413.545pt>
 File: figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA_met25d020-eps-conv
 erted-to.pdf Graphic file (type pdf)
 <use figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA_met25d020-eps-conve
 rted-to.pdf>
 Package pdftex.def Info: figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_regionA
-_met25d020-eps-converted-to.pdf  used on input line 1013.
+_met25d020-eps-converted-to.pdf  used on input line 1028.
 (pdftex.def)             Requested size: 138.2795pt x 100.47699pt.
 File: figures/C_mBBcr_reOpt2000_bbpt350_wlepmtben_regionA_met25d020-eps-convert
 ed-to.pdf Graphic file (type pdf)
 <use figures/C_mBBcr_reOpt2000_bbpt350_wlepmtben_regionA_met25d020-eps-converte
 d-to.pdf>
 Package pdftex.def Info: figures/C_mBBcr_reOpt2000_bbpt350_wlepmtben_regionA_me
-t25d020-eps-converted-to.pdf  used on input line 1013.
+t25d020-eps-converted-to.pdf  used on input line 1028.
 (pdftex.def)             Requested size: 138.2795pt x 100.47699pt.
- [47
+ [48
 
  <./figures/C_mBBcr_reOptNonRes_mww_bbpt210_bbpt300_wlepmtben_regionA_met25d020
 -eps-converted-to.pdf> <./figures/C_mBBcr_reOpt700_mww_bbpt210_wlepmtben_region
 A_met25d020-eps-converted-to.pdf>]
-[48
-
-] [49
+[49
 
 ] [50
 
 ] [51
 
 ] [52
+
+] [53
 
 ]
 Package epstopdf Info: Source file: <figures/C_reOptNonRes_mww_bbpt210_bbpt300_
@@ -2116,21 +2154,14 @@ wwpt250_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_reOptNonRes_mww_b
 bpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf figure
 s/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d020.eps>
-(epstopdf)             \includegraphics on input line 1166.
+(epstopdf)             \includegraphics on input line 1181.
 Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: pdflatex (file ./figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt
-250_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf): PDF inclusion: found PD
-F version <1.7>, but at most version <1.5> allowed
-<figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d020
--eps-converted-to.pdf, id=1247, 569.12625pt x 413.545pt>
 File: figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met2
 5d020-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25
 d020-eps-converted-to.pdf>
 Package pdftex.def Info: figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_
-hhMass_regionA_met25d020-eps-converted-to.pdf  used on input line 1166.
+hhMass_regionA_met25d020-eps-converted-to.pdf  used on input line 1181.
 (pdftex.def)             Requested size: 138.2795pt x 100.47699pt.
 Package epstopdf Info: Source file: <figures/C_reOpt500_mww_bbpt210_wwpt150_mbb
 _hhMass_regionA_met25d020.eps>
@@ -2143,7 +2174,7 @@ _hhMass_regionA_met25d020-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_reOpt500_mww_bbpt
 210_wwpt150_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf figures/C_reOpt50
 0_mww_bbpt210_wwpt150_mbb_hhMass_regionA_met25d020.eps>
-(epstopdf)             \includegraphics on input line 1166.
+(epstopdf)             \includegraphics on input line 1181.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2151,13 +2182,13 @@ pdfTeX warning: pdflatex (file ./figures/C_reOpt500_mww_bbpt210_wwpt150_mbb_hhM
 ass_regionA_met25d020-eps-converted-to.pdf): PDF inclusion: found PDF version <
 1.7>, but at most version <1.5> allowed
 <figures/C_reOpt500_mww_bbpt210_wwpt150_mbb_hhMass_regionA_met25d020-eps-conver
-ted-to.pdf, id=1248, 569.12625pt x 413.545pt>
+ted-to.pdf, id=1261, 569.12625pt x 413.545pt>
 File: figures/C_reOpt500_mww_bbpt210_wwpt150_mbb_hhMass_regionA_met25d020-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use figures/C_reOpt500_mww_bbpt210_wwpt150_mbb_hhMass_regionA_met25d020-eps-co
 nverted-to.pdf>
 Package pdftex.def Info: figures/C_reOpt500_mww_bbpt210_wwpt150_mbb_hhMass_regi
-onA_met25d020-eps-converted-to.pdf  used on input line 1166.
+onA_met25d020-eps-converted-to.pdf  used on input line 1181.
 (pdftex.def)             Requested size: 138.2795pt x 100.47699pt.
 Package epstopdf Info: Source file: <figures/C_reOpt700_mww_bbpt210_wwpt250_mbb
 _hhMass_regionA_met25d020.eps>
@@ -2170,14 +2201,14 @@ _hhMass_regionA_met25d020-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_reOpt700_mww_bbpt
 210_wwpt250_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf figures/C_reOpt70
 0_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020.eps>
-(epstopdf)             \includegraphics on input line 1166.
+(epstopdf)             \includegraphics on input line 1181.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020-eps-c
 onverted-to.pdf Graphic file (type pdf)
 <use figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020-eps-co
 nverted-to.pdf>
 Package pdftex.def Info: figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regi
-onA_met25d020-eps-converted-to.pdf  used on input line 1166.
+onA_met25d020-eps-converted-to.pdf  used on input line 1181.
 (pdftex.def)             Requested size: 138.2795pt x 100.47699pt.
 Package epstopdf Info: Source file: <figures/C_reOpt2000_bbpt350_wwpt250_drww15
 _mbb_hhMass_regionA_met25d020.eps>
@@ -2190,7 +2221,7 @@ _mbb_hhMass_regionA_met25d020-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/C_reOpt2000_bbpt350
 _wwpt250_drww15_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf figures/C_reO
 pt2000_bbpt350_wwpt250_drww15_mbb_hhMass_regionA_met25d020.eps>
-(epstopdf)             \includegraphics on input line 1166.
+(epstopdf)             \includegraphics on input line 1181.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2198,24 +2229,23 @@ pdfTeX warning: pdflatex (file ./figures/C_reOpt2000_bbpt350_wwpt250_drww15_mbb
 _hhMass_regionA_met25d020-eps-converted-to.pdf): PDF inclusion: found PDF versi
 on <1.7>, but at most version <1.5> allowed
 <figures/C_reOpt2000_bbpt350_wwpt250_drww15_mbb_hhMass_regionA_met25d020-eps-co
-nverted-to.pdf, id=1249, 569.12625pt x 413.545pt>
+nverted-to.pdf, id=1262, 569.12625pt x 413.545pt>
 File: figures/C_reOpt2000_bbpt350_wwpt250_drww15_mbb_hhMass_regionA_met25d020-e
 ps-converted-to.pdf Graphic file (type pdf)
 <use figures/C_reOpt2000_bbpt350_wwpt250_drww15_mbb_hhMass_regionA_met25d020-ep
 s-converted-to.pdf>
 Package pdftex.def Info: figures/C_reOpt2000_bbpt350_wwpt250_drww15_mbb_hhMass_
-regionA_met25d020-eps-converted-to.pdf  used on input line 1166.
+regionA_met25d020-eps-converted-to.pdf  used on input line 1181.
 (pdftex.def)             Requested size: 138.2795pt x 100.47699pt.
 
-Overfull \vbox (0.8633pt too high) detected at line 1166
+Overfull \vbox (0.8633pt too high) detected at line 1181
  []
 
-[53
+[54
 
- <./figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d
-020-eps-converted-to.pdf> <./figures/C_reOpt500_mww_bbpt210_wwpt150_mbb_hhMass_
-regionA_met25d020-eps-converted-to.pdf> <./figures/C_reOpt2000_bbpt350_wwpt250_
-drww15_mbb_hhMass_regionA_met25d020-eps-converted-to.pdf>]
+ <./figures/C_reOpt500_mww_bbpt210_wwpt150_mbb_hhMass_regionA_met25d020-eps-con
+verted-to.pdf> <./figures/C_reOpt2000_bbpt350_wwpt250_drww15_mbb_hhMass_regionA
+_met25d020-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures/C_2tab_0bjet_SR_lepton_presel_met5
 0_hhMassRebin1_postfit.eps>
 (epstopdf)                    date: 2018-10-21 06:33:41
@@ -2227,7 +2257,7 @@ Package epstopdf Info: Source file: <figures/C_2tab_0bjet_SR_lepton_presel_met5
 (epstopdf)             Command: <epstopdf --outfile=figures/C_2tab_0bjet_SR_lep
 ton_presel_met50_hhMassRebin1_postfit-eps-converted-to.pdf figures/C_2tab_0bjet
 _SR_lepton_presel_met50_hhMassRebin1_postfit.eps>
-(epstopdf)             \includegraphics on input line 1175.
+(epstopdf)             \includegraphics on input line 1190.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2235,15 +2265,15 @@ pdfTeX warning: pdflatex (file ./figures/C_2tab_0bjet_SR_lepton_presel_met50_hh
 MassRebin1_postfit-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7
 >, but at most version <1.5> allowed
 <figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebin1_postfit-eps-converted
--to.pdf, id=1277, 569.12625pt x 414.54875pt>
+-to.pdf, id=1283, 569.12625pt x 414.54875pt>
 File: figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebin1_postfit-eps-conv
 erted-to.pdf Graphic file (type pdf)
 <use figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebin1_postfit-eps-conve
 rted-to.pdf>
 Package pdftex.def Info: figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebi
-n1_postfit-eps-converted-to.pdf  used on input line 1175.
+n1_postfit-eps-converted-to.pdf  used on input line 1190.
 (pdftex.def)             Requested size: 245.83282pt x 179.06215pt.
-[54
+[55
 
  <./figures/C_2tab_0bjet_SR_lepton_presel_met50_hhMassRebin1_postfit-eps-conver
 ted-to.pdf>]
@@ -2255,17 +2285,17 @@ Package epstopdf Info: Source file: <figures/drbb.eps>
 (epstopdf)                    size: 89160 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/drbb-eps-converted-
 to.pdf figures/drbb.eps>
-(epstopdf)             \includegraphics on input line 1196.
+(epstopdf)             \includegraphics on input line 1211.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/drbb-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/drbb-eps-converted-to.pdf, id=1291, 569.12625pt x 552.0625pt>
+<figures/drbb-eps-converted-to.pdf, id=1298, 569.12625pt x 552.0625pt>
 File: figures/drbb-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/drbb-eps-converted-to.pdf>
 Package pdftex.def Info: figures/drbb-eps-converted-to.pdf  used on input line 
-1196.
+1211.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/drWW.eps>
 (epstopdf)                    date: 2018-03-02 03:14:29
@@ -2275,17 +2305,17 @@ Package epstopdf Info: Source file: <figures/drWW.eps>
 (epstopdf)                    size: 57571 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/drWW-eps-converted-
 to.pdf figures/drWW.eps>
-(epstopdf)             \includegraphics on input line 1196.
+(epstopdf)             \includegraphics on input line 1211.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/drWW-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/drWW-eps-converted-to.pdf, id=1292, 569.12625pt x 552.0625pt>
+<figures/drWW-eps-converted-to.pdf, id=1299, 569.12625pt x 552.0625pt>
 File: figures/drWW-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/drWW-eps-converted-to.pdf>
 Package pdftex.def Info: figures/drWW-eps-converted-to.pdf  used on input line 
-1196.
+1211.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/drqq.eps>
 (epstopdf)                    date: 2018-03-02 03:14:29
@@ -2295,17 +2325,17 @@ Package epstopdf Info: Source file: <figures/drqq.eps>
 (epstopdf)                    size: 97344 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/drqq-eps-converted-
 to.pdf figures/drqq.eps>
-(epstopdf)             \includegraphics on input line 1196.
+(epstopdf)             \includegraphics on input line 1211.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex (file ./figures/drqq-eps-converted-to.pdf): PDF inclus
 ion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures/drqq-eps-converted-to.pdf, id=1293, 569.12625pt x 552.0625pt>
+<figures/drqq-eps-converted-to.pdf, id=1300, 569.12625pt x 552.0625pt>
 File: figures/drqq-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/drqq-eps-converted-to.pdf>
 Package pdftex.def Info: figures/drqq-eps-converted-to.pdf  used on input line 
-1196.
+1211.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/drminlq.eps>
 (epstopdf)                    date: 2018-03-02 03:14:29
@@ -2315,21 +2345,21 @@ Package epstopdf Info: Source file: <figures/drminlq.eps>
 (epstopdf)                    size: 79735 bytes
 (epstopdf)             Command: <epstopdf --outfile=figures/drminlq-eps-convert
 ed-to.pdf figures/drminlq.eps>
-(epstopdf)             \includegraphics on input line 1196.
+(epstopdf)             \includegraphics on input line 1211.
 Package epstopdf Info: Output file is already uptodate.
 File: figures/drminlq-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/drminlq-eps-converted-to.pdf>
 Package pdftex.def Info: figures/drminlq-eps-converted-to.pdf  used on input li
-ne 1196.
+ne 1211.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 
-Overfull \vbox (0.78171pt too high) detected at line 1196
+Overfull \vbox (0.78171pt too high) detected at line 1211
  []
 
-[55
+[56
 
  <./figures/drbb-eps-converted-to.pdf> <./figures/drWW-eps-converted-to.pdf> <.
-/figures/drqq-eps-converted-to.pdf>] [56
+/figures/drqq-eps-converted-to.pdf>] [57
 
 ]
 Package epstopdf Info: Source file: <figures/WHad_plots_john_withcuts/electron/
@@ -2343,16 +2373,16 @@ hww_m_Xhh2000-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/WHad_plots_john_wit
 hcuts/electron/hww_m_Xhh2000-eps-converted-to.pdf figures/WHad_plots_john_withc
 uts/electron/hww_m_Xhh2000.eps>
-(epstopdf)             \includegraphics on input line 1241.
+(epstopdf)             \includegraphics on input line 1256.
 Package epstopdf Info: Output file is already uptodate.
 <figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000-eps-converted-to.pdf, 
-id=1317, 569.12625pt x 552.0625pt>
+id=1323, 569.12625pt x 552.0625pt>
 File: figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000-eps-converted-to.
 pdf Graphic file (type pdf)
 <use figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000-eps-converted-to.p
 df>
 Package pdftex.def Info: figures/WHad_plots_john_withcuts/electron/hww_m_Xhh200
-0-eps-converted-to.pdf  used on input line 1241.
+0-eps-converted-to.pdf  used on input line 1256.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/WHad_plots_john_withcuts/electron/
 hww_pt_Xhh2000.eps>
@@ -2365,16 +2395,16 @@ hww_pt_Xhh2000-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/WHad_plots_john_wit
 hcuts/electron/hww_pt_Xhh2000-eps-converted-to.pdf figures/WHad_plots_john_with
 cuts/electron/hww_pt_Xhh2000.eps>
-(epstopdf)             \includegraphics on input line 1241.
+(epstopdf)             \includegraphics on input line 1256.
 Package epstopdf Info: Output file is already uptodate.
 <figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000-eps-converted-to.pdf,
- id=1318, 569.12625pt x 552.0625pt>
+ id=1324, 569.12625pt x 552.0625pt>
 File: figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000-eps-converted-to
 .pdf Graphic file (type pdf)
 <use figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000-eps-converted-to.
 pdf>
 Package pdftex.def Info: figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh20
-00-eps-converted-to.pdf  used on input line 1241.
+00-eps-converted-to.pdf  used on input line 1256.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/WHad_plots_john_withcuts/electron/
 wlep_met_Xhh2000.eps>
@@ -2387,16 +2417,16 @@ wlep_met_Xhh2000-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/WHad_plots_john_wit
 hcuts/electron/wlep_met_Xhh2000-eps-converted-to.pdf figures/WHad_plots_john_wi
 thcuts/electron/wlep_met_Xhh2000.eps>
-(epstopdf)             \includegraphics on input line 1241.
+(epstopdf)             \includegraphics on input line 1256.
 Package epstopdf Info: Output file is already uptodate.
 <figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh2000-eps-converted-to.pd
-f, id=1319, 569.12625pt x 552.0625pt>
+f, id=1325, 569.12625pt x 552.0625pt>
 File: figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh2000-eps-converted-
 to.pdf Graphic file (type pdf)
 <use figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh2000-eps-converted-t
 o.pdf>
 Package pdftex.def Info: figures/WHad_plots_john_withcuts/electron/wlep_met_Xhh
-2000-eps-converted-to.pdf  used on input line 1241.
+2000-eps-converted-to.pdf  used on input line 1256.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/WHad_plots_john_withcuts/electron/
 hh_m_Xhh2000.eps>
@@ -2409,22 +2439,22 @@ hh_m_Xhh2000-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/WHad_plots_john_wit
 hcuts/electron/hh_m_Xhh2000-eps-converted-to.pdf figures/WHad_plots_john_withcu
 ts/electron/hh_m_Xhh2000.eps>
-(epstopdf)             \includegraphics on input line 1241.
+(epstopdf)             \includegraphics on input line 1256.
 Package epstopdf Info: Output file is already uptodate.
 <figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000-eps-converted-to.pdf, i
-d=1320, 569.12625pt x 552.0625pt>
+d=1326, 569.12625pt x 552.0625pt>
 File: figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000-eps-converted-to.p
 df Graphic file (type pdf)
 <use figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000-eps-converted-to.pd
 f>
 Package pdftex.def Info: figures/WHad_plots_john_withcuts/electron/hh_m_Xhh2000
--eps-converted-to.pdf  used on input line 1241.
+-eps-converted-to.pdf  used on input line 1256.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 
-Overfull \vbox (0.26717pt too high) detected at line 1241
+Overfull \vbox (0.26717pt too high) detected at line 1256
  []
 
-[57
+[58
 
  <./figures/WHad_plots_john_withcuts/electron/hww_m_Xhh2000-eps-converted-to.pd
 f> <./figures/WHad_plots_john_withcuts/electron/hww_pt_Xhh2000-eps-converted-to
@@ -2442,15 +2472,15 @@ m_Xhh2000-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/WHad_plots_john_wit
 hcuts/muon/hww_m_Xhh2000-eps-converted-to.pdf figures/WHad_plots_john_withcuts/
 muon/hww_m_Xhh2000.eps>
-(epstopdf)             \includegraphics on input line 1262.
+(epstopdf)             \includegraphics on input line 1277.
 Package epstopdf Info: Output file is already uptodate.
 <figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000-eps-converted-to.pdf, id=1
-339, 569.12625pt x 552.0625pt>
+345, 569.12625pt x 552.0625pt>
 File: figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000-eps-converted-to.pdf 
 Graphic file (type pdf)
 <use figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000-eps-converted-to.pdf>
 Package pdftex.def Info: figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000-ep
-s-converted-to.pdf  used on input line 1262.
+s-converted-to.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/WHad_plots_john_withcuts/muon/hww_
 pt_Xhh2000.eps>
@@ -2463,16 +2493,16 @@ pt_Xhh2000-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/WHad_plots_john_wit
 hcuts/muon/hww_pt_Xhh2000-eps-converted-to.pdf figures/WHad_plots_john_withcuts
 /muon/hww_pt_Xhh2000.eps>
-(epstopdf)             \includegraphics on input line 1262.
+(epstopdf)             \includegraphics on input line 1277.
 Package epstopdf Info: Output file is already uptodate.
 <figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000-eps-converted-to.pdf, id=
-1340, 569.12625pt x 552.0625pt>
+1346, 569.12625pt x 552.0625pt>
 File: figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000-eps-converted-to.pdf
  Graphic file (type pdf)
 <use figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000-eps-converted-to.pdf>
 
 Package pdftex.def Info: figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000-e
-ps-converted-to.pdf  used on input line 1262.
+ps-converted-to.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/WHad_plots_john_withcuts/muon/wlep
 _met_Xhh2000.eps>
@@ -2485,16 +2515,16 @@ _met_Xhh2000-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/WHad_plots_john_wit
 hcuts/muon/wlep_met_Xhh2000-eps-converted-to.pdf figures/WHad_plots_john_withcu
 ts/muon/wlep_met_Xhh2000.eps>
-(epstopdf)             \includegraphics on input line 1262.
+(epstopdf)             \includegraphics on input line 1277.
 Package epstopdf Info: Output file is already uptodate.
 <figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000-eps-converted-to.pdf, i
-d=1341, 569.12625pt x 552.0625pt>
+d=1347, 569.12625pt x 552.0625pt>
 File: figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000-eps-converted-to.p
 df Graphic file (type pdf)
 <use figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000-eps-converted-to.pd
 f>
 Package pdftex.def Info: figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000
--eps-converted-to.pdf  used on input line 1262.
+-eps-converted-to.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 Package epstopdf Info: Source file: <figures/WHad_plots_john_withcuts/muon/hh_m
 _Xhh2000.eps>
@@ -2507,27 +2537,27 @@ _Xhh2000-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/WHad_plots_john_wit
 hcuts/muon/hh_m_Xhh2000-eps-converted-to.pdf figures/WHad_plots_john_withcuts/m
 uon/hh_m_Xhh2000.eps>
-(epstopdf)             \includegraphics on input line 1262.
+(epstopdf)             \includegraphics on input line 1277.
 Package epstopdf Info: Output file is already uptodate.
 <figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000-eps-converted-to.pdf, id=13
-42, 569.12625pt x 552.0625pt>
+48, 569.12625pt x 552.0625pt>
 File: figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000-eps-converted-to.pdf G
 raphic file (type pdf)
 <use figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000-eps-converted-to.pdf>
 Package pdftex.def Info: figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000-eps
--converted-to.pdf  used on input line 1262.
+-converted-to.pdf  used on input line 1277.
 (pdftex.def)             Requested size: 107.55098pt x 104.32014pt.
 
-Overfull \vbox (0.26717pt too high) detected at line 1262
+Overfull \vbox (0.26717pt too high) detected at line 1277
  []
 
-[58
+[59
 
  <./figures/WHad_plots_john_withcuts/muon/hww_m_Xhh2000-eps-converted-to.pdf> <
 ./figures/WHad_plots_john_withcuts/muon/hww_pt_Xhh2000-eps-converted-to.pdf> <.
 /figures/WHad_plots_john_withcuts/muon/wlep_met_Xhh2000-eps-converted-to.pdf> <
 ./figures/WHad_plots_john_withcuts/muon/hh_m_Xhh2000-eps-converted-to.pdf>]
-[59
+[60
 
 ]
 Package epstopdf Info: Source file: <figures/JohnPlots_5_24/electron/hww_m/hww_
@@ -2541,7 +2571,7 @@ m_Xhh2000sigbkg_resolved-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/JohnPlots_5_24/elec
 tron/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-converted-to.pdf figures/JohnPlots_
 5_24/electron/hww_m/hww_m_Xhh2000sigbkg_resolved.eps>
-(epstopdf)             \includegraphics on input line 1305.
+(epstopdf)             \includegraphics on input line 1320.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2549,13 +2579,13 @@ pdfTeX warning: pdflatex (file ./figures/JohnPlots_5_24/electron/hww_m/hww_m_Xh
 h2000sigbkg_resolved-eps-converted-to.pdf): PDF inclusion: found PDF version <1
 .7>, but at most version <1.5> allowed
 <figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-convert
-ed-to.pdf, id=1367, 569.12625pt x 552.0625pt>
+ed-to.pdf, id=1373, 569.12625pt x 552.0625pt>
 File: figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-co
 nverted-to.pdf Graphic file (type pdf)
 <use figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-con
 verted-to.pdf>
 Package pdftex.def Info: figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sig
-bkg_resolved-eps-converted-to.pdf  used on input line 1305.
+bkg_resolved-eps-converted-to.pdf  used on input line 1320.
 (pdftex.def)             Requested size: 138.2795pt x 134.13191pt.
 Package epstopdf Info: Source file: <figures/JohnPlots_5_24/electron/hww_m/hww_
 m_Xhh2000sigbkg_fatjet.eps>
@@ -2568,7 +2598,7 @@ m_Xhh2000sigbkg_fatjet-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/JohnPlots_5_24/elec
 tron/hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-converted-to.pdf figures/JohnPlots_5_
 24/electron/hww_m/hww_m_Xhh2000sigbkg_fatjet.eps>
-(epstopdf)             \includegraphics on input line 1305.
+(epstopdf)             \includegraphics on input line 1320.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2576,15 +2606,15 @@ pdfTeX warning: pdflatex (file ./figures/JohnPlots_5_24/electron/hww_m/hww_m_Xh
 h2000sigbkg_fatjet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7
 >, but at most version <1.5> allowed
 <figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-converted
--to.pdf, id=1368, 569.12625pt x 552.0625pt>
+-to.pdf, id=1374, 569.12625pt x 552.0625pt>
 File: figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-conv
 erted-to.pdf Graphic file (type pdf)
 <use figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-conve
 rted-to.pdf>
 Package pdftex.def Info: figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sig
-bkg_fatjet-eps-converted-to.pdf  used on input line 1305.
+bkg_fatjet-eps-converted-to.pdf  used on input line 1320.
 (pdftex.def)             Requested size: 138.2795pt x 134.13191pt.
-[60
+[61
 
  <./figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-conv
 erted-to.pdf> <./figures/JohnPlots_5_24/electron/hww_m/hww_m_Xhh2000sigbkg_fatj
@@ -2600,7 +2630,7 @@ h2000sigbkg_resolved-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/JohnPlots_5_24/muon
 /hww_m/hww_m_Xhh2000sigbkg_resolved-eps-converted-to.pdf figures/JohnPlots_5_24
 /muon/hww_m/hww_m_Xhh2000sigbkg_resolved.eps>
-(epstopdf)             \includegraphics on input line 1326.
+(epstopdf)             \includegraphics on input line 1341.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2608,13 +2638,13 @@ pdfTeX warning: pdflatex (file ./figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh200
 0sigbkg_resolved-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>,
  but at most version <1.5> allowed
 <figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-converted-t
-o.pdf, id=1381, 569.12625pt x 552.0625pt>
+o.pdf, id=1388, 569.12625pt x 552.0625pt>
 File: figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-conver
 ted-to.pdf Graphic file (type pdf)
 <use figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-convert
 ed-to.pdf>
 Package pdftex.def Info: figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_
-resolved-eps-converted-to.pdf  used on input line 1326.
+resolved-eps-converted-to.pdf  used on input line 1341.
 (pdftex.def)             Requested size: 138.2795pt x 134.13191pt.
 Package epstopdf Info: Source file: <figures/JohnPlots_5_24/muon/hww_m/hww_m_Xh
 h2000sigbkg_fatjet.eps>
@@ -2627,7 +2657,7 @@ h2000sigbkg_fatjet-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/JohnPlots_5_24/muon
 /hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-converted-to.pdf figures/JohnPlots_5_24/m
 uon/hww_m/hww_m_Xhh2000sigbkg_fatjet.eps>
-(epstopdf)             \includegraphics on input line 1326.
+(epstopdf)             \includegraphics on input line 1341.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2635,15 +2665,15 @@ pdfTeX warning: pdflatex (file ./figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh200
 0sigbkg_fatjet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, b
 ut at most version <1.5> allowed
 <figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-converted-to.
-pdf, id=1382, 569.12625pt x 552.0625pt>
+pdf, id=1389, 569.12625pt x 552.0625pt>
 File: figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-converte
 d-to.pdf Graphic file (type pdf)
 <use figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-converted
 -to.pdf>
 Package pdftex.def Info: figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_
-fatjet-eps-converted-to.pdf  used on input line 1326.
+fatjet-eps-converted-to.pdf  used on input line 1341.
 (pdftex.def)             Requested size: 138.2795pt x 134.13191pt.
-[61
+[62
 
  <./figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_resolved-eps-converte
 d-to.pdf> <./figures/JohnPlots_5_24/muon/hww_m/hww_m_Xhh2000sigbkg_fatjet-eps-c
@@ -2659,7 +2689,7 @@ Xhh2000sigbkg_resolved-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/JohnPlots_5_24/elec
 tron/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-converted-to.pdf figures/JohnPlots_5_
 24/electron/hh_m/hh_m_Xhh2000sigbkg_resolved.eps>
-(epstopdf)             \includegraphics on input line 1347.
+(epstopdf)             \includegraphics on input line 1362.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2667,13 +2697,13 @@ pdfTeX warning: pdflatex (file ./figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2
 000sigbkg_resolved-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7
 >, but at most version <1.5> allowed
 <figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-converted
--to.pdf, id=1396, 569.12625pt x 552.0625pt>
+-to.pdf, id=1402, 569.12625pt x 552.0625pt>
 File: figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-conv
 erted-to.pdf Graphic file (type pdf)
 <use figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-conve
 rted-to.pdf>
 Package pdftex.def Info: figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbk
-g_resolved-eps-converted-to.pdf  used on input line 1347.
+g_resolved-eps-converted-to.pdf  used on input line 1362.
 (pdftex.def)             Requested size: 138.2795pt x 134.13191pt.
 Package epstopdf Info: Source file: <figures/JohnPlots_5_24/electron/hh_m/hh_m_
 Xhh2000sigbkg_fatjet.eps>
@@ -2686,7 +2716,7 @@ Xhh2000sigbkg_fatjet-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=figures/JohnPlots_5_24/elec
 tron/hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-converted-to.pdf figures/JohnPlots_5_24
 /electron/hh_m/hh_m_Xhh2000sigbkg_fatjet.eps>
-(epstopdf)             \includegraphics on input line 1347.
+(epstopdf)             \includegraphics on input line 1362.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2694,15 +2724,15 @@ pdfTeX warning: pdflatex (file ./figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2
 000sigbkg_fatjet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>,
  but at most version <1.5> allowed
 <figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-converted-t
-o.pdf, id=1397, 569.12625pt x 552.0625pt>
+o.pdf, id=1403, 569.12625pt x 552.0625pt>
 File: figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-conver
 ted-to.pdf Graphic file (type pdf)
 <use figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-convert
 ed-to.pdf>
 Package pdftex.def Info: figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbk
-g_fatjet-eps-converted-to.pdf  used on input line 1347.
+g_fatjet-eps-converted-to.pdf  used on input line 1362.
 (pdftex.def)             Requested size: 138.2795pt x 134.13191pt.
-[62
+[63
 
  <./figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-conver
 ted-to.pdf> <./figures/JohnPlots_5_24/electron/hh_m/hh_m_Xhh2000sigbkg_fatjet-e
@@ -2718,7 +2748,7 @@ Package epstopdf Info: Source file: <figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2
 (epstopdf)             Command: <epstopdf --outfile=figures/JohnPlots_5_24/muon
 /hh_m/hh_m_Xhh2000sigbkg_resolved-eps-converted-to.pdf figures/JohnPlots_5_24/m
 uon/hh_m/hh_m_Xhh2000sigbkg_resolved.eps>
-(epstopdf)             \includegraphics on input line 1368.
+(epstopdf)             \includegraphics on input line 1383.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2726,13 +2756,13 @@ pdfTeX warning: pdflatex (file ./figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000s
 igbkg_resolved-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, b
 ut at most version <1.5> allowed
 <figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-converted-to.
-pdf, id=1410, 569.12625pt x 552.0625pt>
+pdf, id=1416, 569.12625pt x 552.0625pt>
 File: figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-converte
 d-to.pdf Graphic file (type pdf)
 <use figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-converted
 -to.pdf>
 Package pdftex.def Info: figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_re
-solved-eps-converted-to.pdf  used on input line 1368.
+solved-eps-converted-to.pdf  used on input line 1383.
 (pdftex.def)             Requested size: 138.2795pt x 134.13191pt.
 Package epstopdf Info: Source file: <figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2
 000sigbkg_fatjet.eps>
@@ -2745,7 +2775,7 @@ Package epstopdf Info: Source file: <figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2
 (epstopdf)             Command: <epstopdf --outfile=figures/JohnPlots_5_24/muon
 /hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-converted-to.pdf figures/JohnPlots_5_24/muo
 n/hh_m/hh_m_Xhh2000sigbkg_fatjet.eps>
-(epstopdf)             \includegraphics on input line 1368.
+(epstopdf)             \includegraphics on input line 1383.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2753,23 +2783,23 @@ pdfTeX warning: pdflatex (file ./figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000s
 igbkg_fatjet-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but
  at most version <1.5> allowed
 <figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-converted-to.pd
-f, id=1411, 569.12625pt x 552.0625pt>
+f, id=1417, 569.12625pt x 552.0625pt>
 File: figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-converted-
 to.pdf Graphic file (type pdf)
 <use figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-converted-t
 o.pdf>
 Package pdftex.def Info: figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_fa
-tjet-eps-converted-to.pdf  used on input line 1368.
+tjet-eps-converted-to.pdf  used on input line 1383.
 (pdftex.def)             Requested size: 138.2795pt x 134.13191pt.
-[63
+[64
 
  <./figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_resolved-eps-converted-
 to.pdf> <./figures/JohnPlots_5_24/muon/hh_m/hh_m_Xhh2000sigbkg_fatjet-eps-conve
 rted-to.pdf>]
-Overfull \vbox (9.41322pt too high) detected at line 1412
+Overfull \vbox (9.41322pt too high) detected at line 1427
  []
 
-[64
+[65
 
 ]
 \tf@nav=\write7
@@ -2781,11 +2811,11 @@ Overfull \vbox (9.41322pt too high) detected at line 1412
 \tf@snm=\write9
 \openout9 = `JMyers_Defense.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1416.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1416.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1431.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1431.
  (JMyers_Defense.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1416.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1416.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1431.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1431.
 
 Package rerunfilecheck Info: File `JMyers_Defense.out' has not changed.
 (rerunfilecheck)             Checksum: A7F4D589709A975A14292322A595ED53;42.
@@ -2796,10 +2826,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 26734 strings out of 492902
- 551293 string characters out of 3133547
- 650913 words of memory out of 3000000
- 29818 multiletter control sequences out of 15000+200000
+ 26746 strings out of 492902
+ 551477 string characters out of 3133547
+ 652029 words of memory out of 3000000
+ 29827 multiletter control sequences out of 15000+200000
  32596 words of font info for 112 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,19n,100p,801b,2142s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2836,9 +2866,9 @@ KTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvet
 ic/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on JMyers_Defense.pdf (64 pages, 7097679 bytes).
+Output written on JMyers_Defense.pdf (65 pages, 7163221 bytes).
 PDF statistics:
- 1559 PDF objects out of 1728 (max. 8388607)
- 130 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1565 PDF objects out of 1728 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

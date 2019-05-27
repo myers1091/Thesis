@@ -9,7 +9,9 @@
     \usebeamerfont{footline}%
     \usebeamercolor[fg]{footline}%
     \hspace{1em}%
-    \insertframenumber/\inserttotalframenumber
+    \ifnum\value{framenumber}>0
+    {\insertframenumber/\inserttotalframenumber}
+    \fi
 }
 \setbeamercolor{structure}{fg=MyPurple}
 \definecolor{MyPurple}{RGB}{105,18,83}
@@ -57,9 +59,12 @@
 \institute[University of Oregon]{ University of Oregon}
 \date{\today}
 
-\begin{document}
 
-\titlepage
+\begin{document}
+%\begin{frame}[noframenumbering]
+%\titlepage
+%\end{frame}
+{ \setbeamertemplate{footline}{} \begin{frame}[noframenumbering] \titlepage \end{frame} }
 %%Start with general into and then briefly on trigger
 %% highlight talks and being public face
 %%
@@ -74,12 +79,8 @@
 \end{center}
 \begin{itemize}
 %\small
-\item The Standard Model
-\begin{itemize}
-%\footnotesize
-\item Higgs Physics
-\end{itemize}
-\item BSM Di-Higgs Production
+\item The Standard Model and Higgs Physics
+\item BSM Double Higgs Production
 \item The LHC and ATLAS
 \item $HH\rightarrow{}b\bar{b}WW^{*}$ Analysis
 \item Improvements to the Analysis
@@ -96,7 +97,7 @@
 \begin{itemize}
 \item Describes matter (fermions) and force carriers (gauge bosons)
 \item Very successful model
-\item Final piece (Higgs Boson) discovered in 2012
+\item The discovery of the final piece (Higgs Boson) announced in 2012
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
@@ -113,9 +114,9 @@
 \begin{column}{0.5\textwidth}
 \color{MyPurple}{Scalar Boson}\color{black}
 \begin{center}
-$\phi_0 = \frac{1}{\sqrt{2}}\binom{0}{v}$\\~\\
+$\phi = \frac{1}{\sqrt{2}}\binom{\phi^+}{\phi^0}$\\~\\
 \huge$\Downarrow$ \normalsize EWSB \huge$\Downarrow$ \normalsize\\~\\
-$\phi(x) = \frac{1}{\sqrt{2}}\binom{0}{v + h(x)}$\\~\\
+$\phi_0 = \frac{1}{\sqrt{2}}\binom{0}{v};\ \phi(x) = \frac{1}{\sqrt{2}}\binom{0}{v + h(x)}$\\~\\
 Coupling to Gauge Bosons gives $W^{\pm},\ Z,\ A(\gamma)$\\~\\
 $M_W^2 = \frac{1}{4}g^2v^2$\\~\\
 \vspace{-0.3cm}$M_Z^2 = \frac{1}{4}(g^2 + g'^{2})v^2$\\~\\
@@ -143,7 +144,7 @@ $M_W^2 = \frac{1}{4}g^2v^2$\\~\\
 \color{MyPurple}{Higgs Potential}\color{black}
 \begin{center}
 $V = \mu^2|\Phi^{\dagger}\Phi| + \lambda(|\Phi^{\dagger}\Phi|)^2$\\~\\
-Expand self-coupling around VEV\\~\\
+Expand self-coupling around $v$\\~\\
 $V_\mathrm{self-coupling} \supset{} \lambda{}v\Phi^3 + \frac{\lambda}{4}\Phi^4$\\~\\
 Tri-linear Higgs coupling strength $\lambda_{HHH}\equiv{}\lambda v$
 \end{center}
@@ -180,7 +181,7 @@ Interfere destructively to give small theoretical cross section\\
 \end{center}
 \begin{columns}
 \begin{column}{0.5\textwidth}
-\textcolor{MyPurple}{Resonant di-Higgs production}\\
+\textcolor{MyPurple}{Resonant Double Higgs production}\\
 \begin{itemize}
 \item A New process could decay to $HH$
 \item E.g. Real Higgs Singlet Extension
@@ -234,7 +235,7 @@ Interfere destructively to give small theoretical cross section\\
 
 \begin{frame}
 \begin{center}
-\header{$\mathbf{HH\rightarrow{}b\bar{b}WW^{*}}$ semi-leptonic channel}
+\header{$\mathbf{HH\rightarrow{}b\bar{b}WW^{*}}$ Semi-Leptonic Channel}
 \end{center}
 \vspace{-0.6cm}
 \begin{columns}
@@ -375,21 +376,27 @@ Minor
 \begin{center}
 \header{The Large Hadron Collider}
 \end{center}
-\begin{center}
+\begin{columns}
+\begin{column}{0.6\textwidth}
 \includegraphics[width=1\textwidth]{figures/LHC}
-\end{center}
+\end{column}
+\begin{column}{0.4\textwidth}
+\includegraphics[width=1\textwidth]{figures/dataset}
+\end{column}
+\end{columns}
 \begin{columns}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \small
-\item 13 TeV Proton-Proton Collider
-\item 27 Km Circumference under the French-Swiss border
+\item 13 TeV CoM Proton-Proton Collider
+\item 27 km Circumference under the French-Swiss border
 \end{itemize}
 \end{column}
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \small
 \item 4 primary interaction points, each with a dedicated detector
+\item Run 2 delivered 158 fb\textsuperscript{-1}
 \end{itemize}
 \end{column}
 \end{columns}
@@ -400,20 +407,20 @@ Minor
 \header{The ATLAS Detector}
 \end{center}
 \begin{center}
-\includegraphics[width=0.75\textwidth]{figures/ATLAS_det}
+\includegraphics[width=0.8\textwidth]{figures/ATLAS_det}
 \end{center}
-\begin{columns}
-\begin{column}{0.5\textwidth}
-\begin{itemize}
-\item General purpose detector
-\end{itemize}
-\end{column}
-\begin{column}{0.5\textwidth}
-\begin{itemize}
-\item 3.9 T Toroid
-\end{itemize}
-\end{column}
-\end{columns}
+%\begin{columns}
+%\begin{column}{0.5\textwidth}
+%\begin{itemize}
+%\item General purpose detector
+%\end{itemize}
+%\end{column}
+%\begin{column}{0.5\textwidth}
+%\begin{itemize}
+%\item Up to 3.9 T Toroid
+%\end{itemize}
+%\end{column}
+%\end{columns}
 \end{frame}
 
 \begin{frame}
@@ -493,9 +500,9 @@ Minor
 \begin{center}
 \color{MyPurple}{Resolved}
 \begin{itemize}
-\item \met
-\item $p_T^{bb}$
-\item $p_T^{WW}$
+\item $\met{} > 25$ GeV
+\item Large $p_T^{bb}$
+\item Large $p_T^{WW}$
 \item $m_{bb}\sim{}m_H$
 \item $m_{HH}\sim{}m_{S}$
 \end{itemize}
@@ -506,7 +513,7 @@ Minor
 \vspace{-1.4cm}\color{MyPurple}{Boosted}
 \end{center}
 \begin{itemize}
-\item \met
+\item $\met{} > 50$ GeV
 \item $m_\mathrm{Large-R\ jet}\sim{}m_H$
 \end{itemize}
 \end{column}
@@ -533,7 +540,7 @@ Minor
 \color{MyPurple}{Other MC Bkg.}
 \begin{itemize}
 \footnotesize
-\item Modeled using MC and normilized to SM XSec
+\item Modeled using MC and normalized to SM XSec
 \end{itemize}
 \end{column}
 \end{columns}
@@ -576,13 +583,23 @@ $m_T = \sqrt{2p_T^l\met\times{}(1-\cos{\Delta{\phi}})}$
 
 \begin{frame}
 \begin{center}
-\header{Results}
+\header{Resonant Production Signal Region}
 \end{center}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/C_reOpt700_mww_bbpt210_wwpt250_mbb_hhMass_regionA_met25d020}
 \end{center}
-%\end{column}
-%\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\header{Standard Model Results}
+\end{center}
+\begin{center}
+\includegraphics[width=0.7\textwidth]{figures/C_reOptNonRes_mww_bbpt210_bbpt300_wwpt250_mbb_hhMass_regionA_met25d020}
+\end{center}
+\color{MyPurple}{Production Cross Section 95\% CL}
+\small
+\vspace{-0.5cm}$\sigma(pp\rightarrow{}HH)B(HH\rightarrow{}b\bar{b}WW^*) < 300^{+100}_{-80} \times{} SM$
 \end{frame}
 
 \begin{frame}
@@ -592,8 +609,6 @@ $m_T = \sqrt{2p_T^l\met\times{}(1-\cos{\Delta{\phi}})}$
 \begin{center}
 \includegraphics[width=0.65\textwidth]{figures/limit_2016_reOpt_HiggsApproved_Scalar_Paper_Combined_20190312_01}
 \end{center}
-\small
-\vspace{-0.5cm}$\sigma(pp\rightarrow{}HH)B(HH\rightarrow{}b\bar{b}WW^*) < 300^{+100}_{-80} \times{} SM$
 \end{frame}
 
 \begin{frame}
@@ -605,7 +620,7 @@ $m_T = \sqrt{2p_T^l\met\times{}(1-\cos{\Delta{\phi}})}$
 \begin{column}{0.5\textwidth}
 \begin{itemize}
 \footnotesize
-\item $H\rightarrow{}WW$ becomes boosted around 1 TeV 
+\item $H\rightarrow{}WW^*$ becomes boosted around 1 TeV 
 \item Quarks become too close together to use 0.4 jets
 \item Overlap removal with leptons kill efficiency
 \item A ``Fully-Boosted" selection recovers lost efficiency at high $m_S$
@@ -734,7 +749,7 @@ $m_T = \sqrt{2p_T^l\met\times{}(1-\cos{\Delta{\phi}})}$
 \end{itemize}
 \item ABCD estimate is limited by statistics
 \begin{itemize}
-\item Move to alternate QCD estimate like MM
+\item Move to alternate QCD estimate like the Matrix Method
 \end{itemize}
 \end{itemize}
 \end{frame}
