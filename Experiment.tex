@@ -135,20 +135,24 @@ The ATLAS detector, Figure~\ref{fig:ATLAS_det}, is a general purpose detector an
 %Got To Here
 %
 The inner detector (ID), Figure~\ref{fig:ID_cs}, is the closest system to the beam pipe and is made of four separate pieces. In order of distance from the beam pipe: the Insertable B-Layer (IBL) \cite{Capeans:1291633}, the Pixel Detectors, the Semiconductor Tracker (SCT), and the Transition Radiation Tracker (TRT) \cite{CERN-LHCC-97-016}. These subsystems work together to give charged particle tracking information within the pseudorapidity range of ${|\eta| < 2.5}$. When a charged particle passes through the silicon semiconductor detector in the IBL, Pixel and SCT, an electron-hole pair is created in the silicon. These electron-hole pairs drift toward the charged readout electrodes on the surface of the detector. This gives a ``hit" in the detector. The inner detector is immersed by a 2T solenoid magnet, Section ~\ref{ssec:mag}. The magnetic field causes charged particles to curve as they pass through the ID. The hits they leave along the way are connected together into ``tracks" that show the trajectory of the particle as it passes through. The radius of curvature and direction of the track gives the sign of the charge, positive or negative, along with a momentum measurement of the particle. The other task of the ID is vertexing, or determining if the transient particle came from the interaction point or a slightly displaced point. This is used to identify long lived particles, like bottom or charm quarks, which travel a small distance before decaying. This is discussed further in section ~\ref{ssec:btag}. \newline
-\indent The IBL is the newest addition to the ID, being installed during the 2016 shutdown. It is placed directly outside the beam pipe in order to maintain good vertexing and b tagging in increased pileup environments. In order to facilitate the insertion of the IBL, the beam pipe inner radius was decreased by 4 mm between Run I and Run II(from 29 mm to 25 mm). The IBL utilizes planar sensors, similar to the Pixel Detector, and 3D sensors, allowing electrons to interact with the bulk of the sensor as opposed to just the surface, and functions as a fourth pixel layer of the Pixel Detector. The addition of the IBL significantly improves the vertexing performance of the ID.
+\indent The IBL is the newest addition to the ID, being installed during the 2016 shutdown. It is placed directly outside the beam pipe in order to maintain good vertexing and b tagging in increased pileup environments. In order to facilitate the insertion of the IBL, the beam pipe inner radius was decreased by 4 mm between Run I and Run II(from 29 mm to 25 mm). The IBL utilizes planar sensors, similar to the Pixel Detector, and 3D sensors, allowing electrons to interact with the bulk of the sensor as opposed to just the surface, and functions as a fourth pixel layer of the Pixel Detector. The addition of the IBL significantly improves the vertexing performance of the ID. Figure~\ref{fig:iblbtag} show the improvements the vertexing with the IBL included. This improved vertexing allows for an increase in b-tagging performance, described in Section~\ref{ssec:btag}.
 
-%\begin{table}[h]
-%\centering
-%\begin{tabular}{cccc}\hline
-%b tagger & Without IBL & With IBL & Ratio\\
-%\hline\hline
-%IP3D & ${83\pm{}1.5}$ & ${147\pm{3.4}}$ & ${1.8}$\\
-%\hline
-%IP3D+SV1 & ${339\pm{}12}$ & ${655\pm{}32}$ & ${1.9}$ \\
-%\hline 
-%\end{tabular}
-%\caption{Rejection of light jets in \ttbar events without pileup for b efficiency of 60\%}\label{tab:ibl}
-%\end{table}
+%\begin{figure}[h]
+%\begin{center}
+%\includegraphics[width=0.49\textwidth]{figures/figures_chapter02_Overview_bVSlight__MV2c20}
+%\includegraphics[width=0.49\textwidth]{figures/figures_chapter02_Overview_bVSc__MV2c20}
+%\caption[Comparison of light-jet and c-jet rejection as a function of $b$-jet tagging efficiency]{Comparison of light-jet (left) and c-jet (right) rejection as a function of $b$-jet tagging efficiency for the Run 1 and Run 2 detector layouts.\cite{Abbott:2018ikt}}
+%\end{center}
+%\label{fig:iblbtag}
+%\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.8\textwidth]{figures/vertexing}
+\caption[Vertexing improvements with the IBL]{Unfolded transverse impact parameter resolution measured with and without the IBL as a function of pT,.\cite{trackplot}}
+\label{fig:iblbtag}
+\end{center}
+\end{figure}
 
 
 \indent The Pixel Detector is a network of high granularity, silicon pixels which measure the 2D position of passing charged particles. The silicon pixels are n-doped silicon wafers. A high voltage is applied to the wafer and when a charged particle passes through the silicon many electron hole pairs are created. The electron drifts to the electrode and creates a signal that is read out by the electronics.  The Pixel detector central barrel is divided into three cylindrical layers, the innermost layer is the B-layer, followed by Layer 1 and Layer 2. Each is covered in ${50\mu{m}}$ x ${400\mu{m}}$ silicon pixels. In order to ensure complete coverage, end cap modules are placed on each side of the barrel. The end-caps consist of four wheels, each with an inner and outer ring of trapezoid shaped silicon detectors. \newline

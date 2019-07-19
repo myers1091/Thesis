@@ -94,7 +94,8 @@ to correct for  data/MC differences. The correction factors were derived from da
 simulation comparisons with $Z\to \mu \mu$ and $J/\Psi \to \mu \mu$ events (the calibration procedure to derive the factors 
 is documented in Ref.~\cite{Aad:2016jkr}).
 \subsection{Jets}
-Due to the strong force, quarks very quickly undergo showering, a process of emitting gluons which then further produce quark-antiquark pairs and the process repeats. Once the average energy of a quark (or gluon) reaches ~1 GeV, the particles hadronize, producing quark bound states such as pions and mesons that ultimately deposit energy in the ATLAS detector. The top quark is the only quark that decays before hadronizing. If we could measure every hadron and correctly assign them to the underlying quarks, energy and momentum conservation would allow the exact momentum and energy of the quark could be determined. Jet finding is an algorithm that tries to do this. Collections of hadrons deposit energy in the ATLAS detector. These collections of energy are called jets and can be made from various detector object. In this analysis in particular, two different types of jets are used: calo-jets, jets constructed from energy deposited in the calorimeters; and track-jets, jets constructed from tracks in the Inner Detector. \newline
+Due to the strong force, quarks very quickly undergo showering, a process of emitting gluons which then further produce quark-antiquark pairs and the process repeats. Once the average energy of a quark (or gluon) reaches ~1 GeV, the particles hadronize, producing quark bound states such as pions and mesons that ultimately deposit energy in the ATLAS detector. The top quark is the only quark that decays before hadronizing. If we could measure every hadron and correctly assign them to the underlying quarks, energy and momentum conservation would allow the exact momentum and energy of the quark could be determined. Jet finding is an algorithm that tries to do this. Collections of hadrons deposit energy in the ATLAS detector. These collections of energy are called jets and can be made from various detector object. In this analysis in particular, two different types of jets are used: calo-jets, jets constructed from energy deposited in the calorimeters; and track-jets, jets constructed from tracks in the Inner Detector. To form calo-jets, ATLAS used topological clusters(topo-clusters)~\cite{Aad:2016upy}. Topo-clusters are three dimensional collections of topologically connected energy deposits. These topo-clusters are formed by a growing-volume algorithm starting from a high significance seed signal. Topo-clustering suppresses noise by removing cells with insignificant signals, making it superior to basic energy summing. \newline
+
 \indent Since a jet is not a physical object, rather a collection of energy-momentum 4-vectors, there are many ways to define a jet. A jet algorithm takes a set of input 4-vectors and combines them into one or more jet objects based upon some criteria for separating and grouping inputs. Jets can be made with either energy deposits (calo-jets) or tracks (track-jets). The process of creating calo-jets is described here but the method for making track-jets is similar.  Two important characteristics of any jet algorithm are Infrared (IR) Safety and Collinear (CL) Safety. For a jet algorithm to be IR Safe, the addition or subtraction of small energy deposits will not change the jet collection. A jet algorithm is CL Safe if splitting or merging high transverse momentum particles does not change the jet collection. Figure \ref{fig:IR_CL} illustrates both IR and CL Safety.
 
 \begin{figure}[h]
@@ -105,7 +106,7 @@ Due to the strong force, quarks very quickly undergo showering, a process of emi
 \end{center}
 \end{figure}
 
-\indent Some examples of jet algorithms are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the ${\text{anti-}k_{t}}$ algorithm is selected. In addition to being IR and CL safe, the ${\text{anti-}k_{t}}$ algorithm gives roughly circular jets. This makes calculating the energy density much easier than non-circular jets. The ${\text{anti-}k_{t}}$ algorithm calculates the distance between objects $i$ and $j$ ($d_{ij}$) and $i$ and the beam $B$ ($d_{iB}$). If ${d_{ij}}$ is smaller than ${d_{iB}}$, the objects are combined. If ${d_{iB}}$ is smaller the object is removed and the algorithm is rerun. An important distinction between ${\textrm{anti-}k_{t}}$ and other jet algorithms is the definition of the distances ${d_{ij}\text{ and } d_{iB}}$
+\indent Some examples of jet algorithms are visualized in figure ~\ref{fig:jetalgo}. For this analysis, the ${\text{anti-}k_{t}}$ algorithm is selected. In addition to being IR and CL safe, the ${\text{anti-}k_{t}}$ algorithm gives roughly circular jets. This makes calculating the energy density much easier than non-circular jets and thus easier to calibrate the jets. The ${\text{anti-}k_{t}}$ algorithm calculates the distance between objects $i$ and $j$ ($d_{ij}$) and $i$ and the beam $B$ ($d_{iB}$). If ${d_{ij}}$ is smaller than ${d_{iB}}$, the objects are combined. If ${d_{iB}}$ is smaller the object is removed and the algorithm is rerun. An important distinction between ${\textrm{anti-}k_{t}}$ and other jet algorithms is the definition of the distances ${d_{ij}\text{ and } d_{iB}}$
 \begin{equation}
 \begin{split}
 d_{ij} = \text{ min}(k^{2p}_{ti},k^{2p}_{tj})\frac{\Delta^{2}_{ij}}{R^{2}},\\
@@ -149,8 +150,18 @@ the resulting hard jets\cite{Cacciari:2008gp}.}
 \end{figure}
 
 \subsection{b Tagging}\label{ssec:btag}
-B-Hadrons, composite particles that contain b quarks, travel a small distance before they decay. This means the tracks from the decay products can be traced back to the point at which the b-hadron decays, called the secondary, or displaced, vertex, figure ~\ref{fig:bjets} . This displaced vertex is used to tag jets that are likely to come from b quarks through b-tagging algorithms.\newline
-\indent In this analysis, the MV2c10 is used to tag b-jets \cite{ATL-PHYS-PUB-2016-012}. MV2 is a multivariate discriminant that combines 3 b-tagging algorithms. The c10 signifies a 10\% c-jet fraction in the background training sample. The three algorithms that are used as inputs to the MV2 discriminant are: an impact parameter-based algorithm, an inclusive secondary vertex reconstruction algorithm, and a decay chain multi-vertex reconstruction algorithm. For this analysis, the 85\% efficiency fixed-cut working point is used for b-jet identification.\newline
+Jets that originate from b-quarks have unique properties that allow them to be distinguished from other jets. When a b-quark is produced, it hadronizes into B-Hadrons. These hadrons have a relatively long lifetime compared to many other hadrons that are produced. This long lifetime, combined with the relativistic speeds the hadron is traveling allow the particle to travel a measurable distance before it decays. Figure~\ref{fig:bjets} illustrates a b-hadron decay. To tag a jet as a b-jet, a jet that came from a b-quark, ATLAS relies on the tracks from the inner detector. By reconstructing the tracks in an event, it is possible to find a place, outside of the interaction point, where multiple tracks originate. This is referred to as the secondary vertex. Additionally, it is possible to backtrack the tracks in the displaced vertex to measure their impact parameter, or the minimum distance between the track and the interaction point. Lastly, a decay chain MVA attempts to fully reconstruct the decay chain of the jet. These three methods; secondary vertex identification, impact parameter measurements,  and decay reconstruction; are all used to identify jets coming from b-quarks and reject those coming from light flavor quarks\cite{ATL-PHYS-PUB-2016-012}. \newline
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics*[width=0.90\textwidth] {figures/bjet}
+\caption[Schmatic view of the tracks in a b-jet]{Schmatic view of the tracks in a b-jet \cite{HanssonAdrian:1397942}.}
+\label{fig:bjets}
+\end{center}
+\end{figure}
+
+
+\indent In this analysis, the MV2c10 is used to tag b-jets \cite{ATL-PHYS-PUB-2016-012}. MV2 is a multivariate discriminant that combines the b-tagging algorithms described above. The c10 signifies a 10\% c-jet fraction in the background training sample. The three algorithms that are used as inputs to the MV2 discriminant are: an impact parameter-based algorithm, an inclusive secondary vertex reconstruction algorithm, and a decay chain multi-vertex reconstruction algorithm. For this analysis, the 85\% efficiency fixed-cut working point is used for b-jet identification. This corresponds to a $c$-jet rejection rate of 3.1 and a light-jet rejection rate of 33, Figure~\ref{fig:bjetrej}. \newline
 \indent The difference in the efficiency of $b$-tagging between data and simulation 
 is taken into account by applying scale factors provided by the Flavour Tagging CP group, 
 as prescribed on the \href{https://twiki.cern.ch/twiki/bin/view/AtlasProtected/BTagCalib2015}{BTagCalib2015 twiki}. 
@@ -158,9 +169,9 @@ The uncertainties associated with $b$-tagging are considered for $b$-, $c$- and 
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics*[width=0.90\textwidth] {figures/bjet}
-\caption[Schmatic view of the tracks in a b-jet]{Schmatic view of the tracks in a b-jet \cite{HanssonAdrian:1397942}.}
-\label{fig:bjets}
+\includegraphics*[width=0.90\textwidth] {figures/figures_chapter02_Overview_bVSlight__MV2c20}
+\caption[Comparison of light-jet rejection as a function of $b$-jet tagging efficiency]{Comparison of light-jet rejection as a function of $b$-jet tagging efficiency for the Run 1 and Run 2 detector layouts.\cite{Abbott:2018ikt}}
+\label{fig:bjetrej}
 \end{center}
 \end{figure}
 

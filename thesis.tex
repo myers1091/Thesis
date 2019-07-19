@@ -29,6 +29,8 @@ numbers,
 sort&compress,
 numsections,
 gsmodern,
+english,
+letterpaper,
 ]{uothesis}
 
 % The language of the document must be set: usually UKenglish or USenglish.
@@ -72,6 +74,7 @@ gsmodern,
 %   false: BSM, hion, math, process, other, texmf
 % See the package for details on the options.
 %\setcounter{secnumdepth}{3}% This is supposed to change the depth of references (default 2)
+\usepackage{geometry}
 \usepackage{graphicx}
 
 \usepackage{atlasphysics}
@@ -176,7 +179,7 @@ gsmodern,
 \begin{document}
 \renewcommand\texteuro{FIXME} 
 %\begin{linenumbers}
-\begin{runninglinenumbers}
+%\begin{runninglinenumbers}
 
 \include{cover}
 \include{abstract}
@@ -240,8 +243,16 @@ gsmodern,
 % If you use biblatex and either biber or bibtex to process the bibliography
 % just say \printbibliography here
 
-\printbibliography
-%\printbibliography[title={REFERENCES CITED},heading=bibintoc]
+%\printbibliography
+\begingroup
+\interlinepenalty=10000\relax
+\widowpenalty=10000\relax
+\clubpenalty=10000\relax
+\raggedbottom
+\setstretch{0.8}
+\setlength\bibitemsep{10pt}
+\printbibliography[title={REFERENCES CITED},heading=bibintoc]
+\endgroup
 %\bibliographystyle{atlasBibStyleWithTitle}
 %\bibliography{CONF}
 % If you want to use the traditional BibTeX you need to use the syntax below.
@@ -278,5 +289,5 @@ gsmodern,
 %In an ATLAS note, use the appendices to include all the technical details of your work
 %that are relevant for the ATLAS Collaboration only (e.g.\ dataset details, software release used).
 %This information should be printed after the Bibliography.
-\end{runninglinenumbers}
+%\end{runninglinenumbers}
 \end{document}
